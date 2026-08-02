@@ -5,7 +5,7 @@ import { FileText, Repeat, PhoneCall, BarChart2 } from "lucide-react"
 const perks = [
   {
     icon: FileText,
-    title: "Faktura na firmu a DPH doklad",
+    title: "Company invoice & VAT receipt",
     short: "Company invoice — VAT receipt for every ride",
     desc: "We issue a tax invoice with VAT for every ride, easily claimed as a business expense. No paper receipts — everything sent electronically to your company email.",
   },
@@ -35,7 +35,7 @@ export default function FirmsPerks() {
 
   return (
     <div className="grid md:grid-cols-2 gap-8 items-start">
-      {/* Vlevo – seznam */}
+      {/* Left – list */}
       <div className="flex flex-col gap-3">
         {perks.map((item, i) => {
           const Icon = item.icon
@@ -69,7 +69,7 @@ export default function FirmsPerks() {
         })}
       </div>
 
-      {/* Vpravo – detail */}
+      {/* Right – detail */}
       <div style={{
         background: "#f8fafc", border: "1.5px solid #e2e8f0",
         borderRadius: "16px", padding: "32px", minHeight: "200px",

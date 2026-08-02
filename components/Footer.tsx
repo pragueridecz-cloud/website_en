@@ -79,7 +79,7 @@ export default function Footer() {
                 { label: "Frequently asked questions", href: "#faq" },
                 { label: "Terms & Conditions", href: "/terms-and-conditions" },
                 { label: "Privacy Policy", href: "/ochrana-passengersnich-udaju" },
-                { label: "pragueairportaxi.com", href: "https://www.pragueride.com" },
+                { label: "Cookie Policy", href: "/cookie-policy" },
               ].map((l) => (
                 <li key={l.label}>
                   <a href={l.href} style={{ color: "#94a3b8", fontSize: "13px", textDecoration: "none" }}

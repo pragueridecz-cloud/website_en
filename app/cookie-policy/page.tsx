@@ -196,7 +196,7 @@ export default function ZasadyCookies() {
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
               <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Questions about cookies?</div>
-              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám na info@pragueairportaxi.com</div>
+              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Write to us at info@pragueairportaxi.com</div>
             </div>
             <a href="mailto:info@pragueairportaxi.com" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
               Contact us

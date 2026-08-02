@@ -27,7 +27,7 @@ export default function PrepravaPropFirmy() {
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbSchema)}} />
       <main>
         {/* Hero */}
-        <section style={{ background: "linear-gradient(135deg, #00205B 0%, #0a3a8a 100%)", padding: "80px 20px 60px" }}>
+        <section style={{ background: "linear-gradient(135deg, #00205B 0%, #0a3a8a 100%)", padding: "100px 20px 60px" }}>
           <div className="max-w-6xl mx-auto">
             <div className="flex items-center gap-3 mb-4">
               <div style={{ width: "32px", height: "2px", background: "#F97316", flexShrink: 0 }} />

@@ -11,10 +11,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Transport to Prague Airport and nearby airports | pragueairportaxi.com",
     description: "Transfer to PRG, VIE, BTS, BUD, MUC, FRA airports. Fixed price, flight tracking.",
-    url: "https://www.pragueairportaxi.com/letistni-preprava",
+    url: "https://www.pragueairportaxi.com/airport-transfer",
     images: [{ url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/PRG_Airport_Terminal_2.jpg/1280px-PRG_Airport_Terminal_2.jpg", width: 1280, height: 720 }],
   },
-  alternates: { canonical: "https://www.pragueairportaxi.com/letistni-preprava" },
+  alternates: { canonical: "https://www.pragueairportaxi.com/airport-transfer" },
 }
 
 const schema = {
@@ -69,7 +69,7 @@ const breadcrumbSchema = {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com"},
-        {"@type": "ListItem", "position": 2, "name": "Airport Transfer", "item": "https://www.pragueairportaxi.com/letistni-preprava"}
+        {"@type": "ListItem", "position": 2, "name": "Airport Transfer", "item": "https://www.pragueairportaxi.com/airport-transfer"}
       ]
     }
 

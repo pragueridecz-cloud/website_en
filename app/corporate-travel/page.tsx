@@ -16,7 +16,7 @@ const breadcrumbSchema = {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com"},
-        {"@type": "ListItem", "position": 2, "name": "Business Travel", "item": "https://www.pragueairportaxi.com/preprava-pro-firmy"}
+        {"@type": "ListItem", "position": 2, "name": "Business Travel", "item": "https://www.pragueairportaxi.com/corporate-travel"}
       ]
     }
 

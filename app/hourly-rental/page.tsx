@@ -15,9 +15,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Hourly Rental auta s driverem Prague | Od €29/hod | pragueairportaxi.com",
     description: "Auto s driverem na celý den nebo párhin. Business, turistika, nákupy.",
-    url: "https://www.pragueairportaxi.com/hodinovy-pronajem",
+    url: "https://www.pragueairportaxi.com/hourly-rental",
   },
-  alternates: { canonical: "https://www.pragueairportaxi.com/hodinovy-pronajem" },
+  alternates: { canonical: "https://www.pragueairportaxi.com/hourly-rental" },
 }
 
 const schema = {
@@ -45,7 +45,7 @@ const breadcrumbSchema = {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com"},
-        {"@type": "ListItem", "position": 2, "name": "Hourly Rental", "item": "https://www.pragueairportaxi.com/hodinovy-pronajem"}
+        {"@type": "ListItem", "position": 2, "name": "Hourly Rental", "item": "https://www.pragueairportaxi.com/hourly-rental"}
       ]
     }
 

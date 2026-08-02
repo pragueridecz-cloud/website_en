@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Meziměstská a mezinárodní doprava | pragueairportaxi.com",
     description: "Prague–Vienna 9 €29, Prague–Berlin . Komfortní transport po celé Evropě.",
-    url: "https://www.pragueairportaxi.com/mezimestska-doprava",
+    url: "https://www.pragueairportaxi.com/intercity-transport",
   },
-  alternates: { canonical: "https://www.pragueairportaxi.com/mezimestska-doprava" },
+  alternates: { canonical: "https://www.pragueairportaxi.com/intercity-transport" },
 }
 
 const schema = {
@@ -68,7 +68,7 @@ const breadcrumbSchema = {
       "@type": "BreadcrumbList",
       "itemListElement": [
         {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com"},
-        {"@type": "ListItem", "position": 2, "name": "Intercity Transport", "item": "https://www.pragueairportaxi.com/mezimestska-doprava"}
+        {"@type": "ListItem", "position": 2, "name": "Intercity Transport", "item": "https://www.pragueairportaxi.com/intercity-transport"}
       ]
     }
 

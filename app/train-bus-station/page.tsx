@@ -11,9 +11,9 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Train & Bus Station Transfer Prague | pragueairportaxi.com",
     description: "Transfer na Main Station, Florenc Bus Terminal, Smíchovské nádraží. Pevné ceny 24/7.",
-    url: "https://www.pragueairportaxi.com/vlakove-autobusove-nadrazi",
+    url: "https://www.pragueairportaxi.com/train-bus-station",
   },
-  alternates: { canonical: "https://www.pragueairportaxi.com/vlakove-autobusove-nadrazi" },
+  alternates: { canonical: "https://www.pragueairportaxi.com/train-bus-station" },
 }
 
 const schema = {

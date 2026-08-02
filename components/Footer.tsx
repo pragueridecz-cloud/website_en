@@ -78,7 +78,7 @@ export default function Footer() {
                 { label: "How it works", href: "#jak-to-funguje" },
                 { label: "Frequently asked questions", href: "#faq" },
                 { label: "Terms & Conditions", href: "/terms-and-conditions" },
-                { label: "Privacy Policy", href: "/ochrana-passengersnich-udaju" },
+                { label: "Privacy Policy", href: "/privacy-policy" },
                 { label: "pragueairportaxi.com", href: "https://www.pragueride.com" },
               ].map((l) => (
                 <li key={l.label}>

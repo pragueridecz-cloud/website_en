@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Corporate transport Prague | pragueairportaxi.com",
-  description: "Firemní taxi Prague na fakturu s DPH. Employee airport transfers, korporátní transfery, VIP transport pro delegace. Business taxi Prague — pevná price, měsíční invoicece, dedikovaná linka.",
+  description: "Corporate taxi Prague with VAT invoice. Employee airport transfers, corporate transfers, VIP transport for delegations. Fixed price, monthly invoicing, dedicated line.",
 };
 
 
@@ -37,12 +37,12 @@ export default function PrepravaPropFirmy() {
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 20px" }}>
               Corporate Transport<br />
-              <span style={{ color: "#F97316" }}>na každou příležitost</span>
+              <span style={{ color: "#F97316" }}>for every occasion</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "36px" }}>
               Corporate taxi Prague with VAT invoice for every ride. We provide employee airport transfers, business partner pickups, corporate transfers and VIP transport for delegations. Fixed price, monthly invoicing and dedicated line for corporate clients. Sign a corporate contract and keep transport under control.
             </p>
-            <a href="mailto:info@pragueairportaxi.com?subject=Firemní spolupráce"
+            <a href="mailto:info@pragueairportaxi.com?subject=Corporate%20Enquiry"
               style={{ display: "inline-block", background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "15px", padding: "14px 32px", borderRadius: "12px", textDecoration: "none" }}>
               Arrange corporate partnership →
             </a>
@@ -55,7 +55,7 @@ export default function PrepravaPropFirmy() {
             <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(24px,3vw,36px)", color: "#00205B", marginBottom: "8px" }}>
               Why a corporate account?
             </h2>
-            <p style={{ color: "#475569", fontSize: "16px", marginBottom: "48px" }}>Why choose us, které oceníte při pravidelné firemní přepravě.</p>
+            <p style={{ color: "#475569", fontSize: "16px", marginBottom: "48px" }}>Benefits you will appreciate with regular corporate transport.</p>
             <FirmsPerks />
           </div>
         </section>
@@ -66,7 +66,7 @@ export default function PrepravaPropFirmy() {
             <div style={{ marginBottom: "40px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "12px" }}>
                 <div style={{ width: "32px", height: "2px", background: "#F97316" }} />
-                <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase" as const, letterSpacing: "2px" }}>Kdy nás využít</span>
+                <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase" as const, letterSpacing: "2px" }}>When to use us</span>
               </div>
               <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(32px,4vw,52px)", color: "#00205B", marginBottom: "16px", lineHeight: 1.1 }}>
                 Transport for every occasion
@@ -85,7 +85,7 @@ export default function PrepravaPropFirmy() {
               Trusted by
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4">
-              {[{ name: "Česká televize", logo: "/partner-ct.png" }, { name: "Blažek", logo: "/partner-blazek.png" }].map((p) => (
+              {[{ name: "Czech Television", logo: "/partner-ct.png" }, { name: "Blažek", logo: "/partner-blazek.png" }].map((p) => (
                 <div key={p.name} className="flex items-center justify-center rounded-xl px-7 py-3"
                   style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", minWidth: "130px" }}>
                   <img src={p.logo} alt={p.name}
@@ -94,7 +94,7 @@ export default function PrepravaPropFirmy() {
               ))}
               <div className="flex items-center justify-center rounded-xl px-7 py-3"
                 style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", minWidth: "130px" }}>
-                <span style={{ color: "rgba(255,255,255,0.35)", fontSize: "12px", fontWeight: 600 }}>a mnoho dalších…</span>
+                <span style={{ color: "rgba(255,255,255,0.35)", fontSize: "12px", fontWeight: 600 }}>and many more…</span>
               </div>
             </div>
           </div>
@@ -109,7 +109,7 @@ export default function PrepravaPropFirmy() {
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: 1.7, marginBottom: "32px" }}>
               Contact us and we will prepare a tailored offer for your company.
             </p>
-            <a href="mailto:info@pragueairportaxi.com?subject=Firemní spolupráce"
+            <a href="mailto:info@pragueairportaxi.com?subject=Corporate%20Enquiry"
               style={{ display: "inline-block", background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "16px", padding: "16px 40px", borderRadius: "12px", textDecoration: "none", marginRight: "12px" }}>
               Write to us →
             </a>

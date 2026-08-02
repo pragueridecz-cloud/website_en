@@ -47,7 +47,7 @@ const ROUTES = [
 ]
 
 const VYHODY = [
-  { Icon: Lock,      title: "Fixní price in advance",    desc: "Price je dohodnutá in advance a nemění se. Žádné příplatky za mýto, parkování nebo čekání.", img: "/service-fixni-price.jpg" },
+  { Icon: Lock,      title: "Fixed price upfront",    desc: "Price agreed upfront and never changes. No surcharges for tolls, parking or waiting.", img: "/service-fixni-price.jpg" },
   { Icon: Car,       title: "Moderní vehicle",      desc: "Komfortní sedany a minivany s klimatizací, Wi-Fi a dostatkem místa pro luggage.", img: "/service-vehicle.jpg" },
   { Icon: Clock,     title: "Flexibilní časy",      desc: "Přepravujeme 24hin denně, 7 dní v týdnu. Rezervujte kdykoli, i na poslední chvíli.", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&q=80" },
   { Icon: Globe,     title: "Celá střední Evropa",  desc: "Jezdíme do Německa, Rakouska, Polska, Slovenska, Maďarska a dalších zemí.", img: "/service-evropa.jpg" },
@@ -57,7 +57,7 @@ const VYHODY = [
 
 const FAQ_ITEMS = [
   { q: "Jezdíte i mimo ČR?", a: "Yes, přepravujeme po celé střední Evropě – Německo, Rakousko, Slovensko, Polsko, Maďarsko a další. Cenu trasy získáte ihned po zadání do rezervačního formuláře." },
-  { q: "Je price fixní i pro mezinárodní trasy?", a: "Yes, price je vždy fixní a dohodnuta in advance. Žádné příplatky za mýto, delay nebo noční jízdu." },
+  { q: "Is the price fixed for international routes too?", a: "Yes, the price is always fixed and agreed upfront. No surcharges for tolls, delays or night rides." },
   { q: "Mohu book cestu tam a zpět?", a: "Samozřejmě, v rezervačním formuláři jednoduše přidejte zpáteční cestu se slevou." },
   { q: "Jak probíhá payment za dlouhé trasy?", a: "Payment kartou online nebo hotově driver. U tras nad 5 000 je možná záloha in advance." },
   { q: "Co když trasa není v ceníku?", a: "Zadejte ji do rezervačního formuláře – price se vypočítá automaticky podle vzdálenosti. Nebo nás kontaktujte přímo." },
@@ -129,7 +129,7 @@ export default function MezimestskaPage() {
                     <div style={{ fontSize: "13px", fontWeight: 700, color: "#00205B" }}>{r.from} → {r.to}</div>
                     <div style={{ fontSize: "11px", color: "#94a3b8", marginTop: "2px" }}>{r.km}</div>
                   </div>
-                  <div style={{ fontSize: "16px", fontWeight: 800, color: "#F97316" }}>od {r.price}</div>
+                  <div style={{ fontSize: "16px", fontWeight: 800, color: "#F97316" }}>{r.price}</div>
                 </div>
               ))}
             </div>

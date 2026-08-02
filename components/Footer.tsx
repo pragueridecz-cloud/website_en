@@ -55,7 +55,7 @@ export default function Footer() {
               {[
                 { label: "Airport Transfer", href: "/airport-transfer" },
                 { label: "Intercity Transport", href: "/intercity-transport" },
-                { label: "Vlakové a autobusové nádraží", href: "/train-bus-station" },
+                { label: "Train & Bus Station", href: "/train-bus-station" },
                 { label: "Hourly Rental", href: "/hourly-rental" },
                 { label: "For companies", href: "/corporate-travel" },
               ].map((l) => (
@@ -78,8 +78,8 @@ export default function Footer() {
                 { label: "How it works", href: "#jak-to-funguje" },
                 { label: "Frequently asked questions", href: "#faq" },
                 { label: "Terms & Conditions", href: "/terms-and-conditions" },
-                { label: "Ochrana passengersních údajů", href: "/ochrana-passengersnich-udaju" },
-                { label: "PragueRide.com (EN)", href: "https://www.pragueride.com" },
+                { label: "Privacy Policy", href: "/ochrana-passengersnich-udaju" },
+                { label: "pragueairportaxi.com", href: "https://www.pragueride.com" },
               ].map((l) => (
                 <li key={l.label}>
                   <a href={l.href} style={{ color: "#94a3b8", fontSize: "13px", textDecoration: "none" }}
@@ -122,11 +122,11 @@ export default function Footer() {
               <img src="/logo-en.png" alt="Transfer Prague Car" style={{ height: "28px", objectFit: "contain", filter: "brightness(0) invert(1)", opacity: 0.6 }} />
               <div>
                 <div style={{ fontSize: "12px", fontWeight: 600, color: "#94a3b8" }}>transfer-prague-car s.r.o.</div>
-                <div style={{ fontSize: "11px", color: "#475569" }}>IČO: 25706993 · Sochařská 2, 170 00 Prague</div>
+                <div style={{ fontSize: "11px", color: "#475569" }}>Reg. No.: 25706993 · Sochařská 2, 170 00 Prague</div>
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
-              {["Terms & Conditions", "GDPR"].map((l) => (
+              {["Terms & Conditions", "Privacy Policy"].map((l) => (
                 <a key={l} href={`/${l.toLowerCase().replace(/ /g, "-")}`}
                   style={{ fontSize: "11px", color: "#475569", textDecoration: "none" }}
                   onMouseEnter={e => (e.currentTarget.style.color = "#94a3b8")}
@@ -137,7 +137,7 @@ export default function Footer() {
             </div>
           </div>
           <div style={{ fontSize: "11px", color: "#334155" }}>
-            © {new Date().getFullYear()} pragueairportaxi.com — provozuje transfer-prague-car s.r.o. All rights reserved.
+            © {new Date().getFullYear()} pragueairportaxi.com — operated by transfer-prague-car s.r.o. All rights reserved.
           </div>
         </div>
       </div>

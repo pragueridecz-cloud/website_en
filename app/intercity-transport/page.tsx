@@ -23,7 +23,7 @@ const schema = {
   "description": "Transport mezi městy v ČR a do zahraničí – Vienna, Berlin, Munich, Varšava a další.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
   "areaServed": [
-    { "@type": "Country", "name": "Česká republika" },
+    { "@type": "Country", "name": "Czech Republic" },
     { "@type": "Country", "name": "Německo" },
     { "@type": "Country", "name": "Rakousko" },
     { "@type": "Country", "name": "Polsko" },
@@ -51,15 +51,15 @@ const VYHODY = [
   { Icon: Car,       title: "Moderní vehicle",      desc: "Komfortní sedany a minivany s klimatizací, Wi-Fi a dostatkem místa pro luggage.", img: "/service-vehicle.jpg" },
   { Icon: Clock,     title: "Flexibilní časy",      desc: "Přepravujeme 24 hodin denně, 7 dní v týdnu. Rezervujte kdykoli, i na poslední chvíli.", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&q=80" },
   { Icon: Globe,     title: "Celá střední Evropa",  desc: "Jezdíme do Německa, Rakouska, Polska, Slovenska, Maďarska a dalších zemí.", img: "/service-evropa.jpg" },
-  { Icon: CreditCard,title: "Payment kartou",        desc: "Payment kartou online nebo hotově driveri. Na vyžádání invoice na firmu.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
-  { Icon: UserCheck, title: "Professional drivers", desc: "Zkušení, jazykově vybavení driveri se znalostí tras a místních podmínek.", img: "/service-ridici.jpg" },
+  { Icon: CreditCard,title: "Payment kartou",        desc: "Payment kartou online nebo hotově driver. Na vyžádání invoice na firmu.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
+  { Icon: UserCheck, title: "Professional drivers", desc: "Zkušení, jazykově vybavení driver se znalostí tras a místních podmínek.", img: "/service-ridici.jpg" },
 ]
 
 const FAQ_ITEMS = [
   { q: "Jezdíte i mimo ČR?", a: "Yes, přepravujeme po celé střední Evropě – Německo, Rakousko, Slovensko, Polsko, Maďarsko a další. Cenu trasy získáte ihned po zadání do rezervačního formuláře." },
   { q: "Je price fixní i pro mezinárodní trasy?", a: "Yes, price je vždy fixní a dohodnuta in advance. Žádné příplatky za mýto, delay nebo noční jízdu." },
   { q: "Mohu book cestu tam a zpět?", a: "Samozřejmě, v rezervačním formuláři jednoduše přidejte zpáteční cestu se slevou." },
-  { q: "Jak probíhá payment za dlouhé trasy?", a: "Payment kartou online nebo hotově driveri. U tras nad 5 000 Kč je možná záloha in advance." },
+  { q: "Jak probíhá payment za dlouhé trasy?", a: "Payment kartou online nebo hotově driver. U tras nad 5 000 Kč je možná záloha in advance." },
   { q: "Co když trasa není v ceníku?", a: "Zadejte ji do rezervačního formuláře – price se vypočítá automaticky podle vzdálenosti. Nebo nás kontaktujte přímo." },
 ]
 
@@ -67,7 +67,7 @@ const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.pragueairportaxi.com"},
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com"},
         {"@type": "ListItem", "position": 2, "name": "Intercity Transport", "item": "https://www.pragueairportaxi.com/mezimestska-doprava"}
       ]
     }
@@ -90,12 +90,12 @@ export default function MezimestskaPage() {
               </span>
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
-              Meziměstské transfery<br />
+              Intercity transfers<br />
               <span style={{ color: "#F97316" }}>po celé ČR i Evropě</span>
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-              Pohodlná transport mezi městy bez přestupů. Fixed price, klimatizované vehicle, door-to-door.
+              Comfortable transport between cities without transfers. Fixed price, air-conditioned vehicle, door-to-door.
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function MezimestskaPage() {
               Long Distance Taxi z Prahy
             </h2>
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: 1.7, marginBottom: "40px", maxWidth: "680px" }}>
-              Dálkový transfer z Prahy do jakéhokoli města v ČR nebo zahraničí — pevná price dohodnutá in advance, bez taxametru a bez překvapení. Long Distance Taxi Prague zajišťujeme 24 hodin denně, 7 dní v týdnu, se sedany i minibusy pro groups.
+              Long distance transfer from Prague to any city in Czech Republic or abroad — fixed price agreed in advance, no meter, no surprises. Long Distance Taxi Prague available 24 hours a day, 7 days a week, with sedans and minivans for groups.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
@@ -188,7 +188,7 @@ export default function MezimestskaPage() {
             <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Fixed price, komfortní vehicle, reliable driver</p>
             <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
-              Zabook nyní
+              Book now
             </a>
           </div>
         </section>

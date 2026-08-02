@@ -6,11 +6,11 @@ import SectionHeading from "@/components/SectionHeading"
 
 export const metadata: Metadata = {
   title: "Transport na airport Prague | pragueairportaxi.com",
-  description: "Transfer na/z Václav Havel Airport Prague from €29. Také Vienna, Bratislava, Budapešť, Munich, Frankfurt. Fixed price, driver čeká u výstupu, sledování letu 24/7.",
-  keywords: "doprava na airport Prague, transfer Václav Havel Airport, taxi airport Vienna, transfer airport Bratislava, transport airport Munich, airport transfer Prague",
+  description: "Transfer to/from Václav Havel Airport Prague from €29. Also Vienna, Bratislava, Budapest, Munich, Frankfurt. Fixed price, driver waits at exit, flight tracking 24/7.",
+  keywords: "airport transfer Prague, Prague airport taxi, Václav Havel airport transfer, Vienna airport transfer, Bratislava airport transfer, Munich airport transfer",
   openGraph: {
-    title: "Transport na airport Prague a okolní airport | pragueairportaxi.com",
-    description: "Transfer na airport PRG, VIE, BTS, BUD, MUC, FRA. Fixed price, sledování letu.",
+    title: "Transport to Prague Airport and nearby airports | pragueairportaxi.com",
+    description: "Transfer to PRG, VIE, BTS, BUD, MUC, FRA airports. Fixed price, flight tracking.",
     url: "https://www.pragueairportaxi.com/letistni-preprava",
     images: [{ url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/PRG_Airport_Terminal_2.jpg/1280px-PRG_Airport_Terminal_2.jpg", width: 1280, height: 720 }],
   },
@@ -20,12 +20,12 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Letištní transfer Prague",
+  "name": "Airport Transfer Prague",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179", "url": "https://www.pragueairportaxi.com" },
   "areaServed": [
-    { "@type": "Airport", "name": "Airport Václava Havla Prague", "iataCode": "PRG" },
-    { "@type": "Airport", "name": "Viennaské mezinárodní airport", "iataCode": "VIE" },
-    { "@type": "Airport", "name": "Letisko M. R. Štefánika Bratislava", "iataCode": "BTS" },
+    { "@type": "Airport", "name": "Václav Havel Prague Airport", "iataCode": "PRG" },
+    { "@type": "Airport", "name": "Vienna International Airport", "iataCode": "VIE" },
+    { "@type": "Airport", "name": "Bratislava M. R. Štefánik Airport", "iataCode": "BTS" },
   ],
   "offers": { "@type": "Offer", "priceCurrency": "CZK", "price": "790" },
 }
@@ -33,33 +33,33 @@ const schema = {
 const AIRPORTS_CZ = [
   {
     code: "PRG",
-    name: "Airport Václava Havla Prague",
+    name: "Václav Havel Prague Airport",
     city: "Prague",
-    desc: "Největší a nejrušnější airport v ČR s více než 17 miliony passengerch ročně. Dvě terminály – T1 pro Schengen, T2 pro mimoevropské lety. Vzdáleno cca 17 km od centra Prahy.",
+    desc: "The largest and busiest airport in Czech Republic with over 17 million passengers annually. Two terminals – T1 for Schengen, T2 for non-European flights. Located approx. 17 km from Prague city centre.",
     price: "from €29",
     time: "20–35 min",
     img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
-    facts: ["Terminál 1 – Schengen (většina evropských letů)", "Terminál 2 – mimo Schengen, zámořské lety", "17 km od Václavského náměstí", "Sledujeme delay vašeho letu"],
+    facts: ["Terminal 1 – Schengen (most European flights)", "Terminal 2 – non-Schengen, overseas flights", "17 km from Wenceslas Square", "We track your flight delay"],
   },
   {
     code: "BRQ",
     name: "Airport Brno-Tuřany",
     city: "Brno",
-    desc: "Druhé největší airport v ČR. Pravidelné linky do Londýna, Amsterdamu, Frankfurtu a dalších evropských destinací. Ideální alternativa pro passenger z jižní Moravy.",
+    desc: "Second largest airport in Czech Republic. Regular routes to London, Amsterdam, Frankfurt and other European destinations. Ideal alternative for passengers from South Moravia.",
     price: "from €112",
     time: "2.5 hrs z Prahy",
     img: "/airport-brno.jpg",
-    facts: ["210 km od Prahy", "Pravidelné linky Ryanair, Wizz Air"],
+    facts: ["210 km from Prague", "Regular Ryanair, Wizz Air routes"],
   },
   {
     code: "OSR",
     name: "Airport Ostrava-Mošnov",
     city: "Ostrava",
-    desc: "Airport v srdci Slezska. Sezónní i pravidelné charterové lety do celé Evropy a Turecka. Dobré spojení s Polskem a Slovenskem.",
+    desc: "Airport in the heart of Silesia. Seasonal and regular charter flights across Europe and Turkey. Good connections to Poland and Slovakia.",
     price: "from €189",
     time: "3.5 hrs z Prahy",
     img: "/airport-ostrava.jpg",
-    facts: ["360 km od Prahy", "Charterové lety do Turecka, Řecka, Egypta"],
+    facts: ["360 km from Prague", "Charter flights to Turkey, Greece, Egypt"],
   },
 ]
 
@@ -68,7 +68,7 @@ const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.pragueairportaxi.com"},
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com"},
         {"@type": "ListItem", "position": 2, "name": "Airport Transfer", "item": "https://www.pragueairportaxi.com/letistni-preprava"}
       ]
     }
@@ -98,11 +98,11 @@ export default function LetistniPreprava() {
                 </h1>
                 <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
                 <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-                  Taxi na/z Václav Havel Airport Prague from €29 — pevná price, žádné příplatky za čekání ani delay letu. Zajišťujeme také transfer na airport Vienna, Bratislava, Budapešť, Munich, Frankfurt a Drážďany. Řidič čeká s cedulkou v příletové hale, sleduje váš let v reálném čase a odveze vás z airport Ruzyně přímo domů nebo do hotelu.
+                  Taxi to/from Václav Havel Airport Prague from €29 — pevná price, žádné příplatky za čekání ani delay letu. Zajišťujeme také transfer na airport Vienna, Bratislava, Budapešť, Munich, Frankfurt a Drážďany. Driver waits with name sign in arrivals, sleduje váš let v reálném čase a odveze vás z airport Ruzyně přímo domů nebo do hotelu.
                 </p>
               </div>
               <div className="hidden md:block" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.4)" }}>
-                <img src="/driver-sign.jpg" alt="Řidič s cedulkou čeká na zákazníka u výstupu z airport"
+                <img src="/driver-sign.jpg" alt="Řidič s cedulkou čeká na customer u výstupu z airport"
                   style={{ width: "100%", height: "auto", display: "block" }} />
               </div>
             </div>
@@ -112,7 +112,7 @@ export default function LetistniPreprava() {
         {/* LETIŠTĚ V ČR */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <SectionHeading label="Airport v České republice" title="Česká airport" subtitle="Přepravujeme na všechna airport v České republice. Nejčastěji samozřejmě na Airport Václava Havla Prague, ale také do Brna a Ostravy." />
+            <SectionHeading label="Airports in Czech Republic" title="Czech Airports" subtitle="Přepravujeme na všechna airport v České republice. Nejčastěji samozřejmě na Václav Havel Prague Airport, ale také do Brna a Ostravy." />
 
             {/* PRG – full width */}
             {(() => {
@@ -193,15 +193,15 @@ export default function LetistniPreprava() {
         {/* PROČ MY */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <SectionHeading label="Proč si vybrat nás" title="Co dostanete s každou jízdou" />
+            <SectionHeading label="Why choose us" title="What you get with every ride" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
                   img: "/flight-tracking.jpg",
                   imgPos: "65% 0%",
                   imgZoom: 1.3,
-                  title: "Flight tracking v reálném čase",
-                  desc: "Automaticky monitorujeme delay vašeho letu. Řidič přijede přesně na čas – ani dříve, ani později. Nečekáte, neplatíte extra.",
+                  title: "Real-time flight tracking",
+                  desc: "We automatically monitor your flight delay. Driver arrives exactly on time — not earlier, not later. No waiting, no extra charge.",
                 },
                 {
                   img: "/driver-sign.jpg",
@@ -237,7 +237,7 @@ export default function LetistniPreprava() {
                 { q: "Přepravíte mě i na airport ve Vídni nebo Munichě?", a: "Yes, přepravujeme na všechna airport v dosahu přibližně 700 km od Prahy. Vienna, Bratislava, Budapešť, Munich, Frankfurt, Drážďany a další. Cenu dostanete ihned po zadání do rezervačního formuláře." },
                 { q: "Jak funguje sledování delay letu?", a: "Při rezervaci zadáte číslo letu. Náš systém automaticky sleduje reálný čas příletu a informuje drivere. Pokud má váš let delay, driver dorazí pozdě – a vy neplatíte žádný příplatek za čekání." },
                 { q: "Kde mě driver vyzvedne po příletu?", a: "Řidič vás čeká přímo v příletové hale s cedulkou s vaším jménem, ihned za výstupem z celnice. Nemusíte nikam volat ani hledat." },
-                { q: "Mohu platit kartou?", a: "Yes, payment kartou online při rezervaci nebo hotově driveri. Na vyžádání vystavíme fakturu na firmu s DIČ." },
+                { q: "Mohu platit kartou?", a: "Yes, payment kartou online při rezervaci nebo hotově driver. Na vyžádání vystavíme fakturu na firmu s DIČ." },
                 { q: "Co když potřebuji převézt hodně luggage nebo lyže?", a: "Při rezervaci upřesněte počet luggage a speciální požadavky. Pro velká luggage, lyže nebo kočárky rezervujeme minivan s dostatkem místa." },
                 { q: "Je možné book zpáteční cestu?", a: "Samozřejmě. V rezervačním formuláři jednoduše přidejte zpáteční cestu. Zpáteční jízdu je možné objednat i samostatně." },
               ].map((item, i) => (
@@ -258,10 +258,10 @@ export default function LetistniPreprava() {
           <div style={{ position: "absolute", inset: 0, backgroundImage: "url(https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=1200&q=60)", backgroundSize: "cover", backgroundPosition: "center", opacity: 0.1 }} />
           <div className="max-w-3xl mx-auto px-4 text-center" style={{ position: "relative" }}>
             <h2 className="text-white font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif", fontSize: "clamp(28px,4vw,44px)" }}>
-              To letíte?
+              Flying instead?
             </h2>
             <p className="mb-8 text-lg" style={{ color: "rgba(255,255,255,.75)" }}>
-              Zadejte odkud a na které airport – price se zobrazí okamžitě.
+              Enter your pickup location and destination airport — price shown instantly.
             </p>
             <a href="/#booking" style={{ background: "#F97316", color: "#fff", padding: "18px 48px", borderRadius: "14px", fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "18px", textDecoration: "none", display: "inline-block", boxShadow: "0 8px 32px rgba(249,115,22,.4)" }}>
               Book now transfer →

@@ -4,7 +4,7 @@ import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Privacy Policy (GDPR) | transfer-prague-car s.r.o.",
-  description: "Zásady ochrany osobních údajů společnosti transfer-prague-car s.r.o. Jak zpracováváme vaše data, jaká máte práva a jak nás kontaktovat.",
+  description: "Zásady ochrany personal data společnosti transfer-prague-car s.r.o. Jak zpracováváme vaše data, jaká máte rights a jak nás kontaktovat.",
 }
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
@@ -58,7 +58,7 @@ export default function OchranaOsobnichUdaju() {
           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
             <div style={{ width: "32px", height: "2px", background: "#F97316" }} />
             <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase" as const, letterSpacing: "1.5px" }}>
-              Právní dokumenty
+              Legal documents
             </span>
           </div>
           <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(28px,4vw,44px)", color: "#fff", margin: "0 0 12px", lineHeight: 1.15 }}>
@@ -66,7 +66,7 @@ export default function OchranaOsobnichUdaju() {
           </h1>
           <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "16px" }} />
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "14px" }}>
-            Platné od {updated} · Nařízení GDPR (EU) 2016/679
+            Effective from {updated} · GDPR Regulation (EU) 2016/679
           </p>
         </div>
       </div>
@@ -75,43 +75,43 @@ export default function OchranaOsobnichUdaju() {
       <div style={{ background: "#f8fafc", padding: "60px 24px 80px" }}>
         <div style={{ maxWidth: "860px", margin: "0 auto", background: "#fff", borderRadius: "16px", padding: "clamp(24px,5vw,56px)", boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
 
-          <Section title="1. Správce osobních údajů">
-            <P>Správcem vašich osobních údajů je:</P>
+          <Section title="1. Data Controller">
+            <P>The controller of your personal data is:</P>
             <div style={{ background: "#f0f4ff", border: "1px solid #dbeafe", borderRadius: "10px", padding: "16px 20px", marginBottom: "12px" }}>
               <strong>transfer-prague-car s.r.o.</strong><br />
-              Sídlo: Sochařská 333/2, 170 00 Prague, Česká republika<br />
-              IČO: 25706993<br />
+              Registered office: Sochařská 333/2, 170 00 Prague, Czech Republic<br />
+              Company ID: 25706993<br />
               E-mail: <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a><br />
               Phone: <a href="tel:+420606079179" style={{ color: "#00205B" }}>+420 606 079 179</a>
             </div>
-            <P>Tato stránka popisuje, jaké osobní údaje shromažďujeme, k jakým účelům je používáme a jaká máte v souvislosti s jejich zpracováním práva.</P>
+            <P>This page describes what personal data we collect, for what purposes we use it and what rights you have in connection with its processing.</P>
           </Section>
 
-          <Section title="2. Jaké osobní údaje zpracováváme">
-            <P><strong>Při rezervaci přepravy:</strong></P>
+          <Section title="2. What Personal Data We Process">
+            <P><strong>When booking transport:</strong></P>
             <Ul items={[
               "Name a příjmení",
               "E-mailová adresa",
               "Phonení číslo",
               "Místo vyzvednutí a cíl cesty",
-              "Date and time přepravy",
+              "Date and time transport",
               "Číslo letu (pokud je relevantní)",
               "Number of passengers a luggage",
               "Zvláštní požadavky (dětská sedačka, nadměrná luggage)",
             ]} />
-            <P><strong>Při platbě kartou:</strong></P>
+            <P><strong>When paying by card:</strong></P>
             <Ul items={[
               "Platební údaje jsou zpracovávány výhradně naším poskytovatelem platebních služeb – my samotní číslo karty ani CVC kód nikdy nevidíme ani neuchováváme",
-              "Zpracovatel plateb sídlí v USA a zpracování probíhá na základě standardních smluvních doložek schválených Evropskou komisí",
+              "Zpracovatel plateb sídlí v USA a processing probíhá na základě standardních smluvních doložek schválených Evropskou komisí",
             ]} />
-            <P><strong>Při návštěvě webu:</strong></P>
+            <P><strong>When visiting the website:</strong></P>
             <Ul items={[
-              "IP adresa a technické informace o zařízení (prostřednictvím analytických nástrojů)",
+              "IP adresa a technické information o device (prostřednictvím analyticalch nástrojů)",
               "Cookies – viz naše Zásady cookies",
             ]} />
           </Section>
 
-          <Section title="3. Účely a právní základ zpracování">
+          <Section title="3. Účely a legal základ processing">
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: "12px", fontSize: "14px" }}>
                 <thead>
@@ -123,11 +123,11 @@ export default function OchranaOsobnichUdaju() {
                 </thead>
                 <tbody>
                   {[
-                    ["Zajištění přepravy (realizace smlouvy)", "Plnění smlouvy (čl. 6 odst. 1 písm. b)", "Po dobu trvání smluvního vztahu + 1 rok"],
-                    ["Zasílání potvrzení a komunikace", "Plnění smlouvy (čl. 6 odst. 1 písm. b)", "Po dobu trvání smluvního vztahu"],
+                    ["Zajištění transport (realizace contract)", "Plnění contract (čl. 6 odst. 1 písm. b)", "Po dobu trvání smluvního vztahu + 1 rok"],
+                    ["Zasílání potvrzení a komunikace", "Plnění contract (čl. 6 odst. 1 písm. b)", "Po dobu trvání smluvního vztahu"],
                     ["Vystavení daňových dokladů", "Právní povinnost (čl. 6 odst. 1 písm. c)", "10 let (dle daňových předpisů)"],
-                    ["Řešení reklamací a sporů", "Oprávněný zájem (čl. 6 odst. 1 písm. f)", "3 roky od skončení přepravy"],
-                    ["Zasílání obchodních sdělení", "Souhlas (čl. 6 odst. 1 písm. a)", "Do odvolání souhlasu"],
+                    ["Řešení reklamací a sporů", "Oprávněný zájem (čl. 6 odst. 1 písm. f)", "3 roky od skončení transport"],
+                    ["Zasílání obchodních sdělení", "Souhlas (čl. 6 odst. 1 písm. a)", "Do odvolání consentu"],
                     ["Bezpečnost a prevence podvodů", "Oprávněný zájem (čl. 6 odst. 1 písm. f)", "1 rok"],
                   ].map(([ucel, zaklad, doba], i) => (
                     <tr key={i} style={{ background: i % 2 === 0 ? "#f8fafc" : "#fff" }}>
@@ -141,56 +141,56 @@ export default function OchranaOsobnichUdaju() {
             </div>
           </Section>
 
-          <Section title="4. Příjemci osobních údajů">
-            <P>Vaše osobní údaje sdílíme pouze s důvěryhodnými partnery, kteří jsou vázáni zpracovatelskými smlouvami a jsou povinni vaše data chránit:</P>
+          <Section title="4. Příjemci personal data">
+            <P>We share your personal data only with trusted partners who are bound by processing agreements and are obliged to protect your data:</P>
             <Ul items={[
-              <><strong>Řidiči a partnerští dopravci</strong> – jméno, telefon a trasa jízdy pro účely realizace přepravy</>,
-              <><strong>Poskytovatel platebních služeb</strong> – zpracování online plateb kartou (server v USA, ochrana dle standardních smluvních doložek EU)</>,
-              <><strong>Poskytovatel e-mailových a notifikačních služeb</strong> – odesílání potvrzovacích e-mailů a SMS notifikací (server v EU/USA)</>,
-              <><strong>Cloudová databáze</strong> – bezpečné uložení rezervací a zákaznických dat (infrastruktura v EU)</>,
-              <><strong>Mapové a geolokační služby</strong> – výpočet trasy a vzdálenosti (Google Maps, předávání pouze adresních dat)</>,
-              <><strong>Orgány veřejné moci</strong> – pouze pokud to ukládá zákon (např. finanční správa, soudy)</>,
+              <><strong>Drivers and partner carriers</strong> – name, phone and route for the purpose of completing the transport</>,
+              <><strong>Payment service provider</strong> – processing online card payments (US server, protected under EU standard contractual clauses)</>,
+              <><strong>Email and notification service provider</strong> – odesílání potvrzovacích e-mailů a SMS notifikací (server v EU/USA)</>,
+              <><strong>Cloud database</strong> – secure storage of bookings and customer data (EU infrastructure)</>,
+              <><strong>Mapping and geolocation services</strong> – route and distance calculation (Google Maps, address data only)</>,
+              <><strong>Public authorities</strong> – only where required by law (e.g. tax authority, courts)</>,
             ]} />
-            <P>Žádné osobní údaje neprodáváme třetím stranám ani je nepředáváme pro marketingové účely bez vašeho výslovného souhlasu.</P>
+            <P>We do not sell any personal data to third parties nor share it for marketing purposes without your explicit consent.</P>
           </Section>
 
           <Section title="5. Your Rights">
-            <P>Jako subjekt údajů máte tato práva, která můžete uplatnit kdykoliv kontaktováním správce:</P>
+            <P>As a data subject you have the following rights, which you can exercise at any time by contacting the controller:</P>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "10px", marginBottom: "16px" }}>
-              <RightBox icon="ti ti-eye" title="Právo na přístup" text="Máte právo vědět, jaké údaje o vás zpracováváme a získat jejich kopii." />
-              <RightBox icon="ti ti-pencil" title="Právo na opravu" text="Pokud jsou vaše údaje nesprávné nebo neúplné, máte právo na jejich opravu." />
-              <RightBox icon="ti ti-trash" title="Právo na výmaz" text="Za určitých podmínek máte právo požádat o smazání vašich osobních údajů." />
-              <RightBox icon="ti ti-player-pause" title="Právo na omezení" text="Můžete požádat o omezení zpracování, například pokud zpochybňujete přesnost údajů." />
-              <RightBox icon="ti ti-package" title="Právo na přenositelnost" text="Údaje zpracovávané automatizovaně na základě souhlasu nebo smlouvy vám předáme ve strojově čitelném formátu." />
-              <RightBox icon="ti ti-ban" title="Právo vznést námitku" text="Proti zpracování na základě oprávněného zájmu můžete kdykoliv vznést námitku." />
+              <RightBox icon="ti ti-eye" title="Právo na přístup" text="Máte right vědět, jaké údaje o vás zpracováváme a získat jejich kopii." />
+              <RightBox icon="ti ti-pencil" title="Právo na opravu" text="Pokud jsou vaše údaje nesprávné nebo neúplné, máte right na jejich opravu." />
+              <RightBox icon="ti ti-trash" title="Právo na výmaz" text="Za určitých podmínek máte right požádat o smazání vašich personal data." />
+              <RightBox icon="ti ti-player-pause" title="Právo na omezení" text="Můžete požádat o omezení processing, například pokud zpochybňujete přesnost údajů." />
+              <RightBox icon="ti ti-package" title="Právo na přenositelnost" text="Údaje zpracovávané automatizovaně na základě consentu nebo contract vám předáme ve strojově čitelném formátu." />
+              <RightBox icon="ti ti-ban" title="Právo vznést námitku" text="Proti processing na základě oprávněného zájmu můžete kdykoliv vznést námitku." />
             </div>
-            <P>Svá práva uplatněte e-mailem na <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a>. Na vaši žádost odpovíme do <strong>30 dnů</strong>.</P>
-            <P>Pokud se domníváte, že zpracováváme vaše údaje v rozporu s GDPR, máte právo podat stížnost u Úřadu pro ochranu osobních údajů (<a href="https://www.uoou.cz" target="_blank" rel="noopener noreferrer" style={{ color: "#00205B" }}>www.uoou.cz</a>).</P>
+            <P>Svá rights uplatněte e-mailem na <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a>. Na vaši žádost odpovíme do <strong>30 dnů</strong>.</P>
+            <P>Pokud se domníváte, že zpracováváme vaše údaje v rozporu s GDPR, máte right podat stížnost u Úřadu pro ochranu personal data (<a href="https://www.uoou.cz" target="_blank" rel="noopener noreferrer" style={{ color: "#00205B" }}>www.uoou.cz</a>).</P>
           </Section>
 
           <Section title="6. Zabezpečení údajů">
-            <P>Přijímáme technická a organizační opatření k ochraně vašich osobních údajů před neoprávněným přístupem, ztrátou nebo zneužitím:</P>
+            <P>We implement technical and organisational measures to protect your personal data against unauthorised access, loss or misuse:</P>
             <Ul items={[
               "Šifrování přenosu dat (HTTPS/TLS)",
               "Šifrování dat v databázi",
               "Přístup k datům pouze pro oprávněné osoby na základě potřeby znát",
-              "Pravidelné bezpečnostní audity a aktualizace systémů",
+              "Pravidelné securityní audity a aktualizace systémů",
               "Smluvní závazky zpracovatelů k ochraně dat",
             ]} />
           </Section>
 
           <Section title="7. Cookies">
-            <P>Náš web používá cookies. Podrobné informace o tom, jaké cookies používáme a jak je lze spravovat, naleznete v našich <a href="/cookie-policy" style={{ color: "#00205B" }}>Zásadách zpracování cookies</a>.</P>
+            <P>Náš web používá cookies. Podrobné information o tom, jaké cookies používáme a jak je lze spravovat, naleznete v našich <a href="/cookie-policy" style={{ color: "#00205B" }}>Zásadách processing cookies</a>.</P>
           </Section>
 
           <Section title="8. Změny těchto zásad">
-            <P>Tyto zásady ochrany osobních údajů mohou být průběžně aktualizovány. O podstatných změnách vás budeme informovat e-mailem nebo upozorněním na webu. Datum poslední aktualizace je uvedeno v záhlaví tohoto dokumentu.</P>
+            <P>These privacy policy may be updated from time to time. We will inform you of significant changes by email or notice on the website. Datum poslední aktualizace je uvedeno v záhlaví tohoto dokumentu.</P>
           </Section>
 
           {/* Contactní box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
-              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Chcete uplatnit svá práva nebo se zeptat?</div>
+              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Chcete uplatnit svá rights nebo se zeptat?</div>
               <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám – odpovíme do 30 dnů.</div>
             </div>
             <a href="mailto:info@pragueairportaxi.com" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
@@ -201,10 +201,10 @@ export default function OchranaOsobnichUdaju() {
           {/* Navigace mezi dokumenty */}
           <div style={{ display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap" as const }}>
             <a href="/terms-and-conditions" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
-              ← Obchodní podmínky
+              ← Terms & Conditions
             </a>
             <a href="/cookie-policy" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
-              Zásady cookies →
+              Cookie Policy →
             </a>
           </div>
 

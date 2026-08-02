@@ -15,7 +15,7 @@ const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.pragueairportaxi.com"},
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com"},
         {"@type": "ListItem", "position": 2, "name": "Business Travel", "item": "https://www.pragueairportaxi.com/preprava-pro-firmy"}
       ]
     }
@@ -36,15 +36,15 @@ export default function PrepravaPropFirmy() {
               </span>
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 20px" }}>
-              Firemní doprava<br />
+              Corporate Transport<br />
               <span style={{ color: "#F97316" }}>na každou příležitost</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "36px" }}>
-              Firemní taxi Prague na fakturu s DPH dokladem ke každé jízdě. Zajišťujeme přepravu zaměstnanců na airport, vyzvednutí obchodních partnerů, korporátní transfery i VIP přepravu pro delegace. Business taxi Prague s pevnou cenou, měsíční invoicecí a dedikovanou linkou pro firemní zákazníky. Uzavřete firemní smlouvu a mějte dopravu pod kontrolou.
+              Corporate taxi Prague with VAT invoice for every ride. We provide employee airport transfers, business partner pickups, corporate transfers and VIP transport for delegations. Fixed price, monthly invoicing and dedicated line for corporate clients. Sign a corporate contract and keep transport under control.
             </p>
             <a href="mailto:info@pragueairportaxi.com?subject=Firemní spolupráce"
               style={{ display: "inline-block", background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "15px", padding: "14px 32px", borderRadius: "12px", textDecoration: "none" }}>
-              Domluvit firemní spolupráci →
+              Arrange corporate partnership →
             </a>
           </div>
         </section>
@@ -53,7 +53,7 @@ export default function PrepravaPropFirmy() {
         <section style={{ background: "#fff", padding: "64px 20px" }}>
           <div className="max-w-6xl mx-auto">
             <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(24px,3vw,36px)", color: "#00205B", marginBottom: "8px" }}>
-              Proč firemní účet?
+              Why a corporate account?
             </h2>
             <p style={{ color: "#475569", fontSize: "16px", marginBottom: "48px" }}>Why choose us, které oceníte při pravidelné firemní přepravě.</p>
             <FirmsPerks />
@@ -69,7 +69,7 @@ export default function PrepravaPropFirmy() {
                 <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase" as const, letterSpacing: "2px" }}>Kdy nás využít</span>
               </div>
               <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(32px,4vw,52px)", color: "#00205B", marginBottom: "16px", lineHeight: 1.1 }}>
-                Transport pro každou situaci
+                Transport for every occasion
               </h2>
               <div style={{ width: "40px", height: "3px", background: "#F97316", borderRadius: "2px" }} />
             </div>
@@ -82,7 +82,7 @@ export default function PrepravaPropFirmy() {
         <section style={{ background: "#00205B", padding: "48px 20px" }}>
           <div className="max-w-6xl mx-auto text-center">
             <div style={{ fontSize: "11px", fontWeight: 700, color: "rgba(255,255,255,0.35)", textTransform: "uppercase" as const, letterSpacing: "2px", marginBottom: "24px" }}>
-              Nám důvěřují
+              Trusted by
             </div>
             <div className="flex flex-wrap items-center justify-center gap-4">
               {[{ name: "Česká televize", logo: "/partner-ct.png" }, { name: "Blažek", logo: "/partner-blazek.png" }].map((p) => (
@@ -104,14 +104,14 @@ export default function PrepravaPropFirmy() {
         <section style={{ background: "#fff", padding: "64px 20px", textAlign: "center" }}>
           <div className="max-w-2xl mx-auto">
             <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(24px,3vw,36px)", color: "#00205B", marginBottom: "12px" }}>
-              Připraveni začít?
+              Ready to start?
             </h2>
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: 1.7, marginBottom: "32px" }}>
-              Ozvěte se nám a připravíme nabídku na míru vaší firmě.
+              Contact us and we will prepare a tailored offer for your company.
             </p>
             <a href="mailto:info@pragueairportaxi.com?subject=Firemní spolupráce"
               style={{ display: "inline-block", background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "16px", padding: "16px 40px", borderRadius: "12px", textDecoration: "none", marginRight: "12px" }}>
-              Napsat nám →
+              Write to us →
             </a>
             <a href="tel:+420606079179"
               style={{ display: "inline-block", background: "#f1f5f9", color: "#00205B", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "16px", padding: "16px 40px", borderRadius: "12px", textDecoration: "none" }}>

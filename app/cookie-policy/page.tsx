@@ -50,7 +50,7 @@ export default function ZasadyCookies() {
           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
             <div style={{ width: "32px", height: "2px", background: "#F97316" }} />
             <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase" as const, letterSpacing: "1.5px" }}>
-              Právní dokumenty
+              Legal documents
             </span>
           </div>
           <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(28px,4vw,44px)", color: "#fff", margin: "0 0 12px", lineHeight: 1.15 }}>
@@ -58,7 +58,7 @@ export default function ZasadyCookies() {
           </h1>
           <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "16px" }} />
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "14px" }}>
-            Platné od {updated} · transfer-prague-car s.r.o.
+            Effective from {updated} · transfer-prague-car s.r.o.
           </p>
         </div>
       </div>
@@ -68,8 +68,8 @@ export default function ZasadyCookies() {
         <div style={{ maxWidth: "860px", margin: "0 auto", background: "#fff", borderRadius: "16px", padding: "clamp(24px,5vw,56px)", boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
 
           <Section title="1. Co jsou cookies">
-            <P>Cookies jsou malé textové soubory, které se ukládají do vašeho zařízení (počítač, tablet, telefon) při návštěvě webových stránek. Slouží k tomu, aby si web zapamatoval vaše preference a chování, čímž zlepšuje váš uživatelský zážitek.</P>
-            <P>Cookies samy o sobě neobsahují žádné osobní identifikační údaje a nemohou spouštět programy ani přenášet viry.</P>
+            <P>Cookies are small text files stored on your device (computer, tablet, phone) when you visit websites. They allow the website to remember your preferences and behaviour, improving your user experience.</P>
+            <P>Cookies themselves do not contain any personal identification data and cannot run programmes or transmit viruses.</P>
           </Section>
 
           <Section title="2. Jaké cookies používáme">
@@ -94,7 +94,7 @@ export default function ZasadyCookies() {
                     </tr>
                   </thead>
                   <tbody style={{ background: "#fff" }}>
-                    <CookieRow name="sb-session" type="Nezbytné" purpose="Uchování přihlášení zákazníka do zákaznické zóny" duration="Session" essential={true} />
+                    <CookieRow name="sb-session" type="Nezbytné" purpose="Uchování přihlášení customer do zákaznické zóny" duration="Session" essential={true} />
                     <CookieRow name="nll_currency" type="Nezbytné" purpose="Zapamatování vybrané měny v rezervačním formuláři" duration="30 dní" essential={true} />
                     <CookieRow name="nll_lang" type="Nezbytné" purpose="Zapamatování jazykové předvolby (CS/EN)" duration="30 dní" essential={true} />
                     <CookieRow name="NEXT_LOCALE" type="Nezbytné" purpose="Jazyková verze webu" duration="1 rok" essential={true} />
@@ -109,7 +109,7 @@ export default function ZasadyCookies() {
                 <div style={{ width:"32px", height:"32px", borderRadius:"8px", background:"#92400e", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}><i className="ti ti-settings" style={{ fontSize:"15px", color:"#fff" }} /></div>
                 <div>
                   <div style={{ fontWeight: 700, color: "#00205B", fontSize: "15px" }}>Funkční cookies</div>
-                  <div style={{ fontSize: "12px", color: "#64748b" }}>Zlepšují funkčnost webu. Lze odmítnout, ale některé funkce pak nemusí fungovat správně.</div>
+                  <div style={{ fontSize: "12px", color: "#64748b" }}>Zlepšují functionality webu. Lze odmítnout, ale některé funkce pak nemusí fungovat správně.</div>
                 </div>
               </div>
               <div style={{ overflowX: "auto" }}>
@@ -124,7 +124,7 @@ export default function ZasadyCookies() {
                   </thead>
                   <tbody style={{ background: "#fff" }}>
                     <CookieRow name="__gmaps_*" type="Funkční" purpose="Google Maps – zobrazení interaktivní mapy a výpočet trasy" duration="Session" essential={false} />
-                    <CookieRow name="__stripe_*" type="Funkční" purpose="Platební brána – prevence podvodů a bezpečnost online plateb" duration="Session / 1 rok" essential={false} />
+                    <CookieRow name="__stripe_*" type="Funkční" purpose="Platební brána – prevence podvodů a security online plateb" duration="Session / 1 rok" essential={false} />
                     <CookieRow name="nll_booking_*" type="Funkční" purpose="Uchování rozpracované booking při zavření/otevření widgetu" duration="2 hodiny" essential={false} />
                   </tbody>
                 </table>
@@ -141,18 +141,18 @@ export default function ZasadyCookies() {
                 </div>
               </div>
               <p style={{ color: "#64748b", fontSize: "13px", marginBottom: "12px" }}>
-                V současné době nepoužíváme žádné analytické cookies třetích stran. Pokud to v budoucnu změníme, tento dokument aktualizujeme a požádáme vás o souhlas.
+                We currently do not use any third-party analytical cookies. If this changes in future, we will update this document and ask for your consent.
               </p>
             </div>
 
           </Section>
 
-          <Section title="3. Cookies třetích stran">
-            <P>Některé cookies jsou nastavovány poskytovateli služeb třetích stran, které na webu využíváme. Tyto cookies se řídí zásadami ochrany soukromí daných společností:</P>
+          <Section title="3. Third-party cookies">
+            <P>Some cookies are set by third-party service providers we use on the website. Tyto cookies se řídí zásadami ochrany soukromí daných společností:</P>
             <div style={{ display: "flex", flexDirection: "column" as const, gap: "10px", marginBottom: "12px" }}>
               {[
                 { name: "Mapové služby (Google Maps)", purpose: "Zobrazení interaktivní mapy a výpočet vzdálenosti trasy", link: "https://policies.google.com/privacy" },
-                { name: "Platební brána", purpose: "Bezpečné zpracování online plateb kartou, prevence podvodů", link: null },
+                { name: "Platební brána", purpose: "Bezpečné processing online plateb kartou, prevence podvodů", link: null },
               ].map((item, i) => (
                 <div key={i} style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: "10px", padding: "14px 18px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" as const, gap: "8px" }}>
                   <div>
@@ -161,7 +161,7 @@ export default function ZasadyCookies() {
                   </div>
                   {item.link && (
                     <a href={item.link} target="_blank" rel="noopener noreferrer" style={{ fontSize: "12px", color: "#00205B", textDecoration: "none", padding: "5px 12px", border: "1px solid #dbeafe", borderRadius: "6px", whiteSpace: "nowrap" as const }}>
-                      Zásady ochrany →
+                      Privacy policy →
                     </a>
                   )}
                 </div>
@@ -170,13 +170,13 @@ export default function ZasadyCookies() {
           </Section>
 
           <Section title="4. Jak spravovat cookies">
-            <P>Cookies můžete spravovat nebo odmítnout přímo v nastavení vašeho prohlížeče. Upozorňujeme, že odmítnutí některých cookies může omezit funkčnost webu (např. načítání mapy nebo online platbu).</P>
+            <P>You can manage or decline cookies directly in your browser settings. Please note that declining some cookies may limit website functionality (e.g. map loading or online payment).</P>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "10px", marginBottom: "16px" }}>
               {[
                 { browser: "Google Chrome", link: "https://support.google.com/chrome/answer/95647" },
                 { browser: "Mozilla Firefox", link: "https://support.mozilla.org/cs/kb/povoleni-zakazani-cookies" },
                 { browser: "Safari", link: "https://support.apple.com/cs-cz/guide/safari/sfri11471/mac" },
-                { browser: "Microsoft Edge", link: "https://support.microsoft.com/cs-cz/microsoft-edge/odstr%C3%A1n%C4%9Bn%C3%AD-soubor%C5%AF-cookie-v-prohlí%C5%BEe%C4%8Di-microsoft-edge" },
+                { browser: "Microsoft Edge", link: "https://support.microsoft.com/cs-cz/microsoft-edge/odstr%C3%A1n%C4%9Bn%C3%AD-file%C5%AF-cookie-v-prohlí%C5%BEe%C4%8Di-microsoft-edge" },
               ].map((item, i) => (
                 <a key={i} href={item.link} target="_blank" rel="noopener noreferrer"
                   style={{ display: "flex", alignItems: "center", gap: "8px", padding: "12px 14px", background: "#f0f4ff", border: "1px solid #dbeafe", borderRadius: "8px", textDecoration: "none", color: "#00205B", fontSize: "13px", fontWeight: 600 }}>
@@ -184,12 +184,12 @@ export default function ZasadyCookies() {
                 </a>
               ))}
             </div>
-            <P>Pro mobilní zařízení nastavení cookies najdete v nastavení příslušného prohlížeče nebo operačního systému.</P>
+            <P>For mobile devices, cookie settings can be found in the settings of your browser or operating system.</P>
           </Section>
 
           <Section title="5. Změny těchto zásad">
-            <P>Tyto zásady zpracování cookies mohou být průběžně aktualizovány – například při přidání nových služeb na web. Datum poslední aktualizace je vždy uvedeno v záhlaví tohoto dokumentu.</P>
-            <P>Při podstatných změnách vás upozorníme prostřednictvím banneru na webu.</P>
+            <P>These cookie policies may be updated periodically — for example when new services are added to the website. Datum poslední aktualizace je vždy uvedeno v záhlaví tohoto dokumentu.</P>
+            <P>We will notify you of significant changes via a banner on the website.</P>
           </Section>
 
           {/* Contactní box */}
@@ -199,17 +199,17 @@ export default function ZasadyCookies() {
               <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám na info@pragueairportaxi.com</div>
             </div>
             <a href="mailto:info@pragueairportaxi.com" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
-              Contactovat nás
+              Contact us
             </a>
           </div>
 
           {/* Navigace mezi dokumenty */}
           <div style={{ display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap" as const }}>
             <a href="/privacy-policy" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
-              ← Ochrana osobních údajů
+              ← Privacy Policy
             </a>
             <a href="/terms-and-conditions" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
-              Obchodní podmínky →
+              Terms & Conditions →
             </a>
           </div>
 

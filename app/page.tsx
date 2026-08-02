@@ -13,7 +13,7 @@ const schemaOrg = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "NaLetistelevne.cz",
-  "description": "Spolehlivá a levná doprava to/from Prague Airport. Fixed price, professional driveri, sledování letu.",
+  "description": "Spolehlivá a levná doprava to/from Prague Airport. Fixed price, professional driver, sledování letu.",
   "url": "https://www.pragueairportaxi.com",
   "telephone": "+420606079179",
   "email": "info@pragueairportaxi.com",

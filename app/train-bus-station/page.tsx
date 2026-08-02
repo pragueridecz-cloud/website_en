@@ -6,7 +6,7 @@ import { Clock, Luggage, ArrowLeftRight, MapPin, Banknote, Moon, Train, Bus } fr
 
 export const metadata: Metadata = {
   title: "Transport na nádraží Prague | naairportlevně.cz",
-  description: "Taxi na nádraží Prague — Main Station, Florenc Bus Terminal, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se zavazadly, 24/7 dostupnost. Book online.",
+  description: "Taxi na nádraží Prague — Main Station, Florenc Bus Terminal, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se luggage, 24/7 dostupnost. Book online.",
   keywords: "taxi na nádraží Prague, transfer hlavní nádraží Prague, odvoz na nádraží, transport Florenc Bus Terminal, taxi Smíchovské nádraží, taxi autobusové nádraží",
   openGraph: {
     title: "Transport na vlakové a autobusové nádraží | naairportlevně.cz",
@@ -37,8 +37,8 @@ const STATIONS = [
 
 const VYHODY = [
   { Icon: Clock,          title: "Přijedeme včas",          desc: "Naplánujeme cestu s dostatečnou rezervou, abyste vlak nebo autobus určitě stihli.", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
-  { Icon: Luggage,        title: "Pomoc se zavazadly",       desc: "Řidič vám pomůže s nakládkou a vykládkou luggage, kočárků nebo jízdních kol.", img: "/service-luggage.jpg" },
-  { Icon: ArrowLeftRight, title: "Zpáteční jízda",           desc: "Objednáte i vyzvednutí z nádraží po návratu. Vše v jedné rezervaci.", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80" },
+  { Icon: Luggage,        title: "Pomoc se luggage",       desc: "Řidič vám pomůže s nakládkou a vykládkou luggage, kočárků nebo jízdních kol.", img: "/service-luggage.jpg" },
+  { Icon: ArrowLeftRight, title: "Zpáteční ride",           desc: "Objednáte i vyzvednutí z nádraží po návratu. Vše v jedné rezervaci.", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80" },
   { Icon: MapPin,         title: "Přesné vyzvednutí",        desc: "Vyzvednutí přímo od vašich dveří nebo na dohodnutém místě.", img: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&q=80" },
   { Icon: Banknote,       title: "Pevná price",               desc: "Víte přesně, kolik zaplatíte. Bez taxametru, bez příplatků.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" },
   { Icon: Moon,           title: "Ranní vlaky bez stresu",   desc: "Přepravujeme i v brzkých ranních hodinách. Žádný stres s MHD ve 4 ráno.", img: "/service-ranni-vlak.jpg" },
@@ -66,7 +66,7 @@ export default function NadraziPage() {
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-              Taxi na nádraží Prague s pevnou cenou a bez čekání. Přivezeme vás přesně včas na Main Station Prague, autobusové nádraží Florenc Bus Terminal, Smíchovské nádraží, nádraží Holešovice nebo Masarykovo nádraží. Pomoc se zavazadly, vyzvednutí přímo od dveří — a stejnou službu nabízíme i na zpáteční cestě z nádraží domů.
+              Fixed price taxi to Prague train and bus stations with no waiting. We get you to Prague Main Station, Florenc Bus Terminal, Smíchov Station, Holešovice Station or Masaryk Station exactly on time. Luggage assistance, pickup from your door — and the same service on the return journey.
             </p>
           </div>
         </div>
@@ -151,7 +151,7 @@ export default function NadraziPage() {
             <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Stihnete každý spoj – my se postaráme o včasné odvezení</p>
             <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
-              Zabook nyní
+              Book now
             </a>
           </div>
         </section>

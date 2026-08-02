@@ -32,7 +32,7 @@ const schema = {
 const USES = [
   { Icon: Landmark,    title: "Prohlídka Prahy",    desc: "Navštivte Hradčany, Starý Město a Malou Stranu v klidu s průvodcem za volantem." },
   { Icon: Briefcase,   title: "Business schůzky",   desc: "Přesuny mezi schůzkami bez parkování a stresu. Pracujte v autě." },
-  { Icon: ShoppingBag, title: "Nákupy",              desc: "Velký nákup nebo výprodeje bez starostí se zavazadly a parkováním." },
+  { Icon: ShoppingBag, title: "Nákupy",              desc: "Velký nákup nebo výprodeje bez starostí se luggage a parkováním." },
   { Icon: TreePine,    title: "Výlet za město",      desc: "Český ráj, Karlštejn, Kutná Hora. Bez kompromisů s jízdním řádem." },
   { Icon: Heart,       title: "Svatba",              desc: "Exkluzivní přepravu pro novomanžele nebo hosty na velký den." },
   { Icon: Music,       title: "Kulturní akce",       desc: "Opera, divadlo, konference. Dorazíte včas a v komfortu." },
@@ -44,7 +44,7 @@ const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.pragueairportaxi.com"},
+        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com"},
         {"@type": "ListItem", "position": 2, "name": "Hourly Rental", "item": "https://www.pragueairportaxi.com/hodinovy-pronajem"}
       ]
     }
@@ -72,7 +72,7 @@ export default function HodinPronajem() {
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-              Pronájem auta s driverem Prague from €29/hod — chauffeur service pro business i soukromé účely. Ideální pro obchodní schůzky, VIP přepravu, prohlídky Prahy, nákupy nebo výlety za město. Sedany i minibusy, k dispozici na hodiny nebo celý den. Řidič čeká pouze na vás — žádné sdílené jízdy, žádný stres s parkováním.
+              Car with driver in Prague from €29/hr — chauffeur service for business and private use. Perfect for business meetings, VIP transport, city tours, shopping or day trips. Sedans and minivans, available by the hour or full day. Driver exclusively for you — no shared rides, no parking stress.
             </p>
           </div>
         </div>
@@ -105,7 +105,7 @@ export default function HodinPronajem() {
             <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Flexibilní, komfortní, bez starostí</p>
             <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
-              Zabook nyní
+              Book now
             </a>
           </div>
         </section>

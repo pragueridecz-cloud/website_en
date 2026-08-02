@@ -6,11 +6,11 @@ import { Lock, Car, Clock, Globe, CreditCard, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Long Distance Taxi & Intercity Transport Prague | pragueairportaxi.com",
-  description: "Long Distance Taxi from Prague za pevnou price — Prague–Vienna od 9 €29, Prague–Berlin , Prague–Brno . Intercity Transport across Czech Republic & Europe, 24/7.",
+  description: "Long Distance Taxi from Prague za pevnou price — Prague–Vienna 9 €29, Prague–Berlin , Prague–Brno . Intercity Transport across Czech Republic & Europe, 24/7.",
   keywords: "meziměstská doprava, mezinárodní transfer, Prague Vienna taxi, Prague Berlin taxi, Prague Brno taxi, transport do zahraničí, taxi Prague Munich",
   openGraph: {
     title: "Meziměstská a mezinárodní doprava | pragueairportaxi.com",
-    description: "Prague–Vienna od 9 €29, Prague–Berlin . Komfortní transport po celé Evropě.",
+    description: "Prague–Vienna 9 €29, Prague–Berlin . Komfortní transport po celé Evropě.",
     url: "https://www.pragueairportaxi.com/mezimestska-doprava",
   },
   alternates: { canonical: "https://www.pragueairportaxi.com/mezimestska-doprava" },
@@ -129,7 +129,7 @@ export default function MezimestskaPage() {
                     <div style={{ fontSize: "13px", fontWeight: 700, color: "#00205B" }}>{r.from} → {r.to}</div>
                     <div style={{ fontSize: "11px", color: "#94a3b8", marginTop: "2px" }}>{r.km}</div>
                   </div>
-                  <div style={{ fontSize: "16px", fontWeight: 800, color: "#F97316" }}>od {r.price} Kč</div>
+                  <div style={{ fontSize: "16px", fontWeight: 800, color: "#F97316" }}>od {r.price}</div>
                 </div>
               ))}
             </div>

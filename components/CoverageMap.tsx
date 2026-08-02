@@ -9,7 +9,7 @@ const AIRPORTS = [
   { code: "BRQ", name: "Brno-Tuřany", lat: 49.1513, lng: 16.6944, price: "from €112", time: "2.5h", country: "🇨🇿" },
   { code: "OSR", name: "Ostrava-Mošnov", lat: 49.6963, lng: 18.1111, price: "from €189", time: "3.5h", country: "🇨🇿" },
   { code: "VIE", name: "Vienna International", lat: 48.1103, lng: 16.5697, price: "from €173", time: "3.5h", country: "🇦🇹" },
-  { code: "BTS", name: "Bratislava Štefánik", lat: 48.1702, lng: 17.2127, price: "od 4 200 Kč", time: "3.5h", country: "🇸🇰" },
+  { code: "BTS", name: "Bratislava Štefánik", lat: 48.1702, lng: 17.2127, price: "4 200", time: "3.5h", country: "🇸🇰" },
   { code: "BUD", name: "Budapest Liszt Ferenc", lat: 47.4298, lng: 19.2611, price: "from €266", time: "5h", country: "🇭🇺" },
   { code: "MUC", name: "Munich Franz Josef Strauss", lat: 48.3537, lng: 11.7750, price: "from €305", time: "4h", country: "🇩🇪" },
   { code: "FRA", name: "Frankfurt am Main", lat: 50.0379, lng: 8.5622, price: "from €343", time: "4.5h", country: "🇩🇪" },

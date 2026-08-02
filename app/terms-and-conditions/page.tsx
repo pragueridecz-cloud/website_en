@@ -99,7 +99,7 @@ export default function ObchodniPodminky() {
           </Section>
 
           <Section title="4. Prices and Payment Terms">
-            <P>Ceny jsou uváděny v českých korunách (Kč) včetně DPH. Zobrazená price je <strong>pevná</strong> a zahrnuje veškeré poplatky spojené s přepravou (dálniční poplatky, palivo, parkování u terminálů).</P>
+            <P>Ceny jsou uváděny v českých korunách () včetně DPH. Zobrazená price je <strong>pevná</strong> a zahrnuje veškeré poplatky spojené s přepravou (dálniční poplatky, palivo, parkování u terminálů).</P>
             <P>Price <strong>nezahrnuje</strong>: volitelné příplatky (lyže, kola, dětské sedačky), pokud nebyly součástí objednávky.</P>
             <P>Available payment methods:</P>
             <Ul items={[

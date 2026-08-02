@@ -78,7 +78,7 @@ export default function Footer() {
                 { label: "How it works", href: "#jak-to-funguje" },
                 { label: "Frequently asked questions", href: "#faq" },
                 { label: "Terms & Conditions", href: "/terms-and-conditions" },
-                { label: "Privacy Policy", href: "/ochrana-passengersnich-udaju" },
+                { label: "Privacy Policy", href: "/privacy-policy" },
                 { label: "Cookie Policy", href: "/cookie-policy" },
               ].map((l) => (
                 <li key={l.label}>

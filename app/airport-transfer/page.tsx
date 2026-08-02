@@ -231,15 +231,15 @@ export default function LetistniPreprava() {
         {/* FAQ */}
         <section className="py-20" style={{ background: "#f8fafc" }}>
           <div className="max-w-3xl mx-auto px-4">
-            <SectionHeading label="Časté dotazy" title="Máte otázky?" />
+            <SectionHeading label="FAQ" title="Have a question?" />
             <div className="space-y-3">
               {[
-                { q: "Přepravíte mě i na airport ve Vídni nebo Munichě?", a: "Yes, přepravujeme na všechna airport v dosahu přibližně 700 km od Prahy. Vienna, Bratislava, Budapest, Munich, Frankfurt, Dresden a další. Cenu dostanete ihned po zadání do rezervačního formuláře." },
-                { q: "Jak funguje sledování delay letu?", a: "Při rezervaci zadáte číslo letu. Náš systém automaticky sleduje reálný čas příletu a informuje drivere. Pokud má váš let delay, driver dorazí pozdě – a vy neplatíte žádný příplatek za čekání." },
-                { q: "Kde mě driver vyzvedne po příletu?", a: "Řidič vás čeká přímo v příletové hale s cedulkou s vaším jménem, ihned za výstupem z celnice. Nemusíte nikam volat ani hledat." },
-                { q: "Mohu platit kartou?", a: "Yes, payment kartou online při rezervaci nebo hotově driver. Na vyžádání vystavíme fakturu na firmu s DIČ." },
-                { q: "Co když potřebuji převézt hodně luggage nebo lyže?", a: "Při rezervaci upřesněte počet luggage a speciální požadavky. Pro velká luggage, lyže nebo kočárky rezervujeme minivan s dostatkem místa." },
-                { q: "Je možné book zpáteční cestu?", a: "Samozřejmě. V rezervačním formuláři jednoduše přidejte zpáteční cestu. Zpáteční jízdu je možné objednat i samostatně." },
+                { q: "Do you also transfer to Vienna or Munich airport?", a: "Yes, we cover all airports within approximately 700 km of Prague. Vienna, Bratislava, Budapest, Munich, Frankfurt, Dresden and more. Get a price instantly by entering your route in the booking form." },
+                { q: "How does flight delay tracking work?", a: "When booking, you enter your flight number. Our system automatically tracks the real arrival time and notifies the driver. If your flight is delayed, the driver arrives later — and you pay no waiting surcharge." },
+                { q: "Where will the driver pick me up after landing?", a: "Your driver waits in the arrivals hall with a sign showing your name, right after customs exit. No need to call or search." },
+                { q: "Can I pay by card?", a: "Yes, pay by card online when booking or cash to the driver. We can also issue a VAT invoice for companies on request." },
+                { q: "What if I have a lot of luggage or skis?", a: "Specify your luggage count and special requirements when booking. For large luggage, skis or prams we arrange a minivan with plenty of space." },
+                { q: "Can I book a return journey?", a: "Of course. Simply add a return trip in the booking form. A return ride can also be booked separately." },
               ].map((item, i) => (
                 <details key={i} className="bg-white border border-gray-200 rounded-xl overflow-hidden group">
                   <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50 list-none">

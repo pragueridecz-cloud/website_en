@@ -32,7 +32,7 @@ export default function PrepravaPropFirmy() {
             <div className="flex items-center gap-3 mb-4">
               <div style={{ width: "32px", height: "2px", background: "#F97316", flexShrink: 0 }} />
               <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase" as const, letterSpacing: "1.5px" }}>
-                Pro firmy a korporace
+                For companies & corporations
               </span>
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 20px" }}>

@@ -100,22 +100,22 @@ export default function Navbar() {
                 <button onClick={() => setLangOpen(!langOpen)}
                   className="flex items-center gap-1.5 px-2 py-1.5 rounded text-sm cursor-pointer"
                   style={{ color: "rgba(255,255,255,.7)", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)" }}>
-                  <span className="text-xs font-semibold">CS</span>
+                  <span className="text-base">🇬🇧</span>
                   <ChevronDown size={11} />
                 </button>
                 {langOpen && (
                   <div className="absolute top-full right-0 mt-1 rounded-lg overflow-hidden z-50 min-w-36"
                     style={{ background: "#162d6e", border: "1px solid rgba(255,255,255,.15)", boxShadow: "0 8px 24px rgba(0,0,0,.3)" }}>
-                    <div className="px-4 py-2.5" style={{ borderBottom: "1px solid rgba(255,255,255,.1)", color: "#F97316", fontSize: "13px", fontWeight: 600 }}>
-                      English ✓
+                    <div className="px-4 py-2.5 flex items-center gap-2" style={{ borderBottom: "1px solid rgba(255,255,255,.1)", color: "#F97316", fontSize: "13px", fontWeight: 600 }}>
+                      <span>🇬🇧</span> English ✓
                     </div>
-                    <a href="https://www.pragueride.com" target="_blank" rel="noopener noreferrer"
+                    <a href="https://www.naletistelevne.cz" target="_blank" rel="noopener noreferrer"
                       onClick={() => setLangOpen(false)}
-                      className="block px-4 py-2.5 text-sm cursor-pointer"
+                      className="flex items-center gap-2 px-4 py-2.5 text-sm cursor-pointer"
                       style={{ color: "rgba(255,255,255,.8)", textDecoration: "none" }}
                       onMouseEnter={e => (e.currentTarget.style.background = "rgba(249,115,22,.1)")}
                       onMouseLeave={e => (e.currentTarget.style.background = "transparent")}>
-                      English
+                      <span>🇨🇿</span> Čeština
                     </a>
                   </div>
                 )}

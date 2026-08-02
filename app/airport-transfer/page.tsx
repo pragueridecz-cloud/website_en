@@ -205,13 +205,13 @@ export default function LetistniPreprava() {
                 },
                 {
                   img: "/driver-sign.jpg",
-                  title: "Řidič s cedulkou u výstupu",
-                  desc: "Po příletu vás váš driver čeká přímo v příletové hale s cedulkou s vaším jménem. Žádné hledání, žádný stres po dlouhém letu.",
+                  title: "Driver with sign at arrivals",
+                  desc: "After landing your driver waits in the arrivals hall with a sign showing your name. No searching, no stress after a long flight.",
                 },
                 {
                   img: "/fixed-price-payment.jpg",
-                  title: "Fixed price bez příplatků",
-                  desc: "Price je dohodnutá in advance a nemění se. Žádné příplatky za mýto, delay, noční jízdu ani velká luggage.",
+                  title: "Fixed price, no surcharges",
+                  desc: "Price is agreed in advance and does not change. No surcharges for tolls, delays, night rides or large luggage.",
                 },
               ].map((item, i) => (
                 <div key={i} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100">

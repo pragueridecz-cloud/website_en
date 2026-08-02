@@ -93,12 +93,12 @@ export default function LetistniPreprava() {
                   </span>
                 </div>
                 <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
-                  Transfer na airport<br />
-                  <span style={{ color: "#F97316" }}>Prague a střední Evropa</span>
+                  Airport Transfer<br />
+                  <span style={{ color: "#F97316" }}>Prague & Central Europe</span>
                 </h1>
                 <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
                 <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-                  Taxi to/from Václav Havel Airport Prague from €29 — pevná price, žádné příplatky za čekání ani delay letu. Zajišťujeme také transfer na airport Vienna, Bratislava, Budapešť, Munich, Frankfurt a Drážďany. Driver waits with name sign in arrivals, sleduje váš let v reálném čase a odveze vás z airport Ruzyně přímo domů nebo do hotelu.
+                  Taxi to/from Václav Havel Airport Prague from €29 — fixed price, no extra charges for waiting or flight delays. We also cover transfers to Vienna, Bratislava, Budapest, Munich, Frankfurt and Dresden. Driver waits with name sign in arrivals, tracks your flight in real time and takes you home or to your hotel.
                 </p>
               </div>
               <div className="hidden md:block" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.4)" }}>
@@ -112,7 +112,7 @@ export default function LetistniPreprava() {
         {/* LETIŠTĚ V ČR */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <SectionHeading label="Airports in Czech Republic" title="Czech Airports" subtitle="Přepravujeme na všechna airport v České republice. Nejčastěji samozřejmě na Václav Havel Prague Airport, ale také do Brna a Ostravy." />
+            <SectionHeading label="Airports in Czech Republic" title="Czech Airports" subtitle="We serve all airports in Czech Republic. Most frequently Václav Havel Prague Airport, but also Brno and Ostrava." />
 
             {/* PRG – full width */}
             {(() => {
@@ -234,7 +234,7 @@ export default function LetistniPreprava() {
             <SectionHeading label="Časté dotazy" title="Máte otázky?" />
             <div className="space-y-3">
               {[
-                { q: "Přepravíte mě i na airport ve Vídni nebo Munichě?", a: "Yes, přepravujeme na všechna airport v dosahu přibližně 700 km od Prahy. Vienna, Bratislava, Budapešť, Munich, Frankfurt, Drážďany a další. Cenu dostanete ihned po zadání do rezervačního formuláře." },
+                { q: "Přepravíte mě i na airport ve Vídni nebo Munichě?", a: "Yes, přepravujeme na všechna airport v dosahu přibližně 700 km od Prahy. Vienna, Bratislava, Budapest, Munich, Frankfurt, Dresden a další. Cenu dostanete ihned po zadání do rezervačního formuláře." },
                 { q: "Jak funguje sledování delay letu?", a: "Při rezervaci zadáte číslo letu. Náš systém automaticky sleduje reálný čas příletu a informuje drivere. Pokud má váš let delay, driver dorazí pozdě – a vy neplatíte žádný příplatek za čekání." },
                 { q: "Kde mě driver vyzvedne po příletu?", a: "Řidič vás čeká přímo v příletové hale s cedulkou s vaším jménem, ihned za výstupem z celnice. Nemusíte nikam volat ani hledat." },
                 { q: "Mohu platit kartou?", a: "Yes, payment kartou online při rezervaci nebo hotově driver. Na vyžádání vystavíme fakturu na firmu s DIČ." },

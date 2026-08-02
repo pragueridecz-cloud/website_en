@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Brand – TPC logo */}
           <div className="md:col-span-1">
             <div className="mb-4">
-              <img src="/logo-tpc.png" alt="Transfer Prague Car" style={{ height: "40px", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
+              <img src="/logo-en.png" alt="Transfer Prague Car" style={{ height: "40px", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
             </div>
             <p style={{ color: "#94a3b8", fontSize: "13px", lineHeight: 1.7 }}>
               Reliable transport to/from Prague Airport and across Central Europe. Fixed price, professional drivers, flight tracking.
@@ -119,7 +119,7 @@ export default function Footer() {
         <div style={{ borderTop: "1px solid rgba(255,255,255,.08)", paddingTop: "20px", display: "flex", flexDirection: "column", gap: "8px" }}>
           <div style={{ display: "flex", flexWrap: "wrap", justifyContent: "space-between", alignItems: "center", gap: "12px" }}>
             <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
-              <img src="/logo-tpc.png" alt="Transfer Prague Car" style={{ height: "28px", objectFit: "contain", filter: "brightness(0) invert(1)", opacity: 0.6 }} />
+              <img src="/logo-en.png" alt="Transfer Prague Car" style={{ height: "28px", objectFit: "contain", filter: "brightness(0) invert(1)", opacity: 0.6 }} />
               <div>
                 <div style={{ fontSize: "12px", fontWeight: 600, color: "#94a3b8" }}>transfer-prague-car s.r.o.</div>
                 <div style={{ fontSize: "11px", color: "#475569" }}>IČO: 25706993 · Sochařská 2, 170 00 Prague</div>

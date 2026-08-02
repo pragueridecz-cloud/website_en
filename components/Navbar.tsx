@@ -107,7 +107,7 @@ export default function Navbar() {
                   <div className="absolute top-full right-0 mt-1 rounded-lg overflow-hidden z-50 min-w-36"
                     style={{ background: "#162d6e", border: "1px solid rgba(255,255,255,.15)", boxShadow: "0 8px 24px rgba(0,0,0,.3)" }}>
                     <div className="px-4 py-2.5" style={{ borderBottom: "1px solid rgba(255,255,255,.1)", color: "#F97316", fontSize: "13px", fontWeight: 600 }}>
-                      Čeština ✓
+                      English ✓
                     </div>
                     <a href="https://www.pragueride.com" target="_blank" rel="noopener noreferrer"
                       onClick={() => setLangOpen(false)}

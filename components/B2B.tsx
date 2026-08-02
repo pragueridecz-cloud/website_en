@@ -3,7 +3,7 @@ import { FileText, Repeat, PhoneCall, BarChart2 } from "lucide-react";
 const perks = [
   { icon: FileText, text: "Faktura na firmu ke každé jízdě" },
   { icon: Repeat,   text: "Pravidelné jízdy se slevou" },
-  { icon: BarChart2,text: "Přehled jízd a výdajů online" },
+  { icon: BarChart2,text: "Ride and expense overview online" },
   { icon: PhoneCall,text: "Dedikovaná telefonní linka" },
 ];
 

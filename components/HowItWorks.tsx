@@ -10,21 +10,21 @@ const steps = [
   },
   {
     icon: "ti-plane",
-    title: "Sledujeme váš spoj",
+    title: "We track your connection",
     desc: "System monitors flight, train and bus delays in real time and adjusts driver arrival automatically.",
-    detail: "Bez příplatků za delay. Bez telefonování.",
+    detail: "No delay surcharges. No phone calls needed.",
   },
   {
     icon: "ti-user-check",
-    title: "Driver čeká na místě",
-    desc: "Přesné vyzvednutí na dohodnutém místě — u letišť v příletové hale, jinak přímo před vašimi dveřmi.",
-    detail: "Pomoc se zavazadly, klimatizované auto, Wi-Fi.",
+    title: "Driver waiting on arrival",
+    desc: "Precise pickup at the agreed location — at airports in the arrivals hall, otherwise right at your door.",
+    detail: "Help with luggage, air-conditioned car, Wi-Fi.",
   },
   {
     icon: "ti-armchair",
-    title: "Pohodlná jízda",
+    title: "Comfortable ride",
     desc: "We take you exactly where you need to go. Clean cars, professional drivers.",
-    detail: "Water included, tiché prostředí, invoice na vyžádání.",
+    detail: "Water included, quiet environment, invoice on request.",
   },
 ];
 
@@ -71,8 +71,8 @@ export default function HowItWorks() {
             </span>
           </div>
           <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(28px,4vw,44px)", color: "#0f172a", margin: "0 0 12px", lineHeight: 1.15 }}>
-            Od rezervace k cíli<br />
-            <span style={{ color: "#F97316" }}>ve 4 krocích</span>
+            From booking to destination<br />
+            <span style={{ color: "#F97316" }}>in 4 steps</span>
           </h2>
           <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px" }} />
         </div>
@@ -173,7 +173,7 @@ export default function HowItWorks() {
             fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "15px",
             boxShadow: "0 4px 16px rgba(30,58,138,0.2)",
           }}>
-            Book now přepravu
+            Book your transfer
             <i className="ti ti-arrow-right" style={{ fontSize: "16px" }} aria-hidden="true" />
           </a>
         </div>

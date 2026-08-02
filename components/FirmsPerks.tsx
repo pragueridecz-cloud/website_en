@@ -6,25 +6,25 @@ const perks = [
   {
     icon: FileText,
     title: "Faktura na firmu a DPH doklad",
-    short: "Faktura na firmu — DPH doklad ke každé jízdě",
+    short: "Company invoice — VAT receipt for every ride",
     desc: "We issue a tax invoice with VAT for every ride, easily claimed as a business expense. No paper receipts — everything sent electronically to your company email.",
   },
   {
     icon: Repeat,
-    title: "Firemní slevy a pevné sazby",
-    short: "Pravidelné jízdy s fixní cenou a slevou",
+    title: "Corporate discounts and fixed rates",
+    short: "Regular rides with fixed price and discount",
     desc: "With a corporate contract for regular transport, you get fixed rates and volume discounts. Agreed price upfront — no meter, no weekend or night surcharges, no surprises on the invoice.",
   },
   {
     icon: BarChart2,
-    title: "Přehled jízd a výdajů online",
-    short: "Přehled všech jízd a výdajů online",
-    desc: "Všechny jízdy, výdaje a dokumenty na jednom místě. Firemní zákazníci mají přístup k přehledu přepravy zaměstnanců — kdo jezdil, kdy, kam a za kolik. Ideální pro controlling, schvalování výdajů i interní reporty.",
+    title: "Ride and expense overview online",
+    short: "All rides and expenses online",
+    desc: "All rides, expenses and documents in one place. Corporate clients have access to employee transport overview — who travelled, when, where and for how much. Ideal for controlling, expense approval and internal reports.",
   },
   {
     icon: PhoneCall,
-    title: "Dedikovaná linka pro firemní zákazníky",
-    short: "Dedikovaná telefonní linka pro firemní zákazníky",
+    title: "Dedicated line for corporate clients",
+    short: "Dedicated phone line for corporate clients",
     desc: "Corporate clients have direct dispatch contact with no waiting. Available 24/7 — whether you need to take an employee to a 5am flight or pick up a VIP guest from an evening train, we always know who is calling and what you need.",
   },
 ]

@@ -6,7 +6,7 @@ import FirmsUseCases from "@/components/FirmsUseCases";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Firemní přeprava Prague | pragueairportaxi.com",
+  title: "Corporate transport Prague | pragueairportaxi.com",
   description: "Firemní taxi Prague na fakturu s DPH. Employee airport transfers, korporátní transfery, VIP přeprava pro delegace. Business taxi Prague — pevná price, měsíční invoicece, dedikovaná linka.",
 };
 
@@ -49,13 +49,13 @@ export default function PrepravaPropFirmy() {
           </div>
         </section>
 
-        {/* Výhody */}
+        {/* Why choose us */}
         <section style={{ background: "#fff", padding: "64px 20px" }}>
           <div className="max-w-6xl mx-auto">
             <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(24px,3vw,36px)", color: "#00205B", marginBottom: "8px" }}>
               Proč firemní účet?
             </h2>
-            <p style={{ color: "#475569", fontSize: "16px", marginBottom: "48px" }}>Výhody, které oceníte při pravidelné firemní přepravě.</p>
+            <p style={{ color: "#475569", fontSize: "16px", marginBottom: "48px" }}>Why choose us, které oceníte při pravidelné firemní přepravě.</p>
             <FirmsPerks />
           </div>
         </section>
@@ -69,7 +69,7 @@ export default function PrepravaPropFirmy() {
                 <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase" as const, letterSpacing: "2px" }}>Kdy nás využít</span>
               </div>
               <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(32px,4vw,52px)", color: "#00205B", marginBottom: "16px", lineHeight: 1.1 }}>
-                Přeprava pro každou situaci
+                Transport pro každou situaci
               </h2>
               <div style={{ width: "40px", height: "3px", background: "#F97316", borderRadius: "2px" }} />
             </div>

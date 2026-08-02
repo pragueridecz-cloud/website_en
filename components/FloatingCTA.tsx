@@ -20,7 +20,7 @@ export default function FloatingCTA() {
     <>
       <button
         onClick={scrollToTop}
-        aria-label="Book now přepravu"
+        aria-label="Book your transfer"
         style={{
           position: "fixed",
           bottom: "28px",
@@ -68,7 +68,7 @@ export default function FloatingCTA() {
       </button>
       <style>{`
         @media (max-width: 480px) {
-          button[aria-label="Book now přepravu"] span:last-child {
+          button[aria-label="Book your transfer"] span:last-child {
             display: none;
           }
         }

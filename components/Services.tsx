@@ -9,35 +9,35 @@ const SERVICES = [
     img: "/service-airport.png",
     label: "Airport Transfer",
     title: "Airport Prague",
-    desc: "Fixed price, žádné čekání. Sledujeme váš let v reálném čase a přizpůsobíme čas vyzvednutí případným delaym.",
+    desc: "Fixed price, žádné čekání. We track your flight v reálném čase a přizpůsobíme čas vyzvednutí případným delaym.",
     href: "/letistni-preprava",
   },
   {
     img: "/service-mezimestska.png",
-    label: "Meziměstská přeprava",
-    title: "Celá ČR i Evropa",
-    desc: "Pohodlná přeprava na delší vzdálenosti — Prague, Brno, Ostrava i zahraniční destinace v celé střední Evropě.",
+    label: "Intercity transport",
+    title: "All of Czech Republic and Europe",
+    desc: "Comfortable long-distance transport — Prague, Brno, Ostrava and international destinations across Central Europe.",
     href: "/mezimestska-doprava",
   },
   {
     img: "/service-vlakautobus.png",
-    label: "Nádraží",
-    title: "Hlavní nádraží · Florenc",
-    desc: "Transfer na vlakové i autobusové nádraží. Přesné načasování, aby vlak nebo autobus nestihnout nebyla vaše starost.",
+    label: "Train & Bus Station",
+    title: "Main Station · Florenc",
+    desc: "Transfer to train and bus stations. Precise timing so you never miss your connection.",
     href: "/vlakove-autobusove-nadrazi",
   },
   {
     img: "/service-hodinovy.jpg",
     label: "Hourly Rental",
     title: "Driver k dispozici",
-    desc: "Driver po celý den jen pro vás. Ideální pro svatby, obchodní schůzky, výlety nebo víkendové výpravy bez starostí o parkování.",
+    desc: "Driver all day just for you. Perfect for weddings, business meetings, trips or weekend outings without parking worries.",
     href: "/hodinovy-pronajem",
   },
   {
     img: "/service-firmy.png",
     label: "For companies",
-    title: "Firemní přeprava",
-    desc: "Pravidelné jízdy, invoicece, firemní slevy. Svěřte přepravu svých zaměstnanců a klientů do professionalch rukou.",
+    title: "Corporate transport",
+    desc: "Regular rides, invoicing, corporate discounts. Entrust your employee and client transport to professional hands.",
     href: "/preprava-pro-firmy",
   },
 ];
@@ -78,7 +78,7 @@ export default function Services() {
   return (
     <section className="bg-white">
       <div className="max-w-6xl mx-auto px-4 pt-16 pb-8">
-        <SectionHeading label="Naše služby" title="Přeprava" highlight="pro každou příležitost" />
+        <SectionHeading label="Our services" title="Transport" highlight="for every occasion" />
       </div>
 
       {/* Mobile carousel */}

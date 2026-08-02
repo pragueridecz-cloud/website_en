@@ -10,7 +10,7 @@ const faqs = [
   },
   {
     q: "Co se stane, když bude mít letadlo delay?",
-    a: "Sledujeme váš let v reálném čase. Pokud má let delay, driver automaticky upraví čas příjezdu. Neplatíte žádné příplatky za čekání.",
+    a: "We track your flight v reálném čase. Pokud má let delay, driver automaticky upraví čas příjezdu. Neplatíte žádné příplatky za čekání.",
   },
   {
     q: "Kde mě driver vyzvedne na airport?",

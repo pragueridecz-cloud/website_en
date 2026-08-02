@@ -2,9 +2,9 @@
 import { useEffect, useRef, useState } from "react";
 
 const stats = [
-  { value: 5000, suffix: "+", label: "Spokojených jízd", icon: "ti-car" },
-  { value: 4.9, suffix: "★", label: "Průměrné hodnocení", icon: "ti-star", decimal: true },
-  { value: 8, suffix: "+", label: "Letišť v dosahu", icon: "ti-plane" },
+  { value: 5000, suffix: "+", label: "Happy rides", icon: "ti-car" },
+  { value: 4.9, suffix: "★", label: "Average rating", icon: "ti-star", decimal: true },
+  { value: 8, suffix: "+", label: "Airports covered", icon: "ti-plane" },
   { value: 24, suffix: "/7", label: "Dostupnost", icon: "ti-clock" },
 ];
 

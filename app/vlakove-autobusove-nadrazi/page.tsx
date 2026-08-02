@@ -5,11 +5,11 @@ import SectionHeading from "@/components/SectionHeading"
 import { Clock, Luggage, ArrowLeftRight, MapPin, Banknote, Moon, Train, Bus } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Přeprava na nádraží Praha | naairportlevně.cz",
+  title: "Transport na nádraží Praha | naairportlevně.cz",
   description: "Taxi na nádraží Praha — Hlavní nádraží, Florenc, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se zavazadly, 24/7 dostupnost. Rezervujte online.",
   keywords: "taxi na nádraží Praha, transfer hlavní nádraží Praha, odvoz na nádraží, přeprava Florenc, taxi Smíchovské nádraží, taxi autobusové nádraží",
   openGraph: {
-    title: "Přeprava na vlakové a autobusové nádraží | naairportlevně.cz",
+    title: "Transport na vlakové a autobusové nádraží | naairportlevně.cz",
     description: "Transfer na Hlavní nádraží, Florenc, Smíchovské nádraží. Pevné ceny 24/7.",
     url: "https://www.naletistelevne.cz/vlakove-autobusove-nadrazi",
   },
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Přeprava na vlakové a autobusové nádraží Praha",
+  "name": "Transport na vlakové a autobusové nádraží Praha",
   "description": "Transfer na hlavní nádraží, Florenc, Smíchovské nádraží a další.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
 }
@@ -57,7 +57,7 @@ export default function NadraziPage() {
             <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
               <div style={{ width: "32px", height: "2px", background: "#F97316" }} />
               <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase", letterSpacing: "1.5px" }}>
-                Nádraží
+                Train & Bus Station
               </span>
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
@@ -71,7 +71,7 @@ export default function NadraziPage() {
           </div>
         </div>
 
-        {/* Nádraží */}
+        {/* Train & Bus Station */}
         <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4">
             <SectionHeading label="Obsloužená nádraží" title="Přepravíme vás na každé nádraží" />
@@ -98,10 +98,10 @@ export default function NadraziPage() {
           </div>
         </section>
 
-        {/* Výhody */}
+        {/* Why choose us */}
         <section className="py-20" style={{ background: "#f8fafc" }}>
           <div className="max-w-5xl mx-auto px-4">
-            <SectionHeading label="Výhody" title="Proč jet s námi na nádraží" />
+            <SectionHeading label="Why choose us" title="Proč jet s námi na nádraží" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {VYHODY.map(({ Icon, title, desc, img }) => (
                 <div key={title} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">

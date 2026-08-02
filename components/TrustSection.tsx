@@ -23,7 +23,7 @@ const reasons = [
 
 const stats = [
   { value: "8 400+", label: "Customerů celkem" },
-  { value: "4.9★", label: "Průměrné hodnocení" },
+  { value: "4.9★", label: "Average rating" },
   { value: "24/7", label: "Hodin dostupnosti" },
   { value: "5+", label: "Let zkušeností" },
 ];
@@ -41,7 +41,7 @@ export default function TrustSection() {
               <span className="text-xs font-bold tracking-widest uppercase text-[#F97316]">Proč si vybrat nás</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-[#0F172A] mb-2">
-              Přeprava které
+              Transport které
               <br />
               <span className="text-[#F97316]">můžete věřit</span>
             </h2>

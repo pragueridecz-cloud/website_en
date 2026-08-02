@@ -13,7 +13,7 @@ export default function Footer() {
               <img src="/logo-tpc.png" alt="Transfer Prague Car" style={{ height: "40px", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
             </div>
             <p style={{ color: "#94a3b8", fontSize: "13px", lineHeight: 1.7 }}>
-              Reliable transport to/from Prague Airport a do celé střední Evropy. Fixed price, professional driveri, sledování letu.
+              Reliable transport to/from Prague Airport and across Central Europe. Fixed price, professional drivers, flight tracking.
             </p>
             {/* Social ikonky */}
             <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
@@ -110,7 +110,7 @@ export default function Footer() {
                 <MapPin size={13} style={{ marginTop: "2px", flexShrink: 0 }} />
                 <span>Sochařská 2, 170 00 Prague 7</span>
               </li>
-              <li style={{ color: "#64748b", fontSize: "11px", marginTop: "4px" }}>Dispečink 24/7, 365 dní</li>
+              <li style={{ color: "#64748b", fontSize: "11px", marginTop: "4px" }}>Dispatch 24/7, 365 days</li>
             </ul>
           </div>
         </div>

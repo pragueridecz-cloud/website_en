@@ -2,13 +2,13 @@ import SectionHeading from "./SectionHeading";
 
 const reviews = [
   {
-    name: "Markéta S.",
-    text: "Rezervovala jsem den předem, přijel přesně na čas. Driver byl moc milý, pomohl mi se zavazadly. Cena přesně taková, jak bylo uvedeno. Určitě znovu!",
+    name: "Margaret S.",
+    text: "I booked the day before, arrived exactly on time. The driver was very friendly and helped with luggage. Price exactly as stated. Definitely again!",
     stars: 5,
     source: "Google",
   },
   {
-    name: "Tomáš K.",
+    name: "Thomas K.",
     text: "The flight was 2 hours late and the driver still waited. I paid the same price as booked. This is exactly what you need after a long flight.",
     stars: 5,
     source: "TripAdvisor",
@@ -25,7 +25,7 @@ export default function Testimonials() {
   return (
     <section className="py-16 bg-[#F8FAFC]">
       <div className="max-w-6xl mx-auto px-4">
-        <SectionHeading label="Recenze" title="Co říkají naši zákazníci" subtitle="4,9/5 z 500+ recenzí na Google a TripAdvisoru" />
+        <SectionHeading label="Reviews" title="What our customers say" subtitle="4.9/5 from 500+ reviews on Google and TripAdvisor" />
         <div className="grid md:grid-cols-3 gap-6">
           {reviews.map((r) => (
             <div

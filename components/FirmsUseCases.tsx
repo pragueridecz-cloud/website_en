@@ -2,9 +2,9 @@
 
 const cards = [
   { img: "/firmy-letiste-zamestnanci.jpg", title: "Employee airport transfers", desc: "On-time pickup with invoice for HR" },
-  { img: "/firmy-konference.jpg",          title: "Roadshow a konference",           desc: "Logistika přepravy po Praze i za hranice" },
-  { img: "/service-firmy.png",             title: "Vyzvednutí obchodních partnerů",  desc: "Reprezentativní přivítání klientů na airport" },
-  { img: "/firmy-teambuilding.jpg",        title: "Firemní akce a teambuildingy",    desc: "Přeprava celého týmu na firemní event nebo výjezdní zasedání" },
+  { img: "/firmy-konference.jpg",          title: "Roadshows and conferences",           desc: "Transport logistics in Prague and beyond" },
+  { img: "/service-firmy.png",             title: "Picking up business partners",  desc: "Professional client welcome at the airport" },
+  { img: "/firmy-teambuilding.jpg",        title: "Corporate events and team building",    desc: "Transport celého týmu na firemní event nebo výjezdní zasedání" },
   { img: "/service-vehicle.jpg",           title: "VIP guests and delegations",            desc: "Premium service for international guests" },
 ]
 

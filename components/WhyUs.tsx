@@ -4,27 +4,27 @@ import SectionHeading from "./SectionHeading";
 const features = [
   {
     icon: Shield,
-    title: "Fixed price, žádná překvapení",
-    desc: "Cenu vidíte předem při rezervaci. Nikdy nezaplatíte více — ani za zácpy, ani za delší cestu.",
+    title: "Fixed price, no surprises",
+    desc: "See the price upfront when booking. You never pay more — not for traffic, not for a longer route.",
   },
   {
     icon: Plane,
-    title: "Sledujeme váš let",
+    title: "We track your flight",
     desc: "System monitors arrival in real time. If the flight is delayed, the driver waits. No extra charge.",
   },
   {
     icon: Clock,
     title: "Dostupnost 24/7",
-    desc: "Rezervujte kdykoliv. Ranní lety, noční přílety — jsme tu vždy, 365 dní v roce.",
+    desc: "Book anytime. Early flights, late arrivals — we are always here, 365 days a year.",
   },
   {
     icon: MapPin,
-    title: "Driver čeká na místě",
-    desc: "Driver picks you up přímo u výjezdu z celnice s cedulí s vaším jménem.",
+    title: "Driver waiting on arrival",
+    desc: "Your driver waits at arrivals exit with a name sign.",
   },
   {
     icon: CreditCard,
-    title: "Platba kartou nebo hotovostí",
+    title: "Card or cash payment",
     desc: "Pay online in advance or cash to the driver. Business invoice available.",
   },
   {
@@ -38,7 +38,7 @@ export default function WhyUs() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <SectionHeading label="Výhody" title="Proč si vybrat nás?" highlight="" subtitle="Nejsme taxi. Jsme předem rezervovaná doprava s garantovanou cenou a professionalm přístupem." />
+        <SectionHeading label="Why choose us" title="Why choose us?" highlight="" subtitle="We are not a taxi. We are pre-booked transport with a guaranteed price and professional approach." />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f) => (
             <div

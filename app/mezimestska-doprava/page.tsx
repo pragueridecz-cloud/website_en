@@ -20,7 +20,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Mezinárodní a meziměstská doprava",
-  "description": "Přeprava mezi městy v ČR a do zahraničí – Vienna, Berlin, Munich, Varšava a další.",
+  "description": "Transport mezi městy v ČR a do zahraničí – Vienna, Berlin, Munich, Varšava a další.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
   "areaServed": [
     { "@type": "Country", "name": "Česká republika" },
@@ -140,10 +140,10 @@ export default function MezimestskaPage() {
         </section>
 
 
-        {/* Výhody */}
+        {/* Why choose us */}
         <section className="py-20" style={{ background: "#f8fafc" }}>
           <div className="max-w-5xl mx-auto px-4">
-            <SectionHeading label="Výhody" title="Proč cestovat s námi" />
+            <SectionHeading label="Why choose us" title="Proč cestovat s námi" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {VYHODY.map(({ Icon, title, desc, img }) => (
                 <div key={title} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">

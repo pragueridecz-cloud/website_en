@@ -10,7 +10,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Hourly Rental auta s driverem Prague | pragueairportaxi.com",
-  description: "Auto s driverem Prague €29/hod — chauffeur service, VIP transport, pronájem drivere nahiny nebo celý den. Business schůzky, svatby, výlety za město. Sedan i minivan.",
+  description: "Car with driver Prague from €29/h — chauffeur service, VIP transport, hourly or full day hire. Business meetings, weddings, day trips. Sedan and minivan.",
   keywords: "pronájem auta s driverem Prague, chauffeur service Prague, auto s šoférem Prague,hinový transfer Prague, firemní driver Prague, prohlídka Prahy s driverem",
   openGraph: {
     title: "Hourly Rental auta s driverem Prague | Od €29/hod | pragueairportaxi.com",
@@ -30,14 +30,14 @@ const schema = {
 }
 
 const USES = [
-  { Icon: Landmark,    title: "Prohlídka Prahy",    desc: "Navštivte Hradčany, Starý Město a Malou Stranu v klidu s průvodcem za volantem." },
-  { Icon: Briefcase,   title: "Business schůzky",   desc: "Přesuny mezi schůzkami bez parkování a stresu. Pracujte v autě." },
-  { Icon: ShoppingBag, title: "Nákupy",              desc: "Velký nákup nebo výprodeje bez starostí se luggage a parkováním." },
-  { Icon: TreePine,    title: "Výlet za město",      desc: "Český ráj, Karlštejn, Kutná Hora. Bez kompromisů s jízdním řádem." },
-  { Icon: Heart,       title: "Svatba",              desc: "Exkluzivní přepravu pro novomanžele nebo hosty na velký den." },
-  { Icon: Music,       title: "Kulturní akce",       desc: "Opera, divadlo, konference. Dorazíte včas a v komfortu." },
-  { Icon: Plane,       title: "VIP transfer",        desc: "Vyzvednutí z airport s čekáním a přesuny po celý den." },
-  { Icon: Activity,    title: "Zdravotní přesuny",   desc: "Pohodlné přepravení k lékaři nebo na rehabilitaci." },
+  { Icon: Landmark,    title: "Prague city tour",    desc: "Visit Prague Castle, Old Town and Malá Strana at your own pace with a driver at the wheel." },
+  { Icon: Briefcase,   title: "Business meetings",   desc: "Move between meetings without parking stress. Work in the car." },
+  { Icon: ShoppingBag, title: "Shopping",              desc: "Big shopping trips or sales without worrying about luggage and parking." },
+  { Icon: TreePine,    title: "Day trips",      desc: "Bohemian Paradise, Karlštejn, Kutná Hora. No compromise with timetables." },
+  { Icon: Heart,       title: "Wedding",              desc: "Exclusive transport for the newlyweds or guests on the big day." },
+  { Icon: Music,       title: "Cultural events",       desc: "Opera, theatre, conferences. Arrive on time and in comfort." },
+  { Icon: Plane,       title: "VIP transfer",        desc: "Airport pickup with waiting and transfers throughout the day." },
+  { Icon: Activity,    title: "Medical transport",   desc: "Comfortable transport to a doctor or rehabilitation appointment." },
 ]
 
 const breadcrumbSchema = {
@@ -83,7 +83,7 @@ export default function HodinPronajem() {
         {/* Využití */}
         <section className="py-20" style={{ background: "#f8fafc" }}>
           <div className="max-w-5xl mx-auto px-4">
-            <SectionHeading label="Využití" title="Kdy sehí auto s driverem" />
+            <SectionHeading label="Use cases" title="When to hire a car with driver" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {USES.map(({ Icon, title, desc }) => (
                 <div key={title} className="bg-white rounded-xl p-5 shadow-sm text-center">
@@ -101,8 +101,8 @@ export default function HodinPronajem() {
         {/* CTA */}
         <section className="py-16" style={{ background: "#00205B" }}>
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Pronajměte si auto s driverem</h2>
-            <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Flexibilní, komfortní, bez starostí</p>
+            <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Hire a car with driver</h2>
+            <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Flexible, comfortable, hassle-free</p>
             <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
               Book now

@@ -4,7 +4,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Prague Airport Taxi | Transport to/from Prague Airport €29",
-  description: "Rezervujte dopravu to/from Prague Airport in advance. Fixed price, professional driver, sledování letu. Sedan €29, minivan od €36. Bez příplatků za delay.",
+  description: "Rezervujte dopravu to/from Prague Airport in advance. Fixed price, professional driver, sledování letu. Sedan €29, minivan €36. Bez příplatků za delay.",
   keywords: "doprava na airport Prague, transfer airport Prague, odvoz na airport levně, taxi airport Prague, booking auta na airport",
   openGraph: {
     title: "Prague Airport Taxi | Transport na airport Prague €29",

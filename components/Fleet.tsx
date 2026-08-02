@@ -46,7 +46,7 @@ const cars = [
     model: "Ford Tourneo Custom a podobný",
     passengers: 7,
     luggage: 6,
-    price: "od €36",
+    price: "€36",
     hourlyPrice: "from €36/h",
     features: ["Air conditioning", "Wi-Fi", "Large boot"],
     tag: "Nejoblíbenější",

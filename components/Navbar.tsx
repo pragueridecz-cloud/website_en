@@ -100,14 +100,14 @@ export default function Navbar() {
                 <button onClick={() => setLangOpen(!langOpen)}
                   className="flex items-center gap-1.5 px-2 py-1.5 rounded text-sm cursor-pointer"
                   style={{ color: "rgba(255,255,255,.7)", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)" }}>
-                  <span className="text-base">🇬🇧</span>
+                  <img src="https://flagcdn.com/24x18/gb.png" width="24" height="18" alt="EN" style={{display:"inline",verticalAlign:"middle",borderRadius:"2px"}} />
                   <ChevronDown size={11} />
                 </button>
                 {langOpen && (
                   <div className="absolute top-full right-0 mt-1 rounded-lg overflow-hidden z-50 min-w-36"
                     style={{ background: "#162d6e", border: "1px solid rgba(255,255,255,.15)", boxShadow: "0 8px 24px rgba(0,0,0,.3)" }}>
                     <div className="px-4 py-2.5 flex items-center gap-2" style={{ borderBottom: "1px solid rgba(255,255,255,.1)", color: "#F97316", fontSize: "13px", fontWeight: 600 }}>
-                      <span>🇬🇧</span> English ✓
+                      <img src="https://flagcdn.com/24x18/gb.png" width="24" height="18" alt="EN" style={{display:"inline",verticalAlign:"middle",borderRadius:"2px"}} /> English ✓
                     </div>
                     <a href="https://www.naletistelevne.cz" target="_blank" rel="noopener noreferrer"
                       onClick={() => setLangOpen(false)}
@@ -115,7 +115,7 @@ export default function Navbar() {
                       style={{ color: "rgba(255,255,255,.8)", textDecoration: "none" }}
                       onMouseEnter={e => (e.currentTarget.style.background = "rgba(249,115,22,.1)")}
                       onMouseLeave={e => (e.currentTarget.style.background = "transparent")}>
-                      <span>🇨🇿</span> Čeština
+                      <img src="https://flagcdn.com/24x18/cz.png" width="24" height="18" alt="CZ" style={{display:"inline",verticalAlign:"middle",borderRadius:"2px"}} /> Čeština
                     </a>
                   </div>
                 )}

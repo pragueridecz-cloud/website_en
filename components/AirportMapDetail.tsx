@@ -48,8 +48,8 @@ const AIRPORTS = [
     country: "🇩🇪",
     addr: "Frankfurt Airport, Frankfurt am Main, Germany",
     img: "/airport-frankfurt.jpg",
-    desc: "Největší německé airport a jeden z nejvytíženějších hubů v celé Evropě. Lufthansa a její partneři odtud létají do téměř každého koutu světa. Ideální pro transatlantické přestupy.",
-    facts: ["Největší hub v Evropě", "150+ airlines, 300+ destinací", "Přímé vlakové spojení na terminál", "Lety do celého světa"],
+    desc: "The largest German airport and one of the busiest hubs in Europe. Lufthansa and its partners fly from here to almost every corner of the world. Ideal for transatlantic connections.",
+    facts: ["Largest hub in Europe", "150+ airlines, 300+ destinations", "Direct train to terminal", "Flights worldwide"],
   },
   {
     code: "DRS", name: "Dresden Airport", city: "Dresden, Germany",
@@ -57,17 +57,17 @@ const AIRPORTS = [
     country: "🇩🇪",
     addr: "Dresden Airport, Dresden, Germany",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Aerial_image_of_the_Dresden_Airport.jpg/960px-Aerial_image_of_the_Dresden_Airport.jpg",
-    desc: "Malé a přehledné německé airport nejblíže Praze ze zahraničních letišť. Ideální pro rychlé lety do Německa a dalších evropských destinací bez přestupu.",
-    facts: ["Nejbližší zahraniční airport od Prahy", "Bez front a stresu", "Lety Lufthansa, Eurowings", "Jednoduché parkování"],
+    desc: "A small and well-organised German airport closest to Prague among foreign airports. Ideal for quick flights to Germany and other European destinations without connections.",
+    facts: ["Closest foreign airport to Prague", "No queues or stress", "Lufthansa, Eurowings flights", "Easy parking"],
   },
   {
-    code: "BER", name: "Berlín Brandenburg", city: "Berlin, Germany",
+    code: "BER", name: "Berlin Brandenburg Airport", city: "Berlin, Germany",
     lat: 52.3667, lng: 13.5033, price: "from €343",
     country: "🇩🇪",
     addr: "Berlin Brandenburg Airport, Berlin, Germany",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Berlin_Brandenburg_Airport_Terminal_1.jpg/960px-Berlin_Brandenburg_Airport_Terminal_1.jpg",
-    desc: "Moderní berlínské airport, brána do německé metropole. Přímé spojení do celé Evropy a zámoří s výbornými přestupními možnostmi. Vlak přímo do centra Berlína.",
-    facts: ["Nové terminály od roku 2020", "Lety do 130+ destinací", "Vlak do centra Berlína", "Excellent connection options"],
+    desc: "Modern Berlin airport, gateway to the German capital. Direct connections across Europe and overseas with excellent transfer options. Train directly to Berlin city centre.",
+    facts: ["New terminals since 2020", "Flights to 130+ destinations", "Train to Berlin city centre", "Excellent connection options"],
   },
 ];
 
@@ -230,14 +230,14 @@ export default function AirportMapDetail() {
         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
           <div style={{ width: "28px", height: "2px", background: "#F97316" }} />
           <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase", letterSpacing: "1.5px" }}>
-            Blízká zahraniční airport
+            Nearby international airports
           </span>
         </div>
         <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(26px,3.5vw,40px)", color: "#00205B", marginBottom: "8px", lineHeight: 1.1 }}>
-          Zahraniční airport — <span style={{ color: "#F97316" }}>7 destinací</span>
+          International airports — <span style={{ color: "#F97316" }}>7 destinations</span>
         </h2>
         <p style={{ color: "#64748b", fontSize: "15px", lineHeight: 1.65, marginBottom: "36px", maxWidth: "600px" }}>
-          Někdy se vyplatí letět z Vídně, Mnichova nebo Drážďan. Přepravíme vás i tam – pevná price, bez stresu.
+          Sometimes it pays to fly from Vienna, Munich or Dresden. We cover those too — fixed price, no stress.
         </p>
 
         <div className="airport-map-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "28px", alignItems: "start" }}>
@@ -292,17 +292,17 @@ export default function AirportMapDetail() {
             {/* Stats: price + real route info */}
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: "10px", marginBottom: "20px" }}>
               <div style={{ background: "#FFF7ED", border: "1.5px solid #FED7AA", borderRadius: "12px", padding: "14px", textAlign: "center" as const }}>
-                <div style={{ fontSize: "10px", color: "#94a3b8", textTransform: "uppercase" as const, letterSpacing: "1px", marginBottom: "5px", fontWeight: 600 }}>Cena od</div>
+                <div style={{ fontSize: "10px", color: "#94a3b8", textTransform: "uppercase" as const, letterSpacing: "1px", marginBottom: "5px", fontWeight: 600 }}>Price from</div>
                 <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 900, color: "#F97316", fontSize: "17px", lineHeight: 1.2 }}>{airport.price}</div>
               </div>
               <div style={{ background: "#EFF6FF", border: "1.5px solid #BFDBFE", borderRadius: "12px", padding: "14px", textAlign: "center" as const }}>
-                <div style={{ fontSize: "10px", color: "#94a3b8", textTransform: "uppercase" as const, letterSpacing: "1px", marginBottom: "5px", fontWeight: 600 }}>Vzdálenost</div>
+                <div style={{ fontSize: "10px", color: "#94a3b8", textTransform: "uppercase" as const, letterSpacing: "1px", marginBottom: "5px", fontWeight: 600 }}>Distance</div>
                 <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 900, color: "#00205B", fontSize: "17px", lineHeight: 1.2 }}>
                   {routeLoading ? <span style={{ fontSize: "12px", color: "#94a3b8" }}>…</span> : (routeInfo?.distance ?? "—")}
                 </div>
               </div>
               <div style={{ background: "#F0FDF4", border: "1.5px solid #BBF7D0", borderRadius: "12px", padding: "14px", textAlign: "center" as const }}>
-                <div style={{ fontSize: "10px", color: "#94a3b8", textTransform: "uppercase" as const, letterSpacing: "1px", marginBottom: "5px", fontWeight: 600 }}>Jízda autem</div>
+                <div style={{ fontSize: "10px", color: "#94a3b8", textTransform: "uppercase" as const, letterSpacing: "1px", marginBottom: "5px", fontWeight: 600 }}>Drive time</div>
                 <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 900, color: "#15803d", fontSize: "17px", lineHeight: 1.2 }}>
                   {routeLoading ? <span style={{ fontSize: "12px", color: "#94a3b8" }}>…</span> : (routeInfo?.duration ?? "—")}
                 </div>

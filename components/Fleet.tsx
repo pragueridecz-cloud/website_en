@@ -49,7 +49,7 @@ const cars = [
     price: "from €38 / £32 / $41",
     hourlyPrice: "from €36/h",
     features: ["Air conditioning", "Wi-Fi", "Large boot"],
-    tag: "Nejoblíbenější",
+    tag: "Most popular",
     category: "minivan",
   },
   {
@@ -73,7 +73,7 @@ const cars = [
     price: "from €66 / £55 / $72",
     hourlyPrice: "1 650/h",
     features: ["Mercedes V-Class", "Business class", "Spacious interior"],
-    tag: "Firemní volba",
+    tag: "Business choice",
     category: "minivan",
   },
 ];

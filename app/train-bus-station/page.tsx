@@ -5,11 +5,11 @@ import SectionHeading from "@/components/SectionHeading"
 import { Clock, Luggage, ArrowLeftRight, MapPin, Banknote, Moon, Train, Bus } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Transport na nádraží Prague | naairportlevně.cz",
+  title: "Train & Bus Station Transfer Prague | pragueairportaxi.com",
   description: "Taxi na nádraží Prague — Main Station, Florenc Bus Terminal, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se luggage, 24/7 dostupnost. Book online.",
   keywords: "taxi na nádraží Prague, transfer hlavní nádraží Prague, odvoz na nádraží, transport Florenc Bus Terminal, taxi Smíchovské nádraží, taxi autobusové nádraží",
   openGraph: {
-    title: "Transport na vlakové a autobusové nádraží | naairportlevně.cz",
+    title: "Train & Bus Station Transfer Prague | pragueairportaxi.com",
     description: "Transfer na Main Station, Florenc Bus Terminal, Smíchovské nádraží. Pevné ceny 24/7.",
     url: "https://www.pragueairportaxi.com/vlakove-autobusove-nadrazi",
   },
@@ -19,20 +19,20 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Transport na vlakové a autobusové nádraží Prague",
+  "name": "Train & Bus Station Transfer Prague",
   "description": "Transfer na hlavní nádraží, Florenc Bus Terminal, Smíchovské nádraží a další.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
 }
 
 const STATIONS = [
-  { name: "Prague Main Station",      type: "vlak",   desc: "Centrální vlaková stanice Prahy" },
-  { name: "Prague Smíchovské nádraží",  type: "vlak",   desc: "Moderní přestupní uzel na jihozápadě" },
-  { name: "Prague Masarykovo nádraží",  type: "vlak",   desc: "Historické centrum Prahy" },
-  { name: "Prague Holešovice",          type: "vlak",   desc: "Mezinárodní vlaky a přestupní bod" },
-  { name: "Florenc Bus Terminal",                   type: "autobus", desc: "Hlavní autobusové nádraží Prahy" },
-  { name: "ÚAN Černý Most",            type: "autobus", desc: "Autobusové nádraží na východě Prahy" },
-  { name: "Na Knížecí",                type: "autobus", desc: "Jihozápadní autobusový terminál" },
-  { name: "Zličín",                    type: "autobus", desc: "Westfield Zličín – autobusový terminál" },
+  { name: "Prague Main Station",      type: "train",   desc: "Centrální vlaková stanice Prahy" },
+  { name: "Prague Smíchovské nádraží",  type: "train",   desc: "Moderní přestupní uzel na jihozápadě" },
+  { name: "Prague Masarykovo nádraží",  type: "train",   desc: "Historické centrum Prahy" },
+  { name: "Prague Holešovice",          type: "train",   desc: "Mezinárodní vlaky a přestupní bod" },
+  { name: "Florenc Bus Terminal",                   type: "bus", desc: "Hlavní autobusové nádraží Prahy" },
+  { name: "Černý Most Bus Terminal",            type: "bus", desc: "Bus terminal in east Prague" },
+  { name: "Na Knížecí",                type: "bus", desc: "Southwest bus terminal" },
+  { name: "Zličín",                    type: "bus", desc: "Westfield Zličín – bus terminal" },
 ]
 
 const VYHODY = [
@@ -41,7 +41,7 @@ const VYHODY = [
   { Icon: ArrowLeftRight, title: "Zpáteční ride",           desc: "Objednáte i vyzvednutí z nádraží po návratu. Vše v jedné rezervaci.", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80" },
   { Icon: MapPin,         title: "Přesné vyzvednutí",        desc: "Vyzvednutí přímo od vašich dveří nebo na dohodnutém místě.", img: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&q=80" },
   { Icon: Banknote,       title: "Pevná price",               desc: "Víte přesně, kolik zaplatíte. Bez taxametru, bez příplatků.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" },
-  { Icon: Moon,           title: "Ranní vlaky bez stresu",   desc: "Přepravujeme i v brzkých ranníchhinách. Žádný stres s MHD ve 4 ráno.", img: "/service-ranni-vlak.jpg" },
+  { Icon: Moon,           title: "Early trains, no stress",   desc: "We operate in the early hours too. No stress with public transport at 4am.", img: "/service-ranni-vlak.jpg" },
 ]
 
 export default function NadraziPage() {
@@ -62,7 +62,7 @@ export default function NadraziPage() {
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
               Station Transfer<br />
-              <span style={{ color: "#F97316" }}>vlak i autobus</span>
+              <span style={{ color: "#F97316" }}>train & bus</span>
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
@@ -74,13 +74,13 @@ export default function NadraziPage() {
         {/* Train & Bus Station */}
         <section className="py-20 bg-white">
           <div className="max-w-5xl mx-auto px-4">
-            <SectionHeading label="Obsloužená nádraží" title="Přepravíme vás na každé nádraží" />
+            <SectionHeading label="Stations we serve" title="We cover every station" />
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
               {STATIONS.map((s, i) => (
                 <div key={i} className="flex items-center gap-4 p-4 rounded-xl border border-gray-200 hover:border-orange-300 transition-all">
                   <div className="w-10 h-10 rounded-lg flex items-center justify-center flex-shrink-0"
-                    style={{ background: s.type === "vlak" ? "#EFF6FF" : "#FFF7ED" }}>
-                    {s.type === "vlak"
+                    style={{ background: s.type === "train" ? "#EFF6FF" : "#FFF7ED" }}>
+                    {s.type === "train"
                       ? <Train size={18} color="#00205B" strokeWidth={1.75} />
                       : <Bus size={18} color="#F97316" strokeWidth={1.75} />}
                   </div>
@@ -89,7 +89,7 @@ export default function NadraziPage() {
                     <div className="text-xs text-gray-500">{s.desc}</div>
                   </div>
                   <div className="ml-auto text-xs font-bold px-2 py-1 rounded-full"
-                    style={{ background: s.type === "vlak" ? "#EFF6FF" : "#FFF7ED", color: s.type === "vlak" ? "#00205B" : "#F97316" }}>
+                    style={{ background: s.type === "train" ? "#EFF6FF" : "#FFF7ED", color: s.type === "train" ? "#00205B" : "#F97316" }}>
                     {s.type}
                   </div>
                 </div>
@@ -101,7 +101,7 @@ export default function NadraziPage() {
         {/* Why choose us */}
         <section className="py-20" style={{ background: "#f8fafc" }}>
           <div className="max-w-5xl mx-auto px-4">
-            <SectionHeading label="Why choose us" title="Proč jet s námi na nádraží" />
+            <SectionHeading label="Why choose us" title="Why travel with us to the station" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {VYHODY.map(({ Icon, title, desc, img }) => (
                 <div key={title} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
@@ -129,7 +129,7 @@ export default function NadraziPage() {
             <div className="space-y-4">
               {[
                 { q: "Jak daleko dopředu mám book?", a: "Doporučujeme alespoň 2hiny in advance, ale přijímáme i urgentní objednávky dle aktuální dostupnosti." },
-                { q: "Co když vlak přijede se delaym?", a: "Pokud vás vyzvedáváme z nádraží, sledujeme aktuální přijezd vašeho vlaku a přizpůsobíme čas vyzvednutí." },
+                { q: "What if the train is delayed?", a: "If we are picking you up from the station, we monitor your train arrival in real time and adjust the pickup time accordingly." },
                 { q: "Přepravíte jízdní kolo nebo velké zavazadlo?", a: "Yes, pro kola a velká luggage doporučujeme minivan. Upřesněte při rezervaci." },
                 { q: "Jedete i outside Prague?", a: "Samozřejmě, přepravujeme po celé ČR i do zahraničí. Price se vypočítá automaticky." },
               ].map((item, i) => (

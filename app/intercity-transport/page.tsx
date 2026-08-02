@@ -48,18 +48,18 @@ const ROUTES = [
 
 const VYHODY = [
   { Icon: Lock,      title: "Fixed price upfront",    desc: "Price agreed upfront and never changes. No surcharges for tolls, parking or waiting.", img: "/service-fixni-price.jpg" },
-  { Icon: Car,       title: "Moderní vehicle",      desc: "Komfortní sedany a minivany s klimatizací, Wi-Fi a dostatkem místa pro luggage.", img: "/service-vehicle.jpg" },
-  { Icon: Clock,     title: "Flexibilní časy",      desc: "Přepravujeme 24hin denně, 7 dní v týdnu. Rezervujte kdykoli, i na poslední chvíli.", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&q=80" },
-  { Icon: Globe,     title: "Celá střední Evropa",  desc: "Jezdíme do Německa, Rakouska, Polska, Slovenska, Maďarska a dalších zemí.", img: "/service-evropa.jpg" },
-  { Icon: CreditCard,title: "Payment kartou",        desc: "Payment kartou online nebo hotově driver. Na vyžádání invoice na firmu.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
-  { Icon: UserCheck, title: "Professional drivers", desc: "Zkušení, jazykově vybavení driver se znalostí tras a místních podmínek.", img: "/service-ridici.jpg" },
+  { Icon: Car,       title: "Modern vehicles",      desc: "Comfortable sedans and minivans with air conditioning, Wi-Fi and plenty of luggage space.", img: "/service-vehicle.jpg" },
+  { Icon: Clock,     title: "Flexible times",      desc: "We operate 24 hours a day, 7 days a week. Book anytime, even last minute.", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&q=80" },
+  { Icon: Globe,     title: "All of Central Europe",  desc: "We travel to Germany, Austria, Poland, Slovakia, Hungary and beyond.", img: "/service-evropa.jpg" },
+  { Icon: CreditCard,title: "Card payment",        desc: "Card payment online or cash to the driver. Na vyžádání invoice na firmu.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
+  { Icon: UserCheck, title: "Professional drivers", desc: "Experienced, multilingual drivers with knowledge of routes and local conditions.", img: "/service-ridici.jpg" },
 ]
 
 const FAQ_ITEMS = [
   { q: "Do you travel outside Czech Republic?", a: "Yes, we cover all of Central Europe — Germany, Austria, Slovakia, Poland, Hungary and more. Get a price instantly by entering your route in the booking form." },
   { q: "Is the price fixed for international routes too?", a: "Yes, the price is always fixed and agreed upfront. No surcharges for tolls, delays or night rides." },
   { q: "Can I book a return journey?", a: "Of course — simply add a return trip in the booking form with a 10% discount." },
-  { q: "Jak probíhá payment za dlouhé trasy?", a: "Payment kartou online nebo hotově driver. U tras nad 5 000 je možná záloha in advance." },
+  { q: "How does payment work for long distance routes?", a: "Pay by card online or cash to the driver. For routes over €200, a deposit may be required in advance." },
   { q: "What if my route is not in the price list?", a: "Enter it in the booking form — price is calculated automatically by distance. Or contact us directly." },
 ]
 
@@ -143,7 +143,7 @@ export default function MezimestskaPage() {
         {/* Why choose us */}
         <section className="py-20" style={{ background: "#f8fafc" }}>
           <div className="max-w-5xl mx-auto px-4">
-            <SectionHeading label="Why choose us" title="Proč cestovat s námi" />
+            <SectionHeading label="Why choose us" title="Why travel with us" />
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {VYHODY.map(({ Icon, title, desc, img }) => (
                 <div key={title} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
@@ -167,7 +167,7 @@ export default function MezimestskaPage() {
         {/* FAQ */}
         <section className="py-20 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <SectionHeading label="FAQ" title="Časté dotazy" />
+            <SectionHeading label="FAQ" title="Frequently asked questions" />
             <div className="space-y-4">
               {FAQ_ITEMS.map((item, i) => (
                 <details key={i} className="border border-gray-200 rounded-xl overflow-hidden">
@@ -184,7 +184,7 @@ export default function MezimestskaPage() {
         {/* CTA */}
         <section className="py-16" style={{ background: "#00205B" }}>
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Rezervujte meziměstskou přepravu</h2>
+            <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Book intercity transport</h2>
             <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Fixed price, komfortní vehicle, reliable driver</p>
             <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>

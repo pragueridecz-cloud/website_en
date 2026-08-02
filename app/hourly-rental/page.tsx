@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   keywords: "pronájem auta s driverem Prague, chauffeur service Prague, auto s šoférem Prague,hinový transfer Prague, firemní driver Prague, prohlídka Prahy s driverem",
   openGraph: {
     title: "Hourly Rental auta s driverem Prague | Od €29/hod | pragueairportaxi.com",
-    description: "Auto s driverem na celý den nebo párhin. Business, turistika, nákupy.",
+    description: "Car with driver for the full day or a few hours. Business, tourism, shopping.",
     url: "https://www.pragueairportaxi.com/hourly-rental",
   },
   alternates: { canonical: "https://www.pragueairportaxi.com/hourly-rental" },
@@ -24,7 +24,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Hourly Rental auta s driverem Prague",
-  "description": "Pronájem vehicle s professionalm driverem nahiny nebo celý den.",
+  "description": "Vehicle hire with a professional driver by the hour or full day.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
   "offers": { "@type": "Offer", "priceCurrency": "CZK", "price": "750" },
 }
@@ -67,8 +67,8 @@ export default function HodinPronajem() {
               </span>
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
-              Auto s driverem<br />
-              <span style={{ color: "#F97316" }}>nahiny nebo celý den</span>
+              Car with driver<br />
+              <span style={{ color: "#F97316" }}>by the hour or full day</span>
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>

@@ -64,7 +64,7 @@ export default function FloatingCTA() {
           padding: "2px 10px",
           fontSize: "12px",
           fontWeight: 600,
-        }}>from €29</span>
+        }}>€29</span>
       </button>
       <style>{`
         @media (max-width: 480px) {

@@ -10,7 +10,7 @@ const cars = [
     model: "VW Passat a podobný",
     passengers: 4,
     luggage: 3,
-    price: "from €29",
+    price: "€29",
     hourlyPrice: "€29/h",
     features: ["Air conditioning", "Wi-Fi", "Water included"],
     tag: null,

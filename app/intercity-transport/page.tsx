@@ -32,18 +32,18 @@ const schema = {
 }
 
 const ROUTES = [
-  { from: "Prague", to: "Brno", price: "from €255 / £215 / $280", km: "227 km", time: "2.5h" },
-  { from: "Prague", to: "Vienna", price: "from €390 / £325 / $425", km: "356 km", time: "3.5h" },
-  { from: "Prague", to: "Munich", price: "from €415 / £345 / $450", km: "378 km", time: "4h" },
-  { from: "Prague", to: "Berlin", price: "from €385 / £320 / $420", km: "352 km", time: "4h" },
-  { from: "Prague", to: "Dresden", price: "from €185 / £155 / $200", km: "153 km", time: "1.5h" },
-  { from: "Prague", to: "Warsaw", price: "from €705 / £590 / $770", km: "660 km", time: "7h" },
-  { from: "Prague", to: "Bratislava", price: "from €380 / £320 / $415", km: "349 km", time: "3.5h" },
-  { from: "Prague", to: "Wrocław", price: "from €310 / £260 / $340", km: "280 km", time: "3h" },
-  { from: "Prague", to: "Plzeň", price: "from €125 / £105 / $135", km: "91 km", time: "1h" },
-  { from: "Prague", to: "České Budějovice", price: "from €195 / £165 / $215", km: "168 km", time: "2h" },
-  { from: "Prague", to: "Olomouc", price: "from €335 / £280 / $365", km: "303 km", time: "3h" },
-  { from: "Prague", to: "Salzburg", price: "from €430 / £360 / $470", km: "396 km", time: "4.5h" },
+  { from: "Prague", to: "Brno", price: "€255 / £215 / $280", km: "227 km", time: "2.5h" },
+  { from: "Prague", to: "Vienna", price: "€390 / £325 / $425", km: "356 km", time: "3.5h" },
+  { from: "Prague", to: "Munich", price: "€415 / £345 / $450", km: "378 km", time: "4h" },
+  { from: "Prague", to: "Berlin", price: "€385 / £320 / $420", km: "352 km", time: "4h" },
+  { from: "Prague", to: "Dresden", price: "€185 / £155 / $200", km: "153 km", time: "1.5h" },
+  { from: "Prague", to: "Warsaw", price: "€705 / £590 / $770", km: "660 km", time: "7h" },
+  { from: "Prague", to: "Bratislava", price: "€380 / £320 / $415", km: "349 km", time: "3.5h" },
+  { from: "Prague", to: "Wrocław", price: "€310 / £260 / $340", km: "280 km", time: "3h" },
+  { from: "Prague", to: "Plzeň", price: "€125 / £105 / $135", km: "91 km", time: "1h" },
+  { from: "Prague", to: "České Budějovice", price: "€195 / £165 / $215", km: "168 km", time: "2h" },
+  { from: "Prague", to: "Olomouc", price: "€335 / £280 / $365", km: "303 km", time: "3h" },
+  { from: "Prague", to: "Salzburg", price: "€430 / £360 / $470", km: "396 km", time: "4.5h" },
 ]
 
 const VYHODY = [
@@ -113,15 +113,15 @@ export default function MezimestskaPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { from: "Prague", to: "Vienna", price: "from €390 / £325 / $425", km: "356 km" },
-                { from: "Prague", to: "Berlin", price: "from €385 / £320 / $420", km: "352 km" },
-                { from: "Prague", to: "Bratislava", price: "from €380 / £320 / $415", km: "349 km" },
-                { from: "Prague", to: "Budapest", price: "from €570 / £475 / $620", km: "525 km" },
-                { from: "Prague", to: "Munich", price: "from €415 / £345 / $450", km: "378 km" },
-                { from: "Prague", to: "Frankfurt", price: "from €590 / £490 / $640", km: "545 km" },
-                { from: "Prague", to: "Dresden", price: "from €185 / £155 / $200", km: "153 km" },
-                { from: "Prague", to: "Karlovy Vary", price: "from €150 / £125 / $165", km: "130 km" },
-                { from: "Prague", to: "Brno", price: "from €255 / £215 / $280", km: "227 km" },
+                { from: "Prague", to: "Vienna", price: "€390 / £325 / $425", km: "356 km" },
+                { from: "Prague", to: "Berlin", price: "€385 / £320 / $420", km: "352 km" },
+                { from: "Prague", to: "Bratislava", price: "€380 / £320 / $415", km: "349 km" },
+                { from: "Prague", to: "Budapest", price: "€570 / £475 / $620", km: "525 km" },
+                { from: "Prague", to: "Munich", price: "€415 / £345 / $450", km: "378 km" },
+                { from: "Prague", to: "Frankfurt", price: "€590 / £490 / $640", km: "545 km" },
+                { from: "Prague", to: "Dresden", price: "€185 / £155 / $200", km: "153 km" },
+                { from: "Prague", to: "Karlovy Vary", price: "€150 / £125 / $165", km: "130 km" },
+                { from: "Prague", to: "Brno", price: "€255 / £215 / $280", km: "227 km" },
               ].map((r) => (
                 <div key={r.to} className="flex items-center justify-between rounded-xl p-4"
                   style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>

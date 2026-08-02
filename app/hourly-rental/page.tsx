@@ -10,7 +10,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Hourly Rental auta s driverem Prague | pragueairportaxi.com",
-  description: "Auto s driverem Prague from €29/hod — chauffeur service, VIP transport, pronájem drivere nahiny nebo celý den. Business schůzky, svatby, výlety za město. Sedan i minivan.",
+  description: "Auto s driverem Prague €29/hod — chauffeur service, VIP transport, pronájem drivere nahiny nebo celý den. Business schůzky, svatby, výlety za město. Sedan i minivan.",
   keywords: "pronájem auta s driverem Prague, chauffeur service Prague, auto s šoférem Prague,hinový transfer Prague, firemní driver Prague, prohlídka Prahy s driverem",
   openGraph: {
     title: "Hourly Rental auta s driverem Prague | Od €29/hod | pragueairportaxi.com",
@@ -72,7 +72,7 @@ export default function HodinPronajem() {
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-              Car with driver in Prague from €29/hr — chauffeur service for business and private use. Perfect for business meetings, VIP transport, city tours, shopping or day trips. Sedans and minivans, available by the hour or full day. Driver exclusively for you — no shared rides, no parking stress.
+              Car with driver in Prague €29/hr — chauffeur service for business and private use. Perfect for business meetings, VIP transport, city tours, shopping or day trips. Sedans and minivans, available by the hour or full day. Driver exclusively for you — no shared rides, no parking stress.
             </p>
           </div>
         </div>

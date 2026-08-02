@@ -6,7 +6,7 @@ import SectionHeading from "@/components/SectionHeading"
 
 export const metadata: Metadata = {
   title: "Transport na airport Prague | pragueairportaxi.com",
-  description: "Transfer to/from Václav Havel Airport Prague from €29. Also Vienna, Bratislava, Budapest, Munich, Frankfurt. Fixed price, driver waits at exit, flight tracking 24/7.",
+  description: "Transfer to/from Václav Havel Airport Prague €29. Also Vienna, Bratislava, Budapest, Munich, Frankfurt. Fixed price, driver waits at exit, flight tracking 24/7.",
   keywords: "airport transfer Prague, Prague airport taxi, Václav Havel airport transfer, Vienna airport transfer, Bratislava airport transfer, Munich airport transfer",
   openGraph: {
     title: "Transport to Prague Airport and nearby airports | pragueairportaxi.com",
@@ -36,7 +36,7 @@ const AIRPORTS_CZ = [
     name: "Václav Havel Prague Airport",
     city: "Prague",
     desc: "The largest and busiest airport in Czech Republic with over 17 million passengers annually. Two terminals – T1 for Schengen, T2 for non-European flights. Located approx. 17 km from Prague city centre.",
-    price: "from €29",
+    price: "€29",
     time: "20–35 min",
     img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
     facts: ["Terminal 1 – Schengen (most European flights)", "Terminal 2 – non-Schengen, overseas flights", "17 km from Wenceslas Square", "We track your flight delay"],
@@ -46,7 +46,7 @@ const AIRPORTS_CZ = [
     name: "Airport Brno-Tuřany",
     city: "Brno",
     desc: "Second largest airport in Czech Republic. Regular routes to London, Amsterdam, Frankfurt and other European destinations. Ideal alternative for passengers from South Moravia.",
-    price: "from €112",
+    price: "€112",
     time: "2.5h z Prahy",
     img: "/airport-brno.jpg",
     facts: ["210 km from Prague", "Regular Ryanair, Wizz Air routes"],
@@ -56,7 +56,7 @@ const AIRPORTS_CZ = [
     name: "Airport Ostrava-Mošnov",
     city: "Ostrava",
     desc: "Airport in the heart of Silesia. Seasonal and regular charter flights across Europe and Turkey. Good connections to Poland and Slovakia.",
-    price: "from €189",
+    price: "€189",
     time: "3.5h z Prahy",
     img: "/airport-ostrava.jpg",
     facts: ["360 km from Prague", "Charter flights to Turkey, Greece, Egypt"],
@@ -98,7 +98,7 @@ export default function LetistniPreprava() {
                 </h1>
                 <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
                 <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-                  Taxi to/from Václav Havel Airport Prague from €29 — fixed price, no extra charges for waiting or flight delays. We also cover transfers to Vienna, Bratislava, Budapest, Munich, Frankfurt and Dresden. Driver waits with name sign in arrivals, tracks your flight in real time and takes you home or to your hotel.
+                  Taxi to/from Václav Havel Airport Prague €29 — fixed price, no extra charges for waiting or flight delays. We also cover transfers to Vienna, Bratislava, Budapest, Munich, Frankfurt and Dresden. Driver waits with name sign in arrivals, tracks your flight in real time and takes you home or to your hotel.
                 </p>
               </div>
               <div className="hidden md:block" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.4)" }}>

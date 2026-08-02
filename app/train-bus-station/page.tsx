@@ -6,7 +6,7 @@ import { Clock, Luggage, ArrowLeftRight, MapPin, Banknote, Moon, Train, Bus } fr
 
 export const metadata: Metadata = {
   title: "Train & Bus Station Transfer Prague | pragueairportaxi.com",
-  description: "Taxi na nádraží Prague — Main Station, Florenc Bus Terminal, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se luggage, 24/7 dostupnost. Book online.",
+  description: "Taxi na nádraží Prague — Main Station, Florenc Bus Terminal, Smíchovské nádraží, Holešovice, Masarykovo. Fixed price, pomoc se luggage, 24/7 dostupnost. Book online.",
   keywords: "taxi na nádraží Prague, transfer hlavní nádraží Prague, odvoz na nádraží, transport Florenc Bus Terminal, taxi Smíchovské nádraží, taxi autobusové nádraží",
   openGraph: {
     title: "Train & Bus Station Transfer Prague | pragueairportaxi.com",
@@ -25,22 +25,22 @@ const schema = {
 }
 
 const STATIONS = [
-  { name: "Prague Main Station",      type: "train",   desc: "Centrální vlaková stanice Prahy" },
-  { name: "Prague Smíchovské nádraží",  type: "train",   desc: "Moderní přestupní uzel na jihozápadě" },
-  { name: "Prague Masarykovo nádraží",  type: "train",   desc: "Historické centrum Prahy" },
-  { name: "Prague Holešovice",          type: "train",   desc: "Mezinárodní vlaky a přestupní bod" },
-  { name: "Florenc Bus Terminal",                   type: "bus", desc: "Hlavní autobusové nádraží Prahy" },
+  { name: "Prague Main Station",      type: "train",   desc: "Central railway station of Prague" },
+  { name: "Prague Smíchovské nádraží",  type: "train",   desc: "Modern transport hub in southwest Prague" },
+  { name: "Prague Masarykovo nádraží",  type: "train",   desc: "Historic city centre of Prague" },
+  { name: "Prague Holešovice",          type: "train",   desc: "International trains and transfer hub" },
+  { name: "Florenc Bus Terminal",                   type: "bus", desc: "Main bus terminal of Prague" },
   { name: "Černý Most Bus Terminal",            type: "bus", desc: "Bus terminal in east Prague" },
   { name: "Na Knížecí",                type: "bus", desc: "Southwest bus terminal" },
   { name: "Zličín",                    type: "bus", desc: "Westfield Zličín – bus terminal" },
 ]
 
 const VYHODY = [
-  { Icon: Clock,          title: "Přijedeme včas",          desc: "Naplánujeme cestu s dostatečnou rezervou, abyste vlak nebo autobus určitě stihli.", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
-  { Icon: Luggage,        title: "Pomoc se luggage",       desc: "Řidič vám pomůže s nakládkou a vykládkou luggage, kočárků nebo jízdních kol.", img: "/service-luggage.jpg" },
-  { Icon: ArrowLeftRight, title: "Zpáteční ride",           desc: "Objednáte i vyzvednutí z nádraží po návratu. Vše v jedné rezervaci.", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80" },
-  { Icon: MapPin,         title: "Přesné vyzvednutí",        desc: "Vyzvednutí přímo od vašich dveří nebo na dohodnutém místě.", img: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&q=80" },
-  { Icon: Banknote,       title: "Pevná price",               desc: "Víte přesně, kolik zaplatíte. Bez taxametru, bez příplatků.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" },
+  { Icon: Clock,          title: "We arrive on time",          desc: "We plan the journey with enough buffer so you always catch your train or bus.", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
+  { Icon: Luggage,        title: "Luggage assistance",       desc: "Your driver will help load and unload luggage, prams or bicycles.", img: "/service-luggage.jpg" },
+  { Icon: ArrowLeftRight, title: "Return journey",           desc: "You can also book a pickup from the station on your return. All in one booking.", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80" },
+  { Icon: MapPin,         title: "Precise pickup",        desc: "Pickup directly from your door or at an agreed location.", img: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&q=80" },
+  { Icon: Banknote,       title: "Fixed price",               desc: "You know exactly what you will pay. No meter, no surcharges.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" },
   { Icon: Moon,           title: "Early trains, no stress",   desc: "We operate in the early hours too. No stress with public transport at 4am.", img: "/service-ranni-vlak.jpg" },
 ]
 
@@ -125,13 +125,13 @@ export default function NadraziPage() {
         {/* FAQ */}
         <section className="py-20 bg-white">
           <div className="max-w-3xl mx-auto px-4">
-            <SectionHeading label="FAQ" title="Časté dotazy" />
+            <SectionHeading label="FAQ" title="Frequently asked questions" />
             <div className="space-y-4">
               {[
-                { q: "Jak daleko dopředu mám book?", a: "Doporučujeme alespoň 2hiny in advance, ale přijímáme i urgentní objednávky dle aktuální dostupnosti." },
+                { q: "How far in advance should I book?", a: "We recommend booking at least 2 hours in advance, but we also accept last-minute bookings subject to availability." },
                 { q: "What if the train is delayed?", a: "If we are picking you up from the station, we monitor your train arrival in real time and adjust the pickup time accordingly." },
-                { q: "Přepravíte jízdní kolo nebo velké zavazadlo?", a: "Yes, pro kola a velká luggage doporučujeme minivan. Upřesněte při rezervaci." },
-                { q: "Jedete i outside Prague?", a: "Samozřejmě, přepravujeme po celé ČR i do zahraničí. Price se vypočítá automaticky." },
+                { q: "Do you transport bicycles or large luggage?", a: "Yes, for bicycles and large luggage we recommend a minivan. Please specify when booking." },
+                { q: "Do you travel outside Prague?", a: "Of course — we travel across Czech Republic and abroad. The price is calculated automatically." },
               ].map((item, i) => (
                 <details key={i} className="border border-gray-200 rounded-xl overflow-hidden">
                   <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50">
@@ -147,8 +147,8 @@ export default function NadraziPage() {
         {/* CTA */}
         <section className="py-16" style={{ background: "#00205B" }}>
           <div className="max-w-3xl mx-auto px-4 text-center">
-            <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Rezervujte transfer na nádraží</h2>
-            <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Stihnete každý spoj – my se postaráme o včasné odvezení</p>
+            <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Book your station transfer</h2>
+            <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Never miss a connection — we take care of getting you there on time</p>
             <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
               Book now

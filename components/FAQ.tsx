@@ -6,31 +6,31 @@ import SectionHeading from "./SectionHeading";
 const faqs = [
   {
     q: "How far in advance do I need to book?",
-    a: "Rezervaci lze provést až 2 hodiny před odjezdem. Doporučujeme ale book alespoň 24 hodin in advance pro jistotu dostupnosti vehicle.",
+    a: "You can book up to 2 hours before departure. We recommend booking at least 24 hours in advance to ensure vehicle availability.",
   },
   {
     q: "What happens if my flight is delayed?",
-    a: "We track your flight v reálném čase. Pokud má let delay, driver automaticky upraví čas příjezdu. Neplatíte žádné příplatky za čekání.",
+    a: "We track your flight in real time. If the flight is delayed, the driver automatically adjusts arrival time. No waiting surcharges.",
   },
   {
     q: "Where will the driver pick me up at the airport?",
-    a: "Driver čeká přímo u výjezdu z celnice v příletové hale s cedulí s vaším jménem. Přesné místo dostanete e-mailem po rezervaci.",
+    a: "The driver waits at the arrivals exit with a sign showing your name. You will receive the exact meeting point by email after booking.",
   },
   {
     q: "Can I cancel or change my booking?",
-    a: "Rezervaci lze zrušit free až 24 hodin před jízdou. Změny trasy nebo času jsou možné po domluvě s dispečinkem.",
+    a: "You can cancel free of charge up to 24 hours before the ride. Route or time changes are possible by contacting our dispatch.",
   },
   {
     q: "Do you accept card payment?",
-    a: "Ano, card payment online přijímáme přes Stripe — a za online platbu navíc dostanete 10% slevu. Alternativně lze platit hotovostí přímo driveri.",
+    a: "Yes, we accept card payment online via Stripe. You can also pay cash directly to the driver.",
   },
   {
     q: "Do you transport groups and large luggage?",
-    a: "Ano. Pro velké groups nebo hodně luggage (lyže, kola, golfové vybavení) doporučujeme minivan. Vše zadejte při rezervaci a my zajistíme vhodné vehicle.",
+    a: "Yes. For large groups or lots of luggage (skis, bikes, golf equipment) we recommend a minivan. Add details at booking and we will arrange the right vehicle.",
   },
   {
     q: "Do you travel outside Prague?",
-    a: "Ano — zajišťujeme transfery to/from Prague Airport pro celou ČR i do sousedních zemí (Vienna, Drážďany, Varšava a další).",
+    a: "Yes — we provide transfers to/from Prague Airport across the Czech Republic and to neighbouring countries (Vienna, Dresden, Warsaw and more).",
   },
 ];
 

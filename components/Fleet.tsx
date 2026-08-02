@@ -7,10 +7,10 @@ const cars = [
   {
     name: "Economy Sedan",
     img: "/cars/sedan-economy.jpg",
-    model: "VW Passat a podobný",
+    model: "VW Passat or similar",
     passengers: 4,
     luggage: 3,
-    price: "from €29",
+    price: "from €29 / £25 / $32",
     hourlyPrice: "from €29/h",
     features: ["Air conditioning", "Wi-Fi", "Water included"],
     tag: null,
@@ -22,7 +22,7 @@ const cars = [
     model: "Skoda Superb or similar",
     passengers: 4,
     luggage: 3,
-    price: "900",
+    price: "from €36 / £30 / $39",
     hourlyPrice: "900/h",
     features: ["Air conditioning", "Wi-Fi", "Spacious interior"],
     tag: null,
@@ -34,7 +34,7 @@ const cars = [
     model: "Mercedes-Benz C or similar",
     passengers: 3,
     luggage: 3,
-    price: "1 150",
+    price: "from €46 / £38 / $50",
     hourlyPrice: "1 150/h",
     features: ["Premium interior", "Quiet cabin", "Water included"],
     tag: null,
@@ -43,10 +43,10 @@ const cars = [
   {
     name: "Economy Van",
     img: "/cars/minivan-economy.jpg",
-    model: "Ford Tourneo Custom a podobný",
+    model: "Ford Tourneo Custom or similar",
     passengers: 7,
     luggage: 6,
-    price: "€36",
+    price: "from €38 / £32 / $41",
     hourlyPrice: "from €36/h",
     features: ["Air conditioning", "Wi-Fi", "Large boot"],
     tag: "Nejoblíbenější",
@@ -55,10 +55,10 @@ const cars = [
   {
     name: "Business Van",
     img: "/cars/minivan-business.jpg",
-    model: "Mercedes Vito a podobný",
+    model: "Mercedes-Benz Vito or similar",
     passengers: 7,
     luggage: 6,
-    price: "1 150",
+    price: "from €46 / £38 / $50",
     hourlyPrice: "1 150/h",
     features: ["Extra space", "Air conditioning", "Wi-Fi"],
     tag: null,
@@ -67,10 +67,10 @@ const cars = [
   {
     name: "Executive Van",
     img: "/cars/minivan-executive.jpg",
-    model: "Mercedes V-Class a podobný",
+    model: "Mercedes-Benz V-Class or similar",
     passengers: 7,
     luggage: 6,
-    price: "1 650",
+    price: "from €66 / £55 / $72",
     hourlyPrice: "1 650/h",
     features: ["Mercedes V-Class", "Business class", "Spacious interior"],
     tag: "Firemní volba",
@@ -120,8 +120,8 @@ export default function Fleet({ mode = "transfer" }: { mode?: "transfer" | "hour
   return (
     <section id="vozovy-park" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <SectionHeading label="Our fleet" title="Our fleet a ceny"
-          subtitle="Fixed prices, no surprises. Choose your vehicle podle počtu passengerch a luggage." />
+        <SectionHeading label="Our fleet" title="Our fleet & prices"
+          subtitle="Fixed prices, no surprises. Choose your vehicle based on the number of passengers and luggage." />
 
         {/* Category tabs */}
         <div style={{ display: "flex", gap: "8px", marginBottom: "32px" }}>

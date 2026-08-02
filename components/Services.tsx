@@ -9,7 +9,7 @@ const SERVICES = [
     img: "/service-airport.png",
     label: "Airport Transfer",
     title: "Airport Prague",
-    desc: "Fixed price, žádné čekání. We track your flight v reálném čase a přizpůsobíme čas vyzvednutí případným delaym.",
+    desc: "Fixed price, no waiting. We track your flight in real time and adjust pickup time for any delays.",
     href: "/airport-transfer",
   },
   {

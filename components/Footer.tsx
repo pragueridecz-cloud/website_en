@@ -78,7 +78,7 @@ export default function Footer() {
                 { label: "How it works", href: "#jak-to-funguje" },
                 { label: "Frequently asked questions", href: "#faq" },
                 { label: "Terms & Conditions", href: "/terms-and-conditions" },
-                { label: "Privacy Policy", href: "/privacy-policy" },
+                { label: "Privacy Policy", href: "/ochrana-passengersnich-udaju" },
                 { label: "pragueairportaxi.com", href: "https://www.pragueride.com" },
               ].map((l) => (
                 <li key={l.label}>
@@ -126,16 +126,21 @@ export default function Footer() {
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
-                            <a href="/terms-and-conditions" style={{ fontSize: "11px", color: "#475569", textDecoration: "none" }} onMouseEnter={e => (e.currentTarget.style.color = "#94a3b8")} onMouseLeave={e => (e.currentTarget.style.color = "#475569")}>Terms & Conditions</a>
-              <a href="/privacy-policy" style={{ fontSize: "11px", color: "#475569", textDecoration: "none" }} onMouseEnter={e => (e.currentTarget.style.color = "#94a3b8")} onMouseLeave={e => (e.currentTarget.style.color = "#475569")}>Privacy Policy</a>
-              <a href="/cookie-policy" style={{ fontSize: "11px", color: "#475569", textDecoration: "none" }} onMouseEnter={e => (e.currentTarget.style.color = "#94a3b8")} onMouseLeave={e => (e.currentTarget.style.color = "#475569")}>Cookies</a>
+              {[["Terms & Conditions", "/terms-and-conditions"], ["Privacy Policy", "/privacy-policy"], ["Cookies", "/cookie-policy"]].map(([label, href]) => (
+                <a key={label} href={href}
+                  style={{ fontSize: "11px", color: "#475569", textDecoration: "none" }}
+                  onMouseEnter={e => (e.currentTarget.style.color = "#94a3b8")}
+                  onMouseLeave={e => (e.currentTarget.style.color = "#475569")}>
+                  {label}
+                </a>
+              ))}
             </div>
           </div>
           <div style={{ fontSize: "11px", color: "#334155" }}>
             © {new Date().getFullYear()} pragueairportaxi.com — operated by transfer-prague-car s.r.o. All rights reserved.
           </div>
         </div>
-      </footer>
-    </div>
-  )
+      </div>
+    </footer>
+  );
 }

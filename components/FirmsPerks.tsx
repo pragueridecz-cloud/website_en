@@ -7,13 +7,13 @@ const perks = [
     icon: FileText,
     title: "Faktura na firmu a DPH doklad",
     short: "Faktura na firmu — DPH doklad ke každé jízdě",
-    desc: "Ke každé jízdě vystavíme daňový doklad s DPH, který jednoduše uplatníte jako firemní výdaj. Firemní taxi Praha s fakturou ocení zejména HR oddělení, office manažeři i účetní — žádné sbírání papírových paragonů, vše elektronicky na váš firemní email.",
+    desc: "We issue a tax invoice with VAT for every ride, easily claimed as a business expense. No paper receipts — everything sent electronically to your company email.",
   },
   {
     icon: Repeat,
     title: "Firemní slevy a pevné sazby",
     short: "Pravidelné jízdy s fixní cenou a slevou",
-    desc: "Při uzavření firemní smlouvy na pravidelnou přepravu získáte fixní sazby a množstevní slevy. Korporátní přeprava Praha za předem dohodnutou cenu — bez taxametru, bez přirážek za víkend nebo noční hodiny, bez překvapení na faktuře.",
+    desc: "With a corporate contract for regular transport, you get fixed rates and volume discounts. Agreed price upfront — no meter, no weekend or night surcharges, no surprises on the invoice.",
   },
   {
     icon: BarChart2,
@@ -25,7 +25,7 @@ const perks = [
     icon: PhoneCall,
     title: "Dedikovaná linka pro firemní zákazníky",
     short: "Dedikovaná telefonní linka pro firemní zákazníky",
-    desc: "Firemní klienti mají přímý kontakt na dispečink bez čekání. Business taxi Praha k dispozici 24/7 — ať potřebujete odvézt zaměstnance na ranní let v 5:00 nebo vyzvednout VIP hosta z večerního vlaku, vždy víme, kdo volá a co potřebujete.",
+    desc: "Corporate clients have direct dispatch contact with no waiting. Available 24/7 — whether you need to take an employee to a 5am flight or pick up a VIP guest from an evening train, we always know who is calling and what you need.",
   },
 ]
 

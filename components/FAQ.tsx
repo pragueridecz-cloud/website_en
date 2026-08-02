@@ -6,27 +6,27 @@ import SectionHeading from "./SectionHeading";
 const faqs = [
   {
     q: "Jak daleko předem musím rezervovat?",
-    a: "Rezervaci lze provést až 2 hodiny před odjezdem. Doporučujeme ale rezervovat alespoň 24 hodin předem pro jistotu dostupnosti vozidla.",
+    a: "Rezervaci lze provést až 2 hodiny před odjezdem. Doporučujeme ale rezervovat alespoň 24 hodin předem pro jistotu dostupnosti vehicle.",
   },
   {
-    q: "Co se stane, když bude mít letadlo zpoždění?",
-    a: "Sledujeme váš let v reálném čase. Pokud má let zpoždění, řidič automaticky upraví čas příjezdu. Neplatíte žádné příplatky za čekání.",
+    q: "Co se stane, když bude mít letadlo delay?",
+    a: "Sledujeme váš let v reálném čase. Pokud má let delay, driver automaticky upraví čas příjezdu. Neplatíte žádné příplatky za čekání.",
   },
   {
-    q: "Kde mě řidič vyzvedne na letišti?",
+    q: "Kde mě driver vyzvedne na airport?",
     a: "Driver čeká přímo u výjezdu z celnice v příletové hale s cedulí s vaším jménem. Přesné místo dostanete e-mailem po rezervaci.",
   },
   {
     q: "Mohu zrušit nebo změnit rezervaci?",
-    a: "Rezervaci lze zrušit zdarma až 24 hodin před jízdou. Změny trasy nebo času jsou možné po domluvě s dispečinkem.",
+    a: "Rezervaci lze zrušit free až 24 hodin před jízdou. Změny trasy nebo času jsou možné po domluvě s dispečinkem.",
   },
   {
     q: "Přijímáte platbu kartou?",
-    a: "Ano, platbu kartou online přijímáme přes Stripe — a za online platbu navíc dostanete 10% slevu. Alternativně lze platit hotovostí přímo řidiči.",
+    a: "Ano, platbu kartou online přijímáme přes Stripe — a za online platbu navíc dostanete 10% slevu. Alternativně lze platit hotovostí přímo driveri.",
   },
   {
     q: "Vozíte také skupiny a velká zavazadla?",
-    a: "Ano. Pro velké skupiny nebo hodně zavazadel (lyže, kola, golfové vybavení) doporučujeme minivan. Vše zadejte při rezervaci a my zajistíme vhodné vozidlo.",
+    a: "Ano. Pro velké skupiny nebo hodně zavazadel (lyže, kola, golfové vybavení) doporučujeme minivan. Vše zadejte při rezervaci a my zajistíme vhodné vehicle.",
   },
   {
     q: "Jezdíte i mimo Prahu?",

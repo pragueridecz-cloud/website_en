@@ -8,8 +8,8 @@ const SERVICES = [
   {
     img: "/service-airport.png",
     label: "Airport Transfer",
-    title: "Letiště Prague",
-    desc: "Fixed price, žádné čekání. Sledujeme váš let v reálném čase a přizpůsobíme čas vyzvednutí případným zpožděním.",
+    title: "Airport Prague",
+    desc: "Fixed price, žádné čekání. Sledujeme váš let v reálném čase a přizpůsobíme čas vyzvednutí případným delaym.",
     href: "/letistni-preprava",
   },
   {
@@ -37,7 +37,7 @@ const SERVICES = [
     img: "/service-firmy.png",
     label: "For companies",
     title: "Firemní přeprava",
-    desc: "Pravidelné jízdy, fakturace, firemní slevy. Svěřte přepravu svých zaměstnanců a klientů do profesionálních rukou.",
+    desc: "Pravidelné jízdy, invoicece, firemní slevy. Svěřte přepravu svých zaměstnanců a klientů do professionalch rukou.",
     href: "/preprava-pro-firmy",
   },
 ];
@@ -124,7 +124,7 @@ export default function Services() {
               className="inline-flex items-center gap-2 text-white text-sm font-semibold border border-white/30 rounded-full px-5 py-2.5 hover:bg-white hover:text-black transition-all duration-200"
               style={{ fontFamily: "Poppins, sans-serif" }}
             >
-              Zjistit více
+              Learn more
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><polyline points="9 18 15 12 9 6"/></svg>
             </Link>
           </div>
@@ -276,7 +276,7 @@ function MobileCarousel() {
                 {s.desc}
               </div>
               <span style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "13px", fontWeight: 600, color: "#F97316", fontFamily: "Poppins, sans-serif" }}>
-                Zjistit více
+                Learn more
                 <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#F97316" strokeWidth="2.5"><polyline points="9 18 15 12 9 6"/></svg>
               </span>
             </div>

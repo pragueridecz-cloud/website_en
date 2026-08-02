@@ -13,7 +13,7 @@ export default function Footer() {
               <img src="/logo-tpc.png" alt="Transfer Prague Car" style={{ height: "40px", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
             </div>
             <p style={{ color: "#94a3b8", fontSize: "13px", lineHeight: 1.7 }}>
-              Reliable transport to/from Prague Airport a do celé střední Evropy. Fixed price, profesionální řidiči, sledování letu.
+              Reliable transport to/from Prague Airport a do celé střední Evropy. Fixed price, professional driveri, sledování letu.
             </p>
             {/* Social ikonky */}
             <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
@@ -72,7 +72,7 @@ export default function Footer() {
 
           {/* Info */}
           <div>
-            <h4 style={{ fontWeight: 600, marginBottom: "16px", fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#cbd5e1" }}>Informace</h4>
+            <h4 style={{ fontWeight: 600, marginBottom: "16px", fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#cbd5e1" }}>Information</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               {[
                 { label: "How it works", href: "#jak-to-funguje" },

@@ -1,23 +1,23 @@
 const reasons = [
   {
     num: "01",
-    title: "Fixed price — žádná překvapení",
-    desc: "Cenu vidíte před rezervací. Nikdy nepřidáváme příplatky za čekání nebo zpoždění letu.",
+    title: "Fixed price — no surprises",
+    desc: "Cenu vidíte před rezervací. Nikdy nepřidáváme příplatky za čekání nebo delay letu.",
   },
   {
     num: "02",
-    title: "Sledování letů v reálném čase",
+    title: "Real-time flight tracking",
     desc: "Napojení na live data. Driver přijede přesně tehdy, kdy ho skutečně potřebujete.",
   },
   {
     num: "03",
-    title: "Dostupnost 24 hodin denně",
-    desc: "Ranní let v 5:00 nebo noční příjezd — jsme zde vždy bez příplatku.",
+    title: "Available 24 hours a day",
+    desc: "Ranní let v 5:00 nebo noční příjezd — jsme zde vždy no extra charge.",
   },
   {
     num: "04",
-    title: "Prověření profesionální řidiči",
-    desc: "Všichni řidiči jsou proškoleni, pojištění a pravidelně hodnoceni zákazníky.",
+    title: "Verified professional drivers",
+    desc: "Všichni driveri jsou proškoleni, pojištění a pravidelně hodnoceni zákazníky.",
   },
 ];
 
@@ -82,7 +82,7 @@ export default function TrustSection() {
             {/* Testimonial */}
             <div className="border border-white/10 rounded-xl p-5">
               <p className="text-white/70 text-sm italic leading-relaxed mb-3">
-                &ldquo;Fantastická služba. Driver čekal i přes zpoždění letu a byl velmi profesionální. Určitě využiji opakovaně.&rdquo;
+                &ldquo;Fantastická služba. Driver čekal i přes delay letu a byl velmi professional. Určitě využiji opakovaně.&rdquo;
               </p>
               <div className="text-white/40 text-xs font-bold tracking-wider uppercase">Martina K. · Prague</div>
             </div>

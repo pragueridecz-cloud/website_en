@@ -4,11 +4,11 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Prague Airport Taxi | Transport to/from Prague Airport from €29",
-  description: "Rezervujte dopravu to/from Prague Airport předem. Fixed price, profesionální řidiči, sledování letu. Sedan from €29, minivan od 950 Kč. Bez příplatků za zpoždění.",
-  keywords: "doprava na letiště Prague, transfer letiště Prague, odvoz na letiště levně, taxi letiště Prague, rezervace auta na letiště",
+  description: "Rezervujte dopravu to/from Prague Airport předem. Fixed price, professional driveri, sledování letu. Sedan from €29, minivan od €36. Bez příplatků za delay.",
+  keywords: "doprava na airport Prague, transfer airport Prague, odvoz na airport levně, taxi airport Prague, rezervace auta na airport",
   openGraph: {
-    title: "Prague Airport Taxi | Doprava na letiště Prague od 790 Kč",
-    description: "Fixed price, profesionální řidiči, sledování letu. Bez příplatků za zpoždění letu.",
+    title: "Prague Airport Taxi | Transport na airport Prague from €29",
+    description: "Fixed price, professional driveri, sledování letu. Bez příplatků za delay letu.",
     url: "https://www.pragueairportaxi.com",
     siteName: "NaLetistelevne.cz",
     locale: "cs_CZ",

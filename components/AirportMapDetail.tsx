@@ -7,25 +7,25 @@ const PRAGUE_ADDR = "Václavské náměstí 1, Prague, Czech Republic";
 
 const AIRPORTS = [
   {
-    code: "VIE", name: "Vídeňské mezinárodní letiště", city: "Vídeň, Rakousko",
-    lat: 48.1103, lng: 16.5697, price: "od 4 500 Kč",
+    code: "VIE", name: "Vídeňské mezinárodní airport", city: "Vídeň, Rakousko",
+    lat: 48.1103, lng: 16.5697, price: "from €173",
     country: "🇦🇹",
     addr: "Vienna International Airport, Schwechat, Austria",
     img: "/airport-vienna.jpg",
-    desc: "Největší letiště ve středoevropském regionu s přímými lety do celého světa. Skvělá alternativa pro lety do Asie, Ameriky nebo Blízkého východu, které z Prahy neodjíždí přímo.",
+    desc: "Největší airport ve středoevropském regionu s přímými lety do celého světa. Skvělá alternativa pro lety do Asie, Ameriky nebo Blízkého východu, které z Prahy neodjíždí přímo.",
     facts: ["Přímé lety do 200+ destinací", "Hub Emirates, Austrian Airlines", "Výborná alternativa pro asijské lety", "Moderní terminály s duty free"],
   },
   {
-    code: "BTS", name: "Letiště Bratislava Štefánik", city: "Bratislava, Slovensko",
+    code: "BTS", name: "Airport Bratislava Štefánik", city: "Bratislava, Slovensko",
     lat: 48.1702, lng: 17.2127, price: "od 4 200 Kč",
     country: "🇸🇰",
     addr: "M. R. Štefánik Airport, Bratislava, Slovakia",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/BRATISLAVSK%C3%9D_TERMIN%C3%81L_-_panoramio.jpg/960px-BRATISLAVSK%C3%9D_TERMIN%C3%81L_-_panoramio.jpg",
-    desc: "Blízké slovenské letiště, které používají zejména nízkonákladové aerolinie. Ryanair zde létá do mnoha destinací, které nejsou dostupné z Prahy.",
+    desc: "Blízké slovenské airport, které používají zejména nízkonákladové aerolinie. Ryanair zde létá do mnoha destinací, které nejsou dostupné z Prahy.",
     facts: ["Silná základna Ryanair", "Levnější lety do mnoha destinací", "Bez front u bezpečnostní kontroly", "Snadné parkování"],
   },
   {
-    code: "BUD", name: "Letiště Budapešť Liszt Ferenc", city: "Budapešť, Maďarsko",
+    code: "BUD", name: "Airport Budapešť Liszt Ferenc", city: "Budapešť, Maďarsko",
     lat: 47.4298, lng: 19.2611, price: "od 6 900 Kč",
     country: "🇭🇺",
     addr: "Budapest Ferenc Liszt International Airport, Budapest, Hungary",
@@ -34,31 +34,31 @@ const AIRPORTS = [
     facts: ["Největší základna Wizz Air", "Lety do Asie a Ameriky", "Moderní terminály", "Výborné přestupní možnosti"],
   },
   {
-    code: "MUC", name: "Letiště Mnichov", city: "Mnichov, Německo",
+    code: "MUC", name: "Airport Mnichov", city: "Mnichov, Německo",
     lat: 48.3537, lng: 11.7750, price: "od 7 900 Kč",
     country: "🇩🇪",
     addr: "Munich Airport, Munich, Germany",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Franz_Josef_Strauss_International_Airport_%28Munich%29.jpg/960px-Franz_Josef_Strauss_International_Airport_%28Munich%29.jpg",
-    desc: "Druhé největší německé letiště a jeden z největších hubů v Evropě. Lufthansa zde operuje mezikontinentální lety do Ameriky, Asie a Austrálie s výbornými přestupy.",
-    facts: ["Hub Lufthansy a Star Alliance", "Dva terminály + satelit", "Výborné přestupní možnosti", "Moderní, komfortní letiště"],
+    desc: "Druhé největší německé airport a jeden z největších hubů v Evropě. Lufthansa zde operuje mezikontinentální lety do Ameriky, Asie a Austrálie s výbornými přestupy.",
+    facts: ["Hub Lufthansy a Star Alliance", "Dva terminály + satelit", "Výborné přestupní možnosti", "Moderní, komfortní airport"],
   },
   {
-    code: "FRA", name: "Letiště Frankfurt", city: "Frankfurt, Německo",
+    code: "FRA", name: "Airport Frankfurt", city: "Frankfurt, Německo",
     lat: 50.0379, lng: 8.5622, price: "od 8 900 Kč",
     country: "🇩🇪",
     addr: "Frankfurt Airport, Frankfurt am Main, Germany",
     img: "/airport-frankfurt.jpg",
-    desc: "Největší německé letiště a jeden z nejvytíženějších hubů v celé Evropě. Lufthansa a její partneři odtud létají do téměř každého koutu světa. Ideální pro transatlantické přestupy.",
+    desc: "Největší německé airport a jeden z nejvytíženějších hubů v celé Evropě. Lufthansa a její partneři odtud létají do téměř každého koutu světa. Ideální pro transatlantické přestupy.",
     facts: ["Největší hub v Evropě", "150+ airlines, 300+ destinací", "Přímé vlakové spojení na terminál", "Lety do celého světa"],
   },
   {
-    code: "DRS", name: "Letiště Drážďany", city: "Drážďany, Německo",
+    code: "DRS", name: "Airport Drážďany", city: "Drážďany, Německo",
     lat: 51.1328, lng: 13.7672, price: "od 3 900 Kč",
     country: "🇩🇪",
     addr: "Dresden Airport, Dresden, Germany",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Aerial_image_of_the_Dresden_Airport.jpg/960px-Aerial_image_of_the_Dresden_Airport.jpg",
-    desc: "Malé a přehledné německé letiště nejblíže Praze ze zahraničních letišť. Ideální pro rychlé lety do Německa a dalších evropských destinací bez přestupu.",
-    facts: ["Nejbližší zahraniční letiště od Prahy", "Bez front a stresu", "Lety Lufthansa, Eurowings", "Jednoduché parkování"],
+    desc: "Malé a přehledné německé airport nejblíže Praze ze zahraničních letišť. Ideální pro rychlé lety do Německa a dalších evropských destinací bez přestupu.",
+    facts: ["Nejbližší zahraniční airport od Prahy", "Bez front a stresu", "Lety Lufthansa, Eurowings", "Jednoduché parkování"],
   },
   {
     code: "BER", name: "Berlín Brandenburg", city: "Berlín, Německo",
@@ -66,7 +66,7 @@ const AIRPORTS = [
     country: "🇩🇪",
     addr: "Berlin Brandenburg Airport, Berlin, Germany",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Berlin_Brandenburg_Airport_Terminal_1.jpg/960px-Berlin_Brandenburg_Airport_Terminal_1.jpg",
-    desc: "Moderní berlínské letiště, brána do německé metropole. Přímé spojení do celé Evropy a zámoří s výbornými přestupními možnostmi. Vlak přímo do centra Berlína.",
+    desc: "Moderní berlínské airport, brána do německé metropole. Přímé spojení do celé Evropy a zámoří s výbornými přestupními možnostmi. Vlak přímo do centra Berlína.",
     facts: ["Nové terminály od roku 2020", "Lety do 130+ destinací", "Vlak do centra Berlína", "Výborné přestupní možnosti"],
   },
 ];
@@ -230,14 +230,14 @@ export default function AirportMapDetail() {
         <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "8px" }}>
           <div style={{ width: "28px", height: "2px", background: "#F97316" }} />
           <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase", letterSpacing: "1.5px" }}>
-            Blízká zahraniční letiště
+            Blízká zahraniční airport
           </span>
         </div>
         <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(26px,3.5vw,40px)", color: "#00205B", marginBottom: "8px", lineHeight: 1.1 }}>
-          Zahraniční letiště — <span style={{ color: "#F97316" }}>7 destinací</span>
+          Zahraniční airport — <span style={{ color: "#F97316" }}>7 destinací</span>
         </h2>
         <p style={{ color: "#64748b", fontSize: "15px", lineHeight: 1.65, marginBottom: "36px", maxWidth: "600px" }}>
-          Někdy se vyplatí letět z Vídně, Mnichova nebo Drážďan. Přepravíme vás i tam – pevná cena, bez stresu.
+          Někdy se vyplatí letět z Vídně, Mnichova nebo Drážďan. Přepravíme vás i tam – pevná price, bez stresu.
         </p>
 
         <div className="airport-map-grid" style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "28px", alignItems: "start" }}>

@@ -82,7 +82,7 @@ export default function OchranaOsobnichUdaju() {
               Sídlo: Sochařská 333/2, 170 00 Praha, Česká republika<br />
               IČO: 25706993<br />
               E-mail: <a href="mailto:info@naletistelevne.cz" style={{ color: "#00205B" }}>info@naletistelevne.cz</a><br />
-              Telefon: <a href="tel:+420606079179" style={{ color: "#00205B" }}>+420 606 079 179</a>
+              Phone: <a href="tel:+420606079179" style={{ color: "#00205B" }}>+420 606 079 179</a>
             </div>
             <P>Tato stránka popisuje, jaké osobní údaje shromažďujeme, k jakým účelům je používáme a jaká máte v souvislosti s jejich zpracováním práva.</P>
           </Section>
@@ -90,13 +90,13 @@ export default function OchranaOsobnichUdaju() {
           <Section title="2. Jaké osobní údaje zpracováváme">
             <P><strong>Při rezervaci přepravy:</strong></P>
             <Ul items={[
-              "Jméno a příjmení",
+              "Name a příjmení",
               "E-mailová adresa",
-              "Telefonní číslo",
+              "Phonení číslo",
               "Místo vyzvednutí a cíl cesty",
-              "Datum a čas přepravy",
+              "Date and time přepravy",
               "Číslo letu (pokud je relevantní)",
-              "Počet cestujících a zavazadel",
+              "Number of passengers a zavazadel",
               "Zvláštní požadavky (dětská sedačka, nadměrná zavazadla)",
             ]} />
             <P><strong>Při platbě kartou:</strong></P>

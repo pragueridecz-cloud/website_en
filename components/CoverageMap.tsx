@@ -5,11 +5,11 @@ import SectionHeading from "./SectionHeading";
 const GMAPS_KEY = "AIzaSyAgl9xkJoahOyxLWTjRLrPEXxYfqTXyH7k";
 
 const AIRPORTS = [
-  { code: "PRG", name: "Praha Václava Havla", lat: 50.1008, lng: 14.2600, price: "od 790 Kč", time: "20–35 min", primary: true, country: "🇨🇿" },
-  { code: "BRQ", name: "Brno-Tuřany", lat: 49.1513, lng: 16.6944, price: "od 2 900 Kč", time: "2,5 hod", country: "🇨🇿" },
-  { code: "OSR", name: "Ostrava-Mošnov", lat: 49.6963, lng: 18.1111, price: "od 4 900 Kč", time: "3,5 hod", country: "🇨🇿" },
-  { code: "VIE", name: "Vídeň International", lat: 48.1103, lng: 16.5697, price: "od 4 500 Kč", time: "3,5 hod", country: "🇦🇹" },
-  { code: "BTS", name: "Bratislava Štefánik", lat: 48.1702, lng: 17.2127, price: "od 4 200 Kč", time: "3,5 hod", country: "🇸🇰" },
+  { code: "PRG", name: "Prague Václav Havel", lat: 50.1008, lng: 14.2600, price: "from €29", time: "20–35 min", primary: true, country: "🇨🇿" },
+  { code: "BRQ", name: "Brno-Tuřany", lat: 49.1513, lng: 16.6944, price: "from €112", time: "2.5 hrs", country: "🇨🇿" },
+  { code: "OSR", name: "Ostrava-Mošnov", lat: 49.6963, lng: 18.1111, price: "from €189", time: "3.5 hrs", country: "🇨🇿" },
+  { code: "VIE", name: "Vienna International", lat: 48.1103, lng: 16.5697, price: "from €173", time: "3.5 hrs", country: "🇦🇹" },
+  { code: "BTS", name: "Bratislava Štefánik", lat: 48.1702, lng: 17.2127, price: "od 4 200 Kč", time: "3.5 hrs", country: "🇸🇰" },
   { code: "BUD", name: "Budapešť Liszt Ferenc", lat: 47.4298, lng: 19.2611, price: "od 6 900 Kč", time: "5 hod", country: "🇭🇺" },
   { code: "MUC", name: "Mnichov", lat: 48.3537, lng: 11.7750, price: "od 7 900 Kč", time: "4 hod", country: "🇩🇪" },
   { code: "FRA", name: "Frankfurt am Main", lat: 50.0379, lng: 8.5622, price: "od 8 900 Kč", time: "4,5 hod", country: "🇩🇪" },
@@ -96,7 +96,7 @@ export default function CoverageMap() {
       zIndex: 10,
     });
 
-    // Letiště markery
+    // Airport markery
     AIRPORTS.forEach(airport => {
       const marker = new window.google.maps.Marker({
         position: { lat: airport.lat, lng: airport.lng },
@@ -134,7 +134,7 @@ export default function CoverageMap() {
     });
   }
 
-  // Aktualizuj linky při změně aktivního letiště
+  // Aktualizuj linky při změně aktivního airport
   useEffect(() => {
     if (!mapLoaded) return;
     linesRef.current.forEach(({ code, line }) => {
@@ -155,7 +155,7 @@ export default function CoverageMap() {
         strokeWeight: code === active ? 3 : 2,
       });
     });
-    // Pan na aktivní letiště
+    // Pan na aktivní airport
     if (mapInstanceRef.current) {
       const airport = AIRPORTS.find(a => a.code === active)!;
       mapInstanceRef.current.panTo({ lat: (PRAGUE.lat + airport.lat) / 2, lng: (PRAGUE.lng + airport.lng) / 2 });
@@ -167,9 +167,9 @@ export default function CoverageMap() {
       <div className="max-w-6xl mx-auto px-4">
         <SectionHeading
           label="Pokrytí"
-          title="Kam vás odvezeme"
+          title="To vás odvezeme"
           highlight="10 letišť v dosahu"
-          subtitle="Praha je naše základna. Přepravujeme na všechna letiště v dosahu 700 km – z domu až na terminál."
+          subtitle="Praha je naše základna. Přepravujeme na všechna airport v dosahu 700 km – z domu až na terminál."
         />
 
         <div className="grid md:grid-cols-5 gap-6 items-start">
@@ -180,7 +180,7 @@ export default function CoverageMap() {
 
           {/* Info panel */}
           <div className="md:col-span-2 flex flex-col gap-3">
-            {/* Aktivní letiště detail */}
+            {/* Aktivní airport detail */}
             <div style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderTop: "3px solid #F97316", borderRadius: "14px", padding: "20px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "14px" }}>
                 <span style={{ fontSize: "22px" }}>{activeAirport.country}</span>

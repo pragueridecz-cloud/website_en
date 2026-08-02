@@ -9,13 +9,13 @@ const reviews = [
   },
   {
     name: "Tomáš K.",
-    text: "Let měl 2 hodiny zpoždění a řidič stejně čekal. Zaplatil jsem stejnou cenu jako rezervoval. Tohle je přesně to, co člověk potřebuje po dlouhém letu.",
+    text: "The flight was 2 hours late and the driver still waited. I paid the same price as booked. This is exactly what you need after a long flight.",
     stars: 5,
     source: "TripAdvisor",
   },
   {
     name: "Jana P.",
-    text: "Jezdíme firemně každý týden. Fakturace bez problémů, řidiči spolehliví, auta čistá. Doporučuji každé firmě.",
+    text: "We use them every week for business. Easy invoicing, reliable drivers, clean cars. Highly recommended for any company.",
     stars: 5,
     source: "Google",
   },

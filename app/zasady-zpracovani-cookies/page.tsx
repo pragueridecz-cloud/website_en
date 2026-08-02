@@ -4,7 +4,7 @@ import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Zásady zpracování cookies | transfer-prague-car s.r.o.",
-  description: "Informace o cookies používaných na webu naletistelevne.cz – jaké cookies používáme, k čemu slouží a jak je spravovat.",
+  description: "Information o cookies používaných na webu naletistelevne.cz – jaké cookies používáme, k čemu slouží a jak je spravovat.",
 }
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (

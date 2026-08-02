@@ -27,7 +27,7 @@ export default function B2B() {
             </h2>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "16px", lineHeight: 1.7, marginBottom: "28px" }}>
-              Letiště, obchodní schůzky, firemní akce nebo hodinový pronájem s řidičem. Uzavřete firemní smlouvu a mějte dopravu pod kontrolou.
+              Airport, business meetings, corporate events or hourly rental with driver. Sign a corporate contract and keep transport under control.
             </p>
             <ul className="space-y-3 mb-8">
               {perks.map((p) => (
@@ -56,7 +56,7 @@ export default function B2B() {
           {/* Vpravo – 3x2 grid využití */}
           <div className="grid grid-cols-2 gap-3">
             {[
-              ["✈️", "Letiště", "Transfer na jakékoliv letiště v regionu"],
+              ["✈️", "Airport", "Transfer to any airport in the region"],
               ["🤝", "Obchodní partneři", "Reprezentativní vyzvednutí klientů"],
               ["📅", "Schůzky", "Přesuny mezi schůzkami celý den"],
               ["🎉", "Firemní akce", "Teambuildingy a eventy"],

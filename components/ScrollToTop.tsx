@@ -13,7 +13,7 @@ export default function ScrollToTop() {
   return (
     <button
       onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      aria-label="Zpět nahoru"
+      aria-label="Back nahoru"
       style={{
         position: "fixed", bottom: "96px", right: "24px", zIndex: 998,
         width: "44px", height: "44px", borderRadius: "50%",

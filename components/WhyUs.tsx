@@ -10,7 +10,7 @@ const features = [
   {
     icon: Plane,
     title: "Sledujeme váš let",
-    desc: "Systém hlídá přílet v reálném čase. Pokud má let zpoždění, řidič počká. Bez příplatku.",
+    desc: "System monitors arrival in real time. If the flight is delayed, the driver waits. No extra charge.",
   },
   {
     icon: Clock,
@@ -25,12 +25,12 @@ const features = [
   {
     icon: CreditCard,
     title: "Platba kartou nebo hotovostí",
-    desc: "Zaplaťte online předem se slevou 10 %, nebo hotově řidiči. Firemní faktura k dispozici.",
+    desc: "Pay online in advance or cash to the driver. Business invoice available.",
   },
   {
     icon: Users,
     title: "Professional drivers",
-    desc: "Prověření řidiči se zkušeností. Mluví česky, anglicky i německy. Pomoc se zavazadly.",
+    desc: "Verified experienced drivers. Speak Czech, English and German. Help with luggage.",
   },
 ];
 
@@ -38,7 +38,7 @@ export default function WhyUs() {
   return (
     <section className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <SectionHeading label="Výhody" title="Proč si vybrat nás?" highlight="" subtitle="Nejsme taxi. Jsme předem rezervovaná doprava s garantovanou cenou a profesionálním přístupem." />
+        <SectionHeading label="Výhody" title="Proč si vybrat nás?" highlight="" subtitle="Nejsme taxi. Jsme předem rezervovaná doprava s garantovanou cenou a professionalm přístupem." />
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((f) => (
             <div

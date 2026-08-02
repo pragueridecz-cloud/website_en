@@ -3,10 +3,10 @@ import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
 const WHY_US = [
-  { num: "01", text: "Fixed price — žádná překvapení" },
-  { num: "02", text: "Sledování letů v reálném čase" },
-  { num: "03", text: "Dostupnost 24 hodin denně" },
-  { num: "04", text: "Prověření profesionální řidiči" },
+  { num: "01", text: "Fixed price — no surprises" },
+  { num: "02", text: "Real-time flight tracking" },
+  { num: "03", text: "Available 24 hours a day" },
+  { num: "04", text: "Verified professional drivers" },
 ];
 
 const NAVBAR_H = 98; // px
@@ -22,8 +22,8 @@ function PriceTag() {
               fill="#F97316" filter="url(#ptsh)"/>
         <circle cx="265" cy="40" r="8" fill="#00205B"/>
         <circle cx="265" cy="40" r="5" fill="none" stroke="rgba(255,255,255,0.25)" strokeWidth="1.5"/>
-        <text x="20" y="47" fontFamily="Poppins,sans-serif" fontSize="13" fontWeight="500" fill="rgba(255,255,255,0.75)">již od</text>
-        <text x="68" y="57" fontFamily="Poppins,sans-serif" fontSize="50" fontWeight="900" fill="#fff" letterSpacing="-2">750 Kč</text>
+        <text x="20" y="47" fontFamily="Poppins,sans-serif" fontSize="13" fontWeight="500" fill="rgba(255,255,255,0.75)">from</text>
+        <text x="68" y="57" fontFamily="Poppins,sans-serif" fontSize="50" fontWeight="900" fill="#fff" letterSpacing="-2">€29</text>
       </svg>
     </div>
   );

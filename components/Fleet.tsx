@@ -11,7 +11,7 @@ const cars = [
     passengers: 4,
     luggage: 3,
     price: "from €29",
-    hourlyPrice: "750 Kč/hod",
+    hourlyPrice: "€29/hod",
     features: ["Air conditioning", "Wi-Fi", "Water included"],
     tag: null,
     category: "sedan",
@@ -46,8 +46,8 @@ const cars = [
     model: "Ford Tourneo Custom a podobný",
     passengers: 7,
     luggage: 6,
-    price: "od 950 Kč",
-    hourlyPrice: "950 Kč/hod",
+    price: "od €36",
+    hourlyPrice: "€36/hod",
     features: ["Air conditioning", "Wi-Fi", "Large boot"],
     tag: "Nejoblíbenější",
     category: "minivan",
@@ -121,7 +121,7 @@ export default function Fleet({ mode = "transfer" }: { mode?: "transfer" | "hour
     <section id="vozovy-park" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <SectionHeading label="Vozový park" title="Vozový park a ceny"
-          subtitle="Fixed prices, no surprises. Choose your vehicle podle počtu cestujících a zavazadel." />
+          subtitle="Fixed prices, no surprises. Choose your vehicle podle počtu passengerch a zavazadel." />
 
         {/* Category tabs */}
         <div style={{ display: "flex", gap: "8px", marginBottom: "32px" }}>

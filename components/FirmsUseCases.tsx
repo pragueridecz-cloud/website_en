@@ -1,11 +1,11 @@
 'use client'
 
 const cards = [
-  { img: "/firmy-letiste-zamestnanci.jpg", title: "Přeprava zaměstnanců na letiště", desc: "Včasné odvezení s fakturou pro HR oddělení" },
+  { img: "/firmy-letiste-zamestnanci.jpg", title: "Employee airport transfers", desc: "On-time pickup with invoice for HR" },
   { img: "/firmy-konference.jpg",          title: "Roadshow a konference",           desc: "Logistika přepravy po Praze i za hranice" },
-  { img: "/service-firmy.png",             title: "Vyzvednutí obchodních partnerů",  desc: "Reprezentativní přivítání klientů na letišti" },
+  { img: "/service-firmy.png",             title: "Vyzvednutí obchodních partnerů",  desc: "Reprezentativní přivítání klientů na airport" },
   { img: "/firmy-teambuilding.jpg",        title: "Firemní akce a teambuildingy",    desc: "Přeprava celého týmu na firemní event nebo výjezdní zasedání" },
-  { img: "/service-vozidla.jpg",           title: "VIP hosté a delegace",            desc: "Prémiový servis pro zahraniční hosty" },
+  { img: "/service-vehicle.jpg",           title: "VIP guests and delegations",            desc: "Premium service for international guests" },
 ]
 
 const gridStyles = [

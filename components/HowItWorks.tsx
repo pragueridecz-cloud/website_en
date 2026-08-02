@@ -5,14 +5,14 @@ const steps = [
   {
     icon: "ti-device-laptop",
     title: "Rezervujte online",
-    desc: "Zadejte odkud, kam a kdy — letiště, hotel, nebo přímo domů. Cena se zobrazí okamžitě, pevná a bez skrytých poplatků.",
-    detail: "Platba kartou online se slevou 10 %, nebo hotově řidiči.",
+    desc: "Enter from, to and when — airport, hotel, or home. Price shown instantly, fixed with no hidden fees.",
+    detail: "Pay by card online or cash to the driver.",
   },
   {
     icon: "ti-plane",
     title: "Sledujeme váš spoj",
-    desc: "Systém hlídá zpoždění letu, vlaku i autobusu v reálném čase a automaticky upraví čas příjezdu řidiče.",
-    detail: "Bez příplatků za zpoždění. Bez telefonování.",
+    desc: "System monitors flight, train and bus delays in real time and adjusts driver arrival automatically.",
+    detail: "Bez příplatků za delay. Bez telefonování.",
   },
   {
     icon: "ti-user-check",
@@ -23,8 +23,8 @@ const steps = [
   {
     icon: "ti-armchair",
     title: "Pohodlná jízda",
-    desc: "Dovezeme vás přesně tam, kam potřebujete. Čistá auta, profesionální řidiči.",
-    detail: "Water included, tiché prostředí, faktura na vyžádání.",
+    desc: "We take you exactly where you need to go. Clean cars, professional drivers.",
+    detail: "Water included, tiché prostředí, invoice na vyžádání.",
   },
 ];
 

@@ -72,7 +72,7 @@ export default function ObchodniPodminky() {
               DIČ: CZ25706993<br />
               Zapsáno v obchodním rejstříku vedeném Městským soudem v Praze<br />
               E-mail: <a href="mailto:info@naletistelevne.cz" style={{ color: "#00205B" }}>info@naletistelevne.cz</a><br />
-              Telefon: <a href="tel:+420606079179" style={{ color: "#00205B" }}>+420 606 079 179</a>
+              Phone: <a href="tel:+420606079179" style={{ color: "#00205B" }}>+420 606 079 179</a>
             </div>
             <P>Tyto obchodní podmínky upravují vztahy mezi provozovatelem a zákazníkem při objednávání a poskytování přepravních služeb.</P>
           </Section>
@@ -82,38 +82,38 @@ export default function ObchodniPodminky() {
               "Provozovatel – transfer-prague-car s.r.o., provozovatel přepravní platformy www.naletistelevne.cz",
               "Zákazník – fyzická nebo právnická osoba, která objednává přepravní službu",
               "Řidič – smluvní partner provozovatele zajišťující fyzickou přepravu",
-              "Rezervace – závazná objednávka přepravy vytvoření prostřednictvím rezervačního formuláře",
-              "Pevná cena – cena sdělená zákazníkovi při dokončení rezervace, která se nemění (není-li dále uvedeno jinak)",
+              "Rezervace – závazná booking přepravy vytvoření prostřednictvím rezervačního formuláře",
+              "Pevná price – price sdělená zákazníkovi při dokončení rezervace, která se nemění (není-li dále uvedeno jinak)",
             ]} />
           </Section>
 
           <Section title="3. Rezervace a uzavření smlouvy">
-            <P>Přepravní smlouva je uzavřena okamžikem, kdy zákazník dokončí objednávku prostřednictvím rezervačního formuláře a obdrží potvrzovací e-mail na adresu uvedenou při rezervaci.</P>
-            <P>Zákazník je povinen uvést správné a úplné informace – místo vyzvednutí, cíl cesty, datum a čas, počet cestujících a počet zavazadel. Provozovatel neodpovídá za škody vzniklé z důvodu nesprávně zadaných údajů.</P>
+            <P>Přepravní smlouva je uzavřena okamžikem, kdy zákazník dokončí booking prostřednictvím rezervačního formuláře a obdrží potvrzovací e-mail na adresu uvedenou při rezervaci.</P>
+            <P>Zákazník je povinen uvést správné a úplné informace – místo vyzvednutí, cíl cesty, datum a čas, počet passengerch a počet zavazadel. Provozovatel neodpovídá za škody vzniklé z důvodu nesprávně zadaných údajů.</P>
             <P>Rezervaci lze provést:</P>
             <Ul items={[
               "Online přes rezervační formulář na naletistelevne.cz",
-              "Telefonicky na +420 606 079 179",
+              "Phoneicky na +420 606 079 179",
               "E-mailem na info@naletistelevne.cz",
             ]} />
           </Section>
 
           <Section title="4. Ceny a platební podmínky">
-            <P>Ceny jsou uváděny v českých korunách (Kč) včetně DPH. Zobrazená cena je <strong>pevná</strong> a zahrnuje veškeré poplatky spojené s přepravou (dálniční poplatky, palivo, parkování u terminálů).</P>
+            <P>Ceny jsou uváděny v českých korunách (Kč) včetně DPH. Zobrazená price je <strong>pevná</strong> a zahrnuje veškeré poplatky spojené s přepravou (dálniční poplatky, palivo, parkování u terminálů).</P>
             <P>Cena <strong>nezahrnuje</strong>: volitelné příplatky (lyže, kola, dětské sedačky), pokud nebyly součástí objednávky.</P>
             <P>Možné způsoby platby:</P>
             <Ul items={[
               "Platba kartou online předem (Visa, Mastercard, Apple Pay, Google Pay)",
-              "Platba v hotovosti řidiči při nastoupení do vozidla",
+              "Platba v hotovosti driveri při nastoupení do vehicle",
               "Bankovní převod (pouze pro firemní zákazníky na základě faktury)",
             ]} />
             <P>Online platby jsou zpracovávány prostřednictvím platební brány <strong>Stripe</strong>. Provozovatel neuchovává čísla platebních karet.</P>
           </Section>
 
-          <Section title="5. Sledování letu a zpoždění">
-            <P>Pro přepravy navazující na letecký spoj provozovatel automaticky sleduje aktuální stav letu. V případě zpoždění příjezdu nebo odletu bude čas vyzvednutí automaticky upraven.</P>
-            <P>Za zpoždění způsobené leteckou společností, povětrnostními podmínkami nebo vyšší mocí provozovatel <strong>neúčtuje žádný příplatek</strong>.</P>
-            <P>Zákazník je povinen uvést správné číslo letu v případě, že zpoždění letového spojení má být zohledněno v době vyzvednutí.</P>
+          <Section title="5. Sledování letu a delay">
+            <P>Pro přepravy navazující na letecký spoj provozovatel automaticky sleduje aktuální stav letu. V případě delay příjezdu nebo odletu bude čas vyzvednutí automaticky upraven.</P>
+            <P>Za delay způsobené leteckou společností, povětrnostními podmínkami nebo vyšší mocí provozovatel <strong>neúčtuje žádný příplatek</strong>.</P>
+            <P>Zákazník je povinen uvést správné číslo letu v případě, že delay letového spojení má být zohledněno v době vyzvednutí.</P>
           </Section>
 
           <Section title="6. Storno podmínky">
@@ -130,7 +130,7 @@ export default function ObchodniPodminky() {
                     ["více než 24 hodin", "Zdarma – plná refundace"],
                     ["12–24 hodin", "50 % z ceny jízdy"],
                     ["méně než 12 hodin", "100 % z ceny jízdy (bez refundace)"],
-                    ["No-show (řidič čeká a zákazník se nedostaví)", "100 % z ceny jízdy"],
+                    ["No-show (driver čeká a zákazník se nedostaví)", "100 % z ceny jízdy"],
                   ].map(([cas, poplatek], i) => (
                     <tr key={i} style={{ background: i % 2 === 0 ? "#f8fafc" : "#fff" }}>
                       <td style={{ padding: "12px 16px", fontSize: "14px", color: "#374151", borderBottom: "1px solid #e5e7eb" }}>{cas}</td>
@@ -148,16 +148,16 @@ export default function ObchodniPodminky() {
               "Být připraven na dohodnutém místě vyzvednutí v stanovený čas",
               "Mít funkční telefonní číslo, na kterém je dostupný v den přepravy",
               "Informovat provozovatele o případných zvláštních požadavcích (dětská sedačka, invalidní vozík, nadměrná zavazadla) předem",
-              "Nepřekračovat kapacitu vozidla (počet osob a zavazadel)",
-              "Chovat se ohleduplně vůči řidiči a vozidlu – kouření, konzumace alkoholu a jídla ve vozidle je zakázána (nevztahuje se na vodu)",
+              "Nepřekračovat kapacitu vehicle (počet osob a zavazadel)",
+              "Chovat se ohleduplně vůči driveri a vozidlu – kouření, konzumace alkoholu a jídla ve vozidle je zakázána (nevztahuje se na vodu)",
             ]} />
           </Section>
 
           <Section title="8. Odpovědnost provozovatele">
             <P>Provozovatel odpovídá za škody způsobené zákazníkovi v přímé souvislosti s poskytnutou přepravní službou, zejména za:</P>
             <Ul items={[
-              "Nedodání vozidla v dohodnutém čase (bez objektivních důvodů)",
-              "Poškození zavazadel přepravovaných ve vozidle prokazatelně zaviněné řidičem",
+              "Nedodání vehicle v dohodnutém čase (bez objektivních důvodů)",
+              "Poškození zavazadel přepravovaných ve vozidle prokazatelně zaviněné driverem",
             ]} />
             <P>Provozovatel <strong>neodpovídá</strong> za:</P>
             <Ul items={[
@@ -172,7 +172,7 @@ export default function ObchodniPodminky() {
             <P>Zákazník má právo podat reklamaci do <strong>30 dnů</strong> od uskutečnění jízdy. Reklamaci lze uplatnit:</P>
             <Ul items={[
               "E-mailem: info@naletistelevne.cz",
-              "Telefonicky: +420 606 079 179",
+              "Phoneicky: +420 606 079 179",
             ]} />
             <P>Provozovatel se zavazuje reklamaci vyřídit do <strong>14 pracovních dnů</strong> od jejího obdržení.</P>
             <P>Zákazník, který je spotřebitelem, má právo na mimosoudní řešení spotřebitelského sporu prostřednictvím České obchodní inspekce (www.coi.cz).</P>

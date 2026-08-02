@@ -5,11 +5,11 @@ import SectionHeading from "@/components/SectionHeading"
 import { Clock, Luggage, ArrowLeftRight, MapPin, Banknote, Moon, Train, Bus } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Přeprava na nádraží Praha | naletištělevně.cz",
-  description: "Taxi na nádraží Praha — Hlavní nádraží, Florenc, Smíchovské nádraží, Holešovice, Masarykovo. Pevná cena, pomoc se zavazadly, 24/7 dostupnost. Rezervujte online.",
+  title: "Přeprava na nádraží Praha | naairportlevně.cz",
+  description: "Taxi na nádraží Praha — Hlavní nádraží, Florenc, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se zavazadly, 24/7 dostupnost. Rezervujte online.",
   keywords: "taxi na nádraží Praha, transfer hlavní nádraží Praha, odvoz na nádraží, přeprava Florenc, taxi Smíchovské nádraží, taxi autobusové nádraží",
   openGraph: {
-    title: "Přeprava na vlakové a autobusové nádraží | naletištělevně.cz",
+    title: "Přeprava na vlakové a autobusové nádraží | naairportlevně.cz",
     description: "Transfer na Hlavní nádraží, Florenc, Smíchovské nádraží. Pevné ceny 24/7.",
     url: "https://www.naletistelevne.cz/vlakove-autobusove-nadrazi",
   },
@@ -40,7 +40,7 @@ const VYHODY = [
   { Icon: Luggage,        title: "Pomoc se zavazadly",       desc: "Řidič vám pomůže s nakládkou a vykládkou zavazadel, kočárků nebo jízdních kol.", img: "/service-zavazadla.jpg" },
   { Icon: ArrowLeftRight, title: "Zpáteční jízda",           desc: "Objednáte i vyzvednutí z nádraží po návratu. Vše v jedné rezervaci.", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80" },
   { Icon: MapPin,         title: "Přesné vyzvednutí",        desc: "Vyzvednutí přímo od vašich dveří nebo na dohodnutém místě.", img: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&q=80" },
-  { Icon: Banknote,       title: "Pevná cena",               desc: "Víte přesně, kolik zaplatíte. Bez taxametru, bez příplatků.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" },
+  { Icon: Banknote,       title: "Pevná price",               desc: "Víte přesně, kolik zaplatíte. Bez taxametru, bez příplatků.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" },
   { Icon: Moon,           title: "Ranní vlaky bez stresu",   desc: "Přepravujeme i v brzkých ranních hodinách. Žádný stres s MHD ve 4 ráno.", img: "/service-ranni-vlak.jpg" },
 ]
 
@@ -129,7 +129,7 @@ export default function NadraziPage() {
             <div className="space-y-4">
               {[
                 { q: "Jak daleko dopředu mám rezervovat?", a: "Doporučujeme alespoň 2 hodiny předem, ale přijímáme i urgentní objednávky dle aktuální dostupnosti." },
-                { q: "Co když vlak přijede se zpožděním?", a: "Pokud vás vyzvedáváme z nádraží, sledujeme aktuální přijezd vašeho vlaku a přizpůsobíme čas vyzvednutí." },
+                { q: "Co když vlak přijede se delaym?", a: "Pokud vás vyzvedáváme z nádraží, sledujeme aktuální přijezd vašeho vlaku a přizpůsobíme čas vyzvednutí." },
                 { q: "Přepravíte jízdní kolo nebo velké zavazadlo?", a: "Ano, pro kola a velká zavazadla doporučujeme minivan. Upřesněte při rezervaci." },
                 { q: "Jedete i mimo Prahu?", a: "Samozřejmě, přepravujeme po celé ČR i do zahraničí. Cena se vypočítá automaticky." },
               ].map((item, i) => (

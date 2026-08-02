@@ -47,7 +47,7 @@ export default function Navbar() {
           <a href="/" className="flex items-center pr-5 cursor-pointer flex-shrink-0 py-2"
             style={{ borderRight: "1px solid rgba(255,255,255,.15)" }}>
             <Image src="/logo-en.png" alt="Prague Airport Taxi" width={1080} height={1080}
-              style={{ height: "58px", width: "58px", objectFit: "contain" }} priority />
+              style={{ height: "120px", width: "120px", objectFit: "contain", display: "block" }} priority />
           </a>
 
           {/* Desktop nav */}

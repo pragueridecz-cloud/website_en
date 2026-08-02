@@ -6,11 +6,11 @@ import { Lock, Car, Clock, Globe, CreditCard, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Long Distance Taxi a meziměstská doprava Prague | pragueairportaxi.com",
-  description: "Long Distance Taxi z Prahy za pevnou price — Prague–Vienna od 9 €29, Prague–Berlin od 9 650 Kč, Prague–Brno od 6 400 Kč. Intercity Transport po celé ČR i Evropě, 24/7.",
+  description: "Long Distance Taxi z Prahy za pevnou price — Prague–Vienna od 9 €29, Prague–Berlin , Prague–Brno . Intercity Transport across Czech Republic & Europe, 24/7.",
   keywords: "meziměstská doprava, mezinárodní transfer, Prague Vienna taxi, Prague Berlin taxi, Prague Brno taxi, transport do zahraničí, taxi Prague Munich",
   openGraph: {
     title: "Meziměstská a mezinárodní doprava | pragueairportaxi.com",
-    description: "Prague–Vienna od 9 €29, Prague–Berlin od 9 650 Kč. Komfortní transport po celé Evropě.",
+    description: "Prague–Vienna od 9 €29, Prague–Berlin . Komfortní transport po celé Evropě.",
     url: "https://www.pragueairportaxi.com/mezimestska-doprava",
   },
   alternates: { canonical: "https://www.pragueairportaxi.com/mezimestska-doprava" },
@@ -32,18 +32,18 @@ const schema = {
 }
 
 const ROUTES = [
-  { from: "Prague", to: "Brno", price: "6 400", km: "227 km", time: "2.5h" },
-  { from: "Prague", to: "Vienna", price: "9 750", km: "356 km", time: "3.5h" },
-  { from: "Prague", to: "Munich", price: "10 350", km: "378 km", time: "4h" },
-  { from: "Prague", to: "Berlin", price: "9 650", km: "352 km", time: "4h" },
-  { from: "Prague", to: "Drážďany", price: "4 600", km: "153 km", time: "1,5h" },
-  { from: "Prague", to: "Varšava", price: "17 650", km: "660 km", time: "7h" },
-  { from: "Prague", to: "Bratislava", price: "9 550", km: "349 km", time: "3.5h" },
-  { from: "Prague", to: "Wroclaw", price: "7 800", km: "280 km", time: "3h" },
-  { from: "Prague", to: "Plzeň", price: "3 100", km: "91 km", time: "1h" },
-  { from: "Prague", to: "České Budějovice", price: "4 950", km: "168 km", time: "2h" },
-  { from: "Prague", to: "Olomouc", price: "8 400", km: "303 km", time: "3h" },
-  { from: "Prague", to: "Salzburg", price: "10 800", km: "396 km", time: "4,5h" },
+  { from: "Prague", to: "Brno", price: "€255 / £215 / $280", km: "227 km", time: "2.5h" },
+  { from: "Prague", to: "Vienna", price: "€390 / £325 / $425", km: "356 km", time: "3.5h" },
+  { from: "Prague", to: "Munich", price: "€415 / £345 / $450", km: "378 km", time: "4h" },
+  { from: "Prague", to: "Berlin", price: "€385 / £320 / $420", km: "352 km", time: "4h" },
+  { from: "Prague", to: "Dresden", price: "€185 / £155 / $200", km: "153 km", time: "1.5h" },
+  { from: "Prague", to: "Warsaw", price: "€705 / £590 / $770", km: "660 km", time: "7h" },
+  { from: "Prague", to: "Bratislava", price: "€380 / £320 / $415", km: "349 km", time: "3.5h" },
+  { from: "Prague", to: "Wrocław", price: "€310 / £260 / $340", km: "280 km", time: "3h" },
+  { from: "Prague", to: "Plzeň", price: "€125 / £105 / $135", km: "91 km", time: "1h" },
+  { from: "Prague", to: "České Budějovice", price: "€195 / £165 / $215", km: "168 km", time: "2h" },
+  { from: "Prague", to: "Olomouc", price: "€335 / £280 / $365", km: "303 km", time: "3h" },
+  { from: "Prague", to: "Salzburg", price: "€430 / £360 / $470", km: "396 km", time: "4.5h" },
 ]
 
 const VYHODY = [
@@ -91,7 +91,7 @@ export default function MezimestskaPage() {
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
               Intercity transfers<br />
-              <span style={{ color: "#F97316" }}>po celé ČR i Evropě</span>
+              <span style={{ color: "#F97316" }}>across Czech Republic & Europe</span>
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
@@ -113,15 +113,15 @@ export default function MezimestskaPage() {
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { from: "Prague", to: "Vienna", price: "9 750", km: "356 km" },
-                { from: "Prague", to: "Berlin", price: "9 650", km: "352 km" },
-                { from: "Prague", to: "Bratislava", price: "9 550", km: "349 km" },
-                { from: "Prague", to: "Budapešť", price: "14 300", km: "525 km" },
-                { from: "Prague", to: "Munich", price: "10 350", km: "378 km" },
-                { from: "Prague", to: "Frankfurt", price: "14 750", km: "545 km" },
-                { from: "Prague", to: "Drážďany", price: "4 600", km: "153 km" },
-                { from: "Prague", to: "Karlovy Vary", price: "3 800", km: "130 km" },
-                { from: "Prague", to: "Brno", price: "6 400", km: "227 km" },
+                { from: "Prague", to: "Vienna", price: "€390 / £325 / $425", km: "356 km" },
+                { from: "Prague", to: "Berlin", price: "€385 / £320 / $420", km: "352 km" },
+                { from: "Prague", to: "Bratislava", price: "€380 / £320 / $415", km: "349 km" },
+                { from: "Prague", to: "Budapest", price: "€570 / £475 / $620", km: "525 km" },
+                { from: "Prague", to: "Munich", price: "€415 / £345 / $450", km: "378 km" },
+                { from: "Prague", to: "Frankfurt", price: "€590 / £490 / $640", km: "545 km" },
+                { from: "Prague", to: "Dresden", price: "€185 / £155 / $200", km: "153 km" },
+                { from: "Prague", to: "Karlovy Vary", price: "€150 / £125 / $165", km: "130 km" },
+                { from: "Prague", to: "Brno", price: "€255 / £215 / $280", km: "227 km" },
               ].map((r) => (
                 <div key={r.to} className="flex items-center justify-between rounded-xl p-4"
                   style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>

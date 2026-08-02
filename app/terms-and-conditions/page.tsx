@@ -93,8 +93,8 @@ export default function ObchodniPodminky() {
             <P>Booking can be made:</P>
             <Ul items={[
               "Online via the booking form at pragueairportaxi.com",
-              "Phoneicky na +420 606 079 179",
-              "E-mailem na info@pragueairportaxi.com",
+              "By phone at +420 606 079 179",
+              "By email at info@pragueairportaxi.com",
             ]} />
           </Section>
 
@@ -103,7 +103,7 @@ export default function ObchodniPodminky() {
             <P>Price <strong>nezahrnuje</strong>: volitelné příplatky (lyže, kola, dětské sedačky), pokud nebyly součástí objednávky.</P>
             <P>Available payment methods:</P>
             <Ul items={[
-              "Payment kartou online in advance (Visa, Mastercard, Apple Pay, Google Pay)",
+              "Card payment online in advance (Visa, Mastercard, Apple Pay, Google Pay)",
               "Cash payment to driver on boarding",
               "Bank transfer (corporate clients only, invoice basis)",
             ]} />
@@ -121,8 +121,8 @@ export default function ObchodniPodminky() {
               <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: "16px" }}>
                 <thead>
                   <tr style={{ background: "#00205B" }}>
-                    <th style={{ padding: "12px 16px", textAlign: "left" as const, color: "#fff", fontWeight: 700, fontSize: "13px" }}>Čas před jízdou</th>
-                    <th style={{ padding: "12px 16px", textAlign: "left" as const, color: "#fff", fontWeight: 700, fontSize: "13px" }}>Storno poplatek</th>
+                    <th style={{ padding: "12px 16px", textAlign: "left" as const, color: "#fff", fontWeight: 700, fontSize: "13px" }}>Time before ride</th>
+                    <th style={{ padding: "12px 16px", textAlign: "left" as const, color: "#fff", fontWeight: 700, fontSize: "13px" }}>Cancellation fee</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -161,10 +161,10 @@ export default function ObchodniPodminky() {
             ]} />
             <P>Operator <strong>neodpovídá</strong> za:</P>
             <Ul items={[
-              "Delay způsobené dopravními nehodami, neprůjezdností komunikací, uzávěrkami nebo vyšší mocí",
-              "Škody vzniklé z důvodu nesprávně zadaných údajů customerem",
-              "Zmeškaný let nebo spoj v případě, kdy customer nesplnil povinnost být připraven v čas",
-              "Cenné předměty ponechané ve vozidle",
+              "Delays caused by traffic accidents, road closures or force majeure",
+              "Damages caused by incorrectly entered data by the customer",
+              "Missed flight or connection where the customer failed to be ready on time",
+              "Valuables left in the vehicle",
             ]} />
           </Section>
 
@@ -172,13 +172,13 @@ export default function ObchodniPodminky() {
             <P>Customer má right podat reklamaci do <strong>30 dnů</strong> od uskutečnění ride. Reklamaci lze uplatnit:</P>
             <Ul items={[
               "E-mailem: info@pragueairportaxi.com",
-              "Phoneicky: +420 606 079 179",
+              "By phone: +420 606 079 179",
             ]} />
             <P>Operator se zavazuje reklamaci vyřídit do <strong>14 pracovních dnů</strong> od jejího obdržení.</P>
             <P>A customer who is a consumer has the right to out-of-court resolution of consumer disputes through the Czech Trade Inspection Authority (www.coi.cz).</P>
           </Section>
 
-          <Section title="10. Ochrana personal data">
+          <Section title="10. Personal Data Protection">
             <P>Operator zpracovává personal data customerů v souladu s nařízením GDPR a zákonem č. 110/2019 Sb. Podrobné information o processing personal data jsou dostupné v dokumentu <a href="/privacy-policy" style={{ color: "#00205B" }}>Ochrana personal data</a>.</P>
           </Section>
 
@@ -191,8 +191,8 @@ export default function ObchodniPodminky() {
           {/* Contactní box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
-              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Máte otázky k podmínkám?</div>
-              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám nebo zavolejte – rádi vše vysvětlíme.</div>
+              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Have questions about the terms?</div>
+              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Write to us or call — we are happy to explain everything.</div>
             </div>
             <a href="mailto:info@pragueairportaxi.com" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
               info@pragueairportaxi.com

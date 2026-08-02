@@ -64,7 +64,7 @@ export default function ObchodniPodminky() {
         <div style={{ maxWidth: "860px", margin: "0 auto", background: "#fff", borderRadius: "16px", padding: "clamp(24px,5vw,56px)", boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
 
           <Section title="1. Operator and Identification Details">
-            <P>Operatorem transport platformy <strong>www.pragueairportaxi.com</strong> (dostupné na adrese <a href="https://www.pragueairportaxi.com" style={{ color: "#00205B" }}>pragueairportaxi.com</a>) je:</P>
+            <P>The operator of the transport platform <strong>www.pragueairportaxi.com</strong> is:</P>
             <div style={{ background: "#f0f4ff", border: "1px solid #dbeafe", borderRadius: "10px", padding: "16px 20px", marginBottom: "12px" }}>
               <strong>transfer-prague-car s.r.o.</strong><br />
               Registered office: Sochařská 333/2, 170 00 Prague, Czech Republic<br />
@@ -99,7 +99,7 @@ export default function ObchodniPodminky() {
           </Section>
 
           <Section title="4. Prices and Payment Terms">
-            <P>Ceny jsou uváděny v českých korunách () včetně DPH. Zobrazená price je <strong>pevná</strong> a zahrnuje veškeré poplatky spojené s přepravou (dálniční poplatky, palivo, parkování u terminálů).</P>
+            <P>Prices are shown in EUR including VAT. The displayed price is <strong>fixed</strong> and includes all charges related to the transfer (motorway tolls, fuel, terminal parking).</P>
             <P>Price <strong>nezahrnuje</strong>: volitelné příplatky (lyže, kola, dětské sedačky), pokud nebyly součástí objednávky.</P>
             <P>Available payment methods:</P>
             <Ul items={[
@@ -107,7 +107,7 @@ export default function ObchodniPodminky() {
               "Cash payment to driver on boarding",
               "Bank transfer (corporate clients only, invoice basis)",
             ]} />
-            <P>Online platby jsou zpracovávány prostřednictvím platební brány <strong>Stripe</strong>. Operator neuchovává čísla platebních karet.</P>
+            <P>Online payments are processed via the <strong>Stripe</strong> payment gateway. The operator does not store card numbers.</P>
           </Section>
 
           <Section title="5. Flight Tracking and Delays">
@@ -140,7 +140,7 @@ export default function ObchodniPodminky() {
                 </tbody>
               </table>
             </div>
-            <P>Storno lze provést e-mailem na <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a> nebo telefonicky. Rozhodující je čas doručení žádosti o storno operatori.</P>
+            <P>Cancellation must be submitted by email to <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a> or by phone. The time of receipt of the cancellation request is decisive.</P>
           </Section>
 
           <Section title="7. Customer Obligations">
@@ -169,7 +169,7 @@ export default function ObchodniPodminky() {
           </Section>
 
           <Section title="9. Complaints">
-            <P>Customer má right podat reklamaci do <strong>30 dnů</strong> od uskutečnění ride. Reklamaci lze uplatnit:</P>
+            <P>The customer has the right to file a complaint within <strong>30 days</strong> of the ride. Complaints can be submitted:</P>
             <Ul items={[
               "E-mailem: info@pragueairportaxi.com",
               "By phone: +420 606 079 179",
@@ -179,11 +179,11 @@ export default function ObchodniPodminky() {
           </Section>
 
           <Section title="10. Personal Data Protection">
-            <P>Operator zpracovává personal data customerů v souladu s nařízením GDPR a zákonem č. 110/2019 Sb. Podrobné information o processing personal data jsou dostupné v dokumentu <a href="/privacy-policy" style={{ color: "#00205B" }}>Ochrana personal data</a>.</P>
+            <P>The operator processes customer personal data in accordance with GDPR and Act No. 110/2019 Coll. Detailed information is available in the <a href="/privacy-policy" style={{ color: "#00205B" }}>Privacy Policy</a>.</P>
           </Section>
 
           <Section title="11. Final Provisions">
-            <P>These terms and conditions are valid and effective from {updated}. The Operator reserves the right to unilaterally amend these terms. O změnách bude customer informován e-mailem nebo zveřejněním nové verze na webových stránkách.</P>
+            <P>These terms and conditions are valid and effective from {updated}. The Operator reserves the right to unilaterally amend these terms. Customers will be notified of changes by email or by publishing a new version on the website.</P>
             <P>These terms and conditions and all legal relationships arising from them are governed by Czech law, in particular Act No. 89/2012 Coll. (Civil Code).</P>
             <P>In case of a dispute, the courts of Czech Republic have jurisdiction.</P>
           </Section>

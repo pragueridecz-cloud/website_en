@@ -46,7 +46,7 @@ export default function Navbar() {
           {/* Logo */}
           <a href="/" className="flex items-center pr-5 cursor-pointer flex-shrink-0 py-2"
             style={{ borderRight: "1px solid rgba(255,255,255,.15)" }}>
-            <Image src="/logo-en.png" alt="Prague Airport Taxi" width={1254} height={399}
+            <Image src="/logo-en.png" alt="Prague Airport Taxi" width={1252} height={406}
               style={{ height: "42px", width: "auto", objectFit: "contain" }} priority />
           </a>
 

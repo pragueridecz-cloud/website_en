@@ -8,7 +8,7 @@ const PRAGUE_ADDR = "Václavské náměstí 1, Prague, Czech Republic";
 const AIRPORTS = [
   {
     code: "VIE", name: "Vienna International Airport", city: "Vienna, Austria",
-    lat: 48.1103, lng: 16.5697, price: "€173",
+    lat: 48.1103, lng: 16.5697, price: "from €173",
     country: "🇦🇹",
     addr: "Vienna International Airport, Schwechat, Austria",
     img: "/airport-vienna.jpg",
@@ -17,7 +17,7 @@ const AIRPORTS = [
   },
   {
     code: "BTS", name: "Airport Bratislava Štefánik", city: "Bratislava, Slovensko",
-    lat: 48.1702, lng: 17.2127, price: "€162",
+    lat: 48.1702, lng: 17.2127, price: "from €162",
     country: "🇸🇰",
     addr: "M. R. Štefánik Airport, Bratislava, Slovakia",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/BRATISLAVSK%C3%9D_TERMIN%C3%81L_-_panoramio.jpg/960px-BRATISLAVSK%C3%9D_TERMIN%C3%81L_-_panoramio.jpg",
@@ -26,7 +26,7 @@ const AIRPORTS = [
   },
   {
     code: "BUD", name: "Budapest Liszt Ferenc Airport", city: "Budapest, Hungary",
-    lat: 47.4298, lng: 19.2611, price: "€266",
+    lat: 47.4298, lng: 19.2611, price: "from €266",
     country: "🇭🇺",
     addr: "Budapest Ferenc Liszt International Airport, Budapest, Hungary",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Budapest_Liszt_Ferenc_International_Airport_-_Terminal_2B_from_above_%282018%29.jpg/960px-Budapest_Liszt_Ferenc_International_Airport_-_Terminal_2B_from_above_%282018%29.jpg",
@@ -35,7 +35,7 @@ const AIRPORTS = [
   },
   {
     code: "MUC", name: "Munich Franz Josef Strauss Airport", city: "Munich, Germany",
-    lat: 48.3537, lng: 11.7750, price: "€305",
+    lat: 48.3537, lng: 11.7750, price: "from €305",
     country: "🇩🇪",
     addr: "Munich Airport, Munich, Germany",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Franz_Josef_Strauss_International_Airport_%28Munich%29.jpg/960px-Franz_Josef_Strauss_International_Airport_%28Munich%29.jpg",
@@ -44,7 +44,7 @@ const AIRPORTS = [
   },
   {
     code: "FRA", name: "Frankfurt am Main Airport", city: "Frankfurt, Germany",
-    lat: 50.0379, lng: 8.5622, price: "€343",
+    lat: 50.0379, lng: 8.5622, price: "from €343",
     country: "🇩🇪",
     addr: "Frankfurt Airport, Frankfurt am Main, Germany",
     img: "/airport-frankfurt.jpg",
@@ -53,7 +53,7 @@ const AIRPORTS = [
   },
   {
     code: "DRS", name: "Dresden Airport", city: "Dresden, Germany",
-    lat: 51.1328, lng: 13.7672, price: "€150",
+    lat: 51.1328, lng: 13.7672, price: "from €150",
     country: "🇩🇪",
     addr: "Dresden Airport, Dresden, Germany",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/32/Aerial_image_of_the_Dresden_Airport.jpg/960px-Aerial_image_of_the_Dresden_Airport.jpg",
@@ -62,7 +62,7 @@ const AIRPORTS = [
   },
   {
     code: "BER", name: "Berlin Brandenburg Airport", city: "Berlin, Germany",
-    lat: 52.3667, lng: 13.5033, price: "€343",
+    lat: 52.3667, lng: 13.5033, price: "from €343",
     country: "🇩🇪",
     addr: "Berlin Brandenburg Airport, Berlin, Germany",
     img: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Berlin_Brandenburg_Airport_Terminal_1.jpg/960px-Berlin_Brandenburg_Airport_Terminal_1.jpg",

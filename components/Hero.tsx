@@ -14,17 +14,17 @@ const NAVBAR_H = 98; // px
 function PriceTag() {
   return (
     <div style={{ marginTop: "16px" }}>
-      <svg width="280" height="80" viewBox="0 0 280 80" xmlns="http://www.w3.org/2000/svg">
+      <svg width="360" height="80" viewBox="0 0 360 80" xmlns="http://www.w3.org/2000/svg">
         <filter id="ptsh">
           <feDropShadow dx="0" dy="3" stdDeviation="8" floodColor="rgba(0,0,0,0.35)"/>
         </filter>
-        <path d="M 12 0 L 300 0 Q 328 0 328 25 L 328 32 Q 338 40 328 48 L 328 55 Q 328 88 300 88 L 12 88 Q 0 88 0 76 L 0 12 Q 0 0 12 0 Z"
+        <path d="M 12 0 L 340 0 Q 368 0 368 25 L 368 32 Q 378 40 368 48 L 368 55 Q 368 80 340 80 L 12 80 Q 0 80 0 68 L 0 12 Q 0 0 12 0 Z"
               fill="#F97316" filter="url(#ptsh)"/>
-        <circle cx="313" cy="44" r="8" fill="#00205B"/>
-        <circle cx="313" cy="44" r="5" fill="none" stroke="rgba(255,255,255,0.25)" strokeWidth="1.5"/>
-        <text x="20" y="42" fontFamily="Poppins,sans-serif" fontSize="12" fontWeight="500" fill="rgba(255,255,255,0.75)">from</text>
-        <text x="20" y="62" fontFamily="Poppins,sans-serif" fontSize="38" fontWeight="900" fill="#fff" letterSpacing="-2">€29</text>
-        <text x="20" y="80" fontFamily="Poppins,sans-serif" fontSize="11" fontWeight="500" fill="rgba(255,255,255,0.75)">/ £25 / $32</text>
+        <circle cx="353" cy="40" r="8" fill="#00205B"/>
+        <circle cx="353" cy="40" r="5" fill="none" stroke="rgba(255,255,255,0.25)" strokeWidth="1.5"/>
+        <text x="16" y="30" fontFamily="Poppins,sans-serif" fontSize="11" fontWeight="500" fill="rgba(255,255,255,0.75)">from</text>
+        <text x="16" y="58" fontFamily="Poppins,sans-serif" fontSize="46" fontWeight="900" fill="#fff" letterSpacing="-2">€29</text>
+        <text x="110" y="54" fontFamily="Poppins,sans-serif" fontSize="13" fontWeight="600" fill="rgba(255,255,255,0.85)">/ £25 / $32</text>
       </svg>
     </div>
   );

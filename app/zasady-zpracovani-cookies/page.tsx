@@ -125,7 +125,7 @@ export default function ZasadyCookies() {
                   <tbody style={{ background: "#fff" }}>
                     <CookieRow name="__gmaps_*" type="Funkční" purpose="Google Maps – zobrazení interaktivní mapy a výpočet trasy" duration="Session" essential={false} />
                     <CookieRow name="__stripe_*" type="Funkční" purpose="Platební brána – prevence podvodů a bezpečnost online plateb" duration="Session / 1 rok" essential={false} />
-                    <CookieRow name="nll_booking_*" type="Funkční" purpose="Uchování rozpracované rezervace při zavření/otevření widgetu" duration="2 hodiny" essential={false} />
+                    <CookieRow name="nll_booking_*" type="Funkční" purpose="Uchování rozpracované booking při zavření/otevření widgetu" duration="2 hodiny" essential={false} />
                   </tbody>
                 </table>
               </div>
@@ -195,7 +195,7 @@ export default function ZasadyCookies() {
           {/* Kontaktní box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
-              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Otázky ohledně cookies?</div>
+              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>FAQ ohledně cookies?</div>
               <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám na info@naletistelevne.cz</div>
             </div>
             <a href="mailto:info@naletistelevne.cz" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>

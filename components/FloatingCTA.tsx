@@ -13,7 +13,7 @@ export default function FloatingCTA() {
   }, []);
 
   const scrollToTop = () => {
-    document.getElementById("rezervace")?.scrollIntoView({ behavior: "smooth" });
+    document.getElementById("booking")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (

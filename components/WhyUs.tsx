@@ -14,7 +14,7 @@ const features = [
   },
   {
     icon: Clock,
-    title: "Dostupnost 24/7",
+    title: "Availability 24/7",
     desc: "Book anytime. Early flights, late arrivals — we are always here, 365 days a year.",
   },
   {

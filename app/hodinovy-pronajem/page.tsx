@@ -10,7 +10,7 @@ import {
 
 export const metadata: Metadata = {
   title: "Hourly Rental auta s driverem Prague | pragueairportaxi.com",
-  description: "Auto s driverem Prague from €29/hod — chauffeur service, VIP přeprava, pronájem drivere na hodiny nebo celý den. Business schůzky, svatby, výlety za město. Sedan i minivan.",
+  description: "Auto s driverem Prague from €29/hod — chauffeur service, VIP transport, pronájem drivere na hodiny nebo celý den. Business schůzky, svatby, výlety za město. Sedan i minivan.",
   keywords: "pronájem auta s driverem Prague, chauffeur service Prague, auto s šoférem Prague, hodinový transfer Prague, firemní driver Prague, prohlídka Prahy s driverem",
   openGraph: {
     title: "Hourly Rental auta s driverem Prague | Od €29/hod | pragueairportaxi.com",
@@ -103,9 +103,9 @@ export default function HodinPronajem() {
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Pronajměte si auto s driverem</h2>
             <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Flexibilní, komfortní, bez starostí</p>
-            <a href="/#rezervace" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
+            <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
-              Zarezervovat nyní
+              Zabook nyní
             </a>
           </div>
         </section>

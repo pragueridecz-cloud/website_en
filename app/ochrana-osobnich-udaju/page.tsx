@@ -96,8 +96,8 @@ export default function OchranaOsobnichUdaju() {
               "Místo vyzvednutí a cíl cesty",
               "Date and time přepravy",
               "Číslo letu (pokud je relevantní)",
-              "Number of passengers a zavazadel",
-              "Zvláštní požadavky (dětská sedačka, nadměrná zavazadla)",
+              "Number of passengers a luggage",
+              "Zvláštní požadavky (dětská sedačka, nadměrná luggage)",
             ]} />
             <P><strong>Při platbě kartou:</strong></P>
             <Ul items={[

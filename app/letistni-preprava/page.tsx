@@ -7,7 +7,7 @@ import SectionHeading from "@/components/SectionHeading"
 export const metadata: Metadata = {
   title: "Transport na airport Prague | pragueairportaxi.com",
   description: "Transfer na/z Václav Havel Airport Prague from €29. Také Vienna, Bratislava, Budapešť, Munich, Frankfurt. Fixed price, driver čeká u výstupu, sledování letu 24/7.",
-  keywords: "doprava na airport Prague, transfer Václav Havel Airport, taxi airport Vienna, transfer airport Bratislava, přeprava airport Munich, airport transfer Prague",
+  keywords: "doprava na airport Prague, transfer Václav Havel Airport, taxi airport Vienna, transfer airport Bratislava, transport airport Munich, airport transfer Prague",
   openGraph: {
     title: "Transport na airport Prague a okolní airport | pragueairportaxi.com",
     description: "Transfer na airport PRG, VIE, BTS, BUD, MUC, FRA. Fixed price, sledování letu.",
@@ -143,7 +143,7 @@ export default function LetistniPreprava() {
                           </li>
                         ))}
                       </ul>
-                      <a href="/#rezervace" style={{ background: "#00205B", color: "#fff", padding: "11px 28px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", textDecoration: "none", display: "inline-block" }}>
+                      <a href="/#booking" style={{ background: "#00205B", color: "#fff", padding: "11px 28px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", textDecoration: "none", display: "inline-block" }}>
                         Book now na {prg.code} →
                       </a>
                     </div>
@@ -177,7 +177,7 @@ export default function LetistniPreprava() {
                         </li>
                       ))}
                     </ul>
-                    <a href="/#rezervace" style={{ background: "#00205B", color: "#fff", padding: "10px 20px", borderRadius: "10px", fontWeight: 700, fontSize: "13px", textDecoration: "none", display: "inline-block" }}>
+                    <a href="/#booking" style={{ background: "#00205B", color: "#fff", padding: "10px 20px", borderRadius: "10px", fontWeight: 700, fontSize: "13px", textDecoration: "none", display: "inline-block" }}>
                       Book now na {airport.code} →
                     </a>
                   </div>
@@ -211,7 +211,7 @@ export default function LetistniPreprava() {
                 {
                   img: "/fixed-price-payment.jpg",
                   title: "Fixed price bez příplatků",
-                  desc: "Cena je dohodnutá předem a nemění se. Žádné příplatky za mýto, delay, noční jízdu ani velká zavazadla.",
+                  desc: "Cena je dohodnutá in advance a nemění se. Žádné příplatky za mýto, delay, noční jízdu ani velká luggage.",
                 },
               ].map((item, i) => (
                 <div key={i} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
@@ -238,8 +238,8 @@ export default function LetistniPreprava() {
                 { q: "Jak funguje sledování delay letu?", a: "Při rezervaci zadáte číslo letu. Náš systém automaticky sleduje reálný čas příletu a informuje drivere. Pokud má váš let delay, driver dorazí pozdě – a vy neplatíte žádný příplatek za čekání." },
                 { q: "Kde mě driver vyzvedne po příletu?", a: "Řidič vás čeká přímo v příletové hale s cedulkou s vaším jménem, ihned za výstupem z celnice. Nemusíte nikam volat ani hledat." },
                 { q: "Mohu platit kartou?", a: "Ano, platba kartou online při rezervaci nebo hotově driveri. Na vyžádání vystavíme fakturu na firmu s DIČ." },
-                { q: "Co když potřebuji převézt hodně zavazadel nebo lyže?", a: "Při rezervaci upřesněte počet zavazadel a speciální požadavky. Pro velká zavazadla, lyže nebo kočárky rezervujeme minivan s dostatkem místa." },
-                { q: "Je možné rezervovat zpáteční cestu?", a: "Samozřejmě. V rezervačním formuláři jednoduše přidejte zpáteční cestu. Zpáteční jízdu je možné objednat i samostatně." },
+                { q: "Co když potřebuji převézt hodně luggage nebo lyže?", a: "Při rezervaci upřesněte počet luggage a speciální požadavky. Pro velká luggage, lyže nebo kočárky rezervujeme minivan s dostatkem místa." },
+                { q: "Je možné book zpáteční cestu?", a: "Samozřejmě. V rezervačním formuláři jednoduše přidejte zpáteční cestu. Zpáteční jízdu je možné objednat i samostatně." },
               ].map((item, i) => (
                 <details key={i} className="bg-white border border-gray-200 rounded-xl overflow-hidden group">
                   <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50 list-none">
@@ -263,7 +263,7 @@ export default function LetistniPreprava() {
             <p className="mb-8 text-lg" style={{ color: "rgba(255,255,255,.75)" }}>
               Zadejte odkud a na které airport – price se zobrazí okamžitě.
             </p>
-            <a href="/#rezervace" style={{ background: "#F97316", color: "#fff", padding: "18px 48px", borderRadius: "14px", fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "18px", textDecoration: "none", display: "inline-block", boxShadow: "0 8px 32px rgba(249,115,22,.4)" }}>
+            <a href="/#booking" style={{ background: "#F97316", color: "#fff", padding: "18px 48px", borderRadius: "14px", fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "18px", textDecoration: "none", display: "inline-block", boxShadow: "0 8px 32px rgba(249,115,22,.4)" }}>
               Book now transfer →
             </a>
           </div>

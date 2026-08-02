@@ -7,10 +7,10 @@ import { Lock, Car, Clock, Globe, CreditCard, UserCheck } from "lucide-react"
 export const metadata: Metadata = {
   title: "Dálkové taxi a meziměstská doprava Prague | pragueairportaxi.com",
   description: "Dálkové taxi z Prahy za pevnou price — Prague–Vienna od 9 €29, Prague–Berlin od 9 650 Kč, Prague–Brno od 6 400 Kč. Intercity Transport po celé ČR i Evropě, 24/7.",
-  keywords: "meziměstská doprava, mezinárodní transfer, Prague Vienna taxi, Prague Berlin taxi, Prague Brno taxi, přeprava do zahraničí, taxi Prague Munich",
+  keywords: "meziměstská doprava, mezinárodní transfer, Prague Vienna taxi, Prague Berlin taxi, Prague Brno taxi, transport do zahraničí, taxi Prague Munich",
   openGraph: {
     title: "Meziměstská a mezinárodní doprava | pragueairportaxi.com",
-    description: "Prague–Vienna od 9 €29, Prague–Berlin od 9 650 Kč. Komfortní přeprava po celé Evropě.",
+    description: "Prague–Vienna od 9 €29, Prague–Berlin od 9 650 Kč. Komfortní transport po celé Evropě.",
     url: "https://www.pragueairportaxi.com/mezimestska-doprava",
   },
   alternates: { canonical: "https://www.pragueairportaxi.com/mezimestska-doprava" },
@@ -47,8 +47,8 @@ const ROUTES = [
 ]
 
 const VYHODY = [
-  { Icon: Lock,      title: "Fixní price předem",    desc: "Cena je dohodnutá předem a nemění se. Žádné příplatky za mýto, parkování nebo čekání.", img: "/service-fixni-price.jpg" },
-  { Icon: Car,       title: "Moderní vehicle",      desc: "Komfortní sedany a minivany s klimatizací, Wi-Fi a dostatkem místa pro zavazadla.", img: "/service-vehicle.jpg" },
+  { Icon: Lock,      title: "Fixní price in advance",    desc: "Cena je dohodnutá in advance a nemění se. Žádné příplatky za mýto, parkování nebo čekání.", img: "/service-fixni-price.jpg" },
+  { Icon: Car,       title: "Moderní vehicle",      desc: "Komfortní sedany a minivany s klimatizací, Wi-Fi a dostatkem místa pro luggage.", img: "/service-vehicle.jpg" },
   { Icon: Clock,     title: "Flexibilní časy",      desc: "Přepravujeme 24 hodin denně, 7 dní v týdnu. Rezervujte kdykoli, i na poslední chvíli.", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&q=80" },
   { Icon: Globe,     title: "Celá střední Evropa",  desc: "Jezdíme do Německa, Rakouska, Polska, Slovenska, Maďarska a dalších zemí.", img: "/service-evropa.jpg" },
   { Icon: CreditCard,title: "Platba kartou",        desc: "Platba kartou online nebo hotově driveri. Na vyžádání invoice na firmu.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
@@ -57,9 +57,9 @@ const VYHODY = [
 
 const FAQ_ITEMS = [
   { q: "Jezdíte i mimo ČR?", a: "Ano, přepravujeme po celé střední Evropě – Německo, Rakousko, Slovensko, Polsko, Maďarsko a další. Cenu trasy získáte ihned po zadání do rezervačního formuláře." },
-  { q: "Je price fixní i pro mezinárodní trasy?", a: "Ano, price je vždy fixní a dohodnuta předem. Žádné příplatky za mýto, delay nebo noční jízdu." },
-  { q: "Mohu rezervovat cestu tam a zpět?", a: "Samozřejmě, v rezervačním formuláři jednoduše přidejte zpáteční cestu se slevou." },
-  { q: "Jak probíhá platba za dlouhé trasy?", a: "Platba kartou online nebo hotově driveri. U tras nad 5 000 Kč je možná záloha předem." },
+  { q: "Je price fixní i pro mezinárodní trasy?", a: "Ano, price je vždy fixní a dohodnuta in advance. Žádné příplatky za mýto, delay nebo noční jízdu." },
+  { q: "Mohu book cestu tam a zpět?", a: "Samozřejmě, v rezervačním formuláři jednoduše přidejte zpáteční cestu se slevou." },
+  { q: "Jak probíhá platba za dlouhé trasy?", a: "Platba kartou online nebo hotově driveri. U tras nad 5 000 Kč je možná záloha in advance." },
   { q: "Co když trasa není v ceníku?", a: "Zadejte ji do rezervačního formuláře – price se vypočítá automaticky podle vzdálenosti. Nebo nás kontaktujte přímo." },
 ]
 
@@ -95,7 +95,7 @@ export default function MezimestskaPage() {
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-              Pohodlná přeprava mezi městy bez přestupů. Fixed price, klimatizované vehicle, door-to-door.
+              Pohodlná transport mezi městy bez přestupů. Fixed price, klimatizované vehicle, door-to-door.
             </p>
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function MezimestskaPage() {
               Dálkové taxi z Prahy
             </h2>
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: 1.7, marginBottom: "40px", maxWidth: "680px" }}>
-              Dálkový transfer z Prahy do jakéhokoli města v ČR nebo zahraničí — pevná price dohodnutá předem, bez taxametru a bez překvapení. Dálkové taxi Prague zajišťujeme 24 hodin denně, 7 dní v týdnu, se sedany i minibusy pro skupiny.
+              Dálkový transfer z Prahy do jakéhokoli města v ČR nebo zahraničí — pevná price dohodnutá in advance, bez taxametru a bez překvapení. Dálkové taxi Prague zajišťujeme 24 hodin denně, 7 dní v týdnu, se sedany i minibusy pro groups.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
@@ -134,7 +134,7 @@ export default function MezimestskaPage() {
               ))}
             </div>
             <div className="mt-4 p-4 rounded-xl text-sm text-center" style={{ background: "#f8fafc", color: "#64748b" }}>
-              Your route není v seznamu? Zadejte ji do <a href="/#rezervace" style={{ color: "#F97316", fontWeight: 700 }}>rezervačního formuláře</a> – price se vypočítá okamžitě.
+              Your route není v seznamu? Zadejte ji do <a href="/#booking" style={{ color: "#F97316", fontWeight: 700 }}>rezervačního formuláře</a> – price se vypočítá okamžitě.
             </div>
           </div>
         </section>
@@ -186,9 +186,9 @@ export default function MezimestskaPage() {
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Rezervujte meziměstskou přepravu</h2>
             <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Fixed price, komfortní vehicle, reliable driver</p>
-            <a href="/#rezervace" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
+            <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
-              Zarezervovat nyní
+              Zabook nyní
             </a>
           </div>
         </section>

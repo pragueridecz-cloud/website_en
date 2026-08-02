@@ -76,7 +76,7 @@ export default function Footer() {
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               {[
                 { label: "How it works", href: "#jak-to-funguje" },
-                { label: "Časté otázky", href: "#faq" },
+                { label: "Frequently asked questions", href: "#faq" },
                 { label: "Terms & Conditions", href: "/obchodni-podminky" },
                 { label: "Ochrana passengersních údajů", href: "/ochrana-passengersnich-udaju" },
                 { label: "PragueRide.com (EN)", href: "https://www.pragueride.com" },

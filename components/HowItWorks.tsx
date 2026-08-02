@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from "react";
 const steps = [
   {
     icon: "ti-device-laptop",
-    title: "Rezervujte online",
+    title: "Book online",
     desc: "Enter from, to and when — airport, hotel, or home. Price shown instantly, fixed with no hidden fees.",
     detail: "Pay by card online or cash to the driver.",
   },
@@ -166,7 +166,7 @@ export default function HowItWorks() {
 
         {/* CTA */}
         <div style={{ textAlign: "center", marginTop: "56px" }}>
-          <a href="/#rezervace" style={{
+          <a href="/#booking" style={{
             display: "inline-flex", alignItems: "center", gap: "10px",
             background: "#00205B", color: "#fff", textDecoration: "none",
             padding: "14px 32px", borderRadius: "12px",

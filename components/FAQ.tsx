@@ -5,31 +5,31 @@ import SectionHeading from "./SectionHeading";
 
 const faqs = [
   {
-    q: "Jak daleko předem musím rezervovat?",
-    a: "Rezervaci lze provést až 2 hodiny před odjezdem. Doporučujeme ale rezervovat alespoň 24 hodin předem pro jistotu dostupnosti vehicle.",
+    q: "How far in advance do I need to book?",
+    a: "Rezervaci lze provést až 2 hodiny před odjezdem. Doporučujeme ale book alespoň 24 hodin in advance pro jistotu dostupnosti vehicle.",
   },
   {
-    q: "Co se stane, když bude mít letadlo delay?",
+    q: "What happens if my flight is delayed?",
     a: "We track your flight v reálném čase. Pokud má let delay, driver automaticky upraví čas příjezdu. Neplatíte žádné příplatky za čekání.",
   },
   {
-    q: "Kde mě driver vyzvedne na airport?",
+    q: "Where will the driver pick me up at the airport?",
     a: "Driver čeká přímo u výjezdu z celnice v příletové hale s cedulí s vaším jménem. Přesné místo dostanete e-mailem po rezervaci.",
   },
   {
-    q: "Mohu zrušit nebo změnit rezervaci?",
+    q: "Can I cancel or change my booking?",
     a: "Rezervaci lze zrušit free až 24 hodin před jízdou. Změny trasy nebo času jsou možné po domluvě s dispečinkem.",
   },
   {
-    q: "Přijímáte platbu kartou?",
-    a: "Ano, platbu kartou online přijímáme přes Stripe — a za online platbu navíc dostanete 10% slevu. Alternativně lze platit hotovostí přímo driveri.",
+    q: "Do you accept card payment?",
+    a: "Ano, card payment online přijímáme přes Stripe — a za online platbu navíc dostanete 10% slevu. Alternativně lze platit hotovostí přímo driveri.",
   },
   {
-    q: "Vozíte také skupiny a velká zavazadla?",
-    a: "Ano. Pro velké skupiny nebo hodně zavazadel (lyže, kola, golfové vybavení) doporučujeme minivan. Vše zadejte při rezervaci a my zajistíme vhodné vehicle.",
+    q: "Do you transport groups and large luggage?",
+    a: "Ano. Pro velké groups nebo hodně luggage (lyže, kola, golfové vybavení) doporučujeme minivan. Vše zadejte při rezervaci a my zajistíme vhodné vehicle.",
   },
   {
-    q: "Jezdíte i mimo Prahu?",
+    q: "Do you travel outside Prague?",
     a: "Ano — zajišťujeme transfery to/from Prague Airport pro celou ČR i do sousedních zemí (Vienna, Drážďany, Varšava a další).",
   },
 ];
@@ -40,7 +40,7 @@ export default function FAQ() {
   return (
     <section id="faq" className="py-16 bg-white">
       <div className="max-w-3xl mx-auto px-4">
-        <SectionHeading label="Otázky" title="Časté otázky" subtitle="Nenašli jste odpověď? Zavolejte nám na +420 606 079 179" />
+        <SectionHeading label="FAQ" title="Frequently asked questions" subtitle="Didn't find an answer? Call us at +420 606 079 179" />
         <div className="space-y-3">
           {faqs.map((faq, i) => (
             <div

@@ -325,9 +325,9 @@ export default function AirportMapDetail() {
             </ul>
 
             {/* CTA */}
-            <a href="/#rezervace"
+            <a href="/#booking"
               style={{ display: "block", textAlign: "center" as const, background: "#F97316", color: "#fff", textDecoration: "none", padding: "14px", borderRadius: "12px", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "15px", boxShadow: "0 4px 16px rgba(249,115,22,0.3)", transition: "opacity 0.15s" }}>
-              Rezervovat transfer na {airport.code} →
+              Book transfer na {airport.code} →
             </a>
           </div>
         </div>

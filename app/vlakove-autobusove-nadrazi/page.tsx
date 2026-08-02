@@ -6,8 +6,8 @@ import { Clock, Luggage, ArrowLeftRight, MapPin, Banknote, Moon, Train, Bus } fr
 
 export const metadata: Metadata = {
   title: "Transport na nádraží Praha | naairportlevně.cz",
-  description: "Taxi na nádraží Praha — Hlavní nádraží, Florenc, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se zavazadly, 24/7 dostupnost. Rezervujte online.",
-  keywords: "taxi na nádraží Praha, transfer hlavní nádraží Praha, odvoz na nádraží, přeprava Florenc, taxi Smíchovské nádraží, taxi autobusové nádraží",
+  description: "Taxi na nádraží Praha — Hlavní nádraží, Florenc, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se zavazadly, 24/7 dostupnost. Book online.",
+  keywords: "taxi na nádraží Praha, transfer hlavní nádraží Praha, odvoz na nádraží, transport Florenc, taxi Smíchovské nádraží, taxi autobusové nádraží",
   openGraph: {
     title: "Transport na vlakové a autobusové nádraží | naairportlevně.cz",
     description: "Transfer na Hlavní nádraží, Florenc, Smíchovské nádraží. Pevné ceny 24/7.",
@@ -37,7 +37,7 @@ const STATIONS = [
 
 const VYHODY = [
   { Icon: Clock,          title: "Přijedeme včas",          desc: "Naplánujeme cestu s dostatečnou rezervou, abyste vlak nebo autobus určitě stihli.", img: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=600&q=80" },
-  { Icon: Luggage,        title: "Pomoc se zavazadly",       desc: "Řidič vám pomůže s nakládkou a vykládkou zavazadel, kočárků nebo jízdních kol.", img: "/service-zavazadla.jpg" },
+  { Icon: Luggage,        title: "Pomoc se zavazadly",       desc: "Řidič vám pomůže s nakládkou a vykládkou luggage, kočárků nebo jízdních kol.", img: "/service-luggage.jpg" },
   { Icon: ArrowLeftRight, title: "Zpáteční jízda",           desc: "Objednáte i vyzvednutí z nádraží po návratu. Vše v jedné rezervaci.", img: "https://images.unsplash.com/photo-1502877338535-766e1452684a?w=600&q=80" },
   { Icon: MapPin,         title: "Přesné vyzvednutí",        desc: "Vyzvednutí přímo od vašich dveří nebo na dohodnutém místě.", img: "https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=600&q=80" },
   { Icon: Banknote,       title: "Pevná price",               desc: "Víte přesně, kolik zaplatíte. Bez taxametru, bez příplatků.", img: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&q=80" },
@@ -128,10 +128,10 @@ export default function NadraziPage() {
             <SectionHeading label="FAQ" title="Časté dotazy" />
             <div className="space-y-4">
               {[
-                { q: "Jak daleko dopředu mám rezervovat?", a: "Doporučujeme alespoň 2 hodiny předem, ale přijímáme i urgentní objednávky dle aktuální dostupnosti." },
+                { q: "Jak daleko dopředu mám book?", a: "Doporučujeme alespoň 2 hodiny in advance, ale přijímáme i urgentní objednávky dle aktuální dostupnosti." },
                 { q: "Co když vlak přijede se delaym?", a: "Pokud vás vyzvedáváme z nádraží, sledujeme aktuální přijezd vašeho vlaku a přizpůsobíme čas vyzvednutí." },
-                { q: "Přepravíte jízdní kolo nebo velké zavazadlo?", a: "Ano, pro kola a velká zavazadla doporučujeme minivan. Upřesněte při rezervaci." },
-                { q: "Jedete i mimo Prahu?", a: "Samozřejmě, přepravujeme po celé ČR i do zahraničí. Cena se vypočítá automaticky." },
+                { q: "Přepravíte jízdní kolo nebo velké zavazadlo?", a: "Ano, pro kola a velká luggage doporučujeme minivan. Upřesněte při rezervaci." },
+                { q: "Jedete i outside Prague?", a: "Samozřejmě, přepravujeme po celé ČR i do zahraničí. Cena se vypočítá automaticky." },
               ].map((item, i) => (
                 <details key={i} className="border border-gray-200 rounded-xl overflow-hidden">
                   <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50">
@@ -149,9 +149,9 @@ export default function NadraziPage() {
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Rezervujte transfer na nádraží</h2>
             <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Stihnete každý spoj – my se postaráme o včasné odvezení</p>
-            <a href="/#rezervace" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
+            <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
-              Zarezervovat nyní
+              Zabook nyní
             </a>
           </div>
         </section>

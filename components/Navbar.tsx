@@ -128,7 +128,7 @@ export default function Navbar() {
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,.08)"; }}>
                 Sign in
               </a>
-              <a href="/#rezervace"
+              <a href="/#booking"
                 className="text-xs font-bold px-4 py-1.5 rounded cursor-pointer"
                 style={{ background: "#F97316", color: "#fff", textDecoration: "none" }}
                 onMouseEnter={e => ((e.currentTarget as HTMLElement).style.background = "#EA580C")}
@@ -171,7 +171,7 @@ export default function Navbar() {
             <a href="https://portal.pragueairportaxi.com" target="_blank" rel="noopener noreferrer"
               className="flex-1 text-center py-2.5 rounded-lg font-semibold text-sm"
               style={{ border: "1px solid rgba(255,255,255,.3)", color: "#fff", textDecoration: "none" }}>Sign in</a>
-            <a href="/#rezervace" onClick={() => setMenuOpen(false)}
+            <a href="/#booking" onClick={() => setMenuOpen(false)}
               className="flex-1 text-center py-2.5 rounded-lg font-bold text-sm"
               style={{ background: "#F97316", color: "#fff", textDecoration: "none" }}>Book now</a>
           </div>

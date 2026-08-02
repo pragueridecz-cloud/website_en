@@ -185,7 +185,7 @@ export default function Hero() {
       {/* Portal only on desktop — mobile uses inline iframe */}
       {mounted && isDesktop && createPortal(widgetEl, document.body)}
 
-      <section id="rezervace" className="px-4 pt-28 pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
+      <section id="booking" className="px-4 pt-28 pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
         {/* Prague fotka */}
         <div className="hero-bg" style={{
           position: "absolute", inset: 0, zIndex: 0,
@@ -211,13 +211,13 @@ export default function Hero() {
               pointerEvents: expanded ? "none" : "auto",
             }}>
               <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(32px,4vw,52px)", margin: "0 0 8px" }}>
-                Levná přeprava
+                Affordable transport
               </h1>
               <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(32px,4vw,52px)", margin: "0 0 6px", color: "#F97316" }}>
                 to/from Prague Airport
               </h1>
               <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, lineHeight: 1.3, fontSize: "clamp(16px,2vw,22px)", margin: "0 0 28px", color: "#fff" }}>
-                a transfery po celé ČR a střední Evropě
+                and transfers across Czech Republic and Central Europe
               </h2>
               <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "32px" }}>
                 {WHY_US.map((item, i) => (
@@ -247,7 +247,7 @@ export default function Hero() {
           {/* Mobil */}
           <div className="md:hidden flex flex-col pb-5">
             <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 4px" }}>
-              Levná přeprava
+              Affordable transport
             </h1>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 16px", color: "#F97316" }}>
               to/from Prague Airport

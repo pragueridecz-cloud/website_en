@@ -7,7 +7,7 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Corporate transport Prague | pragueairportaxi.com",
-  description: "Firemní taxi Prague na fakturu s DPH. Employee airport transfers, korporátní transfery, VIP přeprava pro delegace. Business taxi Prague — pevná price, měsíční invoicece, dedikovaná linka.",
+  description: "Firemní taxi Prague na fakturu s DPH. Employee airport transfers, korporátní transfery, VIP transport pro delegace. Business taxi Prague — pevná price, měsíční invoicece, dedikovaná linka.",
 };
 
 

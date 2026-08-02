@@ -29,7 +29,7 @@ const SERVICES = [
   {
     img: "/service-hodinovy.jpg",
     label: "Hourly Rental",
-    title: "Driver k dispozici",
+    title: "Driver available",
     desc: "Driver all day just for you. Perfect for weddings, business meetings, trips or weekend outings without parking worries.",
     href: "/hodinovy-pronajem",
   },

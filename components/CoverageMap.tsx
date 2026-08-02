@@ -199,8 +199,8 @@ export default function CoverageMap() {
                   <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 900, color: "#00205B", fontSize: "18px" }}>{activeAirport.time}</div>
                 </div>
               </div>
-              <a href="/#rezervace" style={{ display: "block", textAlign: "center" as const, background: "#F97316", color: "#fff", textDecoration: "none", padding: "11px", borderRadius: "10px", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "14px" }}>
-                Rezervovat na {activeAirport.code} →
+              <a href="/#booking" style={{ display: "block", textAlign: "center" as const, background: "#F97316", color: "#fff", textDecoration: "none", padding: "11px", borderRadius: "10px", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "14px" }}>
+                Book na {activeAirport.code} →
               </a>
             </div>
 

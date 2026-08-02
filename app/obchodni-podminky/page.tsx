@@ -82,14 +82,14 @@ export default function ObchodniPodminky() {
               "Provozovatel – transfer-prague-car s.r.o., provozovatel přepravní platformy www.naletistelevne.cz",
               "Zákazník – fyzická nebo právnická osoba, která objednává přepravní službu",
               "Řidič – smluvní partner provozovatele zajišťující fyzickou přepravu",
-              "Rezervace – závazná booking přepravy vytvoření prostřednictvím rezervačního formuláře",
-              "Pevná price – price sdělená zákazníkovi při dokončení rezervace, která se nemění (není-li dále uvedeno jinak)",
+              "Booking – závazná booking přepravy vytvoření prostřednictvím rezervačního formuláře",
+              "Pevná price – price sdělená zákazníkovi při dokončení booking, která se nemění (není-li dále uvedeno jinak)",
             ]} />
           </Section>
 
-          <Section title="3. Rezervace a uzavření smlouvy">
+          <Section title="3. Booking a uzavření smlouvy">
             <P>Přepravní smlouva je uzavřena okamžikem, kdy zákazník dokončí booking prostřednictvím rezervačního formuláře a obdrží potvrzovací e-mail na adresu uvedenou při rezervaci.</P>
-            <P>Zákazník je povinen uvést správné a úplné informace – místo vyzvednutí, cíl cesty, datum a čas, počet passengerch a počet zavazadel. Provozovatel neodpovídá za škody vzniklé z důvodu nesprávně zadaných údajů.</P>
+            <P>Zákazník je povinen uvést správné a úplné informace – místo vyzvednutí, cíl cesty, datum a čas, počet passengerch a počet luggage. Provozovatel neodpovídá za škody vzniklé z důvodu nesprávně zadaných údajů.</P>
             <P>Rezervaci lze provést:</P>
             <Ul items={[
               "Online přes rezervační formulář na naletistelevne.cz",
@@ -103,7 +103,7 @@ export default function ObchodniPodminky() {
             <P>Cena <strong>nezahrnuje</strong>: volitelné příplatky (lyže, kola, dětské sedačky), pokud nebyly součástí objednávky.</P>
             <P>Možné způsoby platby:</P>
             <Ul items={[
-              "Platba kartou online předem (Visa, Mastercard, Apple Pay, Google Pay)",
+              "Platba kartou online in advance (Visa, Mastercard, Apple Pay, Google Pay)",
               "Platba v hotovosti driveri při nastoupení do vehicle",
               "Bankovní převod (pouze pro firemní zákazníky na základě faktury)",
             ]} />
@@ -147,8 +147,8 @@ export default function ObchodniPodminky() {
             <Ul items={[
               "Být připraven na dohodnutém místě vyzvednutí v stanovený čas",
               "Mít funkční telefonní číslo, na kterém je dostupný v den přepravy",
-              "Informovat provozovatele o případných zvláštních požadavcích (dětská sedačka, invalidní vozík, nadměrná zavazadla) předem",
-              "Nepřekračovat kapacitu vehicle (počet osob a zavazadel)",
+              "Informovat provozovatele o případných zvláštních požadavcích (dětská sedačka, invalidní vozík, nadměrná luggage) in advance",
+              "Nepřekračovat kapacitu vehicle (počet osob a luggage)",
               "Chovat se ohleduplně vůči driveri a vozidlu – kouření, konzumace alkoholu a jídla ve vozidle je zakázána (nevztahuje se na vodu)",
             ]} />
           </Section>
@@ -157,7 +157,7 @@ export default function ObchodniPodminky() {
             <P>Provozovatel odpovídá za škody způsobené zákazníkovi v přímé souvislosti s poskytnutou přepravní službou, zejména za:</P>
             <Ul items={[
               "Nedodání vehicle v dohodnutém čase (bez objektivních důvodů)",
-              "Poškození zavazadel přepravovaných ve vozidle prokazatelně zaviněné driverem",
+              "Poškození luggage přepravovaných ve vozidle prokazatelně zaviněné driverem",
             ]} />
             <P>Provozovatel <strong>neodpovídá</strong> za:</P>
             <Ul items={[

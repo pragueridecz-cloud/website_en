@@ -120,8 +120,8 @@ export default function Fleet({ mode = "transfer" }: { mode?: "transfer" | "hour
   return (
     <section id="vozovy-park" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
-        <SectionHeading label="Vozový park" title="Vozový park a ceny"
-          subtitle="Fixed prices, no surprises. Choose your vehicle podle počtu passengerch a zavazadel." />
+        <SectionHeading label="Our fleet" title="Our fleet a ceny"
+          subtitle="Fixed prices, no surprises. Choose your vehicle podle počtu passengerch a luggage." />
 
         {/* Category tabs */}
         <div style={{ display: "flex", gap: "8px", marginBottom: "32px" }}>
@@ -242,7 +242,7 @@ function CarCard({ car, mode = "transfer" }: { car: typeof cars[0]; mode?: strin
         </ul>
         <div className="border-t border-gray-100 pt-3 flex items-center justify-between">
           <span className="text-lg font-black text-[#00205B]">{mode === "hourly" ? car.hourlyPrice : car.price}</span>
-          <a href="/#rezervace" className="text-xs font-bold px-3 py-1.5 rounded-lg text-white"
+          <a href="/#booking" className="text-xs font-bold px-3 py-1.5 rounded-lg text-white"
             style={{ background: "#F97316", textDecoration: "none" }}>
             Book now
           </a>

@@ -53,11 +53,11 @@ export default function Footer() {
             <h4 style={{ fontWeight: 600, marginBottom: "16px", fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#cbd5e1" }}>Services</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               {[
-                { label: "Airport Transfer", href: "/letistni-preprava" },
-                { label: "Intercity Transport", href: "/mezimestska-doprava" },
-                { label: "Vlakové a autobusové nádraží", href: "/vlakove-autobusove-nadrazi" },
-                { label: "Hourly Rental", href: "/hodinovy-pronajem" },
-                { label: "For companies", href: "/preprava-pro-firmy" },
+                { label: "Airport Transfer", href: "/airport-transfer" },
+                { label: "Intercity Transport", href: "/intercity-transport" },
+                { label: "Vlakové a autobusové nádraží", href: "/train-bus-station" },
+                { label: "Hourly Rental", href: "/hourly-rental" },
+                { label: "For companies", href: "/corporate-travel" },
               ].map((l) => (
                 <li key={l.label}>
                   <a href={l.href} style={{ color: "#94a3b8", fontSize: "13px", textDecoration: "none" }}
@@ -77,7 +77,7 @@ export default function Footer() {
               {[
                 { label: "How it works", href: "#jak-to-funguje" },
                 { label: "Frequently asked questions", href: "#faq" },
-                { label: "Terms & Conditions", href: "/obchodni-podminky" },
+                { label: "Terms & Conditions", href: "/terms-and-conditions" },
                 { label: "Ochrana passengersních údajů", href: "/ochrana-passengersnich-udaju" },
                 { label: "PragueRide.com (EN)", href: "https://www.pragueride.com" },
               ].map((l) => (

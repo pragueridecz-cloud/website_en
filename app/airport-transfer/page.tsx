@@ -211,7 +211,7 @@ export default function LetistniPreprava() {
                 {
                   img: "/fixed-price-payment.jpg",
                   title: "Fixed price bez příplatků",
-                  desc: "Cena je dohodnutá in advance a nemění se. Žádné příplatky za mýto, delay, noční jízdu ani velká luggage.",
+                  desc: "Price je dohodnutá in advance a nemění se. Žádné příplatky za mýto, delay, noční jízdu ani velká luggage.",
                 },
               ].map((item, i) => (
                 <div key={i} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
@@ -234,10 +234,10 @@ export default function LetistniPreprava() {
             <SectionHeading label="Časté dotazy" title="Máte otázky?" />
             <div className="space-y-3">
               {[
-                { q: "Přepravíte mě i na airport ve Vídni nebo Munichě?", a: "Ano, přepravujeme na všechna airport v dosahu přibližně 700 km od Prahy. Vienna, Bratislava, Budapešť, Munich, Frankfurt, Drážďany a další. Cenu dostanete ihned po zadání do rezervačního formuláře." },
+                { q: "Přepravíte mě i na airport ve Vídni nebo Munichě?", a: "Yes, přepravujeme na všechna airport v dosahu přibližně 700 km od Prahy. Vienna, Bratislava, Budapešť, Munich, Frankfurt, Drážďany a další. Cenu dostanete ihned po zadání do rezervačního formuláře." },
                 { q: "Jak funguje sledování delay letu?", a: "Při rezervaci zadáte číslo letu. Náš systém automaticky sleduje reálný čas příletu a informuje drivere. Pokud má váš let delay, driver dorazí pozdě – a vy neplatíte žádný příplatek za čekání." },
                 { q: "Kde mě driver vyzvedne po příletu?", a: "Řidič vás čeká přímo v příletové hale s cedulkou s vaším jménem, ihned za výstupem z celnice. Nemusíte nikam volat ani hledat." },
-                { q: "Mohu platit kartou?", a: "Ano, platba kartou online při rezervaci nebo hotově driveri. Na vyžádání vystavíme fakturu na firmu s DIČ." },
+                { q: "Mohu platit kartou?", a: "Yes, payment kartou online při rezervaci nebo hotově driveri. Na vyžádání vystavíme fakturu na firmu s DIČ." },
                 { q: "Co když potřebuji převézt hodně luggage nebo lyže?", a: "Při rezervaci upřesněte počet luggage a speciální požadavky. Pro velká luggage, lyže nebo kočárky rezervujeme minivan s dostatkem místa." },
                 { q: "Je možné book zpáteční cestu?", a: "Samozřejmě. V rezervačním formuláři jednoduše přidejte zpáteční cestu. Zpáteční jízdu je možné objednat i samostatně." },
               ].map((item, i) => (

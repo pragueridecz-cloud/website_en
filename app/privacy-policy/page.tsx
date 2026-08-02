@@ -3,7 +3,7 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
-  title: "Ochrana osobních údajů (GDPR) | transfer-prague-car s.r.o.",
+  title: "Privacy Policy (GDPR) | transfer-prague-car s.r.o.",
   description: "Zásady ochrany osobních údajů společnosti transfer-prague-car s.r.o. Jak zpracováváme vaše data, jaká máte práva a jak nás kontaktovat.",
 }
 
@@ -62,7 +62,7 @@ export default function OchranaOsobnichUdaju() {
             </span>
           </div>
           <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(28px,4vw,44px)", color: "#fff", margin: "0 0 12px", lineHeight: 1.15 }}>
-            Ochrana osobních údajů
+            Privacy Policy
           </h1>
           <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "16px" }} />
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "14px" }}>
@@ -79,9 +79,9 @@ export default function OchranaOsobnichUdaju() {
             <P>Správcem vašich osobních údajů je:</P>
             <div style={{ background: "#f0f4ff", border: "1px solid #dbeafe", borderRadius: "10px", padding: "16px 20px", marginBottom: "12px" }}>
               <strong>transfer-prague-car s.r.o.</strong><br />
-              Sídlo: Sochařská 333/2, 170 00 Praha, Česká republika<br />
+              Sídlo: Sochařská 333/2, 170 00 Prague, Česká republika<br />
               IČO: 25706993<br />
-              E-mail: <a href="mailto:info@naletistelevne.cz" style={{ color: "#00205B" }}>info@naletistelevne.cz</a><br />
+              E-mail: <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a><br />
               Phone: <a href="tel:+420606079179" style={{ color: "#00205B" }}>+420 606 079 179</a>
             </div>
             <P>Tato stránka popisuje, jaké osobní údaje shromažďujeme, k jakým účelům je používáme a jaká máte v souvislosti s jejich zpracováním práva.</P>
@@ -154,7 +154,7 @@ export default function OchranaOsobnichUdaju() {
             <P>Žádné osobní údaje neprodáváme třetím stranám ani je nepředáváme pro marketingové účely bez vašeho výslovného souhlasu.</P>
           </Section>
 
-          <Section title="5. Vaše práva">
+          <Section title="5. Your Rights">
             <P>Jako subjekt údajů máte tato práva, která můžete uplatnit kdykoliv kontaktováním správce:</P>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "10px", marginBottom: "16px" }}>
               <RightBox icon="ti ti-eye" title="Právo na přístup" text="Máte právo vědět, jaké údaje o vás zpracováváme a získat jejich kopii." />
@@ -164,7 +164,7 @@ export default function OchranaOsobnichUdaju() {
               <RightBox icon="ti ti-package" title="Právo na přenositelnost" text="Údaje zpracovávané automatizovaně na základě souhlasu nebo smlouvy vám předáme ve strojově čitelném formátu." />
               <RightBox icon="ti ti-ban" title="Právo vznést námitku" text="Proti zpracování na základě oprávněného zájmu můžete kdykoliv vznést námitku." />
             </div>
-            <P>Svá práva uplatněte e-mailem na <a href="mailto:info@naletistelevne.cz" style={{ color: "#00205B" }}>info@naletistelevne.cz</a>. Na vaši žádost odpovíme do <strong>30 dnů</strong>.</P>
+            <P>Svá práva uplatněte e-mailem na <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a>. Na vaši žádost odpovíme do <strong>30 dnů</strong>.</P>
             <P>Pokud se domníváte, že zpracováváme vaše údaje v rozporu s GDPR, máte právo podat stížnost u Úřadu pro ochranu osobních údajů (<a href="https://www.uoou.cz" target="_blank" rel="noopener noreferrer" style={{ color: "#00205B" }}>www.uoou.cz</a>).</P>
           </Section>
 
@@ -180,30 +180,30 @@ export default function OchranaOsobnichUdaju() {
           </Section>
 
           <Section title="7. Cookies">
-            <P>Náš web používá cookies. Podrobné informace o tom, jaké cookies používáme a jak je lze spravovat, naleznete v našich <a href="/zasady-zpracovani-cookies" style={{ color: "#00205B" }}>Zásadách zpracování cookies</a>.</P>
+            <P>Náš web používá cookies. Podrobné informace o tom, jaké cookies používáme a jak je lze spravovat, naleznete v našich <a href="/cookie-policy" style={{ color: "#00205B" }}>Zásadách zpracování cookies</a>.</P>
           </Section>
 
           <Section title="8. Změny těchto zásad">
             <P>Tyto zásady ochrany osobních údajů mohou být průběžně aktualizovány. O podstatných změnách vás budeme informovat e-mailem nebo upozorněním na webu. Datum poslední aktualizace je uvedeno v záhlaví tohoto dokumentu.</P>
           </Section>
 
-          {/* Kontaktní box */}
+          {/* Contactní box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
               <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Chcete uplatnit svá práva nebo se zeptat?</div>
               <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám – odpovíme do 30 dnů.</div>
             </div>
-            <a href="mailto:info@naletistelevne.cz" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
-              info@naletistelevne.cz
+            <a href="mailto:info@pragueairportaxi.com" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
+              info@pragueairportaxi.com
             </a>
           </div>
 
           {/* Navigace mezi dokumenty */}
           <div style={{ display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap" as const }}>
-            <a href="/obchodni-podminky" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
+            <a href="/terms-and-conditions" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
               ← Obchodní podmínky
             </a>
-            <a href="/zasady-zpracovani-cookies" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
+            <a href="/cookie-policy" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
               Zásady cookies →
             </a>
           </div>

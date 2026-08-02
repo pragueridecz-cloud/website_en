@@ -5,31 +5,31 @@ import SectionHeading from "@/components/SectionHeading"
 import { Clock, Luggage, ArrowLeftRight, MapPin, Banknote, Moon, Train, Bus } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Transport na nádraží Praha | naairportlevně.cz",
-  description: "Taxi na nádraží Praha — Hlavní nádraží, Florenc, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se zavazadly, 24/7 dostupnost. Book online.",
-  keywords: "taxi na nádraží Praha, transfer hlavní nádraží Praha, odvoz na nádraží, transport Florenc, taxi Smíchovské nádraží, taxi autobusové nádraží",
+  title: "Transport na nádraží Prague | naairportlevně.cz",
+  description: "Taxi na nádraží Prague — Main Station, Florenc Bus Terminal, Smíchovské nádraží, Holešovice, Masarykovo. Pevná price, pomoc se zavazadly, 24/7 dostupnost. Book online.",
+  keywords: "taxi na nádraží Prague, transfer hlavní nádraží Prague, odvoz na nádraží, transport Florenc Bus Terminal, taxi Smíchovské nádraží, taxi autobusové nádraží",
   openGraph: {
     title: "Transport na vlakové a autobusové nádraží | naairportlevně.cz",
-    description: "Transfer na Hlavní nádraží, Florenc, Smíchovské nádraží. Pevné ceny 24/7.",
-    url: "https://www.naletistelevne.cz/vlakove-autobusove-nadrazi",
+    description: "Transfer na Main Station, Florenc Bus Terminal, Smíchovské nádraží. Pevné ceny 24/7.",
+    url: "https://www.pragueairportaxi.com/vlakove-autobusove-nadrazi",
   },
-  alternates: { canonical: "https://www.naletistelevne.cz/vlakove-autobusove-nadrazi" },
+  alternates: { canonical: "https://www.pragueairportaxi.com/vlakove-autobusove-nadrazi" },
 }
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Transport na vlakové a autobusové nádraží Praha",
-  "description": "Transfer na hlavní nádraží, Florenc, Smíchovské nádraží a další.",
+  "name": "Transport na vlakové a autobusové nádraží Prague",
+  "description": "Transfer na hlavní nádraží, Florenc Bus Terminal, Smíchovské nádraží a další.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
 }
 
 const STATIONS = [
-  { name: "Praha Hlavní nádraží",      type: "vlak",   desc: "Centrální vlaková stanice Prahy" },
-  { name: "Praha Smíchovské nádraží",  type: "vlak",   desc: "Moderní přestupní uzel na jihozápadě" },
-  { name: "Praha Masarykovo nádraží",  type: "vlak",   desc: "Historické centrum Prahy" },
-  { name: "Praha Holešovice",          type: "vlak",   desc: "Mezinárodní vlaky a přestupní bod" },
-  { name: "Florenc",                   type: "autobus", desc: "Hlavní autobusové nádraží Prahy" },
+  { name: "Prague Main Station",      type: "vlak",   desc: "Centrální vlaková stanice Prahy" },
+  { name: "Prague Smíchovské nádraží",  type: "vlak",   desc: "Moderní přestupní uzel na jihozápadě" },
+  { name: "Prague Masarykovo nádraží",  type: "vlak",   desc: "Historické centrum Prahy" },
+  { name: "Prague Holešovice",          type: "vlak",   desc: "Mezinárodní vlaky a přestupní bod" },
+  { name: "Florenc Bus Terminal",                   type: "autobus", desc: "Hlavní autobusové nádraží Prahy" },
   { name: "ÚAN Černý Most",            type: "autobus", desc: "Autobusové nádraží na východě Prahy" },
   { name: "Na Knížecí",                type: "autobus", desc: "Jihozápadní autobusový terminál" },
   { name: "Zličín",                    type: "autobus", desc: "Westfield Zličín – autobusový terminál" },
@@ -61,12 +61,12 @@ export default function NadraziPage() {
               </span>
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
-              Transfer na nádraží<br />
+              Station Transfer<br />
               <span style={{ color: "#F97316" }}>vlak i autobus</span>
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-              Taxi na nádraží Praha s pevnou cenou a bez čekání. Přivezeme vás přesně včas na Hlavní nádraží Praha, autobusové nádraží Florenc, Smíchovské nádraží, nádraží Holešovice nebo Masarykovo nádraží. Pomoc se zavazadly, vyzvednutí přímo od dveří — a stejnou službu nabízíme i na zpáteční cestě z nádraží domů.
+              Taxi na nádraží Prague s pevnou cenou a bez čekání. Přivezeme vás přesně včas na Main Station Prague, autobusové nádraží Florenc Bus Terminal, Smíchovské nádraží, nádraží Holešovice nebo Masarykovo nádraží. Pomoc se zavazadly, vyzvednutí přímo od dveří — a stejnou službu nabízíme i na zpáteční cestě z nádraží domů.
             </p>
           </div>
         </div>
@@ -130,8 +130,8 @@ export default function NadraziPage() {
               {[
                 { q: "Jak daleko dopředu mám book?", a: "Doporučujeme alespoň 2 hodiny in advance, ale přijímáme i urgentní objednávky dle aktuální dostupnosti." },
                 { q: "Co když vlak přijede se delaym?", a: "Pokud vás vyzvedáváme z nádraží, sledujeme aktuální přijezd vašeho vlaku a přizpůsobíme čas vyzvednutí." },
-                { q: "Přepravíte jízdní kolo nebo velké zavazadlo?", a: "Ano, pro kola a velká luggage doporučujeme minivan. Upřesněte při rezervaci." },
-                { q: "Jedete i outside Prague?", a: "Samozřejmě, přepravujeme po celé ČR i do zahraničí. Cena se vypočítá automaticky." },
+                { q: "Přepravíte jízdní kolo nebo velké zavazadlo?", a: "Yes, pro kola a velká luggage doporučujeme minivan. Upřesněte při rezervaci." },
+                { q: "Jedete i outside Prague?", a: "Samozřejmě, přepravujeme po celé ČR i do zahraničí. Price se vypočítá automaticky." },
               ].map((item, i) => (
                 <details key={i} className="border border-gray-200 rounded-xl overflow-hidden">
                   <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50">

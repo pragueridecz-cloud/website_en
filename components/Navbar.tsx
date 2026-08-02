@@ -5,10 +5,10 @@ import { Phone, Mail, Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 const services = [
-  { name: "Airport Transfer", href: "/letistni-preprava" },
-  { name: "Vlakové a autobusové nádraží", href: "/vlakove-autobusove-nadrazi" },
-  { name: "Intercity Transport", href: "/mezimestska-doprava" },
-  { name: "Hourly Rental", href: "/hodinovy-pronajem" },
+  { name: "Airport Transfer", href: "/airport-transfer" },
+  { name: "Vlakové a autobusové nádraží", href: "/train-bus-station" },
+  { name: "Intercity Transport", href: "/intercity-transport" },
+  { name: "Hourly Rental", href: "/hourly-rental" },
 ];
 
 export default function Navbar() {
@@ -84,7 +84,7 @@ export default function Navbar() {
               style={{ color: "rgba(255,255,255,.85)" }}
               onMouseEnter={e => (e.currentTarget.style.color = "#F97316")}
               onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,.85)")}>How it works</a>
-            <a href="/preprava-pro-firmy" className="px-3 py-1.5 text-sm font-medium cursor-pointer"
+            <a href="/corporate-travel" className="px-3 py-1.5 text-sm font-medium cursor-pointer"
               style={{ color: "rgba(255,255,255,.85)" }}
               onMouseEnter={e => (e.currentTarget.style.color = "#F97316")}
               onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,.85)")}>For companies</a>
@@ -165,7 +165,7 @@ export default function Navbar() {
               className="pl-2" style={{ color: "rgba(255,255,255,.8)", textDecoration: "none" }}>{s.name}</a>
           ))}
           <a href="/#jak-to-funguje" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>How it works</a>
-          <a href="/preprava-pro-firmy" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>For companies</a>
+          <a href="/corporate-travel" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>For companies</a>
           <a href="/#faq" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>FAQ</a>
           <div className="flex gap-2 pt-1">
             <a href="https://portal.pragueairportaxi.com" target="_blank" rel="noopener noreferrer"

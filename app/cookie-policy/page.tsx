@@ -3,8 +3,8 @@ import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
-  title: "Zásady zpracování cookies | transfer-prague-car s.r.o.",
-  description: "Information o cookies používaných na webu naletistelevne.cz – jaké cookies používáme, k čemu slouží a jak je spravovat.",
+  title: "Cookie Policy | transfer-prague-car s.r.o.",
+  description: "Information o cookies používaných na webu pragueairportaxi.com – jaké cookies používáme, k čemu slouží a jak je spravovat.",
 }
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
@@ -54,7 +54,7 @@ export default function ZasadyCookies() {
             </span>
           </div>
           <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(28px,4vw,44px)", color: "#fff", margin: "0 0 12px", lineHeight: 1.15 }}>
-            Zásady zpracování cookies
+            Cookie Policy
           </h1>
           <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "16px" }} />
           <p style={{ color: "rgba(255,255,255,0.65)", fontSize: "14px" }}>
@@ -192,23 +192,23 @@ export default function ZasadyCookies() {
             <P>Při podstatných změnách vás upozorníme prostřednictvím banneru na webu.</P>
           </Section>
 
-          {/* Kontaktní box */}
+          {/* Contactní box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
               <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>FAQ ohledně cookies?</div>
-              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám na info@naletistelevne.cz</div>
+              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám na info@pragueairportaxi.com</div>
             </div>
-            <a href="mailto:info@naletistelevne.cz" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
-              Kontaktovat nás
+            <a href="mailto:info@pragueairportaxi.com" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
+              Contactovat nás
             </a>
           </div>
 
           {/* Navigace mezi dokumenty */}
           <div style={{ display: "flex", gap: "12px", marginTop: "24px", flexWrap: "wrap" as const }}>
-            <a href="/ochrana-osobnich-udaju" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
+            <a href="/privacy-policy" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
               ← Ochrana osobních údajů
             </a>
-            <a href="/obchodni-podminky" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
+            <a href="/terms-and-conditions" style={{ color: "#00205B", textDecoration: "none", fontSize: "13px", padding: "8px 16px", border: "1px solid #dbeafe", borderRadius: "8px", background: "#f0f4ff" }}>
               Obchodní podmínky →
             </a>
           </div>

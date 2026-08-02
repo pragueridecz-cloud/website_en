@@ -40,7 +40,7 @@ export default function B2B() {
               ))}
             </ul>
             <div className="flex gap-3 flex-wrap">
-              <a href="/preprava-pro-firmy"
+              <a href="/corporate-travel"
                 className="inline-block font-bold px-6 py-3 rounded-xl text-sm"
                 style={{ background: "#F97316", color: "#fff", textDecoration: "none" }}>
                 Více o firemní přepravě →

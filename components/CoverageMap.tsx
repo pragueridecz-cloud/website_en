@@ -10,11 +10,11 @@ const AIRPORTS = [
   { code: "OSR", name: "Ostrava-Mošnov", lat: 49.6963, lng: 18.1111, price: "from €189", time: "3.5 hrs", country: "🇨🇿" },
   { code: "VIE", name: "Vienna International", lat: 48.1103, lng: 16.5697, price: "from €173", time: "3.5 hrs", country: "🇦🇹" },
   { code: "BTS", name: "Bratislava Štefánik", lat: 48.1702, lng: 17.2127, price: "od 4 200 Kč", time: "3.5 hrs", country: "🇸🇰" },
-  { code: "BUD", name: "Budapešť Liszt Ferenc", lat: 47.4298, lng: 19.2611, price: "od 6 900 Kč", time: "5 hod", country: "🇭🇺" },
-  { code: "MUC", name: "Mnichov", lat: 48.3537, lng: 11.7750, price: "od 7 900 Kč", time: "4 hod", country: "🇩🇪" },
-  { code: "FRA", name: "Frankfurt am Main", lat: 50.0379, lng: 8.5622, price: "od 8 900 Kč", time: "4,5 hod", country: "🇩🇪" },
-  { code: "DRS", name: "Drážďany", lat: 51.1328, lng: 13.7672, price: "od 3 900 Kč", time: "1,5 hod", country: "🇩🇪" },
-  { code: "BER", name: "Berlín Brandenburg", lat: 52.3667, lng: 13.5033, price: "od 8 900 Kč", time: "4 hod", country: "🇩🇪" },
+  { code: "BUD", name: "Budapest Liszt Ferenc", lat: 47.4298, lng: 19.2611, price: "from €266", time: "5 hrs", country: "🇭🇺" },
+  { code: "MUC", name: "Munich Franz Josef Strauss", lat: 48.3537, lng: 11.7750, price: "from €305", time: "4 hrs", country: "🇩🇪" },
+  { code: "FRA", name: "Frankfurt am Main", lat: 50.0379, lng: 8.5622, price: "from €343", time: "4.5 hrs", country: "🇩🇪" },
+  { code: "DRS", name: "Dresden Airport", lat: 51.1328, lng: 13.7672, price: "from €150", time: "1.5 hrs", country: "🇩🇪" },
+  { code: "BER", name: "Berlin Brandenburg", lat: 52.3667, lng: 13.5033, price: "from €343", time: "4 hrs", country: "🇩🇪" },
 ];
 
 declare global {
@@ -195,7 +195,7 @@ export default function CoverageMap() {
                   <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 900, color: "#F97316", fontSize: "18px" }}>{activeAirport.price}</div>
                 </div>
                 <div style={{ background: "#fff", borderRadius: "10px", padding: "12px", border: "1px solid #e2e8f0", textAlign: "center" as const }}>
-                  <div style={{ fontSize: "10px", color: "#94a3b8", textTransform: "uppercase" as const, letterSpacing: "0.5px", marginBottom: "4px" }}>Čas jízdy</div>
+                  <div style={{ fontSize: "10px", color: "#94a3b8", textTransform: "uppercase" as const, letterSpacing: "0.5px", marginBottom: "4px" }}>Journey time</div>
                   <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 900, color: "#00205B", fontSize: "18px" }}>{activeAirport.time}</div>
                 </div>
               </div>

@@ -20,8 +20,8 @@ function PriceTag() {
         </filter>
         <path d="M 12 0 L 396 0 Q 416 0 416 20 L 416 35 Q 420 45 416 55 L 416 70 Q 416 90 396 90 L 12 90 Q 0 90 0 78 L 0 12 Q 0 0 12 0 Z"
               fill="#F97316" filter="url(#ptsh)"/>
-        <text x="208" y="22" fontFamily="Poppins,sans-serif" fontSize="12" fontWeight="500" fill="rgba(255,255,255,0.8)" textAnchor="middle">from</text>
-        <text x="208" y="72" fontFamily="Poppins,sans-serif" fontSize="44" fontWeight="900" fill="#fff" letterSpacing="-1" textAnchor="middle">€29 / £25 / $32</text>
+        <text x="16" y="38" fontFamily="Poppins,sans-serif" fontSize="12" fontWeight="500" fill="rgba(255,255,255,0.8)">from</text>
+        <text x="16" y="72" fontFamily="Poppins,sans-serif" fontSize="44" fontWeight="900" fill="#fff" letterSpacing="-1" textAnchor="start">€29 / £25 / $32</text>
       </svg>
     </div>
   );

@@ -67,65 +67,65 @@ export default function ZasadyCookies() {
       <div style={{ background: "#f8fafc", padding: "60px 24px 80px" }}>
         <div style={{ maxWidth: "860px", margin: "0 auto", background: "#fff", borderRadius: "16px", padding: "clamp(24px,5vw,56px)", boxShadow: "0 2px 16px rgba(0,0,0,0.06)" }}>
 
-          <Section title="1. Co jsou cookies">
+          <Section title="1. What are cookies">
             <P>Cookies are small text files stored on your device (computer, tablet, phone) when you visit websites. They allow the website to remember your preferences and behaviour, improving your user experience.</P>
             <P>Cookies themselves do not contain any personal identification data and cannot run programmes or transmit viruses.</P>
           </Section>
 
-          <Section title="2. Jaké cookies používáme">
+          <Section title="2. What cookies do we use">
 
-            {/* Nezbytné */}
+            {/* Essential */}
             <div style={{ marginBottom: "28px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
                 <div style={{ width:"32px", height:"32px", borderRadius:"8px", background:"#00205B", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}><i className="ti ti-lock" style={{ fontSize:"15px", color:"#fff" }} /></div>
                 <div>
-                  <div style={{ fontWeight: 700, color: "#00205B", fontSize: "15px" }}>Nezbytné cookies</div>
-                  <div style={{ fontSize: "12px", color: "#64748b" }}>Vždy aktivní – bez nich web nemůže fungovat. Souhlas se nevyžaduje.</div>
+                  <div style={{ fontWeight: 700, color: "#00205B", fontSize: "15px" }}>Essential cookies</div>
+                  <div style={{ fontSize: "12px", color: "#64748b" }}>Always active — the website cannot function without them. No consent required.</div>
                 </div>
               </div>
               <div style={{ overflowX: "auto" }}>
                 <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
                   <thead>
                     <tr style={{ background: "#f0f4ff" }}>
-                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#00205B", fontSize: "12px" }}>Název</th>
-                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#00205B", fontSize: "12px" }}>Typ</th>
-                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#00205B", fontSize: "12px" }}>Účel</th>
-                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#00205B", fontSize: "12px" }}>Platnost</th>
+                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#00205B", fontSize: "12px" }}>Name</th>
+                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#00205B", fontSize: "12px" }}>Type</th>
+                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#00205B", fontSize: "12px" }}>Purpose</th>
+                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#00205B", fontSize: "12px" }}>Validity</th>
                     </tr>
                   </thead>
                   <tbody style={{ background: "#fff" }}>
-                    <CookieRow name="sb-session" type="Nezbytné" purpose="Uchování přihlášení customer do zákaznické zóny" duration="Session" essential={true} />
-                    <CookieRow name="nll_currency" type="Nezbytné" purpose="Zapamatování vybrané měny v rezervačním formuláři" duration="30 dní" essential={true} />
-                    <CookieRow name="nll_lang" type="Nezbytné" purpose="Zapamatování jazykové předvolby (CS/EN)" duration="30 dní" essential={true} />
-                    <CookieRow name="NEXT_LOCALE" type="Nezbytné" purpose="Jazyková verze webu" duration="1 rok" essential={true} />
+                    <CookieRow name="sb-session" type="Essential" purpose="Storing customer login to the customer zone" duration="Session" essential={true} />
+                    <CookieRow name="nll_currency" type="Essential" purpose="Remembering the selected currency in the booking form" duration="30 days" essential={true} />
+                    <CookieRow name="nll_lang" type="Essential" purpose="Remembering language preference (CS/EN)" duration="30 days" essential={true} />
+                    <CookieRow name="NEXT_LOCALE" type="Essential" purpose="Website language version" duration="1 year" essential={true} />
                   </tbody>
                 </table>
               </div>
             </div>
 
-            {/* Funkční */}
+            {/* Functional */}
             <div style={{ marginBottom: "28px" }}>
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
                 <div style={{ width:"32px", height:"32px", borderRadius:"8px", background:"#92400e", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}><i className="ti ti-settings" style={{ fontSize:"15px", color:"#fff" }} /></div>
                 <div>
-                  <div style={{ fontWeight: 700, color: "#00205B", fontSize: "15px" }}>Funkční cookies</div>
-                  <div style={{ fontSize: "12px", color: "#64748b" }}>Zlepšují functionality webu. Lze odmítnout, ale některé funkce pak nemusí fungovat správně.</div>
+                  <div style={{ fontWeight: 700, color: "#00205B", fontSize: "15px" }}>Functional cookies</div>
+                  <div style={{ fontSize: "12px", color: "#64748b" }}>Improve website functionality. Can be declined, but some features may not work correctly.</div>
                 </div>
               </div>
               <div style={{ overflowX: "auto" }}>
                 <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "14px" }}>
                   <thead>
                     <tr style={{ background: "#fefce8" }}>
-                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#92400e", fontSize: "12px" }}>Název</th>
-                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#92400e", fontSize: "12px" }}>Typ</th>
-                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#92400e", fontSize: "12px" }}>Účel</th>
-                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#92400e", fontSize: "12px" }}>Platnost</th>
+                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#92400e", fontSize: "12px" }}>Name</th>
+                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#92400e", fontSize: "12px" }}>Type</th>
+                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#92400e", fontSize: "12px" }}>Purpose</th>
+                      <th style={{ padding: "10px 14px", textAlign: "left" as const, fontWeight: 700, color: "#92400e", fontSize: "12px" }}>Validity</th>
                     </tr>
                   </thead>
                   <tbody style={{ background: "#fff" }}>
-                    <CookieRow name="__gmaps_*" type="Funkční" purpose="Google Maps – zobrazení interaktivní mapy a výpočet trasy" duration="Session" essential={false} />
-                    <CookieRow name="__stripe_*" type="Funkční" purpose="Platební brána – prevence podvodů a security online plateb" duration="Session / 1 rok" essential={false} />
-                    <CookieRow name="nll_booking_*" type="Funkční" purpose="Uchování rozpracované booking při zavření/otevření widgetu" duration="2hiny" essential={false} />
+                    <CookieRow name="__gmaps_*" type="Functional" purpose="Google Maps — interactive map display and route calculation" duration="Session" essential={false} />
+                    <CookieRow name="__stripe_*" type="Functional" purpose="Payment gateway — fraud prevention and online payment security" duration="Session / 1 year" essential={false} />
+                    <CookieRow name="nll_booking_*" type="Functional" purpose="Storing unfinished booking when closing/reopening the widget" duration="2 hours" essential={false} />
                   </tbody>
                 </table>
               </div>
@@ -136,8 +136,8 @@ export default function ZasadyCookies() {
               <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
                 <div style={{ width:"32px", height:"32px", borderRadius:"8px", background:"#475569", display:"flex", alignItems:"center", justifyContent:"center", flexShrink:0 }}><i className="ti ti-chart-bar" style={{ fontSize:"15px", color:"#fff" }} /></div>
                 <div>
-                  <div style={{ fontWeight: 700, color: "#00205B", fontSize: "15px" }}>Analytické cookies</div>
-                  <div style={{ fontSize: "12px", color: "#64748b" }}>Pomáhají nám pochopit, jak návštěvníci web používají. Všechna data jsou anonymizovaná.</div>
+                  <div style={{ fontWeight: 700, color: "#00205B", fontSize: "15px" }}>Analytical cookies</div>
+                  <div style={{ fontSize: "12px", color: "#64748b" }}>Help us understand how visitors use the website. All data is anonymised.</div>
                 </div>
               </div>
               <p style={{ color: "#64748b", fontSize: "13px", marginBottom: "12px" }}>
@@ -148,11 +148,11 @@ export default function ZasadyCookies() {
           </Section>
 
           <Section title="3. Third-party cookies">
-            <P>Some cookies are set by third-party service providers we use on the website. Tyto cookies se řídí zásadami ochrany soukromí daných společností:</P>
+            <P>Some cookies are set by third-party service providers we use on the website. These cookies are governed by the privacy policies of those companies:</P>
             <div style={{ display: "flex", flexDirection: "column" as const, gap: "10px", marginBottom: "12px" }}>
               {[
-                { name: "Mapové služby (Google Maps)", purpose: "Zobrazení interaktivní mapy a výpočet vzdálenosti trasy", link: "https://policies.google.com/privacy" },
-                { name: "Platební brána", purpose: "Bezpečné processing online plateb kartou, prevence podvodů", link: null },
+                { name: "Mapping services (Google Maps)", purpose: "Interactive map display and route distance calculation", link: "https://policies.google.com/privacy" },
+                { name: "Payment gateway", purpose: "Secure online card payment processing, fraud prevention", link: null },
               ].map((item, i) => (
                 <div key={i} style={{ background: "#f8fafc", border: "1px solid #e2e8f0", borderRadius: "10px", padding: "14px 18px", display: "flex", justifyContent: "space-between", alignItems: "center", flexWrap: "wrap" as const, gap: "8px" }}>
                   <div>
@@ -169,7 +169,7 @@ export default function ZasadyCookies() {
             </div>
           </Section>
 
-          <Section title="4. Jak spravovat cookies">
+          <Section title="4. How to manage cookies">
             <P>You can manage or decline cookies directly in your browser settings. Please note that declining some cookies may limit website functionality (e.g. map loading or online payment).</P>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "10px", marginBottom: "16px" }}>
               {[
@@ -187,15 +187,15 @@ export default function ZasadyCookies() {
             <P>For mobile devices, cookie settings can be found in the settings of your browser or operating system.</P>
           </Section>
 
-          <Section title="5. Změny těchto zásad">
-            <P>These cookie policies may be updated periodically — for example when new services are added to the website. Datum poslední aktualizace je vždy uvedeno v záhlaví tohoto dokumentu.</P>
+          <Section title="5. Policy changes">
+            <P>These cookie policies may be updated periodically — for example when new services are added to the website. The date of the last update is always shown at the top of this document.</P>
             <P>We will notify you of significant changes via a banner on the website.</P>
           </Section>
 
           {/* Contactní box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
-              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>FAQ ohledně cookies?</div>
+              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Questions about cookies?</div>
               <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám na info@pragueairportaxi.com</div>
             </div>
             <a href="mailto:info@pragueairportaxi.com" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>

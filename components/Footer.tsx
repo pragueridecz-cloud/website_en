@@ -126,8 +126,8 @@ export default function Footer() {
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
-              {["Terms & Conditions", "Privacy Policy"].map((l) => (
-                <a key={l} href={`/${l.toLowerCase().replace(/ /g, "-")}`}
+              {[{ label: "Terms & Conditions", href: "/terms-and-conditions" }, { label: "Privacy Policy", href: "/privacy-policy" }, { label: "Cookies", href: "/cookie-policy" }].map((l) => (
+                <a key={l.label} href={l.href}
                   style={{ fontSize: "11px", color: "#475569", textDecoration: "none" }}
                   onMouseEnter={e => (e.currentTarget.style.color = "#94a3b8")}
                   onMouseLeave={e => (e.currentTarget.style.color = "#475569")}>

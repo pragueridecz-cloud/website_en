@@ -1,0 +1,46 @@
+import type { Metadata } from "next"
+import ProgressBar from "@/components/ProgressBar";
+import "./globals.css";
+
+export const metadata: Metadata = {
+  title: "Na letiště levně | Doprava na/z letiště Praha od 750 Kč",
+  description: "Rezervujte dopravu na/z letiště Praha předem. Pevná cena, profesionální řidiči, sledování letu. Sedan od 750 Kč, minivan od 950 Kč. Bez příplatků za zpoždění.",
+  keywords: "doprava na letiště Praha, transfer letiště Praha, odvoz na letiště levně, taxi letiště Praha, rezervace auta na letiště",
+  openGraph: {
+    title: "Na letiště levně | Doprava na letiště Praha od 790 Kč",
+    description: "Pevná cena, profesionální řidiči, sledování letu. Bez příplatků za zpoždění letu.",
+    url: "https://www.naletistelevne.cz",
+    siteName: "NaLetistelevne.cz",
+    locale: "cs_CZ",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://www.naletistelevne.cz",
+    languages: {
+      "cs": "https://www.naletistelevne.cz",
+      "en": "https://www.pragueride.com",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="cs" className="h-full">
+      <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
+      </head>
+      <body className="min-h-full flex flex-col antialiased">
+        <ProgressBar />
+        {children}
+      </body>
+    </html>
+  );
+}

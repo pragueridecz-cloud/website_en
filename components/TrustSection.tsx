@@ -17,7 +17,7 @@ const reasons = [
   {
     num: "04",
     title: "Verified professional drivers",
-    desc: "Všichni driveri jsou proškoleni, pojištění a pravidelně hodnoceni zákazníky.",
+    desc: "Všichni driveri jsou proškoleni, pojištění a pravidelněhnoceni zákazníky.",
   },
 ];
 

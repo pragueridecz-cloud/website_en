@@ -32,24 +32,24 @@ const schema = {
 }
 
 const ROUTES = [
-  { from: "Prague", to: "Brno", price: "6 400", km: "227 km", time: "2.5 hrs" },
-  { from: "Prague", to: "Vienna", price: "9 750", km: "356 km", time: "3.5 hrs" },
-  { from: "Prague", to: "Munich", price: "10 350", km: "378 km", time: "4 hod" },
-  { from: "Prague", to: "Berlin", price: "9 650", km: "352 km", time: "4 hod" },
-  { from: "Prague", to: "Drážďany", price: "4 600", km: "153 km", time: "1,5 hod" },
-  { from: "Prague", to: "Varšava", price: "17 650", km: "660 km", time: "7 hod" },
-  { from: "Prague", to: "Bratislava", price: "9 550", km: "349 km", time: "3.5 hrs" },
-  { from: "Prague", to: "Wroclaw", price: "7 800", km: "280 km", time: "3 hod" },
-  { from: "Prague", to: "Plzeň", price: "3 100", km: "91 km", time: "1 hod" },
-  { from: "Prague", to: "České Budějovice", price: "4 950", km: "168 km", time: "2 hod" },
-  { from: "Prague", to: "Olomouc", price: "8 400", km: "303 km", time: "3 hod" },
-  { from: "Prague", to: "Salzburg", price: "10 800", km: "396 km", time: "4,5 hod" },
+  { from: "Prague", to: "Brno", price: "6 400", km: "227 km", time: "2.5h" },
+  { from: "Prague", to: "Vienna", price: "9 750", km: "356 km", time: "3.5h" },
+  { from: "Prague", to: "Munich", price: "10 350", km: "378 km", time: "4h" },
+  { from: "Prague", to: "Berlin", price: "9 650", km: "352 km", time: "4h" },
+  { from: "Prague", to: "Drážďany", price: "4 600", km: "153 km", time: "1,5h" },
+  { from: "Prague", to: "Varšava", price: "17 650", km: "660 km", time: "7h" },
+  { from: "Prague", to: "Bratislava", price: "9 550", km: "349 km", time: "3.5h" },
+  { from: "Prague", to: "Wroclaw", price: "7 800", km: "280 km", time: "3h" },
+  { from: "Prague", to: "Plzeň", price: "3 100", km: "91 km", time: "1h" },
+  { from: "Prague", to: "České Budějovice", price: "4 950", km: "168 km", time: "2h" },
+  { from: "Prague", to: "Olomouc", price: "8 400", km: "303 km", time: "3h" },
+  { from: "Prague", to: "Salzburg", price: "10 800", km: "396 km", time: "4,5h" },
 ]
 
 const VYHODY = [
   { Icon: Lock,      title: "Fixní price in advance",    desc: "Price je dohodnutá in advance a nemění se. Žádné příplatky za mýto, parkování nebo čekání.", img: "/service-fixni-price.jpg" },
   { Icon: Car,       title: "Moderní vehicle",      desc: "Komfortní sedany a minivany s klimatizací, Wi-Fi a dostatkem místa pro luggage.", img: "/service-vehicle.jpg" },
-  { Icon: Clock,     title: "Flexibilní časy",      desc: "Přepravujeme 24 hodin denně, 7 dní v týdnu. Rezervujte kdykoli, i na poslední chvíli.", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&q=80" },
+  { Icon: Clock,     title: "Flexibilní časy",      desc: "Přepravujeme 24hin denně, 7 dní v týdnu. Rezervujte kdykoli, i na poslední chvíli.", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&q=80" },
   { Icon: Globe,     title: "Celá střední Evropa",  desc: "Jezdíme do Německa, Rakouska, Polska, Slovenska, Maďarska a dalších zemí.", img: "/service-evropa.jpg" },
   { Icon: CreditCard,title: "Payment kartou",        desc: "Payment kartou online nebo hotově driver. Na vyžádání invoice na firmu.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
   { Icon: UserCheck, title: "Professional drivers", desc: "Zkušení, jazykově vybavení driver se znalostí tras a místních podmínek.", img: "/service-ridici.jpg" },

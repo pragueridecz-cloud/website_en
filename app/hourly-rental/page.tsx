@@ -10,11 +10,11 @@ import {
 
 export const metadata: Metadata = {
   title: "Hourly Rental auta s driverem Prague | pragueairportaxi.com",
-  description: "Auto s driverem Prague from €29/hod — chauffeur service, VIP transport, pronájem drivere na hodiny nebo celý den. Business schůzky, svatby, výlety za město. Sedan i minivan.",
-  keywords: "pronájem auta s driverem Prague, chauffeur service Prague, auto s šoférem Prague, hodinový transfer Prague, firemní driver Prague, prohlídka Prahy s driverem",
+  description: "Auto s driverem Prague from €29/hod — chauffeur service, VIP transport, pronájem drivere nahiny nebo celý den. Business schůzky, svatby, výlety za město. Sedan i minivan.",
+  keywords: "pronájem auta s driverem Prague, chauffeur service Prague, auto s šoférem Prague,hinový transfer Prague, firemní driver Prague, prohlídka Prahy s driverem",
   openGraph: {
     title: "Hourly Rental auta s driverem Prague | Od €29/hod | pragueairportaxi.com",
-    description: "Auto s driverem na celý den nebo pár hodin. Business, turistika, nákupy.",
+    description: "Auto s driverem na celý den nebo párhin. Business, turistika, nákupy.",
     url: "https://www.pragueairportaxi.com/hodinovy-pronajem",
   },
   alternates: { canonical: "https://www.pragueairportaxi.com/hodinovy-pronajem" },
@@ -24,7 +24,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Hourly Rental auta s driverem Prague",
-  "description": "Pronájem vehicle s professionalm driverem na hodiny nebo celý den.",
+  "description": "Pronájem vehicle s professionalm driverem nahiny nebo celý den.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
   "offers": { "@type": "Offer", "priceCurrency": "CZK", "price": "750" },
 }
@@ -68,7 +68,7 @@ export default function HodinPronajem() {
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
               Auto s driverem<br />
-              <span style={{ color: "#F97316" }}>na hodiny nebo celý den</span>
+              <span style={{ color: "#F97316" }}>nahiny nebo celý den</span>
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
@@ -83,7 +83,7 @@ export default function HodinPronajem() {
         {/* Využití */}
         <section className="py-20" style={{ background: "#f8fafc" }}>
           <div className="max-w-5xl mx-auto px-4">
-            <SectionHeading label="Využití" title="Kdy se hodí auto s driverem" />
+            <SectionHeading label="Využití" title="Kdy sehí auto s driverem" />
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {USES.map(({ Icon, title, desc }) => (
                 <div key={title} className="bg-white rounded-xl p-5 shadow-sm text-center">

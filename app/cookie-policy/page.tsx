@@ -125,7 +125,7 @@ export default function ZasadyCookies() {
                   <tbody style={{ background: "#fff" }}>
                     <CookieRow name="__gmaps_*" type="Funkční" purpose="Google Maps – zobrazení interaktivní mapy a výpočet trasy" duration="Session" essential={false} />
                     <CookieRow name="__stripe_*" type="Funkční" purpose="Platební brána – prevence podvodů a security online plateb" duration="Session / 1 rok" essential={false} />
-                    <CookieRow name="nll_booking_*" type="Funkční" purpose="Uchování rozpracované booking při zavření/otevření widgetu" duration="2 hodiny" essential={false} />
+                    <CookieRow name="nll_booking_*" type="Funkční" purpose="Uchování rozpracované booking při zavření/otevření widgetu" duration="2hiny" essential={false} />
                   </tbody>
                 </table>
               </div>

@@ -7,16 +7,16 @@ import SectionHeading from "./SectionHeading";
 const SERVICES = [
   {
     img: "/service-airport.png",
-    label: "Letištní přeprava",
-    title: "Letiště Praha",
-    desc: "Pevná cena, žádné čekání. Sledujeme váš let v reálném čase a přizpůsobíme čas vyzvednutí případným zpožděním.",
+    label: "Airport Transfer",
+    title: "Letiště Prague",
+    desc: "Fixed price, žádné čekání. Sledujeme váš let v reálném čase a přizpůsobíme čas vyzvednutí případným zpožděním.",
     href: "/letistni-preprava",
   },
   {
     img: "/service-mezimestska.png",
     label: "Meziměstská přeprava",
     title: "Celá ČR i Evropa",
-    desc: "Pohodlná přeprava na delší vzdálenosti — Praha, Brno, Ostrava i zahraniční destinace v celé střední Evropě.",
+    desc: "Pohodlná přeprava na delší vzdálenosti — Prague, Brno, Ostrava i zahraniční destinace v celé střední Evropě.",
     href: "/mezimestska-doprava",
   },
   {
@@ -28,14 +28,14 @@ const SERVICES = [
   },
   {
     img: "/service-hodinovy.jpg",
-    label: "Hodinový pronájem",
-    title: "Řidič k dispozici",
-    desc: "Řidič po celý den jen pro vás. Ideální pro svatby, obchodní schůzky, výlety nebo víkendové výpravy bez starostí o parkování.",
+    label: "Hourly Rental",
+    title: "Driver k dispozici",
+    desc: "Driver po celý den jen pro vás. Ideální pro svatby, obchodní schůzky, výlety nebo víkendové výpravy bez starostí o parkování.",
     href: "/hodinovy-pronajem",
   },
   {
     img: "/service-firmy.png",
-    label: "Pro firmy",
+    label: "For companies",
     title: "Firemní přeprava",
     desc: "Pravidelné jízdy, fakturace, firemní slevy. Svěřte přepravu svých zaměstnanců a klientů do profesionálních rukou.",
     href: "/preprava-pro-firmy",

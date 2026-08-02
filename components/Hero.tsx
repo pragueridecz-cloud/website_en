@@ -3,7 +3,7 @@ import { useState, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
 const WHY_US = [
-  { num: "01", text: "Pevná cena — žádná překvapení" },
+  { num: "01", text: "Fixed price — žádná překvapení" },
   { num: "02", text: "Sledování letů v reálném čase" },
   { num: "03", text: "Dostupnost 24 hodin denně" },
   { num: "04", text: "Prověření profesionální řidiči" },
@@ -164,7 +164,7 @@ export default function Hero() {
     <div ref={overlayRef}>
       <iframe
         id="nll-widget-frame"
-        src="https://taxisaas-widget.vercel.app/widget.html?proxy=https%3A%2F%2Fadmin.naletistelevne.cz%2Fapi%2Fflight-status"
+        src="https://taxisaas-widget.vercel.app/widget.html?proxy=https%3A%2F%2Fadmin.pragueairportaxi.com%2Fapi%2Fflight-status"
         frameBorder="0"
         title="Rezervační formulář"
         scrolling="no"
@@ -186,7 +186,7 @@ export default function Hero() {
       {mounted && isDesktop && createPortal(widgetEl, document.body)}
 
       <section id="rezervace" className="px-4 pt-28 pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
-        {/* Praha fotka */}
+        {/* Prague fotka */}
         <div className="hero-bg" style={{
           position: "absolute", inset: 0, zIndex: 0,
           backgroundImage: "url('/hero-prague.png')",
@@ -214,7 +214,7 @@ export default function Hero() {
                 Levná přeprava
               </h1>
               <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(32px,4vw,52px)", margin: "0 0 6px", color: "#F97316" }}>
-                na/z letiště Praha
+                to/from Prague Airport
               </h1>
               <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, lineHeight: 1.3, fontSize: "clamp(16px,2vw,22px)", margin: "0 0 28px", color: "#fff" }}>
                 a transfery po celé ČR a střední Evropě
@@ -250,10 +250,10 @@ export default function Hero() {
               Levná přeprava
             </h1>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 16px", color: "#F97316" }}>
-              na/z letiště Praha
+              to/from Prague Airport
             </h1>
             <iframe
-              src="https://taxisaas-widget.vercel.app/widget.html?proxy=https%3A%2F%2Fadmin.naletistelevne.cz%2Fapi%2Fflight-status"
+              src="https://taxisaas-widget.vercel.app/widget.html?proxy=https%3A%2F%2Fadmin.pragueairportaxi.com%2Fapi%2Fflight-status"
               frameBorder="0"
               title="Rezervační formulář"
               style={{

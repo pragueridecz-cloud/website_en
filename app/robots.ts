@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'https://www.naletistelevne.cz/sitemap.xml',
+    sitemap: 'https://www.pragueairportaxi.com/sitemap.xml',
   }
 }

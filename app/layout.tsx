@@ -3,21 +3,21 @@ import ProgressBar from "@/components/ProgressBar";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Na letiště levně | Doprava na/z letiště Praha od 750 Kč",
-  description: "Rezervujte dopravu na/z letiště Praha předem. Pevná cena, profesionální řidiči, sledování letu. Sedan od 750 Kč, minivan od 950 Kč. Bez příplatků za zpoždění.",
-  keywords: "doprava na letiště Praha, transfer letiště Praha, odvoz na letiště levně, taxi letiště Praha, rezervace auta na letiště",
+  title: "Prague Airport Taxi | Transport to/from Prague Airport from €29",
+  description: "Rezervujte dopravu to/from Prague Airport předem. Fixed price, profesionální řidiči, sledování letu. Sedan from €29, minivan od 950 Kč. Bez příplatků za zpoždění.",
+  keywords: "doprava na letiště Prague, transfer letiště Prague, odvoz na letiště levně, taxi letiště Prague, rezervace auta na letiště",
   openGraph: {
-    title: "Na letiště levně | Doprava na letiště Praha od 790 Kč",
-    description: "Pevná cena, profesionální řidiči, sledování letu. Bez příplatků za zpoždění letu.",
-    url: "https://www.naletistelevne.cz",
+    title: "Prague Airport Taxi | Doprava na letiště Prague od 790 Kč",
+    description: "Fixed price, profesionální řidiči, sledování letu. Bez příplatků za zpoždění letu.",
+    url: "https://www.pragueairportaxi.com",
     siteName: "NaLetistelevne.cz",
     locale: "cs_CZ",
     type: "website",
   },
   alternates: {
-    canonical: "https://www.naletistelevne.cz",
+    canonical: "https://www.pragueairportaxi.com",
     languages: {
-      "cs": "https://www.naletistelevne.cz",
+      "cs": "https://www.pragueairportaxi.com",
       "en": "https://www.pragueride.com",
     },
   },
@@ -33,7 +33,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="cs" className="h-full">
+    <html lang="en" className="h-full">
       <head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />
       </head>

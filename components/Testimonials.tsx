@@ -3,7 +3,7 @@ import SectionHeading from "./SectionHeading";
 const reviews = [
   {
     name: "Markéta S.",
-    text: "Rezervovala jsem den předem, přijel přesně na čas. Řidič byl moc milý, pomohl mi se zavazadly. Cena přesně taková, jak bylo uvedeno. Určitě znovu!",
+    text: "Rezervovala jsem den předem, přijel přesně na čas. Driver byl moc milý, pomohl mi se zavazadly. Cena přesně taková, jak bylo uvedeno. Určitě znovu!",
     stars: 5,
     source: "Google",
   },

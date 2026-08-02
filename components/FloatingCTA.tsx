@@ -20,7 +20,7 @@ export default function FloatingCTA() {
     <>
       <button
         onClick={scrollToTop}
-        aria-label="Rezervovat přepravu"
+        aria-label="Book now přepravu"
         style={{
           position: "fixed",
           bottom: "28px",
@@ -57,18 +57,18 @@ export default function FloatingCTA() {
         }}
       >
         <i className="ti ti-calendar-plus" style={{ fontSize: "18px" }} aria-hidden="true" />
-        <span>Rezervovat</span>
+        <span>Book now</span>
         <span style={{
           background: "rgba(255,255,255,0.2)",
           borderRadius: "100px",
           padding: "2px 10px",
           fontSize: "12px",
           fontWeight: 600,
-        }}>od 750 Kč</span>
+        }}>from €29</span>
       </button>
       <style>{`
         @media (max-width: 480px) {
-          button[aria-label="Rezervovat přepravu"] span:last-child {
+          button[aria-label="Book now přepravu"] span:last-child {
             display: none;
           }
         }

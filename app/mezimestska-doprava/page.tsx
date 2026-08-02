@@ -5,22 +5,22 @@ import SectionHeading from "@/components/SectionHeading"
 import { Lock, Car, Clock, Globe, CreditCard, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Dálkové taxi a meziměstská doprava Praha | naletištělevně.cz",
-  description: "Dálkové taxi z Prahy za pevnou cenu — Praha–Vídeň od 9 750 Kč, Praha–Berlín od 9 650 Kč, Praha–Brno od 6 400 Kč. Meziměstská doprava po celé ČR i Evropě, 24/7.",
-  keywords: "meziměstská doprava, mezinárodní transfer, Praha Vídeň taxi, Praha Berlín taxi, Praha Brno taxi, přeprava do zahraničí, taxi Praha Mnichov",
+  title: "Dálkové taxi a meziměstská doprava Prague | pragueairportaxi.com",
+  description: "Dálkové taxi z Prahy za pevnou cenu — Prague–Vienna od 9 750 Kč, Prague–Berlin od 9 650 Kč, Prague–Brno od 6 400 Kč. Intercity Transport po celé ČR i Evropě, 24/7.",
+  keywords: "meziměstská doprava, mezinárodní transfer, Prague Vienna taxi, Prague Berlin taxi, Prague Brno taxi, přeprava do zahraničí, taxi Prague Munich",
   openGraph: {
-    title: "Meziměstská a mezinárodní doprava | naletištělevně.cz",
-    description: "Praha–Vídeň od 9 750 Kč, Praha–Berlín od 9 650 Kč. Komfortní přeprava po celé Evropě.",
-    url: "https://www.naletistelevne.cz/mezimestska-doprava",
+    title: "Meziměstská a mezinárodní doprava | pragueairportaxi.com",
+    description: "Prague–Vienna od 9 750 Kč, Prague–Berlin od 9 650 Kč. Komfortní přeprava po celé Evropě.",
+    url: "https://www.pragueairportaxi.com/mezimestska-doprava",
   },
-  alternates: { canonical: "https://www.naletistelevne.cz/mezimestska-doprava" },
+  alternates: { canonical: "https://www.pragueairportaxi.com/mezimestska-doprava" },
 }
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Mezinárodní a meziměstská doprava",
-  "description": "Přeprava mezi městy v ČR a do zahraničí – Vídeň, Berlín, Mnichov, Varšava a další.",
+  "description": "Přeprava mezi městy v ČR a do zahraničí – Vienna, Berlin, Munich, Varšava a další.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
   "areaServed": [
     { "@type": "Country", "name": "Česká republika" },
@@ -32,18 +32,18 @@ const schema = {
 }
 
 const ROUTES = [
-  { from: "Praha", to: "Brno", price: "6 400", km: "227 km", time: "2,5 hod" },
-  { from: "Praha", to: "Vídeň", price: "9 750", km: "356 km", time: "3,5 hod" },
-  { from: "Praha", to: "Mnichov", price: "10 350", km: "378 km", time: "4 hod" },
-  { from: "Praha", to: "Berlín", price: "9 650", km: "352 km", time: "4 hod" },
-  { from: "Praha", to: "Drážďany", price: "4 600", km: "153 km", time: "1,5 hod" },
-  { from: "Praha", to: "Varšava", price: "17 650", km: "660 km", time: "7 hod" },
-  { from: "Praha", to: "Bratislava", price: "9 550", km: "349 km", time: "3,5 hod" },
-  { from: "Praha", to: "Wroclaw", price: "7 800", km: "280 km", time: "3 hod" },
-  { from: "Praha", to: "Plzeň", price: "3 100", km: "91 km", time: "1 hod" },
-  { from: "Praha", to: "České Budějovice", price: "4 950", km: "168 km", time: "2 hod" },
-  { from: "Praha", to: "Olomouc", price: "8 400", km: "303 km", time: "3 hod" },
-  { from: "Praha", to: "Salzburg", price: "10 800", km: "396 km", time: "4,5 hod" },
+  { from: "Prague", to: "Brno", price: "6 400", km: "227 km", time: "2,5 hod" },
+  { from: "Prague", to: "Vienna", price: "9 750", km: "356 km", time: "3,5 hod" },
+  { from: "Prague", to: "Munich", price: "10 350", km: "378 km", time: "4 hod" },
+  { from: "Prague", to: "Berlin", price: "9 650", km: "352 km", time: "4 hod" },
+  { from: "Prague", to: "Drážďany", price: "4 600", km: "153 km", time: "1,5 hod" },
+  { from: "Prague", to: "Varšava", price: "17 650", km: "660 km", time: "7 hod" },
+  { from: "Prague", to: "Bratislava", price: "9 550", km: "349 km", time: "3,5 hod" },
+  { from: "Prague", to: "Wroclaw", price: "7 800", km: "280 km", time: "3 hod" },
+  { from: "Prague", to: "Plzeň", price: "3 100", km: "91 km", time: "1 hod" },
+  { from: "Prague", to: "České Budějovice", price: "4 950", km: "168 km", time: "2 hod" },
+  { from: "Prague", to: "Olomouc", price: "8 400", km: "303 km", time: "3 hod" },
+  { from: "Prague", to: "Salzburg", price: "10 800", km: "396 km", time: "4,5 hod" },
 ]
 
 const VYHODY = [
@@ -67,8 +67,8 @@ const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.naletistelevne.cz"},
-        {"@type": "ListItem", "position": 2, "name": "Meziměstská doprava", "item": "https://www.naletistelevne.cz/mezimestska-doprava"}
+        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.pragueairportaxi.com"},
+        {"@type": "ListItem", "position": 2, "name": "Intercity Transport", "item": "https://www.pragueairportaxi.com/mezimestska-doprava"}
       ]
     }
 
@@ -86,7 +86,7 @@ export default function MezimestskaPage() {
             <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
               <div style={{ width: "32px", height: "2px", background: "#F97316" }} />
               <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase", letterSpacing: "1.5px" }}>
-                Meziměstská doprava
+                Intercity Transport
               </span>
             </div>
             <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
@@ -95,7 +95,7 @@ export default function MezimestskaPage() {
             </h1>
             <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-              Pohodlná přeprava mezi městy bez přestupů. Pevná cena, klimatizované vozidlo, door-to-door.
+              Pohodlná přeprava mezi městy bez přestupů. Fixed price, klimatizované vozidlo, door-to-door.
             </p>
           </div>
         </div>
@@ -109,19 +109,19 @@ export default function MezimestskaPage() {
               Dálkové taxi z Prahy
             </h2>
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: 1.7, marginBottom: "40px", maxWidth: "680px" }}>
-              Dálkový transfer z Prahy do jakéhokoli města v ČR nebo zahraničí — pevná cena dohodnutá předem, bez taxametru a bez překvapení. Dálkové taxi Praha zajišťujeme 24 hodin denně, 7 dní v týdnu, se sedany i minibusy pro skupiny.
+              Dálkový transfer z Prahy do jakéhokoli města v ČR nebo zahraničí — pevná cena dohodnutá předem, bez taxametru a bez překvapení. Dálkové taxi Prague zajišťujeme 24 hodin denně, 7 dní v týdnu, se sedany i minibusy pro skupiny.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { from: "Praha", to: "Vídeň", price: "9 750", km: "356 km" },
-                { from: "Praha", to: "Berlín", price: "9 650", km: "352 km" },
-                { from: "Praha", to: "Bratislava", price: "9 550", km: "349 km" },
-                { from: "Praha", to: "Budapešť", price: "14 300", km: "525 km" },
-                { from: "Praha", to: "Mnichov", price: "10 350", km: "378 km" },
-                { from: "Praha", to: "Frankfurt", price: "14 750", km: "545 km" },
-                { from: "Praha", to: "Drážďany", price: "4 600", km: "153 km" },
-                { from: "Praha", to: "Karlovy Vary", price: "3 800", km: "130 km" },
-                { from: "Praha", to: "Brno", price: "6 400", km: "227 km" },
+                { from: "Prague", to: "Vienna", price: "9 750", km: "356 km" },
+                { from: "Prague", to: "Berlin", price: "9 650", km: "352 km" },
+                { from: "Prague", to: "Bratislava", price: "9 550", km: "349 km" },
+                { from: "Prague", to: "Budapešť", price: "14 300", km: "525 km" },
+                { from: "Prague", to: "Munich", price: "10 350", km: "378 km" },
+                { from: "Prague", to: "Frankfurt", price: "14 750", km: "545 km" },
+                { from: "Prague", to: "Drážďany", price: "4 600", km: "153 km" },
+                { from: "Prague", to: "Karlovy Vary", price: "3 800", km: "130 km" },
+                { from: "Prague", to: "Brno", price: "6 400", km: "227 km" },
               ].map((r) => (
                 <div key={r.to} className="flex items-center justify-between rounded-xl p-4"
                   style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>
@@ -185,7 +185,7 @@ export default function MezimestskaPage() {
         <section className="py-16" style={{ background: "#00205B" }}>
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Rezervujte meziměstskou přepravu</h2>
-            <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Pevná cena, komfortní vozidlo, spolehlivý řidič</p>
+            <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Fixed price, komfortní vozidlo, spolehlivý řidič</p>
             <a href="/#rezervace" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
               Zarezervovat nyní

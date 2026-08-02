@@ -5,26 +5,26 @@ import Footer from "@/components/Footer"
 import SectionHeading from "@/components/SectionHeading"
 
 export const metadata: Metadata = {
-  title: "Doprava na letiště Praha | naletištělevně.cz",
-  description: "Transfer na/z letiště Václava Havla Praha od 750 Kč. Také Vídeň, Bratislava, Budapešť, Mnichov, Frankfurt. Pevná cena, řidič čeká u výstupu, sledování letu 24/7.",
-  keywords: "doprava na letiště Praha, transfer letiště Václava Havla, taxi letiště Vídeň, transfer letiště Bratislava, přeprava letiště Mnichov, airport transfer Praha",
+  title: "Doprava na letiště Prague | pragueairportaxi.com",
+  description: "Transfer na/z Václav Havel Airport Prague from €29. Také Vienna, Bratislava, Budapešť, Munich, Frankfurt. Fixed price, řidič čeká u výstupu, sledování letu 24/7.",
+  keywords: "doprava na letiště Prague, transfer Václav Havel Airport, taxi letiště Vienna, transfer letiště Bratislava, přeprava letiště Munich, airport transfer Prague",
   openGraph: {
-    title: "Doprava na letiště Praha a okolní letiště | naletištělevně.cz",
-    description: "Transfer na letiště PRG, VIE, BTS, BUD, MUC, FRA. Pevná cena, sledování letu.",
-    url: "https://www.naletistelevne.cz/letistni-preprava",
+    title: "Doprava na letiště Prague a okolní letiště | pragueairportaxi.com",
+    description: "Transfer na letiště PRG, VIE, BTS, BUD, MUC, FRA. Fixed price, sledování letu.",
+    url: "https://www.pragueairportaxi.com/letistni-preprava",
     images: [{ url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/PRG_Airport_Terminal_2.jpg/1280px-PRG_Airport_Terminal_2.jpg", width: 1280, height: 720 }],
   },
-  alternates: { canonical: "https://www.naletistelevne.cz/letistni-preprava" },
+  alternates: { canonical: "https://www.pragueairportaxi.com/letistni-preprava" },
 }
 
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Letištní transfer Praha",
-  "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179", "url": "https://www.naletistelevne.cz" },
+  "name": "Letištní transfer Prague",
+  "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179", "url": "https://www.pragueairportaxi.com" },
   "areaServed": [
-    { "@type": "Airport", "name": "Letiště Václava Havla Praha", "iataCode": "PRG" },
-    { "@type": "Airport", "name": "Vídeňské mezinárodní letiště", "iataCode": "VIE" },
+    { "@type": "Airport", "name": "Letiště Václava Havla Prague", "iataCode": "PRG" },
+    { "@type": "Airport", "name": "Viennaské mezinárodní letiště", "iataCode": "VIE" },
     { "@type": "Airport", "name": "Letisko M. R. Štefánika Bratislava", "iataCode": "BTS" },
   ],
   "offers": { "@type": "Offer", "priceCurrency": "CZK", "price": "790" },
@@ -33,10 +33,10 @@ const schema = {
 const AIRPORTS_CZ = [
   {
     code: "PRG",
-    name: "Letiště Václava Havla Praha",
-    city: "Praha",
+    name: "Letiště Václava Havla Prague",
+    city: "Prague",
     desc: "Největší a nejrušnější letiště v ČR s více než 17 miliony cestujících ročně. Dvě terminály – T1 pro Schengen, T2 pro mimoevropské lety. Vzdáleno cca 17 km od centra Prahy.",
-    price: "od 750 Kč",
+    price: "from €29",
     time: "20–35 min",
     img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
     facts: ["Terminál 1 – Schengen (většina evropských letů)", "Terminál 2 – mimo Schengen, zámořské lety", "17 km od Václavského náměstí", "Sledujeme zpoždění vašeho letu"],
@@ -68,8 +68,8 @@ const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.naletistelevne.cz"},
-        {"@type": "ListItem", "position": 2, "name": "Letištní přeprava", "item": "https://www.naletistelevne.cz/letistni-preprava"}
+        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.pragueairportaxi.com"},
+        {"@type": "ListItem", "position": 2, "name": "Airport Transfer", "item": "https://www.pragueairportaxi.com/letistni-preprava"}
       ]
     }
 
@@ -89,16 +89,16 @@ export default function LetistniPreprava() {
                 <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
                   <div style={{ width: "32px", height: "2px", background: "#F97316" }} />
                   <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase", letterSpacing: "1.5px" }}>
-                    Letištní přeprava
+                    Airport Transfer
                   </span>
                 </div>
                 <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.15, color: "#fff", fontSize: "clamp(32px,5vw,56px)", margin: "0 0 16px" }}>
                   Transfer na letiště<br />
-                  <span style={{ color: "#F97316" }}>Praha a střední Evropa</span>
+                  <span style={{ color: "#F97316" }}>Prague a střední Evropa</span>
                 </h1>
                 <div style={{ width: "48px", height: "3px", background: "#F97316", borderRadius: "2px", marginBottom: "20px" }} />
                 <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px" }}>
-                  Taxi na/z letiště Václava Havla Praha od 750 Kč — pevná cena, žádné příplatky za čekání ani zpoždění letu. Zajišťujeme také transfer na letiště Vídeň, Bratislava, Budapešť, Mnichov, Frankfurt a Drážďany. Řidič čeká s cedulkou v příletové hale, sleduje váš let v reálném čase a odveze vás z letiště Ruzyně přímo domů nebo do hotelu.
+                  Taxi na/z Václav Havel Airport Prague from €29 — pevná cena, žádné příplatky za čekání ani zpoždění letu. Zajišťujeme také transfer na letiště Vienna, Bratislava, Budapešť, Munich, Frankfurt a Drážďany. Řidič čeká s cedulkou v příletové hale, sleduje váš let v reálném čase a odveze vás z letiště Ruzyně přímo domů nebo do hotelu.
                 </p>
               </div>
               <div className="hidden md:block" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.4)" }}>
@@ -112,7 +112,7 @@ export default function LetistniPreprava() {
         {/* LETIŠTĚ V ČR */}
         <section className="py-20 bg-white">
           <div className="max-w-6xl mx-auto px-4">
-            <SectionHeading label="Letiště v České republice" title="Česká letiště" subtitle="Přepravujeme na všechna letiště v České republice. Nejčastěji samozřejmě na Letiště Václava Havla Praha, ale také do Brna a Ostravy." />
+            <SectionHeading label="Letiště v České republice" title="Česká letiště" subtitle="Přepravujeme na všechna letiště v České republice. Nejčastěji samozřejmě na Letiště Václava Havla Prague, ale také do Brna a Ostravy." />
 
             {/* PRG – full width */}
             {(() => {
@@ -144,7 +144,7 @@ export default function LetistniPreprava() {
                         ))}
                       </ul>
                       <a href="/#rezervace" style={{ background: "#00205B", color: "#fff", padding: "11px 28px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", textDecoration: "none", display: "inline-block" }}>
-                        Rezervovat na {prg.code} →
+                        Book now na {prg.code} →
                       </a>
                     </div>
                   </div>
@@ -178,7 +178,7 @@ export default function LetistniPreprava() {
                       ))}
                     </ul>
                     <a href="/#rezervace" style={{ background: "#00205B", color: "#fff", padding: "10px 20px", borderRadius: "10px", fontWeight: 700, fontSize: "13px", textDecoration: "none", display: "inline-block" }}>
-                      Rezervovat na {airport.code} →
+                      Book now na {airport.code} →
                     </a>
                   </div>
                 </div>
@@ -200,7 +200,7 @@ export default function LetistniPreprava() {
                   img: "/flight-tracking.jpg",
                   imgPos: "65% 0%",
                   imgZoom: 1.3,
-                  title: "Sledování letu v reálném čase",
+                  title: "Flight tracking v reálném čase",
                   desc: "Automaticky monitorujeme zpoždění vašeho letu. Řidič přijede přesně na čas – ani dříve, ani později. Nečekáte, neplatíte extra.",
                 },
                 {
@@ -210,7 +210,7 @@ export default function LetistniPreprava() {
                 },
                 {
                   img: "/fixed-price-payment.jpg",
-                  title: "Pevná cena bez příplatků",
+                  title: "Fixed price bez příplatků",
                   desc: "Cena je dohodnutá předem a nemění se. Žádné příplatky za mýto, zpoždění, noční jízdu ani velká zavazadla.",
                 },
               ].map((item, i) => (
@@ -234,7 +234,7 @@ export default function LetistniPreprava() {
             <SectionHeading label="Časté dotazy" title="Máte otázky?" />
             <div className="space-y-3">
               {[
-                { q: "Přepravíte mě i na letiště ve Vídni nebo Mnichově?", a: "Ano, přepravujeme na všechna letiště v dosahu přibližně 700 km od Prahy. Vídeň, Bratislava, Budapešť, Mnichov, Frankfurt, Drážďany a další. Cenu dostanete ihned po zadání do rezervačního formuláře." },
+                { q: "Přepravíte mě i na letiště ve Vídni nebo Munichě?", a: "Ano, přepravujeme na všechna letiště v dosahu přibližně 700 km od Prahy. Vienna, Bratislava, Budapešť, Munich, Frankfurt, Drážďany a další. Cenu dostanete ihned po zadání do rezervačního formuláře." },
                 { q: "Jak funguje sledování zpoždění letu?", a: "Při rezervaci zadáte číslo letu. Náš systém automaticky sleduje reálný čas příletu a informuje řidiče. Pokud má váš let zpoždění, řidič dorazí pozdě – a vy neplatíte žádný příplatek za čekání." },
                 { q: "Kde mě řidič vyzvedne po příletu?", a: "Řidič vás čeká přímo v příletové hale s cedulkou s vaším jménem, ihned za výstupem z celnice. Nemusíte nikam volat ani hledat." },
                 { q: "Mohu platit kartou?", a: "Ano, platba kartou online při rezervaci nebo hotově řidiči. Na vyžádání vystavíme fakturu na firmu s DIČ." },
@@ -264,7 +264,7 @@ export default function LetistniPreprava() {
               Zadejte odkud a na které letiště – cena se zobrazí okamžitě.
             </p>
             <a href="/#rezervace" style={{ background: "#F97316", color: "#fff", padding: "18px 48px", borderRadius: "14px", fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "18px", textDecoration: "none", display: "inline-block", boxShadow: "0 8px 32px rgba(249,115,22,.4)" }}>
-              Rezervovat transfer →
+              Book now transfer →
             </a>
           </div>
         </section>

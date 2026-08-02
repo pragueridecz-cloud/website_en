@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     q: "Kde mě řidič vyzvedne na letišti?",
-    a: "Řidič čeká přímo u výjezdu z celnice v příletové hale s cedulí s vaším jménem. Přesné místo dostanete e-mailem po rezervaci.",
+    a: "Driver čeká přímo u výjezdu z celnice v příletové hale s cedulí s vaším jménem. Přesné místo dostanete e-mailem po rezervaci.",
   },
   {
     q: "Mohu zrušit nebo změnit rezervaci?",
@@ -30,7 +30,7 @@ const faqs = [
   },
   {
     q: "Jezdíte i mimo Prahu?",
-    a: "Ano — zajišťujeme transfery na/z letiště Praha pro celou ČR i do sousedních zemí (Vídeň, Drážďany, Varšava a další).",
+    a: "Ano — zajišťujeme transfery to/from Prague Airport pro celou ČR i do sousedních zemí (Vienna, Drážďany, Varšava a další).",
   },
 ];
 

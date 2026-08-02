@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const base = 'https://www.naletistelevne.cz'
+  const base = 'https://www.pragueairportaxi.com'
   const pages = [
     { url: '/', priority: 1.0, changeFrequency: 'weekly' as const },
     { url: '/letistni-preprava', priority: 0.9, changeFrequency: 'monthly' as const },

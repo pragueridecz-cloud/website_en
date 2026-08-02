@@ -5,67 +5,67 @@ import SectionHeading from "./SectionHeading";
 
 const cars = [
   {
-    name: "Sedan Economy",
+    name: "Economy Sedan",
     img: "/cars/sedan-economy.jpg",
     model: "VW Passat a podobný",
     passengers: 4,
     luggage: 3,
-    price: "od 750 Kč",
+    price: "from €29",
     hourlyPrice: "750 Kč/hod",
-    features: ["Klimatizace", "Wi-Fi", "Voda zdarma"],
+    features: ["Air conditioning", "Wi-Fi", "Water included"],
     tag: null,
     category: "sedan",
   },
   {
-    name: "Sedan Business",
+    name: "Business Sedan",
     img: "/cars/sedan-business.jpg",
-    model: "Škoda Superb a podobný",
+    model: "Skoda Superb or similar",
     passengers: 4,
     luggage: 3,
     price: "od 900 Kč",
     hourlyPrice: "900 Kč/hod",
-    features: ["Klimatizace", "Wi-Fi", "Rozšířený interiér"],
+    features: ["Air conditioning", "Wi-Fi", "Spacious interior"],
     tag: null,
     category: "sedan",
   },
   {
-    name: "Sedan Executive",
+    name: "Executive Sedan",
     img: "/cars/sedan-executive.jpg",
-    model: "Mercedes-Benz C a podobný",
+    model: "Mercedes-Benz C or similar",
     passengers: 3,
     luggage: 3,
     price: "od 1 150 Kč",
     hourlyPrice: "1 150 Kč/hod",
-    features: ["Prémiový interiér", "Tiché prostředí", "Voda zdarma"],
+    features: ["Premium interior", "Tiché prostředí", "Water included"],
     tag: null,
     category: "sedan",
   },
   {
-    name: "Minivan Economy",
+    name: "Economy Van",
     img: "/cars/minivan-economy.jpg",
     model: "Ford Tourneo Custom a podobný",
     passengers: 7,
     luggage: 6,
     price: "od 950 Kč",
     hourlyPrice: "950 Kč/hod",
-    features: ["Klimatizace", "Wi-Fi", "Velký kufr"],
+    features: ["Air conditioning", "Wi-Fi", "Large boot"],
     tag: "Nejoblíbenější",
     category: "minivan",
   },
   {
-    name: "Minivan Business",
+    name: "Business Van",
     img: "/cars/minivan-business.jpg",
     model: "Mercedes Vito a podobný",
     passengers: 7,
     luggage: 6,
     price: "od 1 150 Kč",
     hourlyPrice: "1 150 Kč/hod",
-    features: ["Rozšířený prostor", "Klimatizace", "Wi-Fi"],
+    features: ["Rozšířený prostor", "Air conditioning", "Wi-Fi"],
     tag: null,
     category: "minivan",
   },
   {
-    name: "Minivan Executive",
+    name: "Executive Van",
     img: "/cars/minivan-executive.jpg",
     model: "Mercedes V-Class a podobný",
     passengers: 7,
@@ -79,8 +79,8 @@ const cars = [
 ];
 
 const TABS = [
-  { id: "sedan", label: "Sedan", desc: "1–4 osoby" },
-  { id: "minivan", label: "Minivan", desc: "1–7 osob" },
+  { id: "sedan", label: "Sedan", desc: "1–4 passengersy" },
+  { id: "minivan", label: "Minivan", desc: "1–7 passengers" },
 ] as const;
 
 type Category = typeof TABS[number]["id"];
@@ -121,7 +121,7 @@ export default function Fleet({ mode = "transfer" }: { mode?: "transfer" | "hour
     <section id="vozovy-park" className="py-16 bg-white">
       <div className="max-w-6xl mx-auto px-4">
         <SectionHeading label="Vozový park" title="Vozový park a ceny"
-          subtitle="Pevné ceny bez překvapení. Vyberte vozidlo podle počtu cestujících a zavazadel." />
+          subtitle="Fixed prices, no surprises. Choose your vehicle podle počtu cestujících a zavazadel." />
 
         {/* Category tabs */}
         <div style={{ display: "flex", gap: "8px", marginBottom: "32px" }}>
@@ -230,7 +230,7 @@ function CarCard({ car, mode = "transfer" }: { car: typeof cars[0]; mode?: strin
             <Users size={13} /> {car.passengers} os.
           </span>
           <span className="flex items-center gap-1 text-xs text-gray-500">
-            <Briefcase size={13} /> {car.luggage} kufry
+            <Briefcase size={13} /> {car.luggage} bags
           </span>
         </div>
         <ul className="space-y-1 mb-4 flex-1">
@@ -244,7 +244,7 @@ function CarCard({ car, mode = "transfer" }: { car: typeof cars[0]; mode?: strin
           <span className="text-lg font-black text-[#00205B]">{mode === "hourly" ? car.hourlyPrice : car.price}</span>
           <a href="/#rezervace" className="text-xs font-bold px-3 py-1.5 rounded-lg text-white"
             style={{ background: "#F97316", textDecoration: "none" }}>
-            Rezervovat
+            Book now
           </a>
         </div>
       </div>

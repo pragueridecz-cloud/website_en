@@ -13,7 +13,7 @@ export default function Footer() {
               <img src="/logo-tpc.png" alt="Transfer Prague Car" style={{ height: "40px", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
             </div>
             <p style={{ color: "#94a3b8", fontSize: "13px", lineHeight: 1.7 }}>
-              Spolehlivá doprava na/z letiště Praha a do celé střední Evropy. Pevná cena, profesionální řidiči, sledování letu.
+              Reliable transport to/from Prague Airport a do celé střední Evropy. Fixed price, profesionální řidiči, sledování letu.
             </p>
             {/* Social ikonky */}
             <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
@@ -48,16 +48,16 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Služby */}
+          {/* Services */}
           <div>
-            <h4 style={{ fontWeight: 600, marginBottom: "16px", fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#cbd5e1" }}>Služby</h4>
+            <h4 style={{ fontWeight: 600, marginBottom: "16px", fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#cbd5e1" }}>Services</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               {[
-                { label: "Letištní přeprava", href: "/letistni-preprava" },
-                { label: "Meziměstská doprava", href: "/mezimestska-doprava" },
+                { label: "Airport Transfer", href: "/letistni-preprava" },
+                { label: "Intercity Transport", href: "/mezimestska-doprava" },
                 { label: "Vlakové a autobusové nádraží", href: "/vlakove-autobusove-nadrazi" },
-                { label: "Hodinový pronájem", href: "/hodinovy-pronajem" },
-                { label: "Pro firmy", href: "/preprava-pro-firmy" },
+                { label: "Hourly Rental", href: "/hodinovy-pronajem" },
+                { label: "For companies", href: "/preprava-pro-firmy" },
               ].map((l) => (
                 <li key={l.label}>
                   <a href={l.href} style={{ color: "#94a3b8", fontSize: "13px", textDecoration: "none" }}
@@ -75,10 +75,10 @@ export default function Footer() {
             <h4 style={{ fontWeight: 600, marginBottom: "16px", fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#cbd5e1" }}>Informace</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               {[
-                { label: "Jak to funguje", href: "#jak-to-funguje" },
+                { label: "How it works", href: "#jak-to-funguje" },
                 { label: "Časté otázky", href: "#faq" },
-                { label: "Obchodní podmínky", href: "/obchodni-podminky" },
-                { label: "Ochrana osobních údajů", href: "/ochrana-osobnich-udaju" },
+                { label: "Terms & Conditions", href: "/obchodni-podminky" },
+                { label: "Ochrana passengersních údajů", href: "/ochrana-passengersnich-udaju" },
                 { label: "PragueRide.com (EN)", href: "https://www.pragueride.com" },
               ].map((l) => (
                 <li key={l.label}>
@@ -92,9 +92,9 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Kontakt */}
+          {/* Contact */}
           <div>
-            <h4 style={{ fontWeight: 600, marginBottom: "16px", fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#cbd5e1" }}>Kontakt</h4>
+            <h4 style={{ fontWeight: 600, marginBottom: "16px", fontSize: "12px", textTransform: "uppercase", letterSpacing: "1px", color: "#cbd5e1" }}>Contact</h4>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "10px" }}>
               <li>
                 <a href="tel:+420606079179" style={{ color: "#94a3b8", fontSize: "13px", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}>
@@ -102,13 +102,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="mailto:info@naletistelevne.cz" style={{ color: "#94a3b8", fontSize: "13px", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}>
-                  <Mail size={13} /> info@naletistelevne.cz
+                <a href="mailto:info@pragueairportaxi.com" style={{ color: "#94a3b8", fontSize: "13px", textDecoration: "none", display: "flex", alignItems: "center", gap: "8px" }}>
+                  <Mail size={13} /> info@pragueairportaxi.com
                 </a>
               </li>
               <li style={{ color: "#94a3b8", fontSize: "13px", display: "flex", alignItems: "flex-start", gap: "8px" }}>
                 <MapPin size={13} style={{ marginTop: "2px", flexShrink: 0 }} />
-                <span>Sochařská 2, 170 00 Praha 7</span>
+                <span>Sochařská 2, 170 00 Prague 7</span>
               </li>
               <li style={{ color: "#64748b", fontSize: "11px", marginTop: "4px" }}>Dispečink 24/7, 365 dní</li>
             </ul>
@@ -122,11 +122,11 @@ export default function Footer() {
               <img src="/logo-tpc.png" alt="Transfer Prague Car" style={{ height: "28px", objectFit: "contain", filter: "brightness(0) invert(1)", opacity: 0.6 }} />
               <div>
                 <div style={{ fontSize: "12px", fontWeight: 600, color: "#94a3b8" }}>transfer-prague-car s.r.o.</div>
-                <div style={{ fontSize: "11px", color: "#475569" }}>IČO: 25706993 · Sochařská 2, 170 00 Praha</div>
+                <div style={{ fontSize: "11px", color: "#475569" }}>IČO: 25706993 · Sochařská 2, 170 00 Prague</div>
               </div>
             </div>
             <div style={{ display: "flex", gap: "16px" }}>
-              {["Obchodní podmínky", "GDPR"].map((l) => (
+              {["Terms & Conditions", "GDPR"].map((l) => (
                 <a key={l} href={`/${l.toLowerCase().replace(/ /g, "-")}`}
                   style={{ fontSize: "11px", color: "#475569", textDecoration: "none" }}
                   onMouseEnter={e => (e.currentTarget.style.color = "#94a3b8")}
@@ -137,7 +137,7 @@ export default function Footer() {
             </div>
           </div>
           <div style={{ fontSize: "11px", color: "#334155" }}>
-            © {new Date().getFullYear()} naletistelevne.cz — provozuje transfer-prague-car s.r.o. Všechna práva vyhrazena.
+            © {new Date().getFullYear()} pragueairportaxi.com — provozuje transfer-prague-car s.r.o. All rights reserved.
           </div>
         </div>
       </div>

@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 const features = [
   {
     icon: Shield,
-    title: "Pevná cena, žádná překvapení",
+    title: "Fixed price, žádná překvapení",
     desc: "Cenu vidíte předem při rezervaci. Nikdy nezaplatíte více — ani za zácpy, ani za delší cestu.",
   },
   {
@@ -19,8 +19,8 @@ const features = [
   },
   {
     icon: MapPin,
-    title: "Řidič čeká na místě",
-    desc: "Řidič vás vyzvedne přímo u výjezdu z celnice s cedulí s vaším jménem.",
+    title: "Driver čeká na místě",
+    desc: "Driver picks you up přímo u výjezdu z celnice s cedulí s vaším jménem.",
   },
   {
     icon: CreditCard,
@@ -29,7 +29,7 @@ const features = [
   },
   {
     icon: Users,
-    title: "Profesionální řidiči",
+    title: "Professional drivers",
     desc: "Prověření řidiči se zkušeností. Mluví česky, anglicky i německy. Pomoc se zavazadly.",
   },
 ];

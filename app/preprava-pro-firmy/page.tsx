@@ -6,8 +6,8 @@ import FirmsUseCases from "@/components/FirmsUseCases";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Firemní přeprava Praha | naletištělevně.cz",
-  description: "Firemní taxi Praha na fakturu s DPH. Přeprava zaměstnanců na letiště, korporátní transfery, VIP přeprava pro delegace. Business taxi Praha — pevná cena, měsíční fakturace, dedikovaná linka.",
+  title: "Firemní přeprava Prague | pragueairportaxi.com",
+  description: "Firemní taxi Prague na fakturu s DPH. Přeprava zaměstnanců na letiště, korporátní transfery, VIP přeprava pro delegace. Business taxi Prague — pevná cena, měsíční fakturace, dedikovaná linka.",
 };
 
 
@@ -15,8 +15,8 @@ const breadcrumbSchema = {
       "@context": "https://schema.org",
       "@type": "BreadcrumbList",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.naletistelevne.cz"},
-        {"@type": "ListItem", "position": 2, "name": "Přeprava pro firmy", "item": "https://www.naletistelevne.cz/preprava-pro-firmy"}
+        {"@type": "ListItem", "position": 1, "name": "Domů", "item": "https://www.pragueairportaxi.com"},
+        {"@type": "ListItem", "position": 2, "name": "Business Travel", "item": "https://www.pragueairportaxi.com/preprava-pro-firmy"}
       ]
     }
 
@@ -40,9 +40,9 @@ export default function PrepravaPropFirmy() {
               <span style={{ color: "#F97316" }}>na každou příležitost</span>
             </h1>
             <p style={{ color: "rgba(255,255,255,0.75)", fontSize: "18px", lineHeight: 1.7, maxWidth: "600px", marginBottom: "36px" }}>
-              Firemní taxi Praha na fakturu s DPH dokladem ke každé jízdě. Zajišťujeme přepravu zaměstnanců na letiště, vyzvednutí obchodních partnerů, korporátní transfery i VIP přepravu pro delegace. Business taxi Praha s pevnou cenou, měsíční fakturací a dedikovanou linkou pro firemní zákazníky. Uzavřete firemní smlouvu a mějte dopravu pod kontrolou.
+              Firemní taxi Prague na fakturu s DPH dokladem ke každé jízdě. Zajišťujeme přepravu zaměstnanců na letiště, vyzvednutí obchodních partnerů, korporátní transfery i VIP přepravu pro delegace. Business taxi Prague s pevnou cenou, měsíční fakturací a dedikovanou linkou pro firemní zákazníky. Uzavřete firemní smlouvu a mějte dopravu pod kontrolou.
             </p>
-            <a href="mailto:info@naletistelevne.cz?subject=Firemní spolupráce"
+            <a href="mailto:info@pragueairportaxi.com?subject=Firemní spolupráce"
               style={{ display: "inline-block", background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "15px", padding: "14px 32px", borderRadius: "12px", textDecoration: "none" }}>
               Domluvit firemní spolupráci →
             </a>
@@ -109,7 +109,7 @@ export default function PrepravaPropFirmy() {
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: 1.7, marginBottom: "32px" }}>
               Ozvěte se nám a připravíme nabídku na míru vaší firmě.
             </p>
-            <a href="mailto:info@naletistelevne.cz?subject=Firemní spolupráce"
+            <a href="mailto:info@pragueairportaxi.com?subject=Firemní spolupráce"
               style={{ display: "inline-block", background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "16px", padding: "16px 40px", borderRadius: "12px", textDecoration: "none", marginRight: "12px" }}>
               Napsat nám →
             </a>

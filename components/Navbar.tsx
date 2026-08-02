@@ -5,10 +5,10 @@ import { Phone, Mail, Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 
 const services = [
-  { name: "Letištní přeprava", href: "/letistni-preprava" },
+  { name: "Airport Transfer", href: "/letistni-preprava" },
   { name: "Vlakové a autobusové nádraží", href: "/vlakove-autobusove-nadrazi" },
-  { name: "Meziměstská doprava", href: "/mezimestska-doprava" },
-  { name: "Hodinový pronájem", href: "/hodinovy-pronajem" },
+  { name: "Intercity Transport", href: "/mezimestska-doprava" },
+  { name: "Hourly Rental", href: "/hodinovy-pronajem" },
 ];
 
 export default function Navbar() {
@@ -31,12 +31,12 @@ export default function Navbar() {
             onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,.7)")}>
             <Phone size={11} /> +420 606 079 179
           </a>
-          <a href="mailto:info@naletistelevne.cz"
+          <a href="mailto:info@pragueairportaxi.com"
             className="flex items-center gap-1.5 transition-colors"
             style={{ color: "rgba(255,255,255,.7)", textDecoration: "none" }}
             onMouseEnter={e => (e.currentTarget.style.color = "#F97316")}
             onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,.7)")}>
-            <Mail size={11} /> info@naletistelevne.cz
+            <Mail size={11} /> info@pragueairportaxi.com
           </a>
         </div>
 
@@ -54,15 +54,15 @@ export default function Navbar() {
           <div className="hidden md:flex items-center px-4 flex-1 justify-between">
             <div className="flex items-center gap-0">
             <a href="/" className="px-3 py-1.5 text-sm font-semibold cursor-pointer"
-              style={{ color: "#F97316" }}>Úvod</a>
+              style={{ color: "#F97316" }}>Home</a>
 
-            {/* Dropdown Služby */}
+            {/* Dropdown Services */}
             <div className="relative"
               onMouseEnter={() => setServicesOpen(true)}
               onMouseLeave={() => setTimeout(() => setServicesOpen(false), 250)}>
               <button className="flex items-center gap-1 px-3 py-1.5 text-sm font-medium cursor-pointer"
                 style={{ color: "rgba(255,255,255,.85)", background: "none", border: "none" }}>
-                Služby <ChevronDown size={13} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
+                Services <ChevronDown size={13} className={`transition-transform ${servicesOpen ? "rotate-180" : ""}`} />
               </button>
               {servicesOpen && (
                 <div className="absolute top-full left-0 py-2 z-50 rounded-lg min-w-56"
@@ -83,11 +83,11 @@ export default function Navbar() {
             <a href="/#jak-to-funguje" className="px-3 py-1.5 text-sm font-medium cursor-pointer"
               style={{ color: "rgba(255,255,255,.85)" }}
               onMouseEnter={e => (e.currentTarget.style.color = "#F97316")}
-              onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,.85)")}>Jak to funguje</a>
+              onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,.85)")}>How it works</a>
             <a href="/preprava-pro-firmy" className="px-3 py-1.5 text-sm font-medium cursor-pointer"
               style={{ color: "rgba(255,255,255,.85)" }}
               onMouseEnter={e => (e.currentTarget.style.color = "#F97316")}
-              onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,.85)")}>Pro firmy</a>
+              onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,.85)")}>For companies</a>
             <a href="/#faq" className="px-3 py-1.5 text-sm font-medium cursor-pointer"
               style={{ color: "rgba(255,255,255,.85)" }}
               onMouseEnter={e => (e.currentTarget.style.color = "#F97316")}
@@ -121,19 +121,19 @@ export default function Navbar() {
                 )}
               </div>
 
-              <a href="https://portal.naletistelevne.cz" target="_blank" rel="noopener noreferrer"
+              <a href="https://portal.pragueairportaxi.com" target="_blank" rel="noopener noreferrer"
                 className="text-xs font-semibold px-3 py-1.5 rounded cursor-pointer"
                 style={{ border: "1px solid rgba(255,255,255,.3)", color: "#fff", background: "rgba(255,255,255,.08)", textDecoration: "none" }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,.18)"; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,.08)"; }}>
-                Přihlásit se
+                Sign in
               </a>
               <a href="/#rezervace"
                 className="text-xs font-bold px-4 py-1.5 rounded cursor-pointer"
                 style={{ background: "#F97316", color: "#fff", textDecoration: "none" }}
                 onMouseEnter={e => ((e.currentTarget as HTMLElement).style.background = "#EA580C")}
                 onMouseLeave={e => ((e.currentTarget as HTMLElement).style.background = "#F97316")}>
-                + Rezervovat
+                + Book
               </a>
             </div>
           </div>
@@ -154,26 +154,26 @@ export default function Navbar() {
           <a href="tel:+420606079179" className="flex items-center gap-2" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>
             <Phone size={13} /> +420 606 079 179
           </a>
-          <a href="mailto:info@naletistelevne.cz" className="flex items-center gap-2" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>
-            <Mail size={13} /> info@naletistelevne.cz
+          <a href="mailto:info@pragueairportaxi.com" className="flex items-center gap-2" style={{ color: "rgba(255,255,255,.6)", textDecoration: "none" }}>
+            <Mail size={13} /> info@pragueairportaxi.com
           </a>
           <hr style={{ borderColor: "rgba(255,255,255,.1)" }} />
-          <a href="/" onClick={() => setMenuOpen(false)} style={{ color: "#F97316", fontWeight: 600 }}>Úvod</a>
-          <div style={{ color: "rgba(255,255,255,.4)", fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".1em" }}>Služby</div>
+          <a href="/" onClick={() => setMenuOpen(false)} style={{ color: "#F97316", fontWeight: 600 }}>Home</a>
+          <div style={{ color: "rgba(255,255,255,.4)", fontSize: "10px", fontWeight: 700, textTransform: "uppercase", letterSpacing: ".1em" }}>Services</div>
           {services.map(s => (
             <a key={s.name} href={s.href} onClick={() => setMenuOpen(false)}
               className="pl-2" style={{ color: "rgba(255,255,255,.8)", textDecoration: "none" }}>{s.name}</a>
           ))}
-          <a href="/#jak-to-funguje" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>Jak to funguje</a>
-          <a href="/preprava-pro-firmy" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>Pro firmy</a>
+          <a href="/#jak-to-funguje" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>How it works</a>
+          <a href="/preprava-pro-firmy" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>For companies</a>
           <a href="/#faq" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>FAQ</a>
           <div className="flex gap-2 pt-1">
-            <a href="https://portal.naletistelevne.cz" target="_blank" rel="noopener noreferrer"
+            <a href="https://portal.pragueairportaxi.com" target="_blank" rel="noopener noreferrer"
               className="flex-1 text-center py-2.5 rounded-lg font-semibold text-sm"
-              style={{ border: "1px solid rgba(255,255,255,.3)", color: "#fff", textDecoration: "none" }}>Přihlásit se</a>
+              style={{ border: "1px solid rgba(255,255,255,.3)", color: "#fff", textDecoration: "none" }}>Sign in</a>
             <a href="/#rezervace" onClick={() => setMenuOpen(false)}
               className="flex-1 text-center py-2.5 rounded-lg font-bold text-sm"
-              style={{ background: "#F97316", color: "#fff", textDecoration: "none" }}>Rezervovat</a>
+              style={{ background: "#F97316", color: "#fff", textDecoration: "none" }}>Book now</a>
           </div>
         </div>
       )}

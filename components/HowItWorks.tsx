@@ -16,7 +16,7 @@ const steps = [
   },
   {
     icon: "ti-user-check",
-    title: "Řidič čeká na místě",
+    title: "Driver čeká na místě",
     desc: "Přesné vyzvednutí na dohodnutém místě — u letišť v příletové hale, jinak přímo před vašimi dveřmi.",
     detail: "Pomoc se zavazadly, klimatizované auto, Wi-Fi.",
   },
@@ -24,7 +24,7 @@ const steps = [
     icon: "ti-armchair",
     title: "Pohodlná jízda",
     desc: "Dovezeme vás přesně tam, kam potřebujete. Čistá auta, profesionální řidiči.",
-    detail: "Voda zdarma, tiché prostředí, faktura na vyžádání.",
+    detail: "Water included, tiché prostředí, faktura na vyžádání.",
   },
 ];
 
@@ -67,7 +67,7 @@ export default function HowItWorks() {
           <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "16px" }}>
             <div style={{ width: "32px", height: "2px", background: "#F97316" }} />
             <span style={{ fontSize: "11px", fontWeight: 700, color: "#F97316", textTransform: "uppercase" as const, letterSpacing: "1.5px" }}>
-              Jak to funguje
+              How it works
             </span>
           </div>
           <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(28px,4vw,44px)", color: "#0f172a", margin: "0 0 12px", lineHeight: 1.15 }}>
@@ -173,7 +173,7 @@ export default function HowItWorks() {
             fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "15px",
             boxShadow: "0 4px 16px rgba(30,58,138,0.2)",
           }}>
-            Rezervovat přepravu
+            Book now přepravu
             <i className="ti ti-arrow-right" style={{ fontSize: "16px" }} aria-hidden="true" />
           </a>
         </div>

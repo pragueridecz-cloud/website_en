@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const services = [
   { name: "Airport Transfer", href: "/airport-transfer" },
-  { name: "Vlakové a autobusové nádraží", href: "/train-bus-station" },
+  { name: "Train & Bus Station", href: "/train-bus-station" },
   { name: "Intercity Transport", href: "/intercity-transport" },
   { name: "Hourly Rental", href: "/hourly-rental" },
 ];

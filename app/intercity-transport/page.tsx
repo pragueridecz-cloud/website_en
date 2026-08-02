@@ -5,8 +5,8 @@ import SectionHeading from "@/components/SectionHeading"
 import { Lock, Car, Clock, Globe, CreditCard, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Long Distance Taxi a meziměstská doprava Prague | pragueairportaxi.com",
-  description: "Long Distance Taxi z Prahy za pevnou price — Prague–Vienna od 9 €29, Prague–Berlin , Prague–Brno . Intercity Transport across Czech Republic & Europe, 24/7.",
+  title: "Long Distance Taxi & Intercity Transport Prague | pragueairportaxi.com",
+  description: "Long Distance Taxi from Prague za pevnou price — Prague–Vienna od 9 €29, Prague–Berlin , Prague–Brno . Intercity Transport across Czech Republic & Europe, 24/7.",
   keywords: "meziměstská doprava, mezinárodní transfer, Prague Vienna taxi, Prague Berlin taxi, Prague Brno taxi, transport do zahraničí, taxi Prague Munich",
   openGraph: {
     title: "Meziměstská a mezinárodní doprava | pragueairportaxi.com",
@@ -32,18 +32,18 @@ const schema = {
 }
 
 const ROUTES = [
-  { from: "Prague", to: "Brno", price: "€255 / £215 / $280", km: "227 km", time: "2.5h" },
-  { from: "Prague", to: "Vienna", price: "€390 / £325 / $425", km: "356 km", time: "3.5h" },
-  { from: "Prague", to: "Munich", price: "€415 / £345 / $450", km: "378 km", time: "4h" },
-  { from: "Prague", to: "Berlin", price: "€385 / £320 / $420", km: "352 km", time: "4h" },
-  { from: "Prague", to: "Dresden", price: "€185 / £155 / $200", km: "153 km", time: "1.5h" },
-  { from: "Prague", to: "Warsaw", price: "€705 / £590 / $770", km: "660 km", time: "7h" },
-  { from: "Prague", to: "Bratislava", price: "€380 / £320 / $415", km: "349 km", time: "3.5h" },
-  { from: "Prague", to: "Wrocław", price: "€310 / £260 / $340", km: "280 km", time: "3h" },
-  { from: "Prague", to: "Plzeň", price: "€125 / £105 / $135", km: "91 km", time: "1h" },
-  { from: "Prague", to: "České Budějovice", price: "€195 / £165 / $215", km: "168 km", time: "2h" },
-  { from: "Prague", to: "Olomouc", price: "€335 / £280 / $365", km: "303 km", time: "3h" },
-  { from: "Prague", to: "Salzburg", price: "€430 / £360 / $470", km: "396 km", time: "4.5h" },
+  { from: "Prague", to: "Brno", price: "from €255 / £215 / $280", km: "227 km", time: "2.5h" },
+  { from: "Prague", to: "Vienna", price: "from €390 / £325 / $425", km: "356 km", time: "3.5h" },
+  { from: "Prague", to: "Munich", price: "from €415 / £345 / $450", km: "378 km", time: "4h" },
+  { from: "Prague", to: "Berlin", price: "from €385 / £320 / $420", km: "352 km", time: "4h" },
+  { from: "Prague", to: "Dresden", price: "from €185 / £155 / $200", km: "153 km", time: "1.5h" },
+  { from: "Prague", to: "Warsaw", price: "from €705 / £590 / $770", km: "660 km", time: "7h" },
+  { from: "Prague", to: "Bratislava", price: "from €380 / £320 / $415", km: "349 km", time: "3.5h" },
+  { from: "Prague", to: "Wrocław", price: "from €310 / £260 / $340", km: "280 km", time: "3h" },
+  { from: "Prague", to: "Plzeň", price: "from €125 / £105 / $135", km: "91 km", time: "1h" },
+  { from: "Prague", to: "České Budějovice", price: "from €195 / £165 / $215", km: "168 km", time: "2h" },
+  { from: "Prague", to: "Olomouc", price: "from €335 / £280 / $365", km: "303 km", time: "3h" },
+  { from: "Prague", to: "Salzburg", price: "from €430 / £360 / $470", km: "396 km", time: "4.5h" },
 ]
 
 const VYHODY = [
@@ -59,7 +59,7 @@ const FAQ_ITEMS = [
   { q: "Jezdíte i mimo ČR?", a: "Yes, přepravujeme po celé střední Evropě – Německo, Rakousko, Slovensko, Polsko, Maďarsko a další. Cenu trasy získáte ihned po zadání do rezervačního formuláře." },
   { q: "Je price fixní i pro mezinárodní trasy?", a: "Yes, price je vždy fixní a dohodnuta in advance. Žádné příplatky za mýto, delay nebo noční jízdu." },
   { q: "Mohu book cestu tam a zpět?", a: "Samozřejmě, v rezervačním formuláři jednoduše přidejte zpáteční cestu se slevou." },
-  { q: "Jak probíhá payment za dlouhé trasy?", a: "Payment kartou online nebo hotově driver. U tras nad 5 000 Kč je možná záloha in advance." },
+  { q: "Jak probíhá payment za dlouhé trasy?", a: "Payment kartou online nebo hotově driver. U tras nad 5 000 je možná záloha in advance." },
   { q: "Co když trasa není v ceníku?", a: "Zadejte ji do rezervačního formuláře – price se vypočítá automaticky podle vzdálenosti. Nebo nás kontaktujte přímo." },
 ]
 
@@ -106,22 +106,22 @@ export default function MezimestskaPage() {
         <section className="py-16" style={{ background: "#fff" }}>
           <div className="max-w-6xl mx-auto px-4">
             <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, fontSize: "clamp(24px,3vw,36px)", color: "#00205B", marginBottom: "8px" }}>
-              Long Distance Taxi z Prahy
+              Long Distance Taxi from Prague
             </h2>
             <p style={{ color: "#475569", fontSize: "16px", lineHeight: 1.7, marginBottom: "40px", maxWidth: "680px" }}>
               Long distance transfer from Prague to any city in Czech Republic or abroad — fixed price agreed in advance, no meter, no surprises. Long Distance Taxi Prague available 24 hours a day, 7 days a week, with sedans and minivans for groups.
             </p>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
               {[
-                { from: "Prague", to: "Vienna", price: "€390 / £325 / $425", km: "356 km" },
-                { from: "Prague", to: "Berlin", price: "€385 / £320 / $420", km: "352 km" },
-                { from: "Prague", to: "Bratislava", price: "€380 / £320 / $415", km: "349 km" },
-                { from: "Prague", to: "Budapest", price: "€570 / £475 / $620", km: "525 km" },
-                { from: "Prague", to: "Munich", price: "€415 / £345 / $450", km: "378 km" },
-                { from: "Prague", to: "Frankfurt", price: "€590 / £490 / $640", km: "545 km" },
-                { from: "Prague", to: "Dresden", price: "€185 / £155 / $200", km: "153 km" },
-                { from: "Prague", to: "Karlovy Vary", price: "€150 / £125 / $165", km: "130 km" },
-                { from: "Prague", to: "Brno", price: "€255 / £215 / $280", km: "227 km" },
+                { from: "Prague", to: "Vienna", price: "from €390 / £325 / $425", km: "356 km" },
+                { from: "Prague", to: "Berlin", price: "from €385 / £320 / $420", km: "352 km" },
+                { from: "Prague", to: "Bratislava", price: "from €380 / £320 / $415", km: "349 km" },
+                { from: "Prague", to: "Budapest", price: "from €570 / £475 / $620", km: "525 km" },
+                { from: "Prague", to: "Munich", price: "from €415 / £345 / $450", km: "378 km" },
+                { from: "Prague", to: "Frankfurt", price: "from €590 / £490 / $640", km: "545 km" },
+                { from: "Prague", to: "Dresden", price: "from €185 / £155 / $200", km: "153 km" },
+                { from: "Prague", to: "Karlovy Vary", price: "from €150 / £125 / $165", km: "130 km" },
+                { from: "Prague", to: "Brno", price: "from €255 / £215 / $280", km: "227 km" },
               ].map((r) => (
                 <div key={r.to} className="flex items-center justify-between rounded-xl p-4"
                   style={{ background: "#f8fafc", border: "1px solid #e2e8f0" }}>

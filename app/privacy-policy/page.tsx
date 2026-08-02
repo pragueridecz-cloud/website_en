@@ -90,45 +90,45 @@ export default function OchranaOsobnichUdaju() {
           <Section title="2. What Personal Data We Process">
             <P><strong>When booking transport:</strong></P>
             <Ul items={[
-              "Name a příjmení",
-              "E-mailová adresa",
-              "Phonení číslo",
-              "Místo vyzvednutí a cíl cesty",
-              "Date and time transport",
-              "Číslo letu (pokud je relevantní)",
-              "Number of passengers a luggage",
-              "Zvláštní požadavky (dětská sedačka, nadměrná luggage)",
+              "Full name",
+              "Email address",
+              "Phone number",
+              "Pickup location and destination",
+              "Date and time of transport",
+              "Flight number (if applicable)",
+              "Number of passengers and luggage",
+              "Special requirements (child seat, oversized luggage)",
             ]} />
             <P><strong>When paying by card:</strong></P>
             <Ul items={[
-              "Platební údaje jsou zpracovávány výhradně naším poskytovatelem platebních služeb – my samotní číslo karty ani CVC kód nikdy nevidíme ani neuchováváme",
-              "Zpracovatel plateb sídlí v USA a processing probíhá na základě standardních smluvních doložek schválených Evropskou komisí",
+              "Payment details are processed exclusively by our payment service provider — we never see or store the card number or CVC code",
+              "The payment processor is based in the US and processing takes place under standard contractual clauses approved by the European Commission",
             ]} />
             <P><strong>When visiting the website:</strong></P>
             <Ul items={[
-              "IP adresa a technické information o device (prostřednictvím analyticalch nástrojů)",
-              "Cookies – viz naše Zásady cookies",
+              "IP address and technical information about your device (via analytical tools)",
+              "Cookies — see our Cookie Policy",
             ]} />
           </Section>
 
-          <Section title="3. Účely a legal základ processing">
+          <Section title="3. Purposes and Legal Basis for Processing">
             <div style={{ overflowX: "auto" }}>
               <table style={{ width: "100%", borderCollapse: "collapse", marginBottom: "12px", fontSize: "14px" }}>
                 <thead>
                   <tr style={{ background: "#00205B" }}>
-                    <th style={{ padding: "11px 14px", textAlign: "left" as const, color: "#fff", fontWeight: 700 }}>Účel</th>
-                    <th style={{ padding: "11px 14px", textAlign: "left" as const, color: "#fff", fontWeight: 700 }}>Právní základ</th>
-                    <th style={{ padding: "11px 14px", textAlign: "left" as const, color: "#fff", fontWeight: 700 }}>Doba uchování</th>
+                    <th style={{ padding: "11px 14px", textAlign: "left" as const, color: "#fff", fontWeight: 700 }}>Purpose</th>
+                    <th style={{ padding: "11px 14px", textAlign: "left" as const, color: "#fff", fontWeight: 700 }}>Legal basis</th>
+                    <th style={{ padding: "11px 14px", textAlign: "left" as const, color: "#fff", fontWeight: 700 }}>Retention period</th>
                   </tr>
                 </thead>
                 <tbody>
                   {[
-                    ["Zajištění transport (realizace contract)", "Plnění contract (čl. 6 odst. 1 písm. b)", "Po dobu trvání smluvního vztahu + 1 rok"],
-                    ["Zasílání potvrzení a komunikace", "Plnění contract (čl. 6 odst. 1 písm. b)", "Po dobu trvání smluvního vztahu"],
-                    ["Vystavení daňových dokladů", "Právní povinnost (čl. 6 odst. 1 písm. c)", "10 let (dle daňových předpisů)"],
-                    ["Řešení reklamací a sporů", "Oprávněný zájem (čl. 6 odst. 1 písm. f)", "3 roky od skončení transport"],
-                    ["Zasílání obchodních sdělení", "Souhlas (čl. 6 odst. 1 písm. a)", "Do odvolání consentu"],
-                    ["Bezpečnost a prevence podvodů", "Oprávněný zájem (čl. 6 odst. 1 písm. f)", "1 rok"],
+                    ["Providing transport (contract performance)", "Contract performance (Art. 6(1)(b))", "Duration of contractual relationship + 1 year"],
+                    ["Sending confirmations and communication", "Contract performance (Art. 6(1)(b))", "Duration of contractual relationship"],
+                    ["Issuing tax documents", "Legal obligation (Art. 6(1)(c))", "10 years (per tax regulations)"],
+                    ["Handling complaints and disputes", "Legitimate interest (Art. 6(1)(f))", "3 years from end of transport"],
+                    ["Sending marketing communications", "Consent (Art. 6(1)(a))", "Until consent is withdrawn"],
+                    ["Security and fraud prevention", "Legitimate interest (Art. 6(1)(f))", "1 year"],
                   ].map(([ucel, zaklad, doba], i) => (
                     <tr key={i} style={{ background: i % 2 === 0 ? "#f8fafc" : "#fff" }}>
                       <td style={{ padding: "10px 14px", borderBottom: "1px solid #e5e7eb" }}>{ucel}</td>
@@ -146,7 +146,7 @@ export default function OchranaOsobnichUdaju() {
             <Ul items={[
               <><strong>Drivers and partner carriers</strong> – name, phone and route for the purpose of completing the transport</>,
               <><strong>Payment service provider</strong> – processing online card payments (US server, protected under EU standard contractual clauses)</>,
-              <><strong>Email and notification service provider</strong> – odesílání potvrzovacích e-mailů a SMS notifikací (server v EU/USA)</>,
+              <><strong>Email and notification service provider</strong> – sending confirmation emails and SMS notifications (EU/US server)</>,
               <><strong>Cloud database</strong> – secure storage of bookings and customer data (EU infrastructure)</>,
               <><strong>Mapping and geolocation services</strong> – route and distance calculation (Google Maps, address data only)</>,
               <><strong>Public authorities</strong> – only where required by law (e.g. tax authority, courts)</>,
@@ -157,25 +157,25 @@ export default function OchranaOsobnichUdaju() {
           <Section title="5. Your Rights">
             <P>As a data subject you have the following rights, which you can exercise at any time by contacting the controller:</P>
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))", gap: "10px", marginBottom: "16px" }}>
-              <RightBox icon="ti ti-eye" title="Právo na přístup" text="Máte right vědět, jaké údaje o vás zpracováváme a získat jejich kopii." />
-              <RightBox icon="ti ti-pencil" title="Právo na opravu" text="Pokud jsou vaše údaje nesprávné nebo neúplné, máte right na jejich opravu." />
-              <RightBox icon="ti ti-trash" title="Právo na výmaz" text="Za určitých podmínek máte right požádat o smazání vašich personal data." />
-              <RightBox icon="ti ti-player-pause" title="Právo na omezení" text="Můžete požádat o omezení processing, například pokud zpochybňujete přesnost údajů." />
-              <RightBox icon="ti ti-package" title="Právo na přenositelnost" text="Údaje zpracovávané automatizovaně na základě consentu nebo contract vám předáme ve strojově čitelném formátu." />
-              <RightBox icon="ti ti-ban" title="Právo vznést námitku" text="Proti processing na základě oprávněného zájmu můžete kdykoliv vznést námitku." />
+              <RightBox icon="ti ti-eye" title="Right of access" text="You have the right to know what data we process about you and to obtain a copy." />
+              <RightBox icon="ti ti-pencil" title="Right to rectification" text="If your data is incorrect or incomplete, you have the right to have it corrected." />
+              <RightBox icon="ti ti-trash" title="Right to erasure" text="Under certain conditions you have the right to request deletion of your personal data." />
+              <RightBox icon="ti ti-player-pause" title="Right to restriction" text="You can request restriction of processing, for example if you contest the accuracy of the data." />
+              <RightBox icon="ti ti-package" title="Right to data portability" text="Data processed automatically on the basis of consent or contract will be provided to you in a machine-readable format." />
+              <RightBox icon="ti ti-ban" title="Right to object" text="You can object at any time to processing based on legitimate interest." />
             </div>
             <P>Svá rights uplatněte e-mailem na <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a>. Na vaši žádost odpovíme do <strong>30 dnů</strong>.</P>
             <P>Pokud se domníváte, že zpracováváme vaše údaje v rozporu s GDPR, máte right podat stížnost u Úřadu pro ochranu personal data (<a href="https://www.uoou.cz" target="_blank" rel="noopener noreferrer" style={{ color: "#00205B" }}>www.uoou.cz</a>).</P>
           </Section>
 
-          <Section title="6. Zabezpečení údajů">
+          <Section title="6. Data Security">
             <P>We implement technical and organisational measures to protect your personal data against unauthorised access, loss or misuse:</P>
             <Ul items={[
-              "Šifrování přenosu dat (HTTPS/TLS)",
-              "Šifrování dat v databázi",
-              "Přístup k datům pouze pro oprávněné osoby na základě potřeby znát",
-              "Pravidelné securityní audity a aktualizace systémů",
-              "Smluvní závazky zpracovatelů k ochraně dat",
+              "Data transfer encryption (HTTPS/TLS)",
+              "Database encryption",
+              "Data access limited to authorised personnel on a need-to-know basis",
+              "Regular security audits and system updates",
+              "Contractual data protection obligations for processors",
             ]} />
           </Section>
 
@@ -184,14 +184,14 @@ export default function OchranaOsobnichUdaju() {
           </Section>
 
           <Section title="8. Změny těchto zásad">
-            <P>These privacy policy may be updated from time to time. We will inform you of significant changes by email or notice on the website. Datum poslední aktualizace je uvedeno v záhlaví tohoto dokumentu.</P>
+            <P>These privacy policy may be updated from time to time. We will inform you of significant changes by email or notice on the website. The date of the last update is shown at the top of this document.</P>
           </Section>
 
           {/* Contactní box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
-              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Chcete uplatnit svá rights nebo se zeptat?</div>
-              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Napište nám – odpovíme do 30 dnů.</div>
+              <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Want to exercise your rights or ask a question?</div>
+              <div style={{ color: "rgba(255,255,255,0.65)", fontSize: "13px" }}>Write to us — we will respond within 30 days.</div>
             </div>
             <a href="mailto:info@pragueairportaxi.com" style={{ background: "#F97316", color: "#fff", textDecoration: "none", padding: "12px 24px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", whiteSpace: "nowrap" as const }}>
               info@pragueairportaxi.com

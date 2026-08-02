@@ -56,11 +56,11 @@ const VYHODY = [
 ]
 
 const FAQ_ITEMS = [
-  { q: "Jezdíte i mimo ČR?", a: "Yes, přepravujeme po celé střední Evropě – Německo, Rakousko, Slovensko, Polsko, Maďarsko a další. Cenu trasy získáte ihned po zadání do rezervačního formuláře." },
+  { q: "Do you travel outside Czech Republic?", a: "Yes, we cover all of Central Europe — Germany, Austria, Slovakia, Poland, Hungary and more. Get a price instantly by entering your route in the booking form." },
   { q: "Is the price fixed for international routes too?", a: "Yes, the price is always fixed and agreed upfront. No surcharges for tolls, delays or night rides." },
-  { q: "Mohu book cestu tam a zpět?", a: "Samozřejmě, v rezervačním formuláři jednoduše přidejte zpáteční cestu se slevou." },
+  { q: "Can I book a return journey?", a: "Of course — simply add a return trip in the booking form with a 10% discount." },
   { q: "Jak probíhá payment za dlouhé trasy?", a: "Payment kartou online nebo hotově driver. U tras nad 5 000 je možná záloha in advance." },
-  { q: "Co když trasa není v ceníku?", a: "Zadejte ji do rezervačního formuláře – price se vypočítá automaticky podle vzdálenosti. Nebo nás kontaktujte přímo." },
+  { q: "What if my route is not in the price list?", a: "Enter it in the booking form — price is calculated automatically by distance. Or contact us directly." },
 ]
 
 const breadcrumbSchema = {
@@ -134,7 +134,7 @@ export default function MezimestskaPage() {
               ))}
             </div>
             <div className="mt-4 p-4 rounded-xl text-sm text-center" style={{ background: "#f8fafc", color: "#64748b" }}>
-              Your route není v seznamu? Zadejte ji do <a href="/#booking" style={{ color: "#F97316", fontWeight: 700 }}>rezervačního formuláře</a> – price se vypočítá okamžitě.
+              Your route not listed? Enter it in the <a href="/#rezervace" style={{ color: "#F97316", fontWeight: 700 }}>booking form</a> — price calculated instantly.
             </div>
           </div>
         </section>

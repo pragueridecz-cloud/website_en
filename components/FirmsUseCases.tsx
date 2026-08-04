@@ -33,7 +33,7 @@ export default function FirmsUseCases() {
   return (
     <>
       {/* Desktop grid */}
-      <div className="hidden md:grid" style={{ gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "260px 260px", gap: "12px", display: "grid" }}>
+      <div className="hidden md:grid" style={{ gridTemplateColumns: "repeat(3, 1fr)", gridTemplateRows: "260px 260px", gap: "12px" }}>
         {order.map((idx, pos) => (
           <PhotoCard key={idx} {...cards[idx]} gridStyle={gridStyles[pos]} />
         ))}

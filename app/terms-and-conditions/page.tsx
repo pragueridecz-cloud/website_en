@@ -5,6 +5,14 @@ import Footer from "@/components/Footer"
 export const metadata: Metadata = {
   title: "Terms and Conditions | transfer-prague-car s.r.o.",
   description: "Terms and Conditions of transfer-prague-car s.r.o. operating www.pragueairportaxi.com. Transport terms, cancellation policy, complaints.",
+  alternates: {
+    canonical: "https://www.pragueairportaxi.com/terms-and-conditions",
+    languages: {
+      "en": "https://www.pragueairportaxi.com/terms-and-conditions",
+      "cs": "https://www.naletistelevne.cz/obchodni-podminky",
+      "x-default": "https://www.pragueairportaxi.com/terms-and-conditions",
+    },
+  },
 }
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (

@@ -5,6 +5,14 @@ import Footer from "@/components/Footer"
 export const metadata: Metadata = {
   title: "Cookie Policy | transfer-prague-car s.r.o.",
   description: "Information about cookies used on pragueairportaxi.com – which cookies we use, what they're for, and how to manage them.",
+  alternates: {
+    canonical: "https://www.pragueairportaxi.com/cookie-policy",
+    languages: {
+      "en": "https://www.pragueairportaxi.com/cookie-policy",
+      "cs": "https://www.naletistelevne.cz/zasady-zpracovani-cookies",
+      "x-default": "https://www.pragueairportaxi.com/cookie-policy",
+    },
+  },
 }
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (

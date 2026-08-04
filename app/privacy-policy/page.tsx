@@ -5,6 +5,14 @@ import Footer from "@/components/Footer"
 export const metadata: Metadata = {
   title: "Privacy Policy (GDPR) | transfer-prague-car s.r.o.",
   description: "Privacy policy of transfer-prague-car s.r.o. How we process your data, what rights you have, and how to contact us.",
+  alternates: {
+    canonical: "https://www.pragueairportaxi.com/privacy-policy",
+    languages: {
+      "en": "https://www.pragueairportaxi.com/privacy-policy",
+      "cs": "https://www.naletistelevne.cz/ochrana-osobnich-udaju",
+      "x-default": "https://www.pragueairportaxi.com/privacy-policy",
+    },
+  },
 }
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (

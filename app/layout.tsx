@@ -4,6 +4,7 @@ import ProgressBar from "@/components/ProgressBar";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.pragueairportaxi.com"),
   title: "Prague Airport Taxi | Transport to/from Prague Airport €29",
   description: "Book your transfer to/from Prague Airport in advance. Fixed price, professional driver, real-time flight tracking. Sedan from €29, minivan from €36. No surcharge for flight delays.",
   keywords: "Prague airport transfer, Prague airport taxi, cheap airport transfer Prague, Prague airport transport, book a car Prague airport",
@@ -14,6 +15,11 @@ export const metadata: Metadata = {
     siteName: "NaLetistelevne.cz",
     locale: "en_US",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Prague Airport Taxi | Transport to/from Prague Airport €29",
+    description: "Fixed price, professional driver, real-time flight tracking. No surcharge for flight delays.",
   },
   alternates: {
     canonical: "https://www.pragueairportaxi.com",

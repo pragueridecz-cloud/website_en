@@ -214,10 +214,8 @@ export default function Hero() {
               pointerEvents: expanded ? "none" : "auto",
             }}>
               <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(32px,4vw,52px)", margin: "0 0 8px" }}>
-                Affordable transport
-              </h1>
-              <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(32px,4vw,52px)", margin: "0 0 6px", color: "#F97316" }}>
-                to/from Prague Airport
+                Affordable transport<br />
+                <span style={{ color: "#F97316" }}>to/from Prague Airport</span>
               </h1>
               <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, lineHeight: 1.3, fontSize: "clamp(16px,2vw,22px)", margin: "0 0 28px", color: "#fff" }}>
                 and transfers across Czech Republic and Central Europe
@@ -249,11 +247,9 @@ export default function Hero() {
 
           {/* Mobil */}
           <div className="md:hidden flex flex-col pb-5">
-            <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 4px" }}>
-              Affordable transport
-            </h1>
-            <h1 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 16px", color: "#F97316" }}>
-              to/from Prague Airport
+            <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 16px" }}>
+              Affordable transport<br />
+              <span style={{ color: "#F97316" }}>to/from Prague Airport</span>
             </h1>
             <iframe
               src="https://taxisaas-widget.vercel.app/widget.html?proxy=https%3A%2F%2Fadmin.naletistelevne.cz%2Fapi%2Fflight-status&lang=en"

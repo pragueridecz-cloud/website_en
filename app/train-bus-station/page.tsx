@@ -13,7 +13,14 @@ export const metadata: Metadata = {
     description: "Transfer to Main Station, Florenc Bus Terminal, Smíchovské nádraží. Fixed prices, 24/7.",
     url: "https://www.pragueairportaxi.com/train-bus-station",
   },
-  alternates: { canonical: "https://www.pragueairportaxi.com/train-bus-station" },
+  alternates: {
+    canonical: "https://www.pragueairportaxi.com/train-bus-station",
+    languages: {
+      "en": "https://www.pragueairportaxi.com/train-bus-station",
+      "cs": "https://www.naletistelevne.cz/vlakove-autobusove-nadrazi",
+      "x-default": "https://www.pragueairportaxi.com/train-bus-station",
+    },
+  },
 }
 
 const schema = {
@@ -22,6 +29,32 @@ const schema = {
   "name": "Train & Bus Station Transfer Prague",
   "description": "Transfer to Prague Main Station, Florenc Bus Terminal, Smíchovské nádraží and more.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
+}
+
+const breadcrumbSchema = {
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.pragueairportaxi.com" },
+    { "@type": "ListItem", "position": 2, "name": "Train & Bus Station", "item": "https://www.pragueairportaxi.com/train-bus-station" },
+  ],
+}
+
+const FAQ_ITEMS = [
+  { q: "How far in advance should I book?", a: "We recommend booking at least 2 hours in advance, but we also accept last-minute bookings subject to availability." },
+  { q: "What if the train is delayed?", a: "If we are picking you up from the station, we monitor your train arrival in real time and adjust the pickup time accordingly." },
+  { q: "Do you transport bicycles or large luggage?", a: "Yes, for bicycles and large luggage we recommend a minivan. Please specify when booking." },
+  { q: "Do you travel outside Prague?", a: "Of course — we travel across Czech Republic and abroad. The price is calculated automatically." },
+]
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a },
+  })),
 }
 
 const STATIONS = [
@@ -48,6 +81,8 @@ export default function NadraziPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <Navbar />
       <main>
 
@@ -127,12 +162,7 @@ export default function NadraziPage() {
           <div className="max-w-3xl mx-auto px-4">
             <SectionHeading label="FAQ" title="Frequently asked questions" />
             <div className="space-y-4">
-              {[
-                { q: "How far in advance should I book?", a: "We recommend booking at least 2 hours in advance, but we also accept last-minute bookings subject to availability." },
-                { q: "What if the train is delayed?", a: "If we are picking you up from the station, we monitor your train arrival in real time and adjust the pickup time accordingly." },
-                { q: "Do you transport bicycles or large luggage?", a: "Yes, for bicycles and large luggage we recommend a minivan. Please specify when booking." },
-                { q: "Do you travel outside Prague?", a: "Of course — we travel across Czech Republic and abroad. The price is calculated automatically." },
-              ].map((item, i) => (
+              {FAQ_ITEMS.map((item, i) => (
                 <details key={i} className="border border-gray-200 rounded-xl overflow-hidden">
                   <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50">
                     {item.q}<span className="text-gray-400 text-xl ml-4">+</span>

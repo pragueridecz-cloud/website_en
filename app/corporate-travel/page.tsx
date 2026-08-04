@@ -8,6 +8,14 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Corporate transport Prague | pragueairportaxi.com",
   description: "Corporate taxi Prague with VAT invoice. Employee airport transfers, corporate transfers, VIP transport for delegations. Fixed price, monthly invoicing, dedicated line.",
+  alternates: {
+    canonical: "https://www.pragueairportaxi.com/corporate-travel",
+    languages: {
+      "en": "https://www.pragueairportaxi.com/corporate-travel",
+      "cs": "https://www.naletistelevne.cz/preprava-pro-firmy",
+      "x-default": "https://www.pragueairportaxi.com/corporate-travel",
+    },
+  },
 };
 
 

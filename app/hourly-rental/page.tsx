@@ -17,7 +17,14 @@ export const metadata: Metadata = {
     description: "Car with driver for the full day or a few hours. Business, tourism, shopping.",
     url: "https://www.pragueairportaxi.com/hourly-rental",
   },
-  alternates: { canonical: "https://www.pragueairportaxi.com/hourly-rental" },
+  alternates: {
+    canonical: "https://www.pragueairportaxi.com/hourly-rental",
+    languages: {
+      "en": "https://www.pragueairportaxi.com/hourly-rental",
+      "cs": "https://www.naletistelevne.cz/hodinovy-pronajem",
+      "x-default": "https://www.pragueairportaxi.com/hourly-rental",
+    },
+  },
 }
 
 const schema = {

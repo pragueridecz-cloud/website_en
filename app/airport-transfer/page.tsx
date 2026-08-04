@@ -14,7 +14,14 @@ export const metadata: Metadata = {
     url: "https://www.pragueairportaxi.com/airport-transfer",
     images: [{ url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/PRG_Airport_Terminal_2.jpg/1280px-PRG_Airport_Terminal_2.jpg", width: 1280, height: 720 }],
   },
-  alternates: { canonical: "https://www.pragueairportaxi.com/airport-transfer" },
+  alternates: {
+    canonical: "https://www.pragueairportaxi.com/airport-transfer",
+    languages: {
+      "en": "https://www.pragueairportaxi.com/airport-transfer",
+      "cs": "https://www.naletistelevne.cz/letistni-preprava",
+      "x-default": "https://www.pragueairportaxi.com/airport-transfer",
+    },
+  },
 }
 
 const schema = {
@@ -47,7 +54,7 @@ const AIRPORTS_CZ = [
     city: "Brno",
     desc: "Second largest airport in Czech Republic. Regular routes to London, Amsterdam, Frankfurt and other European destinations. Ideal alternative for passengers from South Moravia.",
     price: "from €112",
-    time: "2.5h z Prahy",
+    time: "2.5h from Prague",
     img: "/airport-brno.jpg",
     facts: ["210 km from Prague", "Regular Ryanair, Wizz Air routes"],
   },
@@ -57,12 +64,31 @@ const AIRPORTS_CZ = [
     city: "Ostrava",
     desc: "Airport in the heart of Silesia. Seasonal and regular charter flights across Europe and Turkey. Good connections to Poland and Slovakia.",
     price: "from €189",
-    time: "3.5h z Prahy",
+    time: "3.5h from Prague",
     img: "/airport-ostrava.jpg",
     facts: ["360 km from Prague", "Charter flights to Turkey, Greece, Egypt"],
   },
 ]
 
+
+const FAQ_ITEMS = [
+  { q: "Do you also transfer to Vienna or Munich airport?", a: "Yes, we cover all airports within approximately 700 km of Prague. Vienna, Bratislava, Budapest, Munich, Frankfurt, Dresden and more. Get a price instantly by entering your route in the booking form." },
+  { q: "How does flight delay tracking work?", a: "When booking, you enter your flight number. Our system automatically tracks the real arrival time and notifies the driver. If your flight is delayed, the driver arrives later — and you pay no waiting surcharge." },
+  { q: "Where will the driver pick me up after landing?", a: "Your driver waits in the arrivals hall with a sign showing your name, right after customs exit. No need to call or search." },
+  { q: "Can I pay by card?", a: "Yes, pay by card online when booking or cash to the driver. We can also issue a VAT invoice for companies on request." },
+  { q: "What if I have a lot of luggage or skis?", a: "Specify your luggage count and special requirements when booking. For large luggage, skis or prams we arrange a minivan with plenty of space." },
+  { q: "Can I book a return journey?", a: "Of course. Simply add a return trip in the booking form. A return ride can also be booked separately." },
+]
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a },
+  })),
+}
 
 const breadcrumbSchema = {
       "@context": "https://schema.org",
@@ -79,6 +105,7 @@ export default function LetistniPreprava() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Navbar />
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbSchema)}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(faqSchema)}} />
       <main>
 
         {/* HERO */}
@@ -233,14 +260,7 @@ export default function LetistniPreprava() {
           <div className="max-w-3xl mx-auto px-4">
             <SectionHeading label="FAQ" title="Have a question?" />
             <div className="space-y-3">
-              {[
-                { q: "Do you also transfer to Vienna or Munich airport?", a: "Yes, we cover all airports within approximately 700 km of Prague. Vienna, Bratislava, Budapest, Munich, Frankfurt, Dresden and more. Get a price instantly by entering your route in the booking form." },
-                { q: "How does flight delay tracking work?", a: "When booking, you enter your flight number. Our system automatically tracks the real arrival time and notifies the driver. If your flight is delayed, the driver arrives later — and you pay no waiting surcharge." },
-                { q: "Where will the driver pick me up after landing?", a: "Your driver waits in the arrivals hall with a sign showing your name, right after customs exit. No need to call or search." },
-                { q: "Can I pay by card?", a: "Yes, pay by card online when booking or cash to the driver. We can also issue a VAT invoice for companies on request." },
-                { q: "What if I have a lot of luggage or skis?", a: "Specify your luggage count and special requirements when booking. For large luggage, skis or prams we arrange a minivan with plenty of space." },
-                { q: "Can I book a return journey?", a: "Of course. Simply add a return trip in the booking form. A return ride can also be booked separately." },
-              ].map((item, i) => (
+              {FAQ_ITEMS.map((item, i) => (
                 <details key={i} className="bg-white border border-gray-200 rounded-xl overflow-hidden group">
                   <summary className="flex items-center justify-between p-5 cursor-pointer font-semibold text-gray-900 hover:bg-gray-50 list-none">
                     <span>{item.q}</span>

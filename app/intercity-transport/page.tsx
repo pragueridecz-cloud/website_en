@@ -13,7 +13,14 @@ export const metadata: Metadata = {
     description: "Prague–Vienna from €390, Prague–Berlin from €385. Comfortable transport across all of Europe.",
     url: "https://www.pragueairportaxi.com/intercity-transport",
   },
-  alternates: { canonical: "https://www.pragueairportaxi.com/intercity-transport" },
+  alternates: {
+    canonical: "https://www.pragueairportaxi.com/intercity-transport",
+    languages: {
+      "en": "https://www.pragueairportaxi.com/intercity-transport",
+      "cs": "https://www.naletistelevne.cz/mezimestska-doprava",
+      "x-default": "https://www.pragueairportaxi.com/intercity-transport",
+    },
+  },
 }
 
 const schema = {
@@ -72,12 +79,23 @@ const breadcrumbSchema = {
       ]
     }
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": FAQ_ITEMS.map((item) => ({
+    "@type": "Question",
+    "name": item.q,
+    "acceptedAnswer": { "@type": "Answer", "text": item.a },
+  })),
+}
+
 export default function MezimestskaPage() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
       <Navbar />
         <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(breadcrumbSchema)}} />
+        <script type="application/ld+json" dangerouslySetInnerHTML={{__html: JSON.stringify(faqSchema)}} />
       <main>
 
         {/* Hero */}
@@ -134,7 +152,7 @@ export default function MezimestskaPage() {
               ))}
             </div>
             <div className="mt-4 p-4 rounded-xl text-sm text-center" style={{ background: "#f8fafc", color: "#64748b" }}>
-              Your route not listed? Enter it in the <a href="/#rezervace" style={{ color: "#F97316", fontWeight: 700 }}>booking form</a> — price calculated instantly.
+              Your route not listed? Enter it in the <a href="/#booking" style={{ color: "#F97316", fontWeight: 700 }}>booking form</a> — price calculated instantly.
             </div>
           </div>
         </section>

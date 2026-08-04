@@ -13,16 +13,21 @@ const NAVBAR_H = 98; // px
 
 function PriceTag() {
   return (
-    <div style={{ marginTop: "16px" }}>
-      <svg width="420" height="90" viewBox="0 0 420 90" xmlns="http://www.w3.org/2000/svg">
-        <filter id="ptsh">
-          <feDropShadow dx="0" dy="3" stdDeviation="8" floodColor="rgba(0,0,0,0.35)"/>
-        </filter>
-        <path d="M 12 0 L 396 0 Q 416 0 416 20 L 416 35 Q 420 45 416 55 L 416 70 Q 416 90 396 90 L 12 90 Q 0 90 0 78 L 0 12 Q 0 0 12 0 Z"
-              fill="#F97316" filter="url(#ptsh)"/>
-        <text x="16" y="38" fontFamily="Poppins,sans-serif" fontSize="12" fontWeight="500" fill="rgba(255,255,255,0.8)">from</text>
-        <text x="16" y="72" fontFamily="Poppins,sans-serif" fontSize="44" fontWeight="900" fill="#fff" letterSpacing="-1" textAnchor="start">€29 / £25 / $32</text>
-      </svg>
+    <div style={{ marginTop: "16px", display: "inline-block" }}>
+      <div style={{
+        display: "inline-block",
+        background: "#F97316",
+        borderRadius: "12px",
+        padding: "10px 30px 14px 16px",
+        filter: "drop-shadow(0 3px 8px rgba(0,0,0,0.35))",
+        WebkitMaskImage: "radial-gradient(circle 9px at 100% 50%, transparent 9px, #000 9.5px)",
+        maskImage: "radial-gradient(circle 9px at 100% 50%, transparent 9px, #000 9.5px)",
+      }}>
+        <div style={{ fontFamily: "Poppins, sans-serif", fontSize: "12px", fontWeight: 500, lineHeight: 1, color: "rgba(255,255,255,.8)" }}>from</div>
+        <div style={{ fontFamily: "Poppins, sans-serif", fontWeight: 900, letterSpacing: "-1px", lineHeight: 1.15, color: "#fff", fontSize: "clamp(26px, 3.2vw, 44px)", whiteSpace: "nowrap" }}>
+          €29 / £25 / $32
+        </div>
+      </div>
     </div>
   );
 }

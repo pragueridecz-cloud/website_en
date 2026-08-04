@@ -227,7 +227,7 @@ function CarCard({ car, mode = "transfer" }: { car: typeof cars[0]; mode?: strin
         <p className="text-xs text-gray-400 mb-3">{car.model}</p>
         <div className="flex gap-4 mb-3">
           <span className="flex items-center gap-1 text-xs text-gray-500">
-            <Users size={13} /> {car.passengers} os.
+            <Users size={13} /> {car.passengers} passengers
           </span>
           <span className="flex items-center gap-1 text-xs text-gray-500">
             <Briefcase size={13} /> {car.luggage} bags

@@ -98,8 +98,8 @@ export default function Navbar() {
               {/* Language switcher */}
               <div className="relative" ref={langRef}>
                 <button onClick={() => setLangOpen(!langOpen)}
-                  className="flex items-center gap-1.5 px-2 py-1.5 rounded text-sm cursor-pointer"
-                  style={{ color: "rgba(255,255,255,.7)", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)" }}>
+                  className="flex items-center gap-1.5 px-2 rounded text-sm cursor-pointer"
+                  style={{ height: "32px", color: "rgba(255,255,255,.7)", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)" }}>
                   <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f1ec-1f1e7.svg" width="24" height="18" alt="EN" style={{display:"inline",verticalAlign:"middle"}} />
                   <ChevronDown size={11} />
                 </button>
@@ -121,16 +121,16 @@ export default function Navbar() {
                 )}
               </div>
 
-              <a href="https://portal.pragueairportaxi.com" target="_blank" rel="noopener noreferrer"
-                className="text-xs font-semibold px-3 py-1.5 rounded cursor-pointer"
-                style={{ border: "1px solid rgba(255,255,255,.3)", color: "#fff", background: "rgba(255,255,255,.08)", textDecoration: "none" }}
+              <a href="https://portal.naletistelevne.cz" target="_blank" rel="noopener noreferrer"
+                className="inline-flex items-center justify-center text-xs font-semibold px-3 rounded cursor-pointer"
+                style={{ height: "32px", border: "1px solid rgba(255,255,255,.3)", color: "#fff", background: "rgba(255,255,255,.08)", textDecoration: "none" }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,.18)"; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,.08)"; }}>
                 Sign in
               </a>
               <a href="/#booking"
-                className="text-xs font-bold px-4 py-1.5 rounded cursor-pointer"
-                style={{ background: "#F97316", color: "#fff", textDecoration: "none" }}
+                className="inline-flex items-center justify-center text-xs font-bold px-4 rounded cursor-pointer"
+                style={{ height: "32px", background: "#F97316", color: "#fff", textDecoration: "none" }}
                 onMouseEnter={e => ((e.currentTarget as HTMLElement).style.background = "#EA580C")}
                 onMouseLeave={e => ((e.currentTarget as HTMLElement).style.background = "#F97316")}>
                 + Book
@@ -168,7 +168,7 @@ export default function Navbar() {
           <a href="/corporate-travel" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>For companies</a>
           <a href="/#faq" onClick={() => setMenuOpen(false)} style={{ color: "rgba(255,255,255,.8)" }}>FAQ</a>
           <div className="flex gap-2 pt-1">
-            <a href="https://portal.pragueairportaxi.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://portal.naletistelevne.cz" target="_blank" rel="noopener noreferrer"
               className="flex-1 text-center py-2.5 rounded-lg font-semibold text-sm"
               style={{ border: "1px solid rgba(255,255,255,.3)", color: "#fff", textDecoration: "none" }}>Sign in</a>
             <a href="/#booking" onClick={() => setMenuOpen(false)}

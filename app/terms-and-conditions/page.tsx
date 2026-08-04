@@ -100,7 +100,7 @@ export default function ObchodniPodminky() {
 
           <Section title="4. Prices and Payment Terms">
             <P>Prices are shown in EUR including VAT. The displayed price is <strong>fixed</strong> and includes all charges related to the transfer (motorway tolls, fuel, terminal parking).</P>
-            <P>Price <strong>nezahrnuje</strong>: volitelné příplatky (lyže, kola, dětské sedačky), pokud nebyly součástí objednávky.</P>
+            <P>The price <strong>does not include</strong>: optional extras (skis, bikes, child seats) unless they were part of the booking.</P>
             <P>Available payment methods:</P>
             <Ul items={[
               "Card payment online in advance (Visa, Mastercard, Apple Pay, Google Pay)",
@@ -112,7 +112,7 @@ export default function ObchodniPodminky() {
 
           <Section title="5. Flight Tracking and Delays">
             <P>For transfers connected to a flight, the operator automatically tracks the current flight status. In case of arrival or departure delay, the pickup time will be automatically adjusted.</P>
-            <P>Za delay způsobené leteckou společností, povětrnostními podmínkami nebo vyšší mocí operator <strong>neúčtuje žádný příplatek</strong>.</P>
+            <P>For delays caused by the airline, weather conditions or force majeure, the operator <strong>charges no additional fee</strong>.</P>
             <P>The customer must provide the correct flight number if flight delay is to be taken into account for pickup time.</P>
           </Section>
 
@@ -159,7 +159,7 @@ export default function ObchodniPodminky() {
               "Failure to provide vehicle at agreed time (without objective reasons)",
               "Damage to luggage in the vehicle demonstrably caused by the driver",
             ]} />
-            <P>Operator <strong>neodpovídá</strong> za:</P>
+            <P>The operator <strong>is not liable</strong> for:</P>
             <Ul items={[
               "Delays caused by traffic accidents, road closures or force majeure",
               "Damages caused by incorrectly entered data by the customer",
@@ -171,10 +171,10 @@ export default function ObchodniPodminky() {
           <Section title="9. Complaints">
             <P>The customer has the right to file a complaint within <strong>30 days</strong> of the ride. Complaints can be submitted:</P>
             <Ul items={[
-              "E-mailem: info@pragueairportaxi.com",
+              "By email: info@pragueairportaxi.com",
               "By phone: +420 606 079 179",
             ]} />
-            <P>Operator se zavazuje reklamaci vyřídit do <strong>14 pracovních dnů</strong> od jejího obdržení.</P>
+            <P>The operator undertakes to resolve the complaint within <strong>14 business days</strong> of receipt.</P>
             <P>A customer who is a consumer has the right to out-of-court resolution of consumer disputes through the Czech Trade Inspection Authority (www.coi.cz).</P>
           </Section>
 
@@ -188,7 +188,7 @@ export default function ObchodniPodminky() {
             <P>In case of a dispute, the courts of Czech Republic have jurisdiction.</P>
           </Section>
 
-          {/* Contactní box */}
+          {/* Contact box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
               <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Have questions about the terms?</div>

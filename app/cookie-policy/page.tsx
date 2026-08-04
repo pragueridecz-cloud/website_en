@@ -4,7 +4,7 @@ import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Cookie Policy | transfer-prague-car s.r.o.",
-  description: "Information o cookies používaných na webu pragueairportaxi.com – jaké cookies používáme, k čemu slouží a jak je spravovat.",
+  description: "Information about cookies used on pragueairportaxi.com – which cookies we use, what they're for, and how to manage them.",
 }
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
@@ -174,9 +174,9 @@ export default function ZasadyCookies() {
             <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))", gap: "10px", marginBottom: "16px" }}>
               {[
                 { browser: "Google Chrome", link: "https://support.google.com/chrome/answer/95647" },
-                { browser: "Mozilla Firefox", link: "https://support.mozilla.org/cs/kb/povoleni-zakazani-cookies" },
-                { browser: "Safari", link: "https://support.apple.com/cs-cz/guide/safari/sfri11471/mac" },
-                { browser: "Microsoft Edge", link: "https://support.microsoft.com/cs-cz/microsoft-edge/odstr%C3%A1n%C4%9Bn%C3%AD-file%C5%AF-cookie-v-prohlí%C5%BEe%C4%8Di-microsoft-edge" },
+                { browser: "Mozilla Firefox", link: "https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" },
+                { browser: "Safari", link: "https://support.apple.com/guide/safari/sfri11471/mac" },
+                { browser: "Microsoft Edge", link: "https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" },
               ].map((item, i) => (
                 <a key={i} href={item.link} target="_blank" rel="noopener noreferrer"
                   style={{ display: "flex", alignItems: "center", gap: "8px", padding: "12px 14px", background: "#f0f4ff", border: "1px solid #dbeafe", borderRadius: "8px", textDecoration: "none", color: "#00205B", fontSize: "13px", fontWeight: 600 }}>

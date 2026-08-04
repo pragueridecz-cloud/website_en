@@ -169,7 +169,7 @@ export default function Hero() {
         id="nll-widget-frame"
         src="https://taxisaas-widget.vercel.app/widget.html?proxy=https%3A%2F%2Fadmin.naletistelevne.cz%2Fapi%2Fflight-status&lang=en"
         frameBorder="0"
-        title="Rezervační formulář"
+        title="Booking form"
         scrolling="no"
         style={{
           width: "100%",
@@ -258,7 +258,7 @@ export default function Hero() {
             <iframe
               src="https://taxisaas-widget.vercel.app/widget.html?proxy=https%3A%2F%2Fadmin.naletistelevne.cz%2Fapi%2Fflight-status&lang=en"
               frameBorder="0"
-              title="Rezervační formulář"
+              title="Booking form"
               style={{
                 width: "100%",
                 height: `${rawWidgetH}px`,

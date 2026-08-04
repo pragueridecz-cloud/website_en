@@ -4,7 +4,7 @@ import Footer from "@/components/Footer"
 
 export const metadata: Metadata = {
   title: "Privacy Policy (GDPR) | transfer-prague-car s.r.o.",
-  description: "Zásady ochrany personal data společnosti transfer-prague-car s.r.o. Jak zpracováváme vaše data, jaká máte rights a jak nás kontaktovat.",
+  description: "Privacy policy of transfer-prague-car s.r.o. How we process your data, what rights you have, and how to contact us.",
 }
 
 const Section = ({ title, children }: { title: string; children: React.ReactNode }) => (
@@ -141,7 +141,7 @@ export default function OchranaOsobnichUdaju() {
             </div>
           </Section>
 
-          <Section title="4. Příjemci personal data">
+          <Section title="4. Recipients of Personal Data">
             <P>We share your personal data only with trusted partners who are bound by processing agreements and are obliged to protect your data:</P>
             <Ul items={[
               <><strong>Drivers and partner carriers</strong> – name, phone and route for the purpose of completing the transport</>,
@@ -164,8 +164,8 @@ export default function OchranaOsobnichUdaju() {
               <RightBox icon="ti ti-package" title="Right to data portability" text="Data processed automatically on the basis of consent or contract will be provided to you in a machine-readable format." />
               <RightBox icon="ti ti-ban" title="Right to object" text="You can object at any time to processing based on legitimate interest." />
             </div>
-            <P>Svá rights uplatněte e-mailem na <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a>. Na vaši žádost odpovíme do <strong>30 dnů</strong>.</P>
-            <P>Pokud se domníváte, že zpracováváme vaše údaje v rozporu s GDPR, máte right podat stížnost u Úřadu pro ochranu personal data (<a href="https://www.uoou.cz" target="_blank" rel="noopener noreferrer" style={{ color: "#00205B" }}>www.uoou.cz</a>).</P>
+            <P>You can exercise your rights by emailing <a href="mailto:info@pragueairportaxi.com" style={{ color: "#00205B" }}>info@pragueairportaxi.com</a>. We will respond to your request within <strong>30 days</strong>.</P>
+            <P>If you believe we are processing your data in violation of GDPR, you have the right to file a complaint with the Office for Personal Data Protection (<a href="https://www.uoou.cz" target="_blank" rel="noopener noreferrer" style={{ color: "#00205B" }}>www.uoou.cz</a>).</P>
           </Section>
 
           <Section title="6. Data Security">
@@ -180,14 +180,14 @@ export default function OchranaOsobnichUdaju() {
           </Section>
 
           <Section title="7. Cookies">
-            <P>Náš web používá cookies. Podrobné information o tom, jaké cookies používáme a jak je lze spravovat, naleznete v našich <a href="/cookie-policy" style={{ color: "#00205B" }}>Zásadách processing cookies</a>.</P>
+            <P>Our website uses cookies. Detailed information about which cookies we use and how you can manage them can be found in our <a href="/cookie-policy" style={{ color: "#00205B" }}>Cookie Policy</a>.</P>
           </Section>
 
-          <Section title="8. Změny těchto zásad">
+          <Section title="8. Changes to This Policy">
             <P>These privacy policy may be updated from time to time. We will inform you of significant changes by email or notice on the website. The date of the last update is shown at the top of this document.</P>
           </Section>
 
-          {/* Contactní box */}
+          {/* Contact box */}
           <div style={{ background: "#00205B", borderRadius: "12px", padding: "24px 28px", marginTop: "40px", display: "flex", flexWrap: "wrap" as const, gap: "16px", alignItems: "center", justifyContent: "space-between" }}>
             <div>
               <div style={{ color: "#fff", fontWeight: 700, fontSize: "16px", marginBottom: "4px" }}>Want to exercise your rights or ask a question?</div>

@@ -6,11 +6,11 @@ import { Clock, Luggage, ArrowLeftRight, MapPin, Banknote, Moon, Train, Bus } fr
 
 export const metadata: Metadata = {
   title: "Train & Bus Station Transfer Prague | pragueairportaxi.com",
-  description: "Taxi na nádraží Prague — Main Station, Florenc Bus Terminal, Smíchovské nádraží, Holešovice, Masarykovo. Fixed price, pomoc se luggage, 24/7 dostupnost. Book online.",
-  keywords: "taxi na nádraží Prague, transfer hlavní nádraží Prague, odvoz na nádraží, transport Florenc Bus Terminal, taxi Smíchovské nádraží, taxi autobusové nádraží",
+  description: "Taxi to Prague train and bus stations — Main Station, Florenc Bus Terminal, Smíchovské nádraží, Holešovice, Masarykovo. Fixed price, help with luggage, available 24/7. Book online.",
+  keywords: "taxi to Prague train station, transfer Prague Main Station, station transfer Prague, transport Florenc Bus Terminal, taxi Smíchovské nádraží, taxi bus terminal",
   openGraph: {
     title: "Train & Bus Station Transfer Prague | pragueairportaxi.com",
-    description: "Transfer na Main Station, Florenc Bus Terminal, Smíchovské nádraží. Pevné ceny 24/7.",
+    description: "Transfer to Main Station, Florenc Bus Terminal, Smíchovské nádraží. Fixed prices, 24/7.",
     url: "https://www.pragueairportaxi.com/train-bus-station",
   },
   alternates: { canonical: "https://www.pragueairportaxi.com/train-bus-station" },
@@ -20,7 +20,7 @@ const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
   "name": "Train & Bus Station Transfer Prague",
-  "description": "Transfer na hlavní nádraží, Florenc Bus Terminal, Smíchovské nádraží a další.",
+  "description": "Transfer to Prague Main Station, Florenc Bus Terminal, Smíchovské nádraží and more.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
 }
 

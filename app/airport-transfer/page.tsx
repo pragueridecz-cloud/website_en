@@ -102,7 +102,7 @@ export default function LetistniPreprava() {
                 </p>
               </div>
               <div className="hidden md:block" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.4)" }}>
-                <img src="/driver-sign.jpg" alt="Řidič s cedulkou čeká na customer u výstupu z airport"
+                <img src="/driver-sign.jpg" alt="Driver holding a name sign waits for the customer at the airport arrivals exit"
                   style={{ width: "100%", height: "auto", display: "block" }} />
               </div>
             </div>

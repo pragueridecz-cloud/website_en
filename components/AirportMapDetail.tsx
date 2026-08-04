@@ -16,7 +16,7 @@ const AIRPORTS = [
     facts: ["Direct flights to 200+ destinations", "Hub for Emirates, Austrian Airlines", "Excellent alternative for Asian flights", "Modern terminals with duty free"],
   },
   {
-    code: "BTS", name: "Airport Bratislava Štefánik", city: "Bratislava, Slovensko",
+    code: "BTS", name: "Airport Bratislava Štefánik", city: "Bratislava, Slovakia",
     lat: 48.1702, lng: 17.2127, price: "from €162",
     country: "🇸🇰",
     addr: "M. R. Štefánik Airport, Bratislava, Slovakia",

@@ -6,11 +6,11 @@ import { Lock, Car, Clock, Globe, CreditCard, UserCheck } from "lucide-react"
 
 export const metadata: Metadata = {
   title: "Long Distance Taxi & Intercity Transport Prague | pragueairportaxi.com",
-  description: "Long Distance Taxi from Prague za pevnou price — Prague–Vienna 9 €29, Prague–Berlin , Prague–Brno . Intercity Transport across Czech Republic & Europe, 24/7.",
-  keywords: "meziměstská doprava, mezinárodní transfer, Prague Vienna taxi, Prague Berlin taxi, Prague Brno taxi, transport do zahraničí, taxi Prague Munich",
+  description: "Long distance taxi from Prague at a fixed price — Prague–Vienna from €390, Prague–Berlin from €385, Prague–Brno from €255. Intercity transport across Czech Republic & Europe, 24/7.",
+  keywords: "intercity transport, international transfer, Prague Vienna taxi, Prague Berlin taxi, Prague Brno taxi, transport abroad, taxi Prague Munich",
   openGraph: {
-    title: "Meziměstská a mezinárodní doprava | pragueairportaxi.com",
-    description: "Prague–Vienna 9 €29, Prague–Berlin . Komfortní transport po celé Evropě.",
+    title: "Intercity & International Transport | pragueairportaxi.com",
+    description: "Prague–Vienna from €390, Prague–Berlin from €385. Comfortable transport across all of Europe.",
     url: "https://www.pragueairportaxi.com/intercity-transport",
   },
   alternates: { canonical: "https://www.pragueairportaxi.com/intercity-transport" },
@@ -19,15 +19,15 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Mezinárodní a meziměstská doprava",
-  "description": "Transport mezi městy v ČR a do zahraničí – Vienna, Berlin, Munich, Varšava a další.",
+  "name": "International and Intercity Transport",
+  "description": "Transport between cities in the Czech Republic and abroad – Vienna, Berlin, Munich, Warsaw and more.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
   "areaServed": [
     { "@type": "Country", "name": "Czech Republic" },
-    { "@type": "Country", "name": "Německo" },
-    { "@type": "Country", "name": "Rakousko" },
-    { "@type": "Country", "name": "Polsko" },
-    { "@type": "Country", "name": "Slovensko" },
+    { "@type": "Country", "name": "Germany" },
+    { "@type": "Country", "name": "Austria" },
+    { "@type": "Country", "name": "Poland" },
+    { "@type": "Country", "name": "Slovakia" },
   ],
 }
 
@@ -51,7 +51,7 @@ const VYHODY = [
   { Icon: Car,       title: "Modern vehicles",      desc: "Comfortable sedans and minivans with air conditioning, Wi-Fi and plenty of luggage space.", img: "/service-vehicle.jpg" },
   { Icon: Clock,     title: "Flexible times",      desc: "We operate 24 hours a day, 7 days a week. Book anytime, even last minute.", img: "https://images.unsplash.com/photo-1508962914676-134849a727f0?w=600&q=80" },
   { Icon: Globe,     title: "All of Central Europe",  desc: "We travel to Germany, Austria, Poland, Slovakia, Hungary and beyond.", img: "/service-evropa.jpg" },
-  { Icon: CreditCard,title: "Card payment",        desc: "Card payment online or cash to the driver. Na vyžádání invoice na firmu.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
+  { Icon: CreditCard,title: "Card payment",        desc: "Card payment online or cash to the driver. Invoice for companies available on request.", img: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80" },
   { Icon: UserCheck, title: "Professional drivers", desc: "Experienced, multilingual drivers with knowledge of routes and local conditions.", img: "/service-ridici.jpg" },
 ]
 
@@ -185,7 +185,7 @@ export default function MezimestskaPage() {
         <section className="py-16" style={{ background: "#00205B" }}>
           <div className="max-w-3xl mx-auto px-4 text-center">
             <h2 className="text-white text-3xl font-bold mb-4" style={{ fontFamily: "Poppins, sans-serif" }}>Book intercity transport</h2>
-            <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Fixed price, komfortní vehicle, reliable driver</p>
+            <p className="mb-8" style={{ color: "rgba(255,255,255,.75)" }}>Fixed price, comfortable vehicle, reliable driver</p>
             <a href="/#booking" className="inline-block font-bold rounded-xl px-8 py-4 text-lg"
               style={{ background: "#F97316", color: "#fff", fontFamily: "Poppins, sans-serif", textDecoration: "none" }}>
               Book now

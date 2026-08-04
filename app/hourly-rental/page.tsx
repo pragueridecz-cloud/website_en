@@ -9,11 +9,11 @@ import {
 } from "lucide-react"
 
 export const metadata: Metadata = {
-  title: "Hourly Rental auta s driverem Prague | pragueairportaxi.com",
+  title: "Hourly Car Rental with Driver Prague | pragueairportaxi.com",
   description: "Car with driver Prague from €29/h — chauffeur service, VIP transport, hourly or full day hire. Business meetings, weddings, day trips. Sedan and minivan.",
-  keywords: "pronájem auta s driverem Prague, chauffeur service Prague, auto s šoférem Prague,hinový transfer Prague, firemní driver Prague, prohlídka Prahy s driverem",
+  keywords: "car rental with driver Prague, chauffeur service Prague, car with driver Prague, hourly transfer Prague, corporate driver Prague, Prague city tour with driver",
   openGraph: {
-    title: "Hourly Rental auta s driverem Prague | Od €29/hod | pragueairportaxi.com",
+    title: "Hourly Car Rental with Driver Prague | From €29/hour | pragueairportaxi.com",
     description: "Car with driver for the full day or a few hours. Business, tourism, shopping.",
     url: "https://www.pragueairportaxi.com/hourly-rental",
   },
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
 const schema = {
   "@context": "https://schema.org",
   "@type": "Service",
-  "name": "Hourly Rental auta s driverem Prague",
+  "name": "Hourly Car Rental with Driver Prague",
   "description": "Vehicle hire with a professional driver by the hour or full day.",
   "provider": { "@type": "LocalBusiness", "name": "Transfer Prague Car s.r.o.", "telephone": "+420606079179" },
   "offers": { "@type": "Offer", "priceCurrency": "CZK", "price": "750" },

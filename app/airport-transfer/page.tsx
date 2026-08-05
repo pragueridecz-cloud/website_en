@@ -34,7 +34,7 @@ const schema = {
     { "@type": "Airport", "name": "Vienna International Airport", "iataCode": "VIE" },
     { "@type": "Airport", "name": "Bratislava M. R. Štefánik Airport", "iataCode": "BTS" },
   ],
-  "offers": { "@type": "Offer", "priceCurrency": "CZK", "price": "790" },
+  "offers": { "@type": "Offer", "priceCurrency": "CZK", "price": "750" },
 }
 
 const AIRPORTS_CZ = [

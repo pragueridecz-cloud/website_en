@@ -23,7 +23,7 @@ const schemaOrg = {
     "addressLocality": "Prague",
     "addressCountry": "CZ",
   },
-  "priceRange": "790 - 1790 CZK",
+  "priceRange": "750 - 1790 CZK",
   "openingHours": "Mo-Su 00:00-23:59",
   "serviceArea": {
     "@type": "GeoCircle",
@@ -42,7 +42,7 @@ const schemaOrg = {
         "@type": "Offer",
         "name": "Economy Sedan",
         "description": "Sedan transfer for 1-4 passengers",
-        "price": "790",
+        "price": "750",
         "priceCurrency": "CZK",
       },
       {

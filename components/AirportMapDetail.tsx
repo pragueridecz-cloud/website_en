@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 
 const GMAPS_KEY = "AIzaSyAgl9xkJoahOyxLWTjRLrPEXxYfqTXyH7k";
 const PRAGUE = { lat: 50.0755, lng: 14.4378 };
@@ -99,7 +100,7 @@ export default function AirportMapDetail() {
     if ((window as any).google?.maps) { initMap(); return; }
     (window as any).initGMapDetail = initMap;
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${GMAPS_KEY}&callback=initGMapDetail&language=cs`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${GMAPS_KEY}&callback=initGMapDetail&language=en`;
     script.async = true;
     document.head.appendChild(script);
     return () => { (window as any).initGMapDetail = () => {}; };
@@ -129,9 +130,9 @@ export default function AirportMapDetail() {
     new window.google.maps.Marker({
       position: PRAGUE, map,
       icon: { path: window.google.maps.SymbolPath.CIRCLE, scale: 10, fillColor: "#00205B", fillOpacity: 1, strokeColor: "#fff", strokeWeight: 3 },
-      title: "Praha", zIndex: 10,
+      title: "Prague", zIndex: 10,
     });
-    new window.google.maps.InfoWindow({ content: '<div style="font-size:12px;font-weight:700;color:#00205B">Praha 🏠</div>' })
+    new window.google.maps.InfoWindow({ content: '<div style="font-size:12px;font-weight:700;color:#00205B">Prague 🏠</div>' })
       .open(map, new window.google.maps.Marker({ position: PRAGUE, map, visible: false }));
 
     // Directions renderer
@@ -272,8 +273,8 @@ export default function AirportMapDetail() {
           }}>
             {/* Photo */}
             <div style={{ position: "relative", height: "220px", borderRadius: "16px", overflow: "hidden", marginBottom: "20px" }}>
-              <img src={airport.img} alt={airport.name}
-                style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+              <Image src={airport.img} alt={airport.name} fill sizes="(max-width: 768px) 100vw, 500px"
+                style={{ objectFit: "cover" }} />
               <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,20,60,0.8) 0%, transparent 55%)" }} />
               <div style={{ position: "absolute", bottom: "16px", left: "16px", right: "16px" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "6px" }}>
@@ -327,7 +328,7 @@ export default function AirportMapDetail() {
             {/* CTA */}
             <a href="/#booking"
               style={{ display: "block", textAlign: "center" as const, background: "#F97316", color: "#fff", textDecoration: "none", padding: "14px", borderRadius: "12px", fontFamily: "Poppins, sans-serif", fontWeight: 700, fontSize: "15px", boxShadow: "0 4px 16px rgba(249,115,22,0.3)", transition: "opacity 0.15s" }}>
-              Book transfer na {airport.code} →
+              Book transfer to {airport.code} →
             </a>
           </div>
         </div>

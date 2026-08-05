@@ -96,7 +96,7 @@ export default function PrepravaPropFirmy() {
               {[{ name: "Czech Television", logo: "/partner-ct.png" }, { name: "Blažek", logo: "/partner-blazek.png" }].map((p) => (
                 <div key={p.name} className="flex items-center justify-center rounded-xl px-7 py-3"
                   style={{ background: "rgba(255,255,255,0.06)", border: "1px solid rgba(255,255,255,0.1)", minWidth: "130px" }}>
-                  <img src={p.logo} alt={p.name}
+                  <img src={p.logo} alt={p.name} loading="lazy"
                     style={{ maxHeight: "64px", maxWidth: "160px", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
                 </div>
               ))}

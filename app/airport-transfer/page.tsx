@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Navbar from "@/components/Navbar"
 import AirportMapDetail from "@/components/AirportMapDetail"
 import Footer from "@/components/Footer"
@@ -12,7 +13,6 @@ export const metadata: Metadata = {
     title: "Transport to Prague Airport and nearby airports | pragueairportaxi.com",
     description: "Transfer to PRG, VIE, BTS, BUD, MUC, FRA airports. Fixed price, flight tracking.",
     url: "https://www.pragueairportaxi.com/airport-transfer",
-    images: [{ url: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/PRG_Airport_Terminal_2.jpg/1280px-PRG_Airport_Terminal_2.jpg", width: 1280, height: 720 }],
   },
   alternates: {
     canonical: "https://www.pragueairportaxi.com/airport-transfer",
@@ -129,7 +129,8 @@ export default function LetistniPreprava() {
                 </p>
               </div>
               <div className="hidden md:block" style={{ borderRadius: "16px", overflow: "hidden", boxShadow: "0 24px 60px rgba(0,0,0,0.4)" }}>
-                <img src="/driver-sign.jpg" alt="Driver holding a name sign waits for the customer at the airport arrivals exit"
+                <Image src="/driver-sign.jpg" alt="Driver holding a name sign waits for the customer at the airport arrivals exit"
+                  width={1536} height={1024} priority
                   style={{ width: "100%", height: "auto", display: "block" }} />
               </div>
             </div>
@@ -147,8 +148,8 @@ export default function LetistniPreprava() {
               return (
                 <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 mb-6">
                   <div className="flex flex-col md:flex-row">
-                    <div className="md:w-2/5 flex-shrink-0">
-                      <img src={prg.img} alt={prg.name} style={{ width: "100%", height: "280px", objectFit: "cover" }} />
+                    <div className="md:w-2/5 flex-shrink-0" style={{ position: "relative", width: "100%", height: "280px" }}>
+                      <Image src={prg.img} alt={prg.name} fill sizes="(max-width: 768px) 100vw, 40vw" style={{ objectFit: "cover" }} />
                     </div>
                     <div className="flex-1 p-8">
                       <div className="flex items-start justify-between mb-4 flex-wrap gap-3">
@@ -171,7 +172,7 @@ export default function LetistniPreprava() {
                         ))}
                       </ul>
                       <a href="/#booking" style={{ background: "#00205B", color: "#fff", padding: "11px 28px", borderRadius: "10px", fontWeight: 700, fontSize: "14px", textDecoration: "none", display: "inline-block" }}>
-                        Book now na {prg.code} →
+                        Book now at {prg.code} →
                       </a>
                     </div>
                   </div>
@@ -183,7 +184,9 @@ export default function LetistniPreprava() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {AIRPORTS_CZ.slice(1).map((airport) => (
                 <div key={airport.code} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100 flex flex-col">
-                  <img src={airport.img} alt={airport.name} style={{ width: "100%", height: "160px", objectFit: "cover" }} />
+                  <div style={{ position: "relative", width: "100%", height: "160px" }}>
+                    <Image src={airport.img} alt={airport.name} fill sizes="(max-width: 768px) 100vw, 50vw" style={{ objectFit: "cover" }} />
+                  </div>
                   <div className="flex-1 p-6">
                     <div className="flex items-start justify-between mb-3 flex-wrap gap-2">
                       <div>
@@ -205,7 +208,7 @@ export default function LetistniPreprava() {
                       ))}
                     </ul>
                     <a href="/#booking" style={{ background: "#00205B", color: "#fff", padding: "10px 20px", borderRadius: "10px", fontWeight: 700, fontSize: "13px", textDecoration: "none", display: "inline-block" }}>
-                      Book now na {airport.code} →
+                      Book now at {airport.code} →
                     </a>
                   </div>
                 </div>
@@ -243,7 +246,7 @@ export default function LetistniPreprava() {
               ].map((item, i) => (
                 <div key={i} className="rounded-2xl overflow-hidden shadow-sm border border-gray-100">
                   <div style={{ width: "100%", height: "200px", overflow: "hidden", position: "relative" }}>
-                    <img src={item.img} alt={item.title} style={{ width: "100%", height: "100%", objectFit: "cover", objectPosition: item.imgPos || "center", transform: item.imgZoom ? `scale(${item.imgZoom})` : undefined, transformOrigin: "center" }} />
+                    <Image src={item.img} alt={item.title} fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: "cover", objectPosition: item.imgPos || "center", transform: item.imgZoom ? `scale(${item.imgZoom})` : undefined, transformOrigin: "center" }} />
                   </div>
                   <div className="p-6">
                     <h3 className="text-lg font-bold mb-2" style={{ fontFamily: "Poppins, sans-serif", color: "#00205B" }}>{item.title}</h3>

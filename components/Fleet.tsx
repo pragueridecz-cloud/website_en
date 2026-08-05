@@ -1,5 +1,6 @@
 "use client";
 import { useRef, useState, useEffect } from "react";
+import Image from "next/image";
 import { Users, Briefcase } from "lucide-react";
 import SectionHeading from "./SectionHeading";
 
@@ -218,9 +219,9 @@ function CarCard({ car, mode = "transfer" }: { car: typeof cars[0]; mode?: strin
           {car.tag}
         </div>
       )}
-      <div style={{ height: "176px", background: "#f8fafc", display: "flex", alignItems: "center", justifyContent: "center", padding: "20px", borderBottom: "1px solid #f1f5f9" }}>
-        <img src={car.img} alt={car.name}
-          style={{ maxHeight: "144px", maxWidth: "100%", objectFit: "contain", display: "block" }} />
+      <div style={{ height: "176px", background: "#f8fafc", position: "relative", padding: "20px", borderBottom: "1px solid #f1f5f9" }}>
+        <Image src={car.img} alt={car.name} fill sizes="(max-width: 768px) 50vw, 300px"
+          style={{ objectFit: "contain" }} />
       </div>
       <div className="p-5 flex flex-col flex-1">
         <h3 className="font-bold text-[#00205B] text-base mb-0.5">{car.name}</h3>

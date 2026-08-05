@@ -1,4 +1,5 @@
 import type { Metadata } from "next"
+import Image from "next/image"
 import Navbar from "@/components/Navbar"
 import Footer from "@/components/Footer"
 import SectionHeading from "@/components/SectionHeading"
@@ -166,7 +167,7 @@ export default function MezimestskaPage() {
               {VYHODY.map(({ Icon, title, desc, img }) => (
                 <div key={title} className="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100">
                   <div style={{ position: "relative", height: "160px" }}>
-                    <img src={img} alt={title} style={{ width: "100%", height: "100%", objectFit: "cover" }} />
+                    <Image src={img} alt={title} fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: "cover" }} />
                     <div style={{ position: "absolute", inset: 0, background: "rgba(0,32,91,0.35)" }} />
                     <div style={{ position: "absolute", bottom: "12px", left: "12px", width: "36px", height: "36px", borderRadius: "10px", background: "#F97316", display: "flex", alignItems: "center", justifyContent: "center" }}>
                       <Icon size={18} color="#fff" strokeWidth={2} />

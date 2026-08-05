@@ -1,5 +1,6 @@
 'use client'
 import { useState, useRef } from "react"
+import Image from "next/image"
 
 const cards = [
   { img: "/firmy-letiste-zamestnanci.jpg", title: "Employee airport transfers", desc: "On-time pickup with invoice for HR" },
@@ -43,8 +44,8 @@ export default function FirmsUseCases() {
       <div className="md:hidden">
         <div onTouchStart={onTouchStart} onTouchEnd={onTouchEnd} style={{ touchAction: "pan-y" }}>
           <div style={{ borderRadius: "16px", overflow: "hidden", position: "relative", height: "260px" }}>
-            <img src={cards[active].img} alt={cards[active].title}
-              style={{ width: "100%", height: "100%", objectFit: "cover", display: "block" }} />
+            <Image src={cards[active].img} alt={cards[active].title} fill sizes="100vw"
+              style={{ objectFit: "cover" }} />
             <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,32,91,.88) 0%, transparent 55%)" }} />
             <div style={{ position: "absolute", bottom: "20px", left: "20px", right: "20px" }}>
               <div style={{ fontFamily: "Poppins, sans-serif", fontSize: "18px", fontWeight: 700, color: "#fff", marginBottom: "4px" }}>{cards[active].title}</div>
@@ -77,7 +78,7 @@ function PhotoCard({ img, title, desc, gridStyle }: { img: string; title: string
       onMouseEnter={e => { const el = e.currentTarget.querySelector("img") as HTMLImageElement; if (el) el.style.transform = "scale(1.06)" }}
       onMouseLeave={e => { const el = e.currentTarget.querySelector("img") as HTMLImageElement; if (el) el.style.transform = "scale(1)" }}
     >
-      <img src={img} alt={title} style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform .5s ease", display: "block" }} />
+      <Image src={img} alt={title} fill sizes="(max-width: 768px) 100vw, 33vw" style={{ objectFit: "cover", transition: "transform .5s ease" }} />
       <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,32,91,.88) 0%, transparent 55%)" }} />
       <div style={{ position: "absolute", bottom: "20px", left: "20px", right: "20px" }}>
         <div style={{ fontFamily: "Poppins, sans-serif", fontSize: "clamp(14px,1.4vw,20px)", fontWeight: 700, color: "#fff", marginBottom: "4px" }}>{title}</div>

@@ -6,7 +6,7 @@ import Footer from "@/components/Footer"
 import SectionHeading from "@/components/SectionHeading"
 
 export const metadata: Metadata = {
-  title: "Transport na airport Prague | pragueairportaxi.com",
+  title: "Transport to Prague Airport | pragueairportaxi.com",
   description: "Transfer to/from Václav Havel Airport Prague €29. Also Vienna, Bratislava, Budapest, Munich, Frankfurt. Fixed price, driver waits at exit, flight tracking 24/7.",
   keywords: "airport transfer Prague, Prague airport taxi, Václav Havel airport transfer, Vienna airport transfer, Bratislava airport transfer, Munich airport transfer",
   openGraph: {
@@ -78,6 +78,7 @@ const FAQ_ITEMS = [
   { q: "Can I pay by card?", a: "Yes, pay by card online when booking or cash to the driver. We can also issue a VAT invoice for companies on request." },
   { q: "What if I have a lot of luggage or skis?", a: "Specify your luggage count and special requirements when booking. For large luggage, skis or prams we arrange a minivan with plenty of space." },
   { q: "Can I book a return journey?", a: "Of course. Simply add a return trip in the booking form. A return ride can also be booked separately." },
+  { q: "Are there cheaper options than a transfer, like public transport or the Airport Express?", a: "Yes — public transport and the Airport Express are both cheaper, but without a booking or the certainty that someone will wait for you if your flight is delayed. See our full comparison of all options to/from the airport with real prices and travel times." },
 ]
 
 const faqSchema = {
@@ -272,6 +273,11 @@ export default function LetistniPreprava() {
                   <div className="px-5 pb-5 text-gray-600 text-sm leading-relaxed border-t border-gray-100 pt-4">{item.a}</div>
                 </details>
               ))}
+            </div>
+            <div className="text-center mt-8">
+              <a href="/how-to-get-from-the-airport" style={{ color: "#00205B", fontWeight: 600, fontSize: "14px", textDecoration: "underline" }}>
+                Compare public transport, Airport Express, taxi and transfer →
+              </a>
             </div>
           </div>
         </section>

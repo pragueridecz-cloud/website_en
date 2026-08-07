@@ -76,6 +76,7 @@ export default function Footer() {
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "8px" }}>
               {[
                 { label: "How it works", href: "#jak-to-funguje" },
+                { label: "How to get from the airport", href: "/how-to-get-from-the-airport" },
                 { label: "Frequently asked questions", href: "#faq" },
                 { label: "Terms & Conditions", href: "/terms-and-conditions" },
                 { label: "Privacy Policy", href: "/privacy-policy" },

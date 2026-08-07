@@ -5,6 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const pages = [
     { url: '/', priority: 1.0, changeFrequency: 'weekly' as const },
     { url: '/airport-transfer', priority: 0.9, changeFrequency: 'monthly' as const },
+    { url: '/how-to-get-from-the-airport', priority: 0.7, changeFrequency: 'monthly' as const },
     { url: '/intercity-transport', priority: 0.9, changeFrequency: 'monthly' as const },
     { url: '/hourly-rental', priority: 0.8, changeFrequency: 'monthly' as const },
     { url: '/corporate-travel', priority: 0.8, changeFrequency: 'monthly' as const },

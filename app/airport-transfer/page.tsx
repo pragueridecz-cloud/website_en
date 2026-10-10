@@ -45,7 +45,7 @@ const AIRPORTS_CZ = [
     desc: "The largest and busiest airport in Czech Republic with over 17 million passengers annually. Two terminals – T1 for Schengen, T2 for non-European flights. Located approx. 17 km from Prague city centre.",
     price: "from €29",
     time: "20–35 min",
-    img: "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
+    img: "/hero-airport.png",
     facts: ["Terminal 1 – Schengen (most European flights)", "Terminal 2 – non-Schengen, overseas flights", "17 km from Wenceslas Square", "We track your flight delay"],
   },
   {

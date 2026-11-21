@@ -80,7 +80,7 @@ const cars = [
 ];
 
 const TABS = [
-  { id: "sedan", label: "Sedan", desc: "1–4 passengersy" },
+  { id: "sedan", label: "Sedan", desc: "1–4 passengers" },
   { id: "minivan", label: "Minivan", desc: "1–7 passengers" },
 ] as const;
 

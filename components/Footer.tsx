@@ -18,7 +18,7 @@ export default function Footer() {
             {/* Social ikonky */}
             <div style={{ display: "flex", gap: "10px", marginTop: "16px" }}>
               {/* Facebook */}
-              <a href="https://facebook.com/naletistelevne" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
+              <a href="https://facebook.com/transferpraguecar" target="_blank" rel="noopener noreferrer" aria-label="Facebook"
                 className="social-icon"
                 style={{ width: "36px", height: "36px", borderRadius: "8px", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.12)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", transition: "all .2s", flexShrink: 0 }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "#1877F2"; (e.currentTarget as HTMLElement).style.borderColor = "#1877F2"; }}
@@ -28,7 +28,7 @@ export default function Footer() {
                 </svg>
               </a>
               {/* Instagram */}
-              <a href="https://instagram.com/naletistelevne" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
+              <a href="https://www.instagram.com/transferpraguecar" target="_blank" rel="noopener noreferrer" aria-label="Instagram"
                 style={{ width: "36px", height: "36px", borderRadius: "8px", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.12)", display: "flex", alignItems: "center", justifyContent: "center", textDecoration: "none", transition: "all .2s", flexShrink: 0 }}
                 onMouseEnter={e => { (e.currentTarget as HTMLElement).style.background = "radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%)"; (e.currentTarget as HTMLElement).style.background = "#E1306C"; (e.currentTarget as HTMLElement).style.borderColor = "#E1306C"; }}
                 onMouseLeave={e => { (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,.08)"; (e.currentTarget as HTMLElement).style.borderColor = "rgba(255,255,255,.12)"; }}>

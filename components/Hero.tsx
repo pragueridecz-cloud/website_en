@@ -192,7 +192,7 @@ export default function Hero() {
         {/* Prague fotka */}
         <div className="hero-bg" style={{
           position: "absolute", inset: 0, zIndex: 0,
-          backgroundImage: "url('/hero-prague.png')",
+          backgroundImage: "url('/hero-prague.webp')",
           backgroundSize: "cover", backgroundPosition: "65% 40%",
           opacity: 0.8, mixBlendMode: "luminosity",
         }} />

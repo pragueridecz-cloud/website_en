@@ -188,17 +188,17 @@ export default function Hero() {
       {/* Portal only on desktop — mobile uses inline iframe */}
       {mounted && isDesktop && createPortal(widgetEl, document.body)}
 
-      <section id="booking" className="pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a", minHeight: "820px" }}>
+      <section id="booking" className="pb-0 md:pb-0 md:min-h-[820px]" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
 
-        {/* Background photo — shifted up so airport sign is just below navbar */}
-        <div style={{
+        {/* Background photo — desktop only (was cropped on mobile) */}
+        <div className="hidden md:block" style={{
           position: "absolute", left: 0, right: 0, top: "-60px",
           height: "calc(100% + 60px)", zIndex: 0,
           backgroundImage: "url('/hero-airport2.webp')",
           backgroundSize: "110% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat",
         }} />
-        {/* Gradient — smooth fade into dark blue at bottom */}
-        <div style={{
+        {/* Gradient — smooth fade into dark blue at bottom (desktop only) */}
+        <div className="hidden md:block" style={{
           position: "absolute", inset: 0, zIndex: 1,
           background: "linear-gradient(to bottom, rgba(13,31,74,0.00) 0%, rgba(13,31,74,0.00) 10%, rgba(13,31,74,0.04) 18%, rgba(13,31,74,0.10) 26%, rgba(13,31,74,0.20) 34%, rgba(13,31,74,0.33) 42%, rgba(13,31,74,0.50) 50%, rgba(13,31,74,0.68) 58%, rgba(13,31,74,0.84) 64%, #0d1f4a 68%)",
         }} />
@@ -219,11 +219,9 @@ export default function Hero() {
         </div>
 
         {/* Mobile */}
-        <div className="md:hidden flex flex-col pb-5 px-4" style={{ paddingTop: "24px", position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 16px" }}>
-            Affordable transport<br />
-            <span style={{ color: "#F97316" }}>to/from Prague Airport</span>
-          </h1>
+        <div className="md:hidden flex flex-col pb-5 px-4" style={{ paddingTop: "84px", position: "relative", zIndex: 2 }}>
+          {/* H1 for SEO / screen readers only — visually hidden */}
+          <h1 className="sr-only">Affordable transport to/from Prague Airport</h1>
           <iframe
             src="https://taxisaas-widget.vercel.app/widget.html?proxy=https%3A%2F%2Fadmin.naletistelevne.cz%2Fapi%2Fflight-status&lang=en"
             frameBorder="0"

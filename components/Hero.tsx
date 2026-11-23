@@ -195,7 +195,7 @@ export default function Hero() {
           position: "absolute", left: 0, right: 0, top: "-60px",
           height: "calc(100% + 60px)", zIndex: 0,
           backgroundImage: "url('/hero-airport2.webp')",
-          backgroundSize: "130% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat",
+          backgroundSize: "110% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat",
         }} />
         {/* Gradient — smooth fade into dark blue at bottom */}
         <div style={{

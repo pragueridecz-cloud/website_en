@@ -194,11 +194,7 @@ export default function Hero() {
           position: "absolute", inset: 0, zIndex: 0,
           backgroundImage: "url('/hero-prague.webp')",
           backgroundSize: "cover", backgroundPosition: "65% 40%",
-          opacity: 0.8, mixBlendMode: "luminosity",
-        }} />
-        <div style={{
-          position: "absolute", inset: 0, zIndex: 1,
-          background: "linear-gradient(180deg, rgba(13,31,74,0.4) 0%, rgba(13,31,74,0.25) 40%, rgba(30,58,138,0.8) 100%)",
+          opacity: 1,
         }} />
 
         <div className="max-w-6xl mx-auto pb-0 md:pb-10" style={{ position: "relative", zIndex: 2 }}>

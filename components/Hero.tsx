@@ -196,7 +196,7 @@ export default function Hero() {
           alt="Václav Havel Airport Prague"
           style={{
             position: "absolute", inset: 0, width: "100%", height: "100%",
-            objectFit: "cover", objectPosition: "50% 30%",
+            objectFit: "cover", objectPosition: "50% top",
           }}
         />
         {/* Gradient — light at top, dark at bottom for text */}
@@ -209,7 +209,7 @@ export default function Hero() {
 
           {/* Desktop — spacer for airport sign, then text + widget */}
           <div className="hidden md:block">
-            <div style={{ height: "220px" }} />
+            <div style={{ height: "120px" }} />
 
             {/* Text + widget side by side */}
             <div style={{ display: "flex", alignItems: "flex-start", gap: "40px", paddingBottom: "40px" }}>

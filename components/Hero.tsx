@@ -188,25 +188,38 @@ export default function Hero() {
       {/* Portal only on desktop — mobile uses inline iframe */}
       {mounted && isDesktop && createPortal(widgetEl, document.body)}
 
-      <section id="booking" className="px-4 pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
-        {/* Full background photo — extends above section to sit behind navbar */}
-        <div style={{
-          position: "absolute", top: "-98px", left: 0, right: 0, bottom: 0, zIndex: 0,
+      <section id="booking" className="pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
+
+        {/* Desktop: photo as real img in HTML flow — precise position control */}
+        <div className="hidden md:block" style={{ position: "relative" }}>
+          <img
+            src="/hero-airport2.webp"
+            alt="Václav Havel Airport Prague"
+            style={{ width: "100%", height: "340px", objectFit: "cover", objectPosition: "50% 30%", display: "block" }}
+          />
+          {/* Gradient over bottom of photo */}
+          <div style={{
+            position: "absolute", bottom: 0, left: 0, right: 0, height: "160px",
+            background: "linear-gradient(to bottom, transparent, #0d1f4a)",
+          }} />
+        </div>
+
+        {/* Mobile: photo as background */}
+        <div className="md:hidden" style={{
+          position: "absolute", inset: 0, zIndex: 0,
           backgroundImage: "url('/hero-airport2.webp')",
-          backgroundSize: "cover", backgroundPosition: "50% 0%",
+          backgroundSize: "cover", backgroundPosition: "50% 30%",
         }} />
-        {/* Gradient — light at top (photo visible), dark at bottom for text */}
-        <div style={{
+        <div className="md:hidden" style={{
           position: "absolute", inset: 0, zIndex: 1,
-          background: "linear-gradient(to bottom, rgba(13,31,74,0.2) 0%, rgba(13,31,74,0.3) 40%, rgba(13,31,74,0.82) 65%, #0d1f4a 90%)",
+          background: "linear-gradient(to bottom, rgba(13,31,74,0.3) 0%, rgba(13,31,74,0.85) 60%, #0d1f4a 100%)",
         }} />
 
-        <div className="max-w-6xl mx-auto pb-0 md:pb-10" style={{ position: "relative", zIndex: 2 }}>
+        <div className="max-w-6xl mx-auto pb-0 md:pb-10 px-4" style={{ position: "relative", zIndex: 2 }}>
 
-          {/* Desktop — photo at top, then text + widget below */}
+          {/* Desktop — text + widget below photo */}
           <div className="hidden md:block">
-            {/* Spacer — room for photo below navbar */}
-            <div style={{ height: "160px" }} />
+            <div style={{ height: "0px" }} />
 
             {/* Text + widget side by side */}
             <div style={{ display: "flex", alignItems: "flex-start", gap: "40px", paddingBottom: "40px" }}>

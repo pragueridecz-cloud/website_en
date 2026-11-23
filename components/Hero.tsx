@@ -195,8 +195,8 @@ export default function Hero() {
           src="/hero-airport2.webp"
           alt="Václav Havel Airport Prague"
           style={{
-            position: "absolute", top: "-98px", left: 0, right: 0, bottom: 0,
-            width: "100%", height: "calc(100% + 98px)",
+            position: "absolute", top: "-300px", left: 0, right: 0, bottom: 0,
+            width: "100%", height: "calc(100% + 300px)",
             objectFit: "cover", objectPosition: "50% top",
           }}
         />

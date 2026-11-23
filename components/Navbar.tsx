@@ -138,10 +138,41 @@ export default function Navbar() {
             </div>
           </div>
 
+          {/* Mobile — language switcher (flag + dropdown, same as desktop) */}
+          <div className="md:hidden ml-auto flex items-center">
+            <div className="relative">
+              <button onClick={() => { setLangOpen(!langOpen); setMenuOpen(false); }}
+                aria-label="Language / Jazyk" aria-expanded={langOpen}
+                className="flex items-center gap-1.5 px-2 rounded text-sm cursor-pointer"
+                style={{ height: "32px", color: "rgba(255,255,255,.7)", background: "rgba(255,255,255,.08)", border: "1px solid rgba(255,255,255,.15)" }}>
+                <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f1ec-1f1e7.svg" width="24" height="18" alt="EN" style={{ display: "inline", verticalAlign: "middle" }} />
+                <ChevronDown size={11} className={`transition-transform ${langOpen ? "rotate-180" : ""}`} />
+              </button>
+              {langOpen && (
+                <>
+                  {/* tap outside closes the dropdown */}
+                  <div className="fixed inset-0 z-40" onClick={() => setLangOpen(false)} />
+                  <div className="absolute top-full right-0 mt-1 rounded-lg overflow-hidden z-50 min-w-36"
+                    style={{ background: "#162d6e", border: "1px solid rgba(255,255,255,.15)", boxShadow: "0 8px 24px rgba(0,0,0,.3)" }}>
+                    <div className="px-4 py-2.5 flex items-center gap-2" style={{ borderBottom: "1px solid rgba(255,255,255,.1)", color: "#F97316", fontSize: "13px", fontWeight: 600 }}>
+                      <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f1ec-1f1e7.svg" width="24" height="18" alt="EN" style={{ display: "inline", verticalAlign: "middle" }} /> English ✓
+                    </div>
+                    <a href="https://www.naletistelevne.cz" target="_blank" rel="noopener noreferrer"
+                      onClick={() => setLangOpen(false)}
+                      className="flex items-center gap-2 px-4 py-2.5 text-sm cursor-pointer"
+                      style={{ color: "rgba(255,255,255,.8)", textDecoration: "none" }}>
+                      <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@latest/assets/svg/1f1e8-1f1ff.svg" width="24" height="18" alt="CZ" style={{ display: "inline", verticalAlign: "middle" }} /> Čeština
+                    </a>
+                  </div>
+                </>
+              )}
+            </div>
+          </div>
+
           {/* Hamburger */}
-          <button className="md:hidden ml-auto flex items-center px-4 cursor-pointer"
+          <button className="md:hidden flex items-center pl-3 pr-1 cursor-pointer"
             style={{ color: "#fff", background: "none", border: "none" }}
-            onClick={() => setMenuOpen(!menuOpen)}>
+            onClick={() => { setMenuOpen(!menuOpen); setLangOpen(false); }}>
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
         </div>

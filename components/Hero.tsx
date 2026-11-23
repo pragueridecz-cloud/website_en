@@ -190,12 +190,13 @@ export default function Hero() {
 
       <section id="booking" className="pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
 
-        {/* Photo covers full section — objectPosition preserves correct sign placement */}
+        {/* Photo extends behind navbar at top */}
         <img
           src="/hero-airport2.webp"
           alt="Václav Havel Airport Prague"
           style={{
-            position: "absolute", inset: 0, width: "100%", height: "100%",
+            position: "absolute", top: "-98px", left: 0, right: 0, bottom: 0,
+            width: "100%", height: "calc(100% + 98px)",
             objectFit: "cover", objectPosition: "50% top",
           }}
         />
@@ -209,7 +210,7 @@ export default function Hero() {
 
           {/* Desktop — spacer for airport sign, then text + widget */}
           <div className="hidden md:block">
-            <div style={{ height: "120px" }} />
+            <div style={{ height: "180px" }} />
 
             {/* Text + widget side by side */}
             <div style={{ display: "flex", alignItems: "flex-start", gap: "40px", paddingBottom: "40px" }}>

@@ -192,8 +192,8 @@ export default function Hero() {
 
         {/* Background photo — shifted up so airport sign is just below navbar */}
         <div style={{
-          position: "absolute", left: 0, right: 0, top: "-195px",
-          height: "calc(100% + 195px)", zIndex: 0,
+          position: "absolute", left: 0, right: 0, top: "-60px",
+          height: "calc(100% + 60px)", zIndex: 0,
           backgroundImage: "url('/hero-airport2.webp')",
           backgroundSize: "130% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat",
         }} />

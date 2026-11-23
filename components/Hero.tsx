@@ -189,9 +189,9 @@ export default function Hero() {
       {mounted && isDesktop && createPortal(widgetEl, document.body)}
 
       <section id="booking" className="px-4 pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
-        {/* Full background photo — shifted up to show terminal clearly */}
+        {/* Full background photo — extends above section to sit behind navbar */}
         <div style={{
-          position: "absolute", inset: 0, zIndex: 0,
+          position: "absolute", top: "-98px", left: 0, right: 0, bottom: 0, zIndex: 0,
           backgroundImage: "url('/hero-airport2.webp')",
           backgroundSize: "cover", backgroundPosition: "50% 0%",
         }} />
@@ -205,8 +205,8 @@ export default function Hero() {
 
           {/* Desktop — photo at top, then text + widget below */}
           <div className="hidden md:block">
-            {/* Spacer — room for photo (navbar + photo height) */}
-            <div style={{ height: "260px" }} />
+            {/* Spacer — room for photo below navbar */}
+            <div style={{ height: "160px" }} />
 
             {/* Text + widget side by side */}
             <div style={{ display: "flex", alignItems: "flex-start", gap: "40px", paddingBottom: "40px" }}>

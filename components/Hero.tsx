@@ -193,7 +193,7 @@ export default function Hero() {
         <div style={{
           position: "absolute", inset: 0, zIndex: 0,
           backgroundImage: "url('/hero-airport2.webp')",
-          backgroundSize: "cover", backgroundPosition: "50% 10%",
+          backgroundSize: "cover", backgroundPosition: "50% 60%",
         }} />
         {/* Gradient — light at top (photo visible), dark at bottom for text */}
         <div style={{

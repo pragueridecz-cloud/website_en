@@ -188,36 +188,23 @@ export default function Hero() {
       {/* Portal only on desktop — mobile uses inline iframe */}
       {mounted && isDesktop && createPortal(widgetEl, document.body)}
 
-      <section id="booking" className="pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a", paddingTop: "98px" }}>
-        {/* Desktop: photo right as decorative panel */}
-        <div className="hidden md:block" style={{
-          position: "absolute", top: 0, right: 0, bottom: 0,
-          width: "45%", zIndex: 0,
+      <section id="booking" className="px-4 pt-28 pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
+        {/* Full background photo */}
+        <div style={{
+          position: "absolute", inset: 0, zIndex: 0,
           backgroundImage: "url('/hero-airport2.webp')",
-          backgroundSize: "cover", backgroundPosition: "55% 50%",
-        }}>
-          {/* Fade left */}
-          <div style={{
-            position: "absolute", inset: 0,
-            background: "linear-gradient(to right, #0d1f4a 0%, rgba(13,31,74,0.6) 30%, transparent 70%)",
-          }} />
-        </div>
-        {/* Mobile: photo strip at top */}
-        <div className="md:hidden" style={{
-          position: "absolute", top: "98px", left: 0, right: 0, height: "180px", zIndex: 0,
-          backgroundImage: "url('/hero-airport2.webp')",
-          backgroundSize: "cover", backgroundPosition: "50% 40%",
-        }}>
-          <div style={{
-            position: "absolute", inset: 0,
-            background: "linear-gradient(to bottom, transparent 0%, #0d1f4a 100%)",
-          }} />
-        </div>
+          backgroundSize: "cover", backgroundPosition: "50% 35%",
+        }} />
+        {/* Gradient on bottom two thirds — keeps airport sign readable but darkens lower half */}
+        <div style={{
+          position: "absolute", inset: 0, zIndex: 1,
+          background: "linear-gradient(to bottom, rgba(13,31,74,0.55) 0%, rgba(13,31,74,0.45) 45%, rgba(13,31,74,0.75) 70%, #0d1f4a 100%)",
+        }} />
 
-        <div className="max-w-6xl mx-auto pb-0 md:pb-10 px-4" style={{ position: "relative", zIndex: 2 }}>
+        <div className="max-w-6xl mx-auto pb-0 md:pb-10" style={{ position: "relative", zIndex: 2 }}>
 
           {/* Desktop */}
-          <div className="hidden md:flex items-start gap-12" style={{ paddingTop: "32px", paddingBottom: "40px" }}>
+          <div className="hidden md:flex items-start gap-12" style={{ paddingTop: "48px", paddingBottom: "40px" }}>
 
             {/* Levý sloupec — text */}
             <div style={{
@@ -260,8 +247,6 @@ export default function Hero() {
 
           {/* Mobile */}
           <div className="md:hidden flex flex-col pb-5">
-            {/* Spacer for photo strip on mobile */}
-            <div style={{ height: "140px" }} />
             <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 16px" }}>
               Affordable transport<br />
               <span style={{ color: "#F97316" }}>to/from Prague Airport</span>

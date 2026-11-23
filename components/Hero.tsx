@@ -188,65 +188,71 @@ export default function Hero() {
       {/* Portal only on desktop — mobile uses inline iframe */}
       {mounted && isDesktop && createPortal(widgetEl, document.body)}
 
-      <section id="booking" className="px-4 pt-28 pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
-        {/* Full background photo */}
+      <section id="booking" className="px-4 pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
+        {/* Full background photo — shifted up to show terminal clearly */}
         <div style={{
           position: "absolute", inset: 0, zIndex: 0,
           backgroundImage: "url('/hero-airport2.webp')",
-          backgroundSize: "cover", backgroundPosition: "50% 35%",
+          backgroundSize: "cover", backgroundPosition: "50% 10%",
         }} />
-        {/* Gradient on bottom two thirds — keeps airport sign readable but darkens lower half */}
+        {/* Gradient — light at top (photo visible), dark at bottom for text */}
         <div style={{
           position: "absolute", inset: 0, zIndex: 1,
-          background: "linear-gradient(to bottom, rgba(13,31,74,0.55) 0%, rgba(13,31,74,0.45) 45%, rgba(13,31,74,0.75) 70%, #0d1f4a 100%)",
+          background: "linear-gradient(to bottom, rgba(13,31,74,0.2) 0%, rgba(13,31,74,0.3) 40%, rgba(13,31,74,0.82) 65%, #0d1f4a 90%)",
         }} />
 
         <div className="max-w-6xl mx-auto pb-0 md:pb-10" style={{ position: "relative", zIndex: 2 }}>
 
-          {/* Desktop */}
-          <div className="hidden md:flex items-start gap-12" style={{ paddingTop: "48px", paddingBottom: "40px" }}>
+          {/* Desktop — photo at top, then text + widget below */}
+          <div className="hidden md:block">
+            {/* Spacer — room for photo (navbar + photo height) */}
+            <div style={{ height: "260px" }} />
 
-            {/* Levý sloupec — text */}
-            <div style={{
-              flex: 1, minWidth: 0,
-              opacity: expanded ? 0 : 1,
-              transition: "opacity 0.3s ease",
-              pointerEvents: expanded ? "none" : "auto",
-            }}>
-              <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(32px,4vw,52px)", margin: "0 0 8px" }}>
-                Affordable transport<br />
-                <span style={{ color: "#F97316" }}>to/from Prague Airport</span>
-              </h1>
-              <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, lineHeight: 1.3, fontSize: "clamp(16px,2vw,22px)", margin: "0 0 28px", color: "#fff" }}>
-                and transfers across Czech Republic and Central Europe
-              </h2>
-              <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "32px" }}>
-                {WHY_US.map((item, i) => (
-                  <div key={i} style={{
-                    display: "flex", alignItems: "center", gap: "16px",
-                    opacity: visibleItems.includes(i) ? 1 : 0,
-                    transform: visibleItems.includes(i) ? "translateX(0)" : "translateX(-20px)",
-                    transition: "opacity 0.5s ease, transform 0.5s ease",
-                  }}>
-                    <span style={{ fontFamily: "Poppins, sans-serif", fontSize: "13px", fontWeight: 800, color: "#F97316", minWidth: "26px", opacity: .8 }}>{item.num}</span>
-                    <div style={{ width: "1px", height: "20px", background: "rgba(249,115,22,.3)", flexShrink: 0 }} />
-                    <span style={{ color: "#fff", fontSize: "18px", fontWeight: 500, whiteSpace: "nowrap" }}>{item.text}</span>
-                  </div>
-                ))}
+            {/* Text + widget side by side */}
+            <div style={{ display: "flex", alignItems: "flex-start", gap: "40px", paddingBottom: "40px" }}>
+
+              {/* Left column — text */}
+              <div style={{
+                flex: 1, minWidth: 0,
+                opacity: expanded ? 0 : 1,
+                transition: "opacity 0.3s ease",
+                pointerEvents: expanded ? "none" : "auto",
+              }}>
+                <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(32px,4vw,52px)", margin: "0 0 8px" }}>
+                  Affordable transport<br />
+                  <span style={{ color: "#F97316" }}>to/from Prague Airport</span>
+                </h1>
+                <h2 style={{ fontFamily: "Poppins, sans-serif", fontWeight: 600, lineHeight: 1.3, fontSize: "clamp(16px,2vw,22px)", margin: "0 0 28px", color: "#fff" }}>
+                  and transfers across Czech Republic and Central Europe
+                </h2>
+                <div style={{ display: "flex", flexDirection: "column", gap: "14px", marginBottom: "32px" }}>
+                  {WHY_US.map((item, i) => (
+                    <div key={i} style={{
+                      display: "flex", alignItems: "center", gap: "16px",
+                      opacity: visibleItems.includes(i) ? 1 : 0,
+                      transform: visibleItems.includes(i) ? "translateX(0)" : "translateX(-20px)",
+                      transition: "opacity 0.5s ease, transform 0.5s ease",
+                    }}>
+                      <span style={{ fontFamily: "Poppins, sans-serif", fontSize: "13px", fontWeight: 800, color: "#F97316", minWidth: "26px", opacity: .8 }}>{item.num}</span>
+                      <div style={{ width: "1px", height: "20px", background: "rgba(249,115,22,.3)", flexShrink: 0 }} />
+                      <span style={{ color: "#fff", fontSize: "18px", fontWeight: 500, whiteSpace: "nowrap" }}>{item.text}</span>
+                    </div>
+                  ))}
+                </div>
+                <PriceTag />
               </div>
-              <PriceTag />
-            </div>
 
-            {/* Ghost div — rezervuje místo pro iframe v step 1 */}
-            <div
-              ref={ghostRef}
-              className="flex-shrink-0"
-              style={{ width: "520px", height: `${widgetH}px`, transition: "height 0.2s ease" }}
-            />
+              {/* Ghost div — holds space for portal iframe in step 1 */}
+              <div
+                ref={ghostRef}
+                className="flex-shrink-0"
+                style={{ width: "520px", height: `${widgetH}px`, transition: "height 0.2s ease" }}
+              />
+            </div>
           </div>
 
           {/* Mobile */}
-          <div className="md:hidden flex flex-col pb-5">
+          <div className="md:hidden flex flex-col pb-5" style={{ paddingTop: "98px" }}>
             <h1 style={{ color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800, lineHeight: 1.1, fontSize: "clamp(28px,8vw,40px)", margin: "0 0 16px" }}>
               Affordable transport<br />
               <span style={{ color: "#F97316" }}>to/from Prague Airport</span>

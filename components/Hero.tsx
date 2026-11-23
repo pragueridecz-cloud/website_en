@@ -193,13 +193,13 @@ export default function Hero() {
         {/* Background photo — desktop only (was cropped on mobile) */}
         <div className="hidden md:block" style={{
           position: "absolute", left: 0, right: 0, top: "-60px",
-          height: "calc(100% + 60px)", zIndex: 0,
+          height: "880px", zIndex: 0, // fixed height — independent of widget height
           backgroundImage: "url('/hero-airport2.webp')",
           backgroundSize: "110% auto", backgroundPosition: "center top", backgroundRepeat: "no-repeat",
         }} />
         {/* Gradient — smooth fade into dark blue at bottom (desktop only) */}
         <div className="hidden md:block" style={{
-          position: "absolute", inset: 0, zIndex: 1,
+          position: "absolute", left: 0, right: 0, top: 0, height: "820px", zIndex: 1, // fixed height — gradient does not stretch with the widget
           background: "linear-gradient(to bottom, rgba(13,31,74,0.00) 0%, rgba(13,31,74,0.00) 10%, rgba(13,31,74,0.04) 18%, rgba(13,31,74,0.10) 26%, rgba(13,31,74,0.20) 34%, rgba(13,31,74,0.33) 42%, rgba(13,31,74,0.50) 50%, rgba(13,31,74,0.68) 58%, rgba(13,31,74,0.84) 64%, #0d1f4a 68%)",
         }} />
 

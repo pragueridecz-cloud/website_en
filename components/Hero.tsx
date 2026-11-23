@@ -188,7 +188,7 @@ export default function Hero() {
       {/* Portal only on desktop — mobile uses inline iframe */}
       {mounted && isDesktop && createPortal(widgetEl, document.body)}
 
-      <section id="booking" className="pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a", minHeight: "760px" }}>
+      <section id="booking" className="pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a", minHeight: "820px" }}>
 
         {/* Background photo — shifted up so airport sign is just below navbar */}
         <div style={{
@@ -203,23 +203,19 @@ export default function Hero() {
           background: "linear-gradient(to bottom, rgba(13,31,74,0.00) 0%, rgba(13,31,74,0.00) 10%, rgba(13,31,74,0.04) 18%, rgba(13,31,74,0.10) 26%, rgba(13,31,74,0.20) 34%, rgba(13,31,74,0.33) 42%, rgba(13,31,74,0.50) 50%, rgba(13,31,74,0.68) 58%, rgba(13,31,74,0.84) 64%, #0d1f4a 68%)",
         }} />
 
-        {/* Desktop — centered widget + heading below */}
-        <div className="hidden md:flex" style={{ position: "relative", zIndex: 2, flexDirection: "column", alignItems: "center", paddingTop: "110px", paddingBottom: "40px", gap: "20px" }}>
-          {/* Ghost div — tracks position for portal widget */}
+        {/* Desktop — ghost div holds section height, widget is absolute via portal */}
+        <div className="hidden md:block" style={{ position: "relative", zIndex: 2, paddingTop: "440px", paddingBottom: "40px" }}>
+          {/* Ghost div — tracks widget position for portal, dictates section height */}
           <div
             ref={ghostRef}
             className="flex-shrink-0"
-            style={{ width: "520px", height: `${widgetH}px`, transition: "height 0.2s ease" }}
+            style={{
+              width: "min(1300px, calc(100% - 40px))",
+              margin: "0 auto",
+              height: `${widgetH}px`,
+              transition: "height 0.2s ease"
+            }}
           />
-          {/* Heading below widget */}
-          <h1 style={{
-            color: "#fff", fontFamily: "Poppins, sans-serif", fontWeight: 800,
-            fontSize: "36px", lineHeight: 1, whiteSpace: "nowrap",
-            opacity: expanded ? 0 : 1, transition: "opacity 0.3s ease",
-          }}>
-            Affordable transport{" "}
-            <span style={{ color: "#F97316" }}>to/from Prague Airport</span>
-          </h1>
         </div>
 
         {/* Mobile */}

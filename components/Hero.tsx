@@ -190,36 +190,26 @@ export default function Hero() {
 
       <section id="booking" className="pb-0 md:pb-0" style={{ position: "relative", overflowX: "hidden", background: "#0d1f4a" }}>
 
-        {/* Desktop: photo as real img in HTML flow — precise position control */}
-        <div className="hidden md:block" style={{ position: "relative" }}>
-          <img
-            src="/hero-airport2.webp"
-            alt="Václav Havel Airport Prague"
-            style={{ width: "100%", height: "340px", objectFit: "cover", objectPosition: "50% 30%", display: "block" }}
-          />
-          {/* Gradient over bottom of photo */}
-          <div style={{
-            position: "absolute", bottom: 0, left: 0, right: 0, height: "160px",
-            background: "linear-gradient(to bottom, transparent, #0d1f4a)",
-          }} />
-        </div>
-
-        {/* Mobile: photo as background */}
-        <div className="md:hidden" style={{
-          position: "absolute", inset: 0, zIndex: 0,
-          backgroundImage: "url('/hero-airport2.webp')",
-          backgroundSize: "cover", backgroundPosition: "50% 30%",
-        }} />
-        <div className="md:hidden" style={{
+        {/* Photo covers full section — objectPosition preserves correct sign placement */}
+        <img
+          src="/hero-airport2.webp"
+          alt="Václav Havel Airport Prague"
+          style={{
+            position: "absolute", inset: 0, width: "100%", height: "100%",
+            objectFit: "cover", objectPosition: "50% 30%",
+          }}
+        />
+        {/* Gradient — light at top, dark at bottom for text */}
+        <div style={{
           position: "absolute", inset: 0, zIndex: 1,
-          background: "linear-gradient(to bottom, rgba(13,31,74,0.3) 0%, rgba(13,31,74,0.85) 60%, #0d1f4a 100%)",
+          background: "linear-gradient(to bottom, rgba(13,31,74,0.15) 0%, rgba(13,31,74,0.25) 35%, rgba(13,31,74,0.75) 60%, #0d1f4a 90%)",
         }} />
 
         <div className="max-w-6xl mx-auto pb-0 md:pb-10 px-4" style={{ position: "relative", zIndex: 2 }}>
 
-          {/* Desktop — text + widget below photo */}
+          {/* Desktop — spacer for airport sign, then text + widget */}
           <div className="hidden md:block">
-            <div style={{ height: "0px" }} />
+            <div style={{ height: "220px" }} />
 
             {/* Text + widget side by side */}
             <div style={{ display: "flex", alignItems: "flex-start", gap: "40px", paddingBottom: "40px" }}>

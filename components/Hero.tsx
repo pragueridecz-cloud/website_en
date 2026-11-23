@@ -204,7 +204,7 @@ export default function Hero() {
         }} />
 
         {/* Desktop — ghost div holds section height, widget is absolute via portal */}
-        <div className="hidden md:block" style={{ position: "relative", zIndex: 2, paddingTop: "440px", paddingBottom: "40px" }}>
+        <div className="hidden md:block" style={{ position: "relative", zIndex: 2, paddingTop: "500px", paddingBottom: "40px" }}>
           {/* Ghost div — tracks widget position for portal, dictates section height */}
           <div
             ref={ghostRef}
